@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Predicta</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js" defer><\/script>')</script>
+	<script src="https://d3js.org/d3.v5.min.js" defer></script>
+	<script src="js/jquery.main.js" defer></script>
+</head>
+<body>
+	<div id="wrapper">
+		<main id="main">
+			<section class="content-section bg-light-gray text-center">
+				<div class="container">
+					<h3>Geographical Region Contribution in Daily Diagnosed Cases</h3>
+					<div class="graph-box stacked-chart"
+						data-url="./inc/area-plot.csv"
+						data-keys="Asia-Pacific, Eastern Europe, Latin America and the Caribbean, Middle East and North Africa, North America, Sub-Saharan Africa, Western Europe"
+						data-colors="#3A4C68, #91BCE8, #808285, #242020, #789AC4, #A7A9AC, #222B3E">
+					</div>
+					<h3>Geographical Region Contribution in Daily Deaths</h3>
+					<div class="graph-box stacked-chart"
+						data-url="./inc/area-plot-2.csv"
+						data-keys="Brazil, France, India, Italy, Mideast, Oceania, Rest of Africa, Rest of Asia, Rest of Europe, Rest of Latin America, Rest of N. America, Spain, UK, US"
+						data-colors="#313E59, #A5A5A5, #606060, #91BCE8, #808285, #3A4C68, #231F20, #789AC4, #222B3E, #4C5874, #58595B, #D1D3D4, #597394, #A7A9AC">
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+</html>

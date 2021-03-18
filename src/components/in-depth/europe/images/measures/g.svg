@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 756.353 409.517">
+  <g id="Group_721" data-name="Group 721" transform="translate(-984.214 -4767.806)">
+    <g id="Group_681" data-name="Group 681">
+      <text id="_0" data-name="0" transform="translate(1328.306 4782.806)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">0</tspan></text>
+      <text id="_1" data-name="1" transform="translate(1365.004 4782.806)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">1</tspan></text>
+      <rect id="Rectangle_708" data-name="Rectangle 708" width="9.763" height="9.763" transform="translate(1314.939 4772.75)" fill="#91bce8"/>
+      <rect id="Rectangle_709" data-name="Rectangle 709" width="9.763" height="9.763" transform="translate(1351.452 4772.75)" fill="#789ac4"/>
+      <text id="_2" data-name="2" transform="translate(1401.254 4782.806)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">2</tspan></text>
+      <rect id="Rectangle_710" data-name="Rectangle 710" width="9.763" height="9.763" transform="translate(1387.702 4772.75)" fill="#4c5874"/>
+    </g>
+    <rect id="Rectangle_711" data-name="Rectangle 711" width="754.936" height="367.333" transform="translate(984.923 4809.281)" fill="#fff" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+    <g id="Group_682" data-name="Group 682">
+      <path id="Path_1087" data-name="Path 1087" d="M1078.47,5077.283h609.614M1078.47,5052.7h609.614m-609.614-24.412h609.614M1078.47,5003.7h609.614M1078.47,4979.11h609.614M1078.47,4954.7h609.614m-609.614-24.586h609.614M1078.47,4905.7h609.614m-609.614-24.587h609.614M1078.47,4856.7h609.614" fill="none" stroke="#d9d9d9" stroke-linejoin="round" stroke-width="1.09"/>
+      <path id="Path_1088" data-name="Path 1088" d="M1078.47,5073.8l76.2,5.58,76.2-16.565,76.2-50.22,76.2-44.64,76.2-5.406,76.2-16.74,76.2,27.726,76.2,39.06V5101.7H1078.47v-27.9Z" fill="#91bce8"/>
+      <path id="Path_1089" data-name="Path 1089" d="M1078.3,5102.742h610.835V4856.525H1078.3v246.217Z" fill="none" fill-rule="evenodd"/>
+      <path id="Path_1090" data-name="Path 1090" d="M1078.47,5023.75l76.2,22.32,76.2-44.64,76.2-72.366,76.2-22.32,76.2,5.58,76.2-11.16,76.2,33.48,76.2,22.32v55.625l-76.2-39.06-76.2-27.726-76.2,16.74-76.2,5.406-76.2,44.64-76.2,50.22-76.2,16.565-76.2-5.58V5023.75Z" fill="#789ac4"/>
+      <path id="Path_1091" data-name="Path 1091" d="M1078.3,5102.742h610.835V4856.525H1078.3v246.217Z" fill="none" fill-rule="evenodd"/>
+      <path id="Path_1092" data-name="Path 1092" d="M1078.47,4856.7h609.614v100.266l-76.2-22.32-76.2-33.48-76.2,11.16-76.2-5.58-76.2,22.32-76.2,72.366-76.2,44.64-76.2-22.32V4856.7Z" fill="#4c5874"/>
+      <path id="Path_1093" data-name="Path 1093" d="M1078.3,5102.742h610.835V4856.525H1078.3v246.217Z" fill="none" fill-rule="evenodd"/>
+      <text id="_0_" data-name="0%" transform="translate(1044.728 5106.256)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">0%</tspan></text>
+      <text id="_10_" data-name="10%" transform="translate(1036.083 5081.747)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">10%</tspan></text>
+      <text id="_20_" data-name="20%" transform="translate(1036.083 5057.237)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">20%</tspan></text>
+      <text id="_30_" data-name="30%" transform="translate(1036.083 5032.714)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">30%</tspan></text>
+      <text id="_40_" data-name="40%" transform="translate(1036.083 5008.204)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">40%</tspan></text>
+      <text id="_50_" data-name="50%" transform="translate(1036.083 4983.694)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">50%</tspan></text>
+      <text id="_60_" data-name="60%" transform="translate(1036.083 4959.197)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">60%</tspan></text>
+      <text id="_70_" data-name="70%" transform="translate(1036.083 4934.686)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">70%</tspan></text>
+      <text id="_80_" data-name="80%" transform="translate(1036.083 4910.164)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">80%</tspan></text>
+      <text id="_90_" data-name="90%" transform="translate(1036.083 4885.653)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">90%</tspan></text>
+      <text id="_100_" data-name="100%" transform="translate(1027.58 4861.155)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">100%</tspan></text>
+      <text id="Mar" transform="translate(1063.392 5129.37)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Mar</tspan></text>
+      <text id="Apr" transform="translate(1141.554 5129.37)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Apr</tspan></text>
+      <text id="May" transform="translate(1214.777 5129.37)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">May</tspan></text>
+      <text id="Jun" transform="translate(1294.791 5129.37)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Jun</tspan></text>
+      <text id="Jul" transform="translate(1373.543 5129.37)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Jul</tspan></text>
+      <text id="Aug" transform="translate(1445.372 5129.37)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Aug</tspan></text>
+      <text id="Sep" transform="translate(1522.488 5129.37)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Sep</tspan></text>
+      <text id="Oct" transform="translate(1599.324 5129.37)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Oct</tspan></text>
+      <text id="Nov" transform="translate(1673.534 5129.37)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Nov</tspan></text>
+      <line id="Line_174" data-name="Line 174" x2="609.654" transform="translate(1078.43 5101.696)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+      <line id="Line_175" data-name="Line 175" y2="9.514" transform="translate(1079.13 5101.696)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+      <line id="Line_176" data-name="Line 176" y2="9.514" transform="translate(1154.672 5101.696)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+      <line id="Line_177" data-name="Line 177" y2="9.514" transform="translate(1230.874 5101.696)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+      <line id="Line_178" data-name="Line 178" y2="9.514" transform="translate(1307.075 5101.696)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+      <line id="Line_179" data-name="Line 179" y2="9.514" transform="translate(1383.277 5101.696)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+      <line id="Line_180" data-name="Line 180" y2="9.514" transform="translate(1459.479 5101.696)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+      <line id="Line_181" data-name="Line 181" y2="9.514" transform="translate(1535.681 5101.696)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+      <line id="Line_182" data-name="Line 182" y2="9.514" transform="translate(1611.883 5101.696)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+      <line id="Line_183" data-name="Line 183" y2="9.514" transform="translate(1687.376 5101.696)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+    </g>
+  </g>
+</svg>

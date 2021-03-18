@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 630.418 426.686">
+  <defs>
+    <image id="image" width="4.86" height="4.86" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAG6ADAAQAAAABAAAAGwAAAADVx3bDAAACKklEQVRIDb1WvW4TQRCe2bsiUhLJpcuU0CUdVHGZCCE2FeQN4AlSAGIjQIiOMm8QUWUjhAQV6aBMmdJlyiOxJUs+72Rm7/Zi71ng4BVXeG5mZ7/P83Ozi0QE/+vJFyEaWbNRgtKo8Ens74i+g3J2/bG5iNdiHf8U2cC+6yHSB0B8EG+MdQI6JweH6/q1jdeCPp/szKwMr/JjdtLBcWFJ9GtMk92ONkW8p0VWWNPJVfYDATdj5zvofXC4t6pfnk/vmSXjiAZX2c8liTw+991lTuXDFW36gVCFF5GD39lJCiLBQoTuBLNj4ABEl6chu7ZvNSLuVOZEv9xYg0I9D2gNGSp4E4xJJaqDEJ0nu/5i7qVKX/xHJZ3c2T2xezKk/FnslFJnwqe3ZEDbKcFjLP7Y/VCoakbYjR2S6pxKwfNkPIo7ScHbYB6/qhnCqL2ezsIfuMev0gjUTwfdRuIGuRRrTYYXbZekFj8jq5o5+JwUOgZzdComT7amX53J4Ix9UuhSrzFMbEPmQcl9TAEeY/AYPApnW10zgLWOO2LHfuy8jO6zpcomiIYMembksNxl8GIZgrDXtzvB/uoj05Tnloy96kvLfgpCPpVfSC8EcpGzJ3W9MrTvN0HRCasbtekuouBZuBcTCcBMZAFR7g5jV27xGDtk20Jp9WlD+ARZeX8ekWDPjSyQihx+NV0YZztQ3Rn19Jq881XwG1/jTlXu7HR9Yj/R/0o2b9O/2m4AF+y/7/ck4TgAAAAASUVORK5CYII="/>
+  </defs>
+  <g id="Group_531" data-name="Group 531" transform="translate(-236.256 -3412.595)">
+    <g id="Group_529" data-name="Group 529">
+      <g id="Group_357" data-name="Group 357">
+        <text id="Outdoor_Risk" data-name="Outdoor Risk" transform="translate(464.352 3427.595)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Outdoor Risk</tspan></text>
+        <text id="Indoor_Risk" data-name="Indoor Risk" transform="translate(574.977 3427.595)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Indoor Risk</tspan></text>
+        <rect id="Rectangle_587" data-name="Rectangle 587" width="9.763" height="9.763" transform="translate(450.984 3417.54)" fill="#789ac4"/>
+        <rect id="Rectangle_588" data-name="Rectangle 588" width="9.763" height="9.763" transform="translate(561.425 3417.54)" fill="#222b3e"/>
+      </g>
+      <g id="Group_371" data-name="Group 371">
+        <g id="Group_367" data-name="Group 367">
+          <path id="Path_1167" data-name="Path 1167" d="M279.028,3813.931h566.28m-566.28-59.94h566.28m-566.28-59.94h566.28m-566.28-59.94h566.28m-566.28-59.94h566.28m-566.28-59.94h566.28m-566.28-59.94h566.28" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+          <path id="Path_1168" data-name="Path 1168" d="M335.548,3454.291v359.64m56.7-359.64v359.64m56.7-359.64v359.64m56.52-359.64v359.64m56.7-359.64v359.64m56.7-359.64v359.64m56.52-359.64v359.64m56.7-359.64v359.64m56.7-359.64v359.64m56.52-359.64v359.64" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+          <line id="Line_111" data-name="Line 111" y1="359.64" transform="translate(279.028 3454.291)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
+        </g>
+        <g id="Group_369" data-name="Group 369">
+          <g id="Group_368" data-name="Group 368">
+            <path id="Path_1169" data-name="Path 1169" d="M279.478,3815.153h-.36a1.313,1.313,0,0,1,0-2.625h.147l.338-.112a.99.99,0,0,1,.12-.034l10.266-2.342,45.35-10.617,56.534-12.6,113.417-23.584,113.244-21.424,113.237-19.8,113.421-18a1.313,1.313,0,0,1,.412,2.593l-113.4,18-113.2,19.8L505.8,3765.81l-113.376,23.576-56.5,12.6L290.577,3812.6l-10.2,2.327-.481.161A1.332,1.332,0,0,1,279.478,3815.153Z" fill="#789ac4"/>
+          </g>
+        </g>
+        <use id="Rectangle_595" data-name="Rectangle 595" transform="translate(276.688 3811.411)" xlink:href="#image"/>
+        <use id="Rectangle_596" data-name="Rectangle 596" transform="translate(276.868 3811.23)" xlink:href="#image"/>
+        <use id="Rectangle_597" data-name="Rectangle 597" transform="translate(277.588 3811.23)" xlink:href="#image"/>
+        <circle id="Ellipse_122" data-name="Ellipse 122" cx="3.9" cy="3.9" r="3.9" transform="translate(280.618 3808.68)" fill="#789ac4"/>
+        <circle id="Ellipse_123" data-name="Ellipse 123" cx="3.9" cy="3.9" r="3.9" transform="translate(275.128 3809.462)" fill="#222b3e"/>
+        <circle id="Ellipse_124" data-name="Ellipse 124" cx="3.9" cy="3.9" r="3.9" transform="translate(286.378 3807.24)" fill="#789ac4"/>
+        <circle id="Ellipse_125" data-name="Ellipse 125" cx="3.9" cy="3.9" r="3.9" transform="translate(331.648 3796.801)" fill="#789ac4"/>
+        <circle id="Ellipse_126" data-name="Ellipse 126" cx="3.9" cy="3.9" r="3.9" transform="translate(388.348 3784.201)" fill="#789ac4"/>
+        <circle id="Ellipse_127" data-name="Ellipse 127" cx="3.9" cy="3.9" r="3.9" transform="translate(501.478 3760.62)" fill="#789ac4"/>
+        <circle id="Ellipse_128" data-name="Ellipse 128" cx="3.9" cy="3.9" r="3.9" transform="translate(614.878 3739.021)" fill="#789ac4"/>
+        <circle id="Ellipse_129" data-name="Ellipse 129" cx="3.9" cy="3.9" r="3.9" transform="translate(728.188 3719.4)" fill="#789ac4"/>
+        <circle id="Ellipse_130" data-name="Ellipse 130" cx="3.9" cy="3.9" r="3.9" transform="translate(841.408 3701.4)" fill="#789ac4"/>
+        <circle id="Ellipse_131" data-name="Ellipse 131" cx="3.9" cy="3.9" r="3.9" transform="translate(276.059 3805.783)" fill="#222b3e"/>
+        <circle id="Ellipse_132" data-name="Ellipse 132" cx="3.9" cy="3.9" r="3.9" transform="translate(280.618 3789.601)" fill="#222b3e"/>
+        <circle id="Ellipse_133" data-name="Ellipse 133" cx="3.9" cy="3.9" r="3.9" transform="translate(286.378 3770.521)" fill="#222b3e"/>
+        <circle id="Ellipse_134" data-name="Ellipse 134" cx="3.9" cy="3.9" r="3.9" transform="translate(331.558 3658.201)" fill="#222b3e"/>
+        <circle id="Ellipse_135" data-name="Ellipse 135" cx="3.9" cy="3.9" r="3.9" transform="translate(388.258 3583.321)" fill="#222b3e"/>
+        <circle id="Ellipse_136" data-name="Ellipse 136" cx="3.9" cy="3.9" r="3.9" transform="translate(501.568 3528.061)" fill="#222b3e"/>
+        <circle id="Ellipse_137" data-name="Ellipse 137" cx="3.9" cy="3.9" r="3.9" transform="translate(614.878 3514.561)" fill="#222b3e"/>
+        <circle id="Ellipse_138" data-name="Ellipse 138" cx="3.9" cy="3.9" r="3.9" transform="translate(728.098 3511.321)" fill="#222b3e"/>
+        <circle id="Ellipse_139" data-name="Ellipse 139" cx="3.9" cy="3.9" r="3.9" transform="translate(841.318 3510.601)" fill="#222b3e"/>
+        <g id="Group_370" data-name="Group 370">
+          <path id="Path_1170" data-name="Path 1170" d="M279.118,3814.434a1.316,1.316,0,0,1-1.219-1.8l.319-.8.516-2.411,4.7-16.29,5.581-19.084a1.123,1.123,0,0,1,.043-.123l45.359-112.14a1.313,1.313,0,0,1,.169-.3l56.52-74.88a1.322,1.322,0,0,1,.473-.389l113.4-55.26a1.349,1.349,0,0,1,.42-.124l113.221-13.5c.039,0,.078-.007.118-.008l113.22-3.24,113.427-.9h.01a1.313,1.313,0,0,1,.011,2.625l-113.4.9-113.134,3.238-112.941,13.466-112.918,55.026-56.226,74.49-45.27,111.919-5.562,19.017-4.68,16.2-.517,2.431a1.331,1.331,0,0,1-.065.212l-.359.9A1.313,1.313,0,0,1,279.118,3814.434Z" fill="#222b3e"/>
+        </g>
+        <text id="_0_" data-name="0%" transform="translate(249.932 3817.726)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">0%</tspan></text>
+        <text id="_20_" data-name="20%" transform="translate(243.088 3757.785)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">20%</tspan></text>
+        <text id="_40_" data-name="40%" transform="translate(243.088 3697.867)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">40%</tspan></text>
+        <text id="_60_" data-name="60%" transform="translate(243.088 3637.914)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">60%</tspan></text>
+        <text id="_80_" data-name="80%" transform="translate(243.088 3577.984)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">80%</tspan></text>
+        <text id="_100_" data-name="100%" transform="translate(236.256 3518.054)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">100%</tspan></text>
+        <text id="_120_" data-name="120%" transform="translate(236.256 3458.113)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">120%</tspan></text>
+        <text id="_0" data-name="0" transform="translate(275.537 3835.281)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">0</tspan></text>
+        <text id="_500" data-name="500" transform="translate(325.33 3835.281)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">500</tspan></text>
+        <text id="_1000" data-name="1000" transform="translate(378.557 3835.281)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">1000</tspan></text>
+        <text id="_1500" data-name="1500" transform="translate(435.193 3835.281)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">1500</tspan></text>
+        <text id="_2000" data-name="2000" transform="translate(491.83 3835.281)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">2000</tspan></text>
+        <text id="_2500" data-name="2500" transform="translate(548.467 3835.281)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">2500</tspan></text>
+        <text id="_3000" data-name="3000" transform="translate(605.115 3835.281)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">3000</tspan></text>
+        <text id="_3500" data-name="3500" transform="translate(661.752 3835.281)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">3500</tspan></text>
+        <text id="_4000" data-name="4000" transform="translate(718.389 3835.281)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">4000</tspan></text>
+        <text id="_4500" data-name="4500" transform="translate(775.025 3835.281)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">4500</tspan></text>
+        <text id="_5000" data-name="5000" transform="translate(831.674 3835.281)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">5000</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

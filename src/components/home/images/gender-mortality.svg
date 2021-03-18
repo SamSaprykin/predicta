@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 470.596 338.407">
+  <g id="Group_543" data-name="Group 543" transform="translate(-1322.051 -5147.017)">
+    <g id="Group_55" data-name="Group 55">
+      <text id="_3_" data-name="3%" transform="translate(1744.647 5463.424)" fill="#222b3e" font-size="80.016" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-47.962" y="0">3</tspan><tspan y="0" font-size="49.911">%</tspan></text>
+      <g id="Group_525" data-name="Group 525">
+        <g id="Group_51" data-name="Group 51">
+          <g id="Group_50" data-name="Group 50">
+            <path id="Path_397" data-name="Path 397" d="M1355.109,5369.069a8.406,8.406,0,1,0-8.406,8.408A8.406,8.406,0,0,0,1355.109,5369.069Z" fill="#222b3e"/>
+            <path id="Path_398" data-name="Path 398" d="M1355.944,5380.248h-18.485c-6.715,0-11.617,5.706-11.617,9.469v27.535a3.692,3.692,0,0,0,7.384,0v-24.609h2.7V5458.8a4.622,4.622,0,1,0,9.244,0v-37.858h3.052V5458.8a4.624,4.624,0,0,0,9.247,0v-66.158h2.7v24.609a3.694,3.694,0,0,0,7.388,0v-27.535C1367.562,5385.954,1362.659,5380.248,1355.944,5380.248Z" fill="#222b3e"/>
+          </g>
+        </g>
+        <path id="Path_399" data-name="Path 399" d="M1381.139,5360.663h294.64v102.76h-294.64v-102.76Z" fill="#222b3e" fill-rule="evenodd"/>
+      </g>
+      <g id="Group_53" data-name="Group 53">
+        <text id="_2_1_" data-name="2,1%" transform="translate(1691.5 5249.776)" fill="#d02f34" font-size="80.016" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-83.93" y="0">2,1</tspan><tspan y="0" font-size="49.911">%</tspan></text>
+        <g id="Group_524" data-name="Group 524">
+          <g id="Group_52" data-name="Group 52">
+            <path id="Path_400" data-name="Path 400" d="M1355.13,5155.441a8.427,8.427,0,1,0-8.427,8.427A8.429,8.429,0,0,0,1355.13,5155.441Z" fill="#d02f34"/>
+            <path id="Path_401" data-name="Path 401" d="M1371.171,5198.014l-8.514-26.256a8.986,8.986,0,0,0-8.076-5.416h-15.76a8.987,8.987,0,0,0-8.075,5.416l-8.514,26.256a3.7,3.7,0,1,0,7.043,2.286l6.65-20.506,1.864-1.094-9.31,34.355h9.128V5246a3.774,3.774,0,1,0,7.549,0v-32.946h3.093V5246a3.776,3.776,0,0,0,7.553,0v-32.946h9.121l-9.307-34.355,1.864,1.094,6.647,20.506a3.7,3.7,0,1,0,7.044-2.286Z" fill="#d02f34"/>
+          </g>
+          <path id="Path_402" data-name="Path 402" d="M1381.139,5147.017h206.3v102.76h-206.3v-102.76Z" fill="#d02f34" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

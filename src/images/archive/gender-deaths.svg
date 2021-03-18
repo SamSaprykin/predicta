@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 340.532 410.911">
+  <g id="Group_545" data-name="Group 545" transform="translate(-732 -5147.017)">
+    <g id="Group_47" data-name="Group 47" transform="translate(6.639)">
+      <g id="Group_46" data-name="Group 46">
+        <path id="Path_393" data-name="Path 393" d="M821.751,5171.829a24.811,24.811,0,1,0-24.811,24.82A24.813,24.813,0,0,0,821.751,5171.829Z" fill="#222b3e"/>
+        <path id="Path_394" data-name="Path 394" d="M824.218,5204.829H769.652c-19.82,0-34.291,16.84-34.291,27.95v81.275a10.9,10.9,0,0,0,21.8,0v-72.64h7.981V5436.7a13.644,13.644,0,0,0,27.288,0V5324.949h9.008V5436.7a13.648,13.648,0,0,0,27.3,0V5241.414H836.7v72.64a10.9,10.9,0,0,0,21.807,0v-81.275C858.511,5221.669,844.038,5204.829,824.218,5204.829Z" fill="#222b3e"/>
+      </g>
+    </g>
+    <g id="Group_48" data-name="Group 48" transform="translate(8.408)">
+      <path id="Path_395" data-name="Path 395" d="M1016.235,5171.883a24.874,24.874,0,1,0-24.875,24.875A24.88,24.88,0,0,0,1016.235,5171.883Z" fill="#d02f34"/>
+      <path id="Path_396" data-name="Path 396" d="M1063.586,5297.55l-25.132-77.5c-2.183-6.788-11.828-15.985-23.838-15.985H968.1c-12.01,0-21.645,9.2-23.837,15.985l-25.132,77.5a10.93,10.93,0,0,0,20.792,6.748l19.629-60.53,5.5-3.229-27.481,101.408H964.51v97.248a11.142,11.142,0,1,0,22.284,0v-97.248h9.131v97.248a11.147,11.147,0,1,0,22.293,0v-97.248h26.926l-27.473-101.408,5.5,3.229,19.62,60.53a10.93,10.93,0,0,0,20.792-6.748Z" fill="#d02f34"/>
+    </g>
+    <text id="_58_" data-name="58%" transform="translate(804 5535.927)" fill="#222b3e" font-size="80.016" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-71.967" y="0">58</tspan><tspan y="0" font-size="49.911">%</tspan></text>
+    <text id="_42_" data-name="42%" transform="translate(1000 5535.928)" fill="#d02f34" font-size="80.016" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-71.967" y="0">42</tspan><tspan y="0" font-size="49.911">%</tspan></text>
+  </g>
+</svg>

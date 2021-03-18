@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 338.532 410.911">
+  <g id="Group_544" data-name="Group 544" transform="translate(-134 -5147.017)">
+    <g id="Group_43" data-name="Group 43" transform="translate(14.078)">
+      <g id="Group_42" data-name="Group 42">
+        <path id="Path_389" data-name="Path 389" d="M217.312,5171.829a24.812,24.812,0,1,0-24.811,24.82A24.813,24.813,0,0,0,217.312,5171.829Z" fill="#222b3e"/>
+        <path id="Path_390" data-name="Path 390" d="M219.779,5204.829H165.213c-19.82,0-34.291,16.84-34.291,27.95v81.275a10.9,10.9,0,0,0,21.8,0v-72.64H160.7V5436.7a13.644,13.644,0,0,0,27.288,0V5324.949H197V5436.7a13.648,13.648,0,0,0,27.3,0V5241.414h7.973v72.64a10.9,10.9,0,0,0,21.807,0v-81.275C254.072,5221.669,239.6,5204.829,219.779,5204.829Z" fill="#222b3e"/>
+      </g>
+    </g>
+    <g id="Group_44" data-name="Group 44" transform="translate(12.848)">
+      <path id="Path_391" data-name="Path 391" d="M411.8,5171.883a24.874,24.874,0,1,0-24.875,24.875A24.881,24.881,0,0,0,411.8,5171.883Z" fill="#d02f34"/>
+      <path id="Path_392" data-name="Path 392" d="M459.147,5297.55l-25.132-77.5c-2.183-6.788-11.828-15.985-23.838-15.985h-46.52c-12.01,0-21.646,9.2-23.837,15.985l-25.132,77.5a10.93,10.93,0,0,0,20.792,6.748l19.628-60.53,5.5-3.229L333.13,5341.947h26.941v97.248a11.142,11.142,0,1,0,22.284,0v-97.248h9.131v97.248a11.146,11.146,0,1,0,22.293,0v-97.248H440.7l-27.473-101.408,5.5,3.229,19.62,60.53a10.93,10.93,0,0,0,20.792-6.748Z" fill="#d02f34"/>
+    </g>
+    <text id="_51_" data-name="51%" transform="translate(206 5535.928)" fill="#222b3e" font-size="80.016" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-71.967" y="0">51</tspan><tspan y="0" font-size="49.911">%</tspan></text>
+    <text id="_49_" data-name="49%" transform="translate(400 5535.927)" fill="#d02f34" font-size="80.016" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-71.967" y="0">49</tspan><tspan y="0" font-size="49.911">%</tspan></text>
+  </g>
+</svg>
