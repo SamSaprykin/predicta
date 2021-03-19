@@ -9,6 +9,7 @@ import Icon from "../images/icon.svg"
 const Navigation = styled.nav`
   height: 4rem;
   display: flex;
+  flex-wrap:wrap;
   background-color: transparent;
   position: relative;
   justify-content: center;
@@ -18,16 +19,10 @@ const Navigation = styled.nav`
   z-index: 2;
   align-self: center;
   max-width: 100%;
+  width:100%;
   align-items: center;
-
   @media (max-width: 1024px) {
-    position: sticky;
-    height: 8vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    left: 0;
-    display:none;
+    padding: 0 2vw;
   }
 `
 
@@ -65,19 +60,17 @@ const NavItem = styled(Link)`
 const NavbarLinks = () => {
   return (
     <>
-    <Navigation>
-<LogoWrap as={Link} to="/">
-  <Icon alt="Home Icon" />
-</LogoWrap>
-      <NavItem to="/about">About</NavItem>
-      <NavItem to="/global-analysis">Global Analysis</NavItem>
-      <NavItem to="/in-depth">In Depth</NavItem>
-      <NavItem to="/advanced-statistics">Advanced Statistics</NavItem>
-      <NavItem to="/technology">Technology</NavItem>
-      <NavItem to="/get-in-touch">Get In Touch</NavItem>
-
+      <Navigation>
+        <LogoWrap as={Link} to="/">
+          <Icon alt="Home Icon" />
+        </LogoWrap>
+        <NavItem to="/about">About</NavItem>
+        <NavItem to="/global-analysis">Global Analysis</NavItem>
+        <NavItem to="/in-depth">In Depth</NavItem>
+        <NavItem to="/advanced-statistics">Advanced Statistics</NavItem>
+        <NavItem to="/technology">Technology</NavItem>
+        <NavItem to="/get-in-touch">Get In Touch</NavItem>
       </ Navigation>
-
     </>
   )
 }

@@ -15,35 +15,34 @@ margin: 0 auto;
     padding:0 32px;
   }
   @media (max-width: 1024px) {
-    max-width: 600px; 
+    max-width: 800px; 
+  }
+  @media (max-width: 768px) {
+    padding:0 48px;
   }
   @media (max-width: 600px) {
-    max-width: 300px;
+    max-width: 500px;
+  }
+`
+const TitleSection = styled.h2`
+  text-transform: capitalize;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:50px;
+  line-height:60px;
+  margin-bottom:80px;
+  @media (max-width: 1024px) {
+    font-size:42px;
+    line-height:48px;
+    margin-bottom:40px;
   }
 `
 
-const Gap = styled.div`
-display: block;
-height: 2rem;
-`;
 
-// const Title = styled.div`
-
-// margin-bottom: 3rem;
-
-// @media (max-width: 1024px) {
-//     padding: 20px 0;
-//     font-size: 1.5rem;
-//     z-index: 6;
-//   }
-// `
 
 const Cases = () => (
 <>
-  <h1 id ='#map' style={{textTransform: `capitalize`}}>Cases per 1M Pop (end Nov. 2020)</h1>
-  <Gap />
-
-
+  <TitleSection id ='#map'>Cases per 1M Pop (end Nov. 2020)</TitleSection>
     <ImageBox>
       <Map alt="Main Map" />
     </ImageBox>

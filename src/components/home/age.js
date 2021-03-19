@@ -2,43 +2,6 @@ import React from "react";
 import styled from "styled-components"
 import Group from "./images/cases-by-age.svg";
 
-//import "./styles.css";
-// const Grid = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(8, 1fr);
-//   grid-template-rows: auto;
-//   grid-gap: 43px;
-//   align-self: center;
-//   justify-content: center;
-//   width: 1200px;
-
- 
-//   @media (max-width: 1024px) {
-
-//     grid-gap: 23px;
-
-//   }
-// `;
-
-
-
-// const Item = styled.div`
-// display: flex;
-// flex-direction: column;
-// align-items: center;
-// justify-content: center;
-// width: auto;
-// height: auto;
-// background-color: transparent;
-// text-align:center;
-
-// @media (max-width: 1024px) {
-
-// & p {font-size: 0.9em}
-// & h1 {font-size: 1.4em}
-// }
-// `;
-
 const ImageBox = styled.div`
 display: flex;
 justify-content: center;
@@ -51,10 +14,13 @@ margin: 0 auto;
     padding:0 32px;
   }
   @media (max-width: 1024px) {
-    max-width: 600px; 
+    max-width: 800px; 
+  }
+  @media (max-width: 768px) {
+    padding:0 48px;
   }
   @media (max-width: 600px) {
-    max-width: 300px;
+    max-width: 500px;
   }
 `
 
@@ -63,27 +29,29 @@ display: block;
 height: 2rem;
 `;
 
+const TitleSection = styled.h2`
+  text-transform: capitalize;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:50px;
+  line-height:60px;
+  margin-bottom:26px;
+  @media (max-width: 1024px) {
+    font-size:42px;
+    line-height:48px;
+  }
+`
+
 const GridBox = () => (
   <>
  
-  <h1 id ='age' style={{textTransform: `capitalize`}}>Cases by Age Group</h1>
+  <TitleSection id ='age'>Cases by Age Group</TitleSection>
 
   <Gap />
 
   <ImageBox>
     <Group/>
   </ImageBox>
-      {/* <Grid>
-        <Item><p>0-19</p><h1>11%</h1></Item>
-        <Item><p>0-19</p><h1>11%</h1></Item>
-        <Item><p>0-19</p><h1>11%</h1></Item>
-        <Item><p>0-19</p><h1>11%</h1></Item>
-        <Item><p>0-19</p><h1>11%</h1></Item>
-        <Item><p>0-19</p><h1>11%</h1></Item>
-        <Item><p>0-19</p><h1>11%</h1></Item>
-        <Item><p>0-19</p><h1>11%</h1></Item>
-      </Grid> */}
-    
 </>
   );
 

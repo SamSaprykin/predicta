@@ -14,45 +14,39 @@ import RiskF from "../components/advanced-statistics/risk-analysis-f"
 const Index = () => (
   <Layout>
     <div className="row">
-    <div className="col">
-    <Intro />
+      <div className="col">
+        <Intro />
+      </div>
     </div>
-</div>
-<div className="row" style={{
-        backgroundColor: ` rgba(234,234,234,1)`
-      }}>
-    <div className="col">
-    <RiskA />
-    </div>
+    <div className="row" style={{backgroundColor: ` rgba(234,234,234,1)`}}>
+      <div className="col">
+        <RiskA />
+      </div>
     </div>
     <div className="row">
-    <div className="col">
-    <RiskB />
+      <div className="col">
+      <RiskB />
+      </div>
     </div>
-</div>
-<div className="row" style={{
-        backgroundColor: ` rgba(234,234,234,1)`
-      }}>
-    <div className="col">
-    <RiskC />
-    </div>
+    <div className="row" style={{backgroundColor: ` rgba(234,234,234,1)`}}>
+      <div className="col">
+        <RiskC />
+      </div>
     </div>
     <div className="row">
-    <div className="col">
-    <RiskD />
+      <div className="col">
+        <RiskD />
+      </div>
     </div>
-    </div>
-    <div className="row" style={{
-        backgroundColor: ` rgba(234,234,234,1)`
-      }}>
-    <div className="col">
-    <RiskE />
-    </div>
+    <div className="row" style={{backgroundColor: ` rgba(234,234,234,1)`}}>
+      <div className="col">
+        <RiskE />
+      </div>
     </div>
     <div className="row">
-    <div className="col">
-    <RiskF />
-    </div>
+      <div className="col">
+        <RiskF />
+      </div>
     </div>
   </Layout>
 )

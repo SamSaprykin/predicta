@@ -15,10 +15,13 @@ margin: 0 auto;
     padding:0 32px;
   }
   @media (max-width: 1024px) {
-    max-width: 600px; 
+    max-width: 800px; 
+  }
+  @media (max-width: 768px) {
+    padding:0 48px;
   }
   @media (max-width: 600px) {
-    max-width: 300px;
+    max-width: 500px;
   }
 `
 
@@ -27,20 +30,27 @@ display: block;
 height: 2rem;
 `;
 
+const TitleSection = styled.h2`
+  text-transform: capitalize;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:50px;
+  line-height:60px;
+  margin-bottom:26px;
+  @media (max-width: 1024px) {
+    font-size:42px;
+    line-height:48px;
+  }
+`
+
 const GridBox = () => (
   <>
-  
-  <h1 id ='' style={{textTransform: `capitalize`}}>Age Ratios</h1>
-
-  <Gap />
-
-        <ImageBox>
-          
-          <AgeRatios />
-          
-          </ImageBox>
-      
-</>
+    <TitleSection id ='' style={{textTransform: `capitalize`}}>Age Ratios</TitleSection>
+    <Gap />
+    <ImageBox>
+      <AgeRatios />
+    </ImageBox>  
+  </>
   );
 
 

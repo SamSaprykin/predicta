@@ -30,11 +30,9 @@ const NavLink = styled(Link)`
     padding: 0.5rem 0.5rem;
     transition: .3s;
 
-    &:hover {
-
-//background-color: #222b3e;
-color: lightgray;
-}
+  &:hover {
+    color: lightgray;
+  }
 
 `
 

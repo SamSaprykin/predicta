@@ -10,70 +10,82 @@ const Grid = styled.div`
   grid-gap: 2rem;
   align-self: center;
   justify-content: center;
-  width: 800px;
+  width:100%;
+  max-width: 1080px;
+  @media (max-width: 1024px) {
+    padding:0 32px;
+  }
+  @media (max-width: 470px) {
+    padding:0 24px;
+  }
 `;
 
 const Item = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-margin: 0 auto;
-width: 800px;
-
-@media (max-width: 1024px) {
-  width: 600px;
-  }
-  @media (max-width: 600px) {
-    width: 300px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+  max-width:630px;
+  margin:0 auto 64px;
 `
 
 const Gap = styled.div`
-height: 2rem;
-
-  @media (max-width: 1024px) {
- 
-  }
+  height: 2rem;
 `
 
 const TextBox = styled.div`
-width: 800px;
-margin: 0 auto;
-
+  max-width: 1080px;
+  margin: 0 auto;
+  @media (max-width: 1440px) {
+    max-width: 800px;
+  }
   @media (max-width: 1024px) {
-    width: 80%;
+    padding:0 32px;
   }
 `
 
+const TitleSection = styled.h2`
+  text-transform: capitalize;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:35px;
+  line-height:42px;
+  margin-bottom:80px;
+  font-weight:400;
+  @media (max-width: 1440px) {
+    font-size:32px;
+    line-height:34px;
+  }
+`
+
+const Info = styled.p`
+  background-color: #f8f8f8;
+  padding:.5rem;
+  text-align:center; 
+  margin: 0 auto;
+  width:100%;
+  max-width:1080px;
+  @media (max-width: 1440px) {
+    max-width: 800px;
+  }
+  @media (max-width: 1024px) {
+    padding:0 32px;
+  }
+`
 const RiskF = () => (
   <>
-
-     <h2
-      style={{
-        fontWeight: `normal`
-      }}
-    >Risk vs Gathering Size without Masks</h2>
-
-<Grid>
-  <Item>
-<ChartNine />
-<Gap />
-</Item>
-</Grid>
-
-<TextBox>
-<p>To demonstrate how <strong>risky</strong> are our everyday habits during the pandemic, we chose a scenario that compares the chance of dying from covid-19 to the chance to be involved in a fatal car accident. Example given, <strong>visiting a bar we are 264 times more prevalent to die from covid-19, compared to our death in a car accident. Again, the mask usage decreases this risk by more than half.</strong></p>
-
-
-
-</TextBox>
-
-<p style={{
-        backgroundColor: `#f8f8f8`, padding:`.5rem`, textAlign: `center`, margin: `0 auto`
-      }}> If you have found this small selection of scenarios interesting, you can always contact us for more.</p>
-
-
+    <TitleSection>Risk vs Gathering Size without Masks</TitleSection>
+    <Grid>
+      <Item>
+        <ChartNine />
+        <Gap />
+      </Item>
+    </Grid>
+    <TextBox>
+      <p>To demonstrate how <strong>risky</strong> are our everyday habits during the pandemic, we chose a scenario that compares the chance of dying from covid-19 to the chance to be involved in a fatal car accident. Example given, <strong>visiting a bar we are 264 times more prevalent to die from covid-19, compared to our death in a car accident. Again, the mask usage decreases this risk by more than half.</strong></p>
+    </TextBox>
+    <Info> If you have found this small selection of scenarios interesting, you can always contact us for more.</Info>
   </>
 );
 export default RiskF

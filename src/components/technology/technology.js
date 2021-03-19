@@ -3,19 +3,26 @@ import styled from "styled-components"
 
 import Technology from "./images/technology.svg"
 
-
 const ImageBox = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-width: 800px;
+width: 100%;
+max-width: 1200px;
 margin: 0 auto;
-
-@media (max-width: 1024px) {
-  width: 80%
-
-}
+  @media (max-width: 1280px) {
+    padding:0 32px;
+  }
+  @media (max-width: 1024px) {
+    max-width: 800px; 
+  }
+  @media (max-width: 768px) {
+    padding:0 48px;
+  }
+  @media (max-width: 600px) {
+    max-width: 500px;
+  }
 `
 
 const TextBox = styled.div`

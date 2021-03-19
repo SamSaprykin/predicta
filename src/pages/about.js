@@ -13,33 +13,29 @@ import Issues from "../components/about/issues"
 const Index = () => (
   <Layout>
     <div className="row">
-    <div className="col">
-    <Intro />
+      <div className="col">
+        <Intro />
+      </div>
     </div>
-</div>
-<div className="row" style={{
-        backgroundColor: ` rgba(234,234,234,1)`
-      }}>
-    <div className="col">
-    <Insights />
-    </div>
+    <div className="row" style={{backgroundColor: ` rgba(234,234,234,1)`}}>
+      <div className="col">
+        <Insights />
+      </div>
     </div>
     <div className="row">
-    <div className="col">
-    <Approach />
+      <div className="col">
+        <Approach />
+      </div>
     </div>
-</div>
-<div className="row" style={{
-        backgroundColor: `rgba(234,234,234,1)`
-      }}>
-    <div className="col">
-    <Data />
-    </div>
+    <div className="row" style={{backgroundColor: `rgba(234,234,234,1)`}}>
+      <div className="col">
+        <Data />
+      </div>
     </div>
     <div className="row">
-    <div className="col">
-    <Issues />
-    </div>
+      <div className="col">
+        <Issues />
+      </div>
     </div>
   </Layout>
 )

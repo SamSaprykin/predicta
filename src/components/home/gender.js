@@ -14,38 +14,59 @@ const FlexCont = styled.div`
     grid-gap: 50px;
     padding:0 32px;
   }
-
+  
+  @media (max-width: 768px) {
+    grid-gap: 0px;
+  }
+  @media (max-width: 470px) {
+    padding:0 24px;
+  }
+  h2 {
+    @media (max-width: 1024px) {
+      margin-bottom: 2rem;
+      font-size: .6rem;   
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+      font-size:24px;
+    }
+    @media (max-width: 470px) {
+      font-size:20px;
+    }
+  }
 `;
 
 const Item = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-background-color: transparent;
- width:33%;
- padding: .1rem;
-
-& :nth-child(even) {max-width: 200px;}
-
-
-
-@media (max-width: 1024px) {
-  grid-gap: 50px;
-  max-width: 200px;
-}
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width:33%;
+  padding: .1rem;
+  & :nth-child(even) {
+    max-width: 200px;
+    @media (max-width: 1024px) {
+      max-width: 100px;
+    }
+    @media (max-width: 470px) {
+      max-width: 30px;
+    }
+  }
+  @media (max-width: 1024px) {
+    grid-gap: 50px;
+    max-width: 200px;
+  }
+  @media (max-width: 768px) {
+    grid-gap: 0px;
+  }
 `;
 
 const Title = styled.div`
 margin-bottom: 3rem;
-& h2 {color: #222B3E}
+color: #222B3E
 
-@media (max-width: 1024px) {
-  margin-bottom: 2rem;
-  font-size: .6rem;
-   
-  }
+
 `
 
 const Gender = () => (

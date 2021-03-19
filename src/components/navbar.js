@@ -17,10 +17,12 @@ const Navigation = styled.nav`
   z-index: 2;
   align-self: center;
   max-width: 100%;
-
+  @media (max-width: 960px) {
+    padding: 0 32px;
+  }
   @media (max-width: 768px) {
-    position: sticky;
-    padding: 0 10vw;
+    position: fixed;
+    padding: 0 32px;
     height: 8vh;
     top: 0;
     left: 0;
@@ -28,42 +30,52 @@ const Navigation = styled.nav`
     left: 0;
     justify-content: space-between;
   }
+  @media (max-width: 470px) {
+   padding: 0 24px;
+  }
 `;
 
 const LogoWrap = styled.div`
   margin: auto 0;
   flex: 0 1 66px;
-
   & svg {width: 65%};
-
   @media (max-width: 768px) and (orientation: landscape) {
     flex: 0 1 25px;
+  }
+  @media (max-width: 1080px) {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    svg {
+      width:75%;
+    }
   }
 `;
 
 const StyledUl = styled.ul`
-list-style-type: none;
-margin: 0;
-overflow: hidden;
-padding: 0px;
-font-weight: 700;
-display: flex;
-height: 100%;
-align-content: center;
-
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0px;
+  font-weight: 700;
+  display: flex;
+  height: 100%;
+  align-content: center;
+  width:100%;
+  justify-content:space-between;
 `;
 
 const StyledUlB= styled.ul`
-list-style-type: none;
-margin: 0;
-overflow: hidden;
-padding: 0px;
-font-weight: 700;
-display: flex;
-height: 100%;
-align-content: center;
-flex-direction: column;
-align-items: center;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0px;
+  font-weight: 700;
+  display: flex;
+  height: 100%;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
 
 `;
 
@@ -77,16 +89,17 @@ const StyledA = styled(Link)`
     padding: 1rem 0rem;
     height: 100%;
     width: 200px;
+    position:relative;
+    z-index:10000;
     justify-content: center;
 
     &:hover  {
       color: grey;
       background-color: transparent;
     }
-
     @media (max-width: 1280px) {
       padding: .5rem;
-      max-width:150px;
+      width:150px;
       font-size:.7rem;
     }
     @media (max-width: 1080px) {
@@ -94,7 +107,17 @@ const StyledA = styled(Link)`
       max-width:140px;
       font-size:.7rem;
     }
-
+    @media (max-width: 960px) {
+      padding: 0;
+      max-width:100px;
+    }
+    @media (max-width: 768px) {
+      padding: 0;
+      max-width:300px;
+      width:300px;
+      padding:16px;
+      font-size:1.2rem;
+    }
 `;
 
 const DropDownBox = styled.div`
@@ -110,38 +133,27 @@ const DropDownBox = styled.div`
 	  padding-top: 4rem;
 
     &::after {
-    position: absolute;
-  content: " ";
-  width: 8%;
-  height: 8%;
-  background: url("../images/carat-down.svg");
-  background-repeat: no-repeat;
-
-  top: 0;
+      position: absolute;
+      content: " ";
+      width: 8%;
+      height: 8%;
+      background: url("../images/carat-down.svg");
+      background-repeat: no-repeat;
+      top: 0;
       margin-top: 53px;
       margin-left: -10px;
+      @media (max-width: 1080px) {
+        margin-left:-16px;
+      }
     }
 
-
-    /* &::after {
-      content: "v";
-      position: absolute;
-      top: 0;
-      margin-top: 48px;
-      font-size: 20px;
-      font-family: Arial, Helvetica, sans-serif;
-    } */
 `;
 
 
 const StyledLi = styled.li`
-display:  inline-block;
-
-
+    display:  inline-block;
     margin:0;
-
     &:hover {
-
         background-color: transparent;
     }
     &:hover ${DropDownBox} {
@@ -162,7 +174,12 @@ const DropDownA = styled(Link)`
     width: 200px;
 
     &:hover {background-color: #222A53};
-
+    @media (max-width: 1080px) {
+      padding: 0;
+      width:140px;
+      margin-left:-20px;
+      font-size:12px;
+    }
 `;
 
 
@@ -179,7 +196,8 @@ const Toggle = styled.div`
 const Navbox = styled.div`
   display: flex;
   height: 100%;
-  //justify-content: flex-end;
+  width:100%;
+  max-width:1200px;
   align-items: center;
 
   @media (max-width: 768px) {
@@ -190,7 +208,7 @@ const Navbox = styled.div`
     background-color: #fff;
     top: 8vh;
     transition: all 0.3s ease-in;
-    left: ${props => (props.open ? "-100%" : "0")};
+    left: ${props => (props.open ? "-120%" : "0")};
     
    
   }
@@ -233,8 +251,6 @@ const Navbar = ({ menuLinks }) => {
   return (
 <>
     <header>
-    {/* <GlobalStyle /> */}
-    
     <Navigation>
     <LogoWrap as={Link} to="/">
       <Icon alt="Home Icon" />
@@ -250,54 +266,39 @@ const Navbar = ({ menuLinks }) => {
       {navbarOpen ? (
         <Navbox>
                    <StyledUlB>
-  {menuLinks.map((link) => (
-    <StyledLi key={link.name}>
-      <StyledA
-        to = {link.link} 
-        aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
-      >
-        {link.name}
-      </StyledA>
-      {/* {link.subMenu && link.subMenu.length > 0 ? (
-        <DropDownBox aria-label="submenu">
-
-          {link.subMenu.map((subLink) => (
-
-           <DropDownA to = {subLink.link}>{subLink.name} </DropDownA>
-
-
-          ))}
-        </DropDownBox>
-      ) : null} */}
-    </StyledLi>
-  ))}
-</StyledUlB>
+    {menuLinks.map((link) => (
+      <StyledLi key={link.name}>
+        <StyledA
+          to = {link.link} 
+          aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
+        >
+          {link.name}
+        </StyledA>
+      </StyledLi>
+    ))}
+    </StyledUlB>
         </Navbox>
       ) : (
         <Navbox open>
-                   <StyledUl>
-  {menuLinks.map((link) => (
-    <StyledLi key={link.name}>
-      <StyledA
-        to = {link.link} activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}
-        aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
-      >
-        {link.name}
-      </StyledA>
-      {link.subMenu && link.subMenu.length > 0 ? (
-        <DropDownBox aria-label="submenu">
-
-          {link.subMenu.map((subLink) => (
-
-           <DropDownA to = {subLink.link} key = {subLink.name}> {subLink.name} </DropDownA>
-
-
-          ))}
-        </DropDownBox>
-      ) : null}
-    </StyledLi>
-  ))}
-</StyledUl>
+          <StyledUl>
+            {menuLinks.map((link) => (
+              <StyledLi key={link.name}>
+                <StyledA
+                  to = {link.link} activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}
+                  aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
+                >
+                  {link.name}
+                </StyledA>
+                {link.subMenu && link.subMenu.length > 0 ? (
+                  <DropDownBox aria-label="submenu">
+                    {link.subMenu.map((subLink) => (
+                    <DropDownA to = {subLink.link} key = {subLink.name}> {subLink.name} </DropDownA>
+                    ))}
+                  </DropDownBox>
+                ) : null}
+              </StyledLi>
+            ))}
+          </StyledUl>
         </Navbox>
       )}
     </Navigation>

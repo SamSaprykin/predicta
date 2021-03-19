@@ -20,7 +20,7 @@ font-weight: 600;
 margin-bottom: 60px;
 };
 
-h2 {font-family: 'IBM Plex Sans',sans-serif; color: #222B3E; margin-bottom:2.5rem font-size:35px;
+h2 {font-family: 'IBM Plex Sans',sans-serif; color: #222B3E; 
 };
 
 h3 {font-family: 'IBM Plex Sans',sans-serif; font-weight: normal; font-size: 35px;
@@ -39,7 +39,10 @@ h4 {margin-bottom:5px;}
   
 
   .row {
-  padding: 5rem 0;
+    padding: 5rem 0;
+    @media (max-width:1080px) {
+      padding 2.5rem 0;
+    }
   }
   
   .col {
