@@ -7,53 +7,53 @@ import Icon from "../images/icon.svg"
 //import "@fontsource/ibm-plex-sans/700.css" // Weight 700.
 
 const Navigation = styled.nav`
-  height: 4rem;
+  height: auto;
   display: flex;
   flex-wrap:wrap;
   background-color: transparent;
   position: relative;
-  justify-content: center;
+  justify-content: space-between;
   text-transform: uppercase;
   margin: 0 auto;
-  padding: 0 10vw;
   z-index: 2;
   align-self: center;
   max-width: 100%;
   width:100%;
   align-items: center;
-  @media (max-width: 1024px) {
-    padding: 0 2vw;
+  margin-bottom:75px;
+  @media (max-width: 1280px) {
+    justify-content:flex-start;
+    margin-bottom:50px;
   }
 `
 
-const LogoWrap = styled.div`
-  margin: auto 0;
-  flex: 0 1 36px;
 
-  @media (max-width: 1024px) and (orientation: landscape) {
-    flex: 0 1 45px;
-  }
-  & svg {width:80%} 
-`;
 
 const NavItem = styled(Link)`
   text-decoration: none;
   display: inline-block;
   white-space: nowrap;
-  margin: 0 1vw;
   transition: 300ms;
   position: relative;
   font-weight: 700;
   color: #fefefe;
-
+  font-size:25px;
+  line-height:30px;
   :hover {
     color: white;
   }
-
-  @media (max-width: 1024px) {
-   
-    font-size: .7rem;
-    z-index: 6;
+  @media (max-width: 1280px) {
+    width:33%;
+    text-align:left;
+    margin-top:16px;
+    font-size:20px;
+  }
+  @media (max-width: 768px) {
+    font-size:16px;
+    line-height:19.2px;
+  }
+  @media (max-width: 470px) {
+    width:50%;
   }
 `;
 
@@ -61,9 +61,6 @@ const NavbarLinks = () => {
   return (
     <>
       <Navigation>
-        <LogoWrap as={Link} to="/">
-          <Icon alt="Home Icon" />
-        </LogoWrap>
         <NavItem to="/about">About</NavItem>
         <NavItem to="/global-analysis">Global Analysis</NavItem>
         <NavItem to="/in-depth">In Depth</NavItem>

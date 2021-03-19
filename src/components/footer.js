@@ -15,139 +15,194 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
 
 
-const NavLink = styled(Link)`
-	color: white;
-	text-decoration: none;
-	/* font-weight: 700;
-	font-size: 0.8rem;
-	color: #222b3e;
-	line-height: 1.4;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center; */
-    padding: 0.5rem 0.5rem;
-    transition: .3s;
 
-  &:hover {
-    color: lightgray;
-  }
-
-`
-
-
-const Grid = styled.div`
-display: grid;
-grid-template-columns: 3fr 1fr 1fr 1fr;
-grid-template-rows: auto;
-width:1160px;
-margin: 0 auto;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: 1fr;
-  }
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-    width: 300px;
-  }
-`;
-
-
-
-const GridB = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 20px;
-  width: 1160px;
-  margin: 0 auto;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: 1fr;
-    ;
-  }
-`;
-
-const Item = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align:center;
-width: auto;
-height: auto;
-background-color: transparent;
-
-&:nth-child(n+2) {
-  border-left: 2px solid white;
-}
-
-& p {margin:0; color: white; text-align:center;}
-
-& svg {height: 30%}
-
-`;
-
-const ItemB = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align:center;
-width: auto;
-height: auto;
-background-color: transparent;
-
-& p {margin:0; }
-
-@media (max-width: 1024px) {
-  & svg {height: 60%}
-}
-
-
-
-`;
-
-const List = styled.ul`
-  list-style: none;
-  overflow-x: auto;
-  margin-bottom:0;
-`;
-
-const ListItem = styled.li`
-  display: inline-block;
-  padding-right:1rem;
-  margin-bottom:0;
-`;
-
-const Gap = styled.div`
-display: block;
-height: 2rem;
-`;
-
-
-const FooterWrapper = styled.div`
-  display:flex;
-  width:100%;
-  max-width:1200px;
-  @media (max-width: 1280px) {
-    padding:0 32px;
-  }
-  @media (max-width: 1024px) {
-    max-width: 600px; 
-  }
-  @media (max-width: 600px) {
-    max-width: 300px;
-  }
-`
-const Footer = ({ siteTitle }) => (
+const Footer = () => (
 
   <FooterWrapper>
     <FooterNav />
-
+    <FooterContent>
+      <CompanyInfo>
+        <p>18 Chatzikonstanti Str., 115 24 Athens, Greece  T. +30 210 69 31 040 F. +30 210 69 31 079  &nbsp;  •  &nbsp;  E. info@predicta.gr &nbsp;   • &nbsp;  <a href="http://www.predicta.gr/" target="_blank" rel="noopener noreferrer">www.predicta.gr</a> </p>
+      </CompanyInfo>
+      <PrivacyPart>
+        <PrivacyItem to="/terms">
+          Terms &amp; Conditions
+        </PrivacyItem>
+        <PrivacyItem to="/privacy-policy">
+          Privacy policy
+        </PrivacyItem>
+        <SocialWrapper>
+           <a href="https://www.facebook.com/PREDICTA-SA-130541270342184/" target="_blank" rel="noopener noreferrer">
+             <img src="/fb-icon.png" alt="fb-icon" />
+           </a>
+           <a href="https://www.linkedin.com/company/predicta-s-a-former-spss-bi-greece-s-a" target="_blank" rel="noopener noreferrer">
+             <img src="/ln-icon.png" alt="linkedin-icon" />
+           </a>
+           <a>
+             <img src="/tw-icon.png" alt="twitter-icon" />
+           </a>
+        </SocialWrapper>
+      </PrivacyPart>
+    </FooterContent>
+    <FooterFooter>
+      <Link to="/">
+        <PredLogo src="/predicta-logo.svg" alt="logo-footer" />
+      </Link>
+      <RightsText>
+          All rights reserved
+      </RightsText>
+      <Link to="/">
+        <IbmLogo src="/ibm-logo.svg" alt="ibm-logo" />
+      </Link>
+      
+    </FooterFooter>
   </FooterWrapper>
 
 )
+
+const FooterContent = styled.div`
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  justify-content:space-between;
+  margin-bottom:60px;
+  @media (max-width: 768px) {
+    flex-direction:column-reverse;
+  }
+`
+
+const PredLogo = styled.img`
+  margin-bottom:8px;
+  max-width:120px;
+  @media (max-width: 1440px) {
+    max-width:100px;
+  }
+`
+
+const IbmLogo = styled.img`
+  margin-bottom:8px;
+  height:auto;
+  max-width:120px;
+  @media (max-width: 1440px) {
+    max-width:100px;
+  }
+`
+
+const RightsText = styled.p`
+  color:white;
+  margin-bottom:0;
+  @media (max-width: 470px) {
+    display:none;
+  }
+`
+
+const FooterWrapper = styled.div`
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  max-width: 1440px;
+  padding: 0 32px;
+  @media (max-width: 1440px) {
+    max-width:1280px;
+  }
+  @media (max-width: 470px) {
+    padding: 0 24px;
+  }
+`
+
+const FooterFooter = styled.div`
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:flex-end;
+  width:100%;
+  max-width: 1440px;
+  @media (max-width: 1440px) {
+    max-width:1280px;
+  }
+  @media (max-width: 470px) {
+    align-items:center;
+  }
+  a {
+    text-decoration:none;
+  }
+`
+
+const CompanyInfo = styled.div`
+  
+  width:50%;
+  padding-right:32px;
+  @media (max-width: 1440px) {
+    padding-right:24px;
+  }
+  @media (max-width: 1280px) {
+    width:100%;
+  }
+  p {
+    color:white;
+    font-size:24.2px;
+    margin-bottom:0;
+    @media (max-width: 1440px) {
+      font-size:18px; 
+    }
+    @media (max-width: 768px) {
+      font-size:16px; 
+    }
+  }
+  a {
+    color: white;
+    text-decoration:none;
+  }
+`
+
+const PrivacyPart = styled.div`
+  display:flex;
+  justify-content:flex-start;
+  width:50%;
+  @media (max-width: 1280px) {
+    width:100%;
+    margin-bottom:24px;
+  }
+
+`
+
+const PrivacyItem = styled(Link)`
+  width:25%;
+  color:white;
+  text-decoration:none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-left:5px solid white;
+  border-right:5px solid white;
+  :nth-of-type(2) {
+    border-left:0 ;
+  }
+  :hover {
+    color:lightgray;
+  }
+  @media (max-width: 1280px) {
+    padding:0 12px;
+  }
+  @media (max-width: 470px) {
+    border-left:2px solid white;
+    border-right:2px solid white;
+    font-size:14px;
+  }
+`
+
+const SocialWrapper = styled.div`
+  width:50%;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  img {
+    margin-bottom:0;
+    @media (max-width: 470px) {
+      width:32px;
+      height:32px;
+    }
+  }
+`
 
 export default Footer
