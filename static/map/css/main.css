@@ -1632,15 +1632,41 @@ margin-bottom:5px;
 	top: 33%;
 }
 
+.map-block .map-box {
+	max-width:1280px !important;
+	margin:0 auto;
+}
+
+.map-section {
+    padding: 0 0 60px !important;
+}
+
 @media (max-width: 1280px) {
+	.map-section.europe-view .map-block .map-container {
+		width:100% !important;
+		height: auto !important;
+		padding-bottom: 0 !important;
+	}
+	.map-holder .statistic-block {
+		left:15% !important;
+	}
+	.map-holder .country-info {
+		right:10% !important;
+	}
+	.map-block h3 {
+		margin-bottom: 23px !important;
+	}
+	.map-holder {
+		margin-bottom: 240px !important;
+	}
+
 	.map-block .map-box {
 		margin:0 auto;
-		max-width:1000px;
-		padding-top:100px;
+		padding-top:20px;
 		margin-left:0;
 	}
 	.map-section.europe-view .map-box {
-		padding: 100px 100px 0 !important;
+		padding: 0 100px 0 100px !important;
 	}
 	.map-block .map-pagination .btn-play {
 		width: 40px;
@@ -1656,16 +1682,47 @@ margin-bottom:5px;
 		border-top: 12px solid transparent;
 	}
 	.map-block .map-pagination .paging-holder {
-		max-width: 400px !important;
+		max-width: 300px !important;
+		height:24px !important;
+		padding-top: 6px !important;
 	}
-	.map-block .map-box {
-		max-width:900px;
+	.btn-prev {
+		margin-right: 5px !important;
+
+	}
+	.btn-next {
+		margin-left: 10px !important;
+	}
+	.map-block .map-pagination .pagination a:not(.btn-prev):not(.btn-next) {
+		width:12px !important;
+		height: 12px !important;
+	}
+	.map-pagination {
+		margin-top:-24px !important;
 	}
 }
 
+
+@media (max-width: 1080px) {
+	
+	.map-holder .statistic-block {
+		left:12% !important;
+	}
+	.map-holder .country-info {
+		right:7% !important;
+	}
+	
+}
+
 @media (max-width: 960px) {
+	.map-holder .statistic-block {
+		left:9% !important;
+	}
+	.map-holder .country-info {
+		right:4% !important;
+	}
 	.map-block .map-box {
-		max-width:600px;
+		max-width:600px !important;
 	}
 	.map-holder .statistic-list {
 		font-size: 14px !important;
@@ -1681,10 +1738,21 @@ margin-bottom:5px;
 	}
 	.map-block .map-container {
 		padding-bottom:0% !important;
-		height:450px !important;
+		height:400px !important;
 	}
 	.map-block .level-list {
 		top: 33%;
 		margin-right:-80px !important;
+	}
+	.map-block .map-pagination .paging-holder {
+		max-width: 200px !important;
+		height:24px !important;
+		padding-top: 6px !important;
+	}
+	.map-section.europe-view .map-box {
+		padding: 0 40px 0 0 !important;
+	}
+	.map-holder {
+		margin-bottom: 180px !important;
 	}
 }
