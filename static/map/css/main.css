@@ -1658,14 +1658,14 @@ margin-bottom:5px;
 	.map-block .map-pagination .paging-holder {
 		max-width: 400px !important;
 	}
-	
-	
+	.map-block .map-box {
+		max-width:900px;
+	}
 }
 
 @media (max-width: 960px) {
 	.map-block .map-box {
-		max-width:800px;
-		margin-left:0;
+		max-width:600px;
 	}
 	.map-holder .statistic-list {
 		font-size: 14px !important;
