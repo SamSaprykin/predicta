@@ -112,7 +112,10 @@ table.metrics-table-alt tbody{
   right: 0;
   width: 100%;
   height: 100%;
+  
 }
+
+
  
 `
 

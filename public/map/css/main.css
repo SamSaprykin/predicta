@@ -646,7 +646,6 @@ a:focus {
 	overflow: hidden;
 	width: 100%;
 	position: relative;
-	
 }
 
 a {
@@ -698,7 +697,6 @@ h3,
 .map-section .map-frame {
 	position: relative;
 	min-height: 200px;
-	height:100%;
 }
 
 .map-section .mobile-cap {
@@ -929,9 +927,6 @@ h3,
 	font-weight: 400;
 	margin-bottom: 20px;
 }
-
-
-
 
 .map-block .map-box {
 	margin-bottom: 22px;
@@ -1282,7 +1277,6 @@ h3,
 
 	.container {
 		padding: 0 30px;
-		
 	}
 
 	/* .map-section {
@@ -1637,7 +1631,6 @@ margin-bottom:5px;
 .map-section.europe-view .map-block .level-list {
 	top: 33%;
 }
-
 
 @media (max-width: 1280px) {
 	.map-block .map-box {
