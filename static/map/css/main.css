@@ -1756,3 +1756,8 @@ margin-bottom:5px;
 		margin-bottom: 180px !important;
 	}
 }
+
+.map-frame {
+	max-width:1280px !important;
+	margin:0 auto;
+}
