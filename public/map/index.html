@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Predicta</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js" defer><\/script>')</script>
+	<script src="https://d3js.org/d3.v5.min.js" defer></script>
+	<script src="https://d3js.org/d3-geo-projection.v2.min.js" defer></script>
+	<script src="js/jquery.main.js" defer></script>
+</head>
+<body>
+	<div id="wrapper">
+		<main id="main">
+			<div class="map-section text-center loading">
+				<div class="container">
+
+				</div>
+				<div class="map-block">
+					<div class="loader-holder">
+						<div class="frame">
+							<div class="loader"></div>
+						</div>
+					</div>
+					<h3><span class="current-month"></span></h3>
+					<div class="map-frame">
+						<div class="mobile-cap">
+							<div class="holder">
+								<h4>Viewing from Mobile?</h4>
+								<p>Please view this website from desktop.</p>
+							</div>
+						</div>
+						<div class="map-holder">
+							<div class="statistic-block">
+								<ul class="statistic-list">
+									<li class="active"><a data-filter="Cases_per_Mil" data-range="[44, 540]" href="#">Cases per 1M Pop</a></li>
+									<li><a data-filter="Deaths_per_Mil" data-range="[0.2, 7]" href="#">Deaths per 1M Pop</a></li>
+									<li><a data-filter="Mortality_Rate" data-range="[1, 2.8]" href="#">Mortality %</a></li>
+									<li><a data-filter="Positivity_Rate" data-range="[2, 8]" href="#">Positivity %</a></li>
+									<li><a data-filter="Mobility_Rate" data-range="[-35, -18]" href="#">Mobility %</a></li>
+									<li><a data-filter="Government_Stringency" data-range="[51, 71]" href="#">Gov Stringency</a></li>
+								</ul>
+							</div>
+							<ul class="map-switcher">
+								<li class="active"><a href="#" data-map="global">GLOBAL</a></li>
+								<li><a href="#" data-map="europe">EUROPE</a></li>
+							</ul>
+							<div class="country-info">
+								<div class="heading">
+									<div class="flag-box">
+										<img class="flag-image" src="./images/none.png" alt="image description">
+									</div>
+									<h4 class="country"></h4>
+								</div>
+								<ul class="info-list">
+									<li>
+										<span class="dt">Population:</span>
+										<span class="dd population">-</span>
+									</li>
+									<li>
+										<span class="dt">Day of First Case:</span>
+										<span class="dd day-first-case">-</span>
+									</li>
+									<li>
+										<span class="dt">Cases:</span>
+										<span class="dd cases">-</span>
+									</li>
+									<li>
+										<span class="dt">Cases per 1M Pop:</span>
+										<span class="dd cases-per-million">-</span>
+									</li>
+									<li>
+										<span class="dt">Deaths:</span>
+										<span class="dd deaths">-</span>
+									</li>
+									<li>
+										<span class="dt">Deaths per 1M Pop:</span>
+										<span class="dd deaths-per-million">-</span>
+									</li>
+									<li>
+										<span class="dt">Mortality:</span>
+										<span class="dd mortality">-</span>
+									</li>
+									<li>
+										<span class="dt">Tests per 1M Pop:</span>
+										<span class="dd tests-per-million">-</span>
+									</li>
+									<li>
+										<span class="dt">Positivity:</span>
+										<span class="dd positivity">-</span>
+									</li>
+									<li>
+										<span class="dt">Mobility:</span>
+										<span class="dd mobility">-</span>
+									</li>
+									<li>
+										<span class="dt">Gov Stringency:</span>
+										<span class="dd gov-stringency">-</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="map-box">
+							<div class="map-container"></div>
+							<ul class="level-list">
+								<li>
+									HIGH
+									<span class="label high"></span>
+								</li>
+								<li>
+									MEDIUM
+									<span class="label medium"></span>
+								</li>
+								<li>
+									LOW
+									<span class="label low"></span>
+								</li>
+							</ul>
+						</div>
+						<div class="map-pagination">
+							<a class="btn-play" href="#">play</a>
+							<a class="btn-prev" href="#">
+								<svg viewBox="0 0 32 32">
+									<path d="M23.68 4.16l-1.76-1.76-13.6 13.6 13.6 13.6 1.76-1.76-11.84-11.84z"></path>
+								</svg>
+							</a>
+							<div class="paging-holder">
+								<ul class="pagination"></ul>
+							</div>
+							<a class="btn-next" href="#">
+								<svg viewBox="0 0 32 32">
+									<path d="M8.32 27.84l1.76 1.76 13.6-13.6-13.6-13.6-1.76 1.76 11.84 11.84z"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

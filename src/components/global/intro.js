@@ -12,19 +12,23 @@ const Grid = styled.div`
   align-self: center;
   justify-content:center;
   position: relative;
-	padding-top: 65%;
-	width: 1200px;
+	
+  width: 100%;
+  height:1300px;
+  @media (max-width:1280px;) {
+    height:110px;
+  }
 `;
 
 const Map = () => (
   <>
   <h1 id='#maps'>Covid-19 Pandemic Evolution</h1>
 
-<Grid>
+  <Grid>
 
-<iframe className='responsive-iframe' src={withPrefix('../map/index.html')}></iframe>
+    <iframe className='responsive-iframe' src={withPrefix('../map/index.html')}></iframe>
 
-</Grid>
+  </Grid>
 
 
     

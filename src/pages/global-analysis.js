@@ -16,45 +16,43 @@ const Global = () => (
   <Layout>
     <div className="row">
     <div className="col">
-    <Intro/>
+      <Intro/>
     </div>
 </div>
 <div className="row" style={{
         backgroundColor: ` rgba(234,234,234,1)`
       }}>
     <div className="col">
-    <GlobalStats/>
+      <GlobalStats/>
     </div>
     </div>
     <div className="row">
     <div className="col">
-    <Metrics/>
+      <Metrics/>
     </div>
 </div>
 <div className="row" style={{
         backgroundColor: ` rgba(234,234,234,1)`
       }}>
-    <div className="col">
-    <Ranking/>
-    </div>
+   
     </div>
     <div className="row" style={{
         backgroundColor: ` rgba(234,234,234,1)`
       }}>
     <div className="col">
-    <GeoAnalysis/>
+      <GeoAnalysis/>
     </div>
     </div>
     <div className="row" style={{
         backgroundColor: ` rgba(255,255,255,1)`
       }}>
     <div className="col">
-    <Regional/>
+      <Regional/>
     </div>
     </div>
     <div className="row">
     <div className="col">
-    <Demographics/>
+      <Demographics/>
     </div>
     </div>
 
@@ -62,3 +60,10 @@ const Global = () => (
 )
 
 export default Global
+
+
+/*
+<div className="col">
+  <Ranking/>
+</div>
+*/
