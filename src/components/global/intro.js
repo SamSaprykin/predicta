@@ -14,11 +14,13 @@ const Grid = styled.div`
   position: relative;
 	
   width: 100%;
-  height:1300px;
-  @media (max-width:1280px) {
-    height:1100px;
+  height:1000px;
+  @media (max-width:1680px) {
+    height:900px;
   }
-  
+  @media (max-width:1440px) {
+    height:800px;
+  }
 `;
 
 const Map = () => (

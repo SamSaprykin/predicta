@@ -1641,32 +1641,34 @@ margin-bottom:5px;
     padding: 0 0 60px !important;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1920px) {
+	.map-block .map-box {
+		max-width:1080px !important;
+		margin:-200px auto 0;
+	}
+	.map-block .level-list {
+		top: 50% !important;
+	}
+	.map-section.europe-view .map-block .level-list {
+		top: 50% !important;
+	}
+}
+
+@media (max-width: 1600px) {
 	.map-section.europe-view .map-block .map-container {
 		width:100% !important;
 		height: auto !important;
 		padding-bottom: 0 !important;
 	}
-	.map-holder .statistic-block {
-		left:15% !important;
+	.map-container {
+		height: auto !important;
+		padding-bottom: 0 !important;
 	}
-	.map-holder .country-info {
-		right:10% !important;
+	.map-block .level-list {
+		top: 60% !important;
 	}
-	.map-block h3 {
-		margin-bottom: 23px !important;
-	}
-	.map-holder {
-		margin-bottom: 240px !important;
-	}
-
-	.map-block .map-box {
-		margin:0 auto;
-		padding-top:20px;
-		margin-left:0;
-	}
-	.map-section.europe-view .map-box {
-		padding: 0 120px 0 120px !important;
+	.map-section.europe-view .map-block .level-list {
+		top: 60% !important;
 	}
 	.map-block .map-pagination .btn-play {
 		width: 40px;
@@ -1691,8 +1693,47 @@ margin-bottom:5px;
 
 	}
 	.btn-next {
-		margin-left: 10px !important;
+		margin-left: 1px !important;
 	}
+	.map-block .map-pagination .btn-play::after {
+		width: 22px;
+		height: 24px;
+		border-width: 0 6px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.map-block .map-box {
+		max-width:1000px !important;
+		margin:-250px auto 0;
+	}
+	.map-block .level-list {
+		top: 80% !important;
+	}
+	.map-section.europe-view .map-block .level-list {
+		top: 80% !important;
+	}
+	
+}
+
+@media (max-width: 1280px) {
+	.map-block h3 {
+		margin-bottom: 23px !important;
+	}
+	.map-holder {
+		margin-bottom: 240px !important;
+	}
+	.map-block .level-list {
+		top: 90% !important;
+	}
+	.map-block .map-box {
+		max-width:800px !important;
+		margin:-200px auto 0;
+	}
+	.map-section.europe-view .map-box {
+		padding: 0 120px 0 120px !important;
+	}
+	
 	.map-block .map-pagination .pagination a:not(.btn-prev):not(.btn-next) {
 		width:12px !important;
 		height: 12px !important;
