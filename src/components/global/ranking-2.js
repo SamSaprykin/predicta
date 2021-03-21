@@ -14,16 +14,8 @@ const Grid = styled.div`
   position: relative;
   width:100%;
   max-width: 1400px;
-  height:900px;
-  @media (max-width: 1900px) {
-    height:800px;
-  }
-  @media (max-width: 1600px) {
-    height:750px;
-  }
-  @media (max-width: 1440px) {
-    height:700px;
-  }
+  height:720px;
+  
 `;
 
 const RankingTwo = () => (

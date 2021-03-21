@@ -14,12 +14,9 @@ const Grid = styled.div`
   position: relative;
   width:100%;
   max-width: 1400px;
-  height:670px;
+  height:720px;
   background-color: rgb(234, 234, 234);
 
-  @media (max-width: 1440px) {
-    height:650px;
-  }
   
 `;
 
