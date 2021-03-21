@@ -987,11 +987,10 @@ h3,
 
 
 
-@media (max-width: 1900px) {
-	.content-section {
-		padding: 90px 0 !important;
-	}
-}
+
+
+
+
 
 
 
@@ -1006,7 +1005,8 @@ h3,
 		
 	}
 	.info-row .info-col {
-		width: 66% !important;
+		width: 100% !important;
+		max-width:700px;
 		margin-left: 0 !important;
 	}
 	.info-row {
@@ -1026,11 +1026,23 @@ h3,
 	
 }
 
-@media (max-width:960px) {
-	.info-row {
-		padding: 0!important;
+@media (max-width: 1900px) {
+	.content-section {
+		padding: 90px 0 !important;
+	}
+	.info-row .info-col {
+		width:100% !important;
+		max-width: 800px ;
+		margin-left: 0 !important;
 	}
 }
+
+@media (max-width:960px) {
+	.info-row {
+		padding: 0 24px!important;
+	}
+}
+
 
 #wrapper {
 	background-color: rgb(234, 234, 234);
