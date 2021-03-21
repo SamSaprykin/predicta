@@ -18,6 +18,9 @@ margin: 0 auto;
   width: 80%
 
 }
+@media (max-width:768px) {
+  padding-top:60px;
+}
 `
 
 const Gap = styled.div`

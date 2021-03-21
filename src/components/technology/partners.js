@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components"
 
-//import LogoOne from "./images/predicta-logo.svg"
-//import LogoTwo from "./images/spss-logo.svg"
-//import LogoThree from "./images/python-logo.svg"
-//import LogoFour from "./images/r-logo.svg"
-//import LogoThree from "./images/python-logo.svg"
-import LogoStrip from "./images/logo-strip.svg"
+import LogoOne from "./images/predicta-logo.svg"
+import LogoTwo from "./images/spss-logo.svg"
+import LogoThree from "./images/python-logo.svg"
+import LogoFour from "./images/r-logo.svg"
+
 
 
 
 const Grid = styled.div`
+
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
@@ -19,72 +19,46 @@ const Grid = styled.div`
   justify-content:center;
 
   @media (max-width: 1024px) {
-
-  grid-template-columns: repeat(2, 1fr);
- 
-  
+    padding:0 32px;
   }
 `;
 
+const LogoWrapper = styled.div`
+  width:100%;
+  max-width:1240px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  @media (max-width: 1440px) {
+    max-width:800px;
+  }
+  img {
+    height:120px;
+    width:20%;
+    @media (max-width: 470px) {
+      width:40%;
+    }
+  }
+`
 
 
-const Item = styled.div`
-display: flex;
-
-flex-direction: column;
-align-items: center;
-background-color: transparent;
-
-`;
 
 
-// const TextBox = styled.div`
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// flex-direction: column;
-// width: 800px;
-// margin: 0 auto;
 
-// @media (max-width: 1024px) {
-//   width: 80%
-
-// }
-// `
-
-// const Gap = styled.div`
-// display: block;
-// height: 2rem;
-// `;
-
-// const Title = styled.div`
-// margin-bottom: 3rem;
-
-// @media (max-width: 1024px) {
-//     padding: 20px 0;
-//     font-size: 1.5rem;
-//     z-index: 6;
-//   }
-// `
 
 const Partners = () => (
   <>
+    <Grid>
+      <LogoWrapper>
+        <img src="/predicta-logo2.svg" />
+        <img src="/spss-logo.svg" />
+        <img src="/python-logo.svg" />
+        <img src="/r-logo.svg" />
 
-
-
-      <Grid>
-
-        <Item>
-
-        <LogoStrip />
-
-
-</Item>
-
-
-      </Grid>
-    
-</>
+      </LogoWrapper>
+    </Grid>  
+  </>
   );
 
 
