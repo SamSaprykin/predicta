@@ -1027,11 +1027,20 @@ h3,
 	.main-category a {
 		padding: 16px 12px;
 	}
+	.content-section.regional-analysis .graph-box .tick text {
+		font-size: 22px !important;
+	}
 }
 
 @media (max-width: 960px) {
 	.secondary-category.list-sm li {
 		min-width: 180px !important;
+	}
+	.content-section.regional-analysis .graph-box .tick text {
+		font-size: 18px !important;
+	}
+	.secondary-category.list-sm li {
+		min-width: 140px !important;
 	}
 }
 

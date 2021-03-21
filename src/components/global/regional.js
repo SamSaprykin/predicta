@@ -23,6 +23,9 @@ const Grid = styled.div`
   @media (max-width:1280px) {
     height:750px;
   }
+  @media (max-width:960px) {
+    height:800px;
+  }
 `;
 
 const GeoAnalysis = () => (

@@ -1024,6 +1024,11 @@ h3,
 	
 }
 
+@media (max-width:960px) {
+	.info-row {
+		padding: 0!important;
+	}
+}
 
 
 
