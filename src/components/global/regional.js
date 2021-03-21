@@ -13,6 +13,7 @@ const Grid = styled.div`
   justify-content:center;
   position: relative;
   width: 100%;
+  max-width:1100px;
   height:1100px;
   @media (max-width:1680px) {
     height:900px;
