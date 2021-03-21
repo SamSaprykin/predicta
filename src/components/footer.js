@@ -5,11 +5,6 @@ import styled from "styled-components"
 //import NavFooter from "./navfooter"
 import FooterNav from "./footernav"
 
-import PredictaLogo from "./images/predicta-logo.svg";
-import IBMLogo from "./images/ibm-logo.svg";
-
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
@@ -22,7 +17,7 @@ const Footer = () => (
     <FooterNav />
     <FooterContent>
       <CompanyInfo>
-        <p>18 Chatzikonstanti Str., 115 24 Athens, Greece  T. +30 210 69 31 040 F. +30 210 69 31 079  &nbsp;  •  &nbsp;  E. info@predicta.gr &nbsp;   • &nbsp;  <a href="http://www.predicta.gr/" target="_blank" rel="noopener noreferrer">www.predicta.gr</a> </p>
+        <p>18 Chatzikonstanti Str., 115 24 Athens, Greece  T. +30 210 69 31 040  F. +30210 69 31 079 &nbsp;  •  &nbsp;  E. info@predicta.gr &nbsp;   • &nbsp;  <a href="http://www.predicta.gr/" target="_blank" rel="noopener noreferrer">www.predicta.gr</a> </p>
       </CompanyInfo>
       <PrivacyPart>
         <PrivacyItem to="/terms">
@@ -38,7 +33,7 @@ const Footer = () => (
            <a href="https://www.linkedin.com/company/predicta-s-a-former-spss-bi-greece-s-a" target="_blank" rel="noopener noreferrer">
              <img src="/ln-icon.png" alt="linkedin-icon" />
            </a>
-           <a>
+           <a href="https://twitter.com/predictasa" target="_blank" rel="noopener noreferrer">
              <img src="/tw-icon.png" alt="twitter-icon" />
            </a>
         </SocialWrapper>
@@ -130,8 +125,8 @@ const FooterFooter = styled.div`
 
 const CompanyInfo = styled.div`
   
-  width:50%;
-  padding-right:32px;
+  width:58%;
+  padding-right:38px;
   @media (max-width: 1440px) {
     padding-right:24px;
   }
@@ -158,8 +153,8 @@ const CompanyInfo = styled.div`
 
 const PrivacyPart = styled.div`
   display:flex;
-  justify-content:flex-start;
-  width:50%;
+  justify-content:space-between;
+  width:40%;
   @media (max-width: 1280px) {
     width:100%;
     margin-bottom:24px;
@@ -168,7 +163,8 @@ const PrivacyPart = styled.div`
 `
 
 const PrivacyItem = styled(Link)`
-  width:25%;
+  width:30%;
+  padding:0 16px;
   color:white;
   text-decoration:none;
   display:flex;
@@ -193,12 +189,14 @@ const PrivacyItem = styled(Link)`
 `
 
 const SocialWrapper = styled.div`
-  width:50%;
+  width:40%;
   display:flex;
-  justify-content:space-evenly;
+  justify-content:flex-end;
+
   align-items:center;
   img {
     margin-bottom:0;
+    padding-left:32px;
     @media (max-width: 470px) {
       width:32px;
       height:32px;

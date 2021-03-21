@@ -7,7 +7,10 @@ justify-content: left;
 flex-direction: column;
 width: 100%;
 margin: 0 auto;
-max-width: 1080px;
+max-width: 1280px;
+@media (max-width:1440px) {
+  max-width:1080px;
+}
 @media (max-width: 1024px) {
   width: 100%;
   padding:0 32px;

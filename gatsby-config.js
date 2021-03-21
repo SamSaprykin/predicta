@@ -75,11 +75,11 @@ module.exports = {
       },
       {
         name:'Greece',
-        link:'/greece',
+        link:'/depth-greece',
       },
       {
         name:'Latin America',
-        link:'/latin-america',
+        link:'/depth-latin-america',
       }
     ]
  },

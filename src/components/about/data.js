@@ -10,7 +10,8 @@ const Grid = styled.div`
   justify-content:center;
   align-items: start;
   width:100%;
-  max-width: 1220px;
+  max-width: 1280px;
+ 
   @media (max-width: 1440px) {
     max-width: 1080px;
   }
@@ -50,8 +51,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-width:100%:
-max-width: 1220px;
+width:100%;
+max-width:1280px;
 margin: 62px auto 48px;
 @media (max-width: 1440px) {
   max-width: 1080px;

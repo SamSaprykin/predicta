@@ -9,8 +9,11 @@ const IntroBox = styled.div`
   align-items: center;
   flex-direction: column;
   width:100%;
-  max-width: 800px;
+  max-width:1280px;
   margin: 0 auto;
+  @media (max-width:1440px) {
+    max-width:1080px;
+  }
   h2 {
     font-size:35px;
     line-height:42px;

@@ -8,11 +8,18 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-width: 800px;
+width:100%;
+max-width: 1280px;
 margin: 0 auto;
-
+@media (max-width:1440px) {
+  max-width:1080px;
+}
+@media (max-width: 1280px) {
+  padding:0 32px;
+}
 @media (max-width: 1024px) {
-  width: 80%
+  width: 100%;
+  padding:0 32px;
 }
 @media (max-width:768px) {
   padding-top:60px;

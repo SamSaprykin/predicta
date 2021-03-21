@@ -63,6 +63,9 @@ const StyledUl = styled.ul`
   align-content: center;
   width:100%;
   justify-content:space-between;
+  @media (max-width:768px) {
+    display:none;
+  }
 `;
 
 const StyledUlB= styled.ul`
@@ -172,7 +175,7 @@ const DropDownA = styled(Link)`
     padding: .5rem 0rem;
     font-size: 0.8rem;
     width: 200px;
-
+    text-transform: capitalize;
     &:hover {background-color: #222A53};
     @media (max-width: 1080px) {
       padding: 0;
@@ -265,17 +268,17 @@ const Navbar = ({ menuLinks }) => {
       </Toggle>
       {navbarOpen ? (
         <Navbox>
-                   <StyledUlB>
-    {menuLinks.map((link) => (
-      <StyledLi key={link.name}>
-        <StyledA
-          to = {link.link} 
-          aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
-        >
-          {link.name}
-        </StyledA>
-      </StyledLi>
-    ))}
+    <StyledUlB>
+      {menuLinks.map((link) => (
+        <StyledLi key={link.name}>
+          <StyledA
+            to = {link.link} 
+            aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
+          >
+            {link.name}
+          </StyledA>
+        </StyledLi>
+      ))}
     </StyledUlB>
         </Navbox>
       ) : (
@@ -292,7 +295,7 @@ const Navbar = ({ menuLinks }) => {
                 {link.subMenu && link.subMenu.length > 0 ? (
                   <DropDownBox aria-label="submenu">
                     {link.subMenu.map((subLink) => (
-                    <DropDownA to = {subLink.link} key = {subLink.name}> {subLink.name} </DropDownA>
+                      <DropDownA to = {subLink.link} key = {subLink.name}> {subLink.name} </DropDownA>
                     ))}
                   </DropDownBox>
                 ) : null}
