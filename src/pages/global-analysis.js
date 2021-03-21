@@ -6,6 +6,8 @@ import Intro from "../components/global/intro"
 import GlobalStats from "../components/global/globalstatistics"
 import Metrics from "../components/global/metrics"
 import Ranking from "../components/global/ranking"
+import RankingOne from "../components/global/ranking-1"
+import RankingTwo from "../components/global/ranking-2"
 import GeoAnalysis from "../components/global/geographical"
 import Regional from "../components/global/regional"
 import Demographics from "../components/global/demographics"
@@ -34,10 +36,16 @@ const Global = () => (
 <div className="row" style={{
         backgroundColor: ` rgba(234,234,234,1)`
       }}>
-    <div className="col">
-      <Ranking/>
-    </div>
-    </div>
+  <div className="col">
+    <RankingOne/>
+  </div>
+</div>
+<div className="row" style={{backgroundColor: ` rgba(255,255,255,1)`}}>
+  <div className="col">
+    <RankingTwo/>
+  </div>
+</div> 
+
     <div className="row" style={{
         backgroundColor: ` rgba(234,234,234,1)`
       }}>
