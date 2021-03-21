@@ -28,19 +28,11 @@ const Grid = styled.div`
 
 const RankingTwo = () => (
   <>
-  <h1 id='#maps'>Countries Weekly Ranking</h1>
-
-<Grid>
-
-<iframe className='responsive-iframe' scrolling='no' src={withPrefix('../geo-2/index.html')}></iframe>
-
-</Grid>
-
-
-    
-    
-</>
-  );
+    <Grid>
+      <iframe className='responsive-iframe' scrolling='no' src={withPrefix('../geo-2/index.html')}></iframe>
+    </Grid>
+  </>
+);
 
 
 export default RankingTwo
