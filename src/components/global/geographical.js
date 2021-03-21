@@ -12,8 +12,9 @@ const Grid = styled.div`
   align-self: center;
   justify-content:center;
   position: relative;
-	padding-top: 76%;
-	width: 100%;
+	
+  width: 100%;
+  height:1500px;
 `;
 
 const GeoAnalysis = () => (

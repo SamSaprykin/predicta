@@ -968,3 +968,71 @@ h3,
 .secondary-category {
 	font-size: 23px;
 }
+
+
+@media (max-width: 1900px) {
+	.content-section {
+		padding: 60px 0 !important;
+	}
+}
+
+@media (max-width: 1600px) {
+	.content-section {
+		max-width:1280px !important;
+		margin:0 auto !important;
+	}
+	.secondary-category.list-sm li {
+		min-width: 200px !important;
+	}
+}
+
+
+
+
+@media (max-width: 1440px) {
+	.main-category {
+		padding-bottom: 24px !important;
+	}
+	.graph-holder {
+		height: 320px !important;
+	}
+	.content-section.regional-analysis .total-line {
+		font-size: 32px  !important;
+		line-height: 36px  !important;
+	}
+	.content-section.regional-analysis .total-line .value {
+		font-size: 32px  !important;
+		line-height: 36px  !important;
+	}
+	.main-category li {
+		margin-bottom:8px !important;
+	}
+	.secondary-category {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.content-section.regional-analysis .graph-box {
+		margin: -32px auto 0;
+		border: none;
+		max-width: 960px !important;
+		width: 100%;
+		font-size: 18px !important;
+		padding: 0 32px !important;
+	}
+	.secondary-category {
+		font-size: 18px; 
+	}
+	.main-category a {
+		padding: 16px 12px;
+	}
+}
+
+@media (max-width: 960px) {
+	.secondary-category.list-sm li {
+		min-width: 180px !important;
+	}
+}
+
+

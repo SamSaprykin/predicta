@@ -34,7 +34,9 @@ const Global = () => (
 <div className="row" style={{
         backgroundColor: ` rgba(234,234,234,1)`
       }}>
-   
+    <div className="col">
+      <Ranking/>
+    </div>
     </div>
     <div className="row" style={{
         backgroundColor: ` rgba(234,234,234,1)`
@@ -63,7 +65,5 @@ export default Global
 
 
 /*
-<div className="col">
-  <Ranking/>
-</div>
+
 */

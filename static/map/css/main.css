@@ -1687,6 +1687,7 @@ margin-bottom:5px;
 		max-width: 300px !important;
 		height:24px !important;
 		padding-top: 6px !important;
+		
 	}
 	.btn-prev {
 		margin-right: 5px !important;
@@ -1703,6 +1704,7 @@ margin-bottom:5px;
 }
 
 @media (max-width: 1440px) {
+
 	.map-block .map-box {
 		max-width:1000px !important;
 		margin:-250px auto 0;

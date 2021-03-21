@@ -137,6 +137,7 @@ const CompanyInfo = styled.div`
   }
   @media (max-width: 1280px) {
     width:100%;
+    margin-bottom:24px;
   }
   p {
     color:white;

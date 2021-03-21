@@ -15,29 +15,27 @@ const Grid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-gap: 2rem;
-  width: 1220px;
+  width: 100%;
+  max-width:1220px;
   align-self: center;
   justify-content:center;
-
-  @media (max-width: 1024px) {
+  @media (max-width: 1280px) {
+      width:80%;
+  }
+  @media (max-width: 960px) {
       grid-template-columns: repeat(1, 1fr);
-      width: 80%
-   
-    }
-
+  }
 `;
 
 
 const Item = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: auto;
-background-color: transparent;
-
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      background-color: transparent;
 `;
 
 const Gap = styled.div`
