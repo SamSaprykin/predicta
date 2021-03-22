@@ -7,7 +7,7 @@ import ChartOne from "../../components/in-depth/europe/images/generalfindings/a.
 import ChartTwo from "../../components/in-depth/europe/images/generalfindings/b.svg"
 import ChartThree from "../../components/in-depth/europe/images/generalfindings/c.svg"
 import ChartFour from "../../components/in-depth/europe/images/generalfindings/d.svg"
-import ChartFive from "../../components/in-depth/europe/images/generalfindings/e.svg"
+
 
 
 const Grid = styled.div`
@@ -17,9 +17,18 @@ const Grid = styled.div`
   grid-gap: 2rem;
   align-self: center;
   justify-content: center;
-  width: 1000px;
-
+  width:100%;
+  max-width:1256px;
+  @media(max-width:1440px) {
+	  max-width:1080px;
+  }
   &h2 {font-size: 35px}
+  .wide-cell {
+	  min-width:360px;
+	  @media(max-width:960px) {
+		min-width:auto;
+	  }
+  }
 `;
 
 const GridB = styled.div`
@@ -29,7 +38,14 @@ const GridB = styled.div`
   grid-gap: 2rem;
   align-self: center;
   justify-content: center;
-  width: 1000px;
+  width:100%;
+  max-width:1256px;
+  @media(max-width:1440px) {
+	  max-width:1080px;
+  }
+  @media(max-width:960px) {
+	grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const Item = styled.div`
@@ -39,336 +55,347 @@ align-items: center;
 flex-direction: column;
 width: 100%;
 margin: 0 auto;
+img {
+	width:100%;
+	height:auto;
+}
+@media(max-width:960px) {
+	max-width:100%;
+}
 
-@media (max-width: 1280px) {
-  width: 600px;
-  }
-  @media (max-width: 600px) {
-    width: 300px;
-    }
+.metrics-table {
+	@media(max-width:960px) {
+		max-width:90%;
+		padding:0 32px;
+	}
+	th {
+		color: #ffffff;
+		font-family: "IBM Plex Sans - Medium";
+		font-size: 19px;
+		font-weight: 500;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 22.74px;
+		text-align: center;
+		/* Text style for "Area" */
+		font-family: "IBM Plex Sans";
+		font-weight: 500;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		@media(max-width:768px) {
+			font-size: 16px;
+		}
+	}
+	td {
+		color: #606060;
+		font-family: "IBM Plex Sans - Light";
+		font-size: 19px;
+		font-weight: 300;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 22.74px;
+		text-align: center;
+		/* Text style for "Latin Amer" */
+		font-family: "IBM Plex Sans";
+		font-weight: 300;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		@media(max-width:768px) {
+			font-size: 16px;
+		}
+	}
+	
+}
 `
 
 const TextBox = styled.div`
 display: flex;
 flex-direction: column;
-width: 800px;
+width: 100%;
+max-width:1086px;
 margin: 0 auto;
 
 @media (max-width: 1024px) {
   width: 80%
-
 }
 `
 
 const Gap = styled.div`
-height: 2rem;
+	height: 2rem;
+`
 
-  @media (max-width: 1024px) {
-  
-  }
+const TitleChart = styled.h3`
+	color: #222b3e;
+	font-family: "IBM Plex Sans";
+	font-size: 35px;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 42px;
+	text-align: center;
+	/* Text style for "1st Wave -" */
+	font-family: "IBM Plex Sans";
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: normal;
+	margin-bottom:35px;
+	@media(max-width:768px) {
+		font-size: 16px;
+	}
+`
+
+const WrapperCountriesGraphs = styled.div`
+	background: #E8E8E8;
+	padding:120px 0 187px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
 `
 const GeneralFindings = () => (
   <Layout>
     <div className="row">
-    <div className="col">
+     <div className="col">
+      <NavbarSubLinks />
+		<TextBox>
+		<h1>General Findings</h1>
+		<Gap/>
+		<p>COVID-19 PANDEMIC has hit Europe much more than other geographical regions of the world, having almost 30% of diagnosed cases and deaths. We can also see that there is a significant difference between Western and Eastern Europe, with Western Europe having almost 20% of cases and deaths.</p>
 
-    <NavbarSubLinks />
-      
-  <TextBox>
-     <h1>General Findings</h1>
+		</TextBox>
 
-     <Gap/>
-  
-    <p>COVID-19 PANDEMIC has hit Europe much more than other geographical regions of the world, having almost 30% of diagnosed cases and deaths. We can also see that there is a significant difference between Western and Eastern Europe, with Western Europe having almost 20% of cases and deaths.</p>
-
-    </TextBox>
-
-<Grid>
-	<Item>
-	<table className="metrics-table">
-	<thead>
-	<tr>
-		<th>Area</th>
-		<th>Total Cases</th>
-		<th>Cases %</th>
-		<th>Total Deaths</th>
-		<th>Deaths %</th>
-		<th>Mortality %</th>
-		<th>Cases per 1M</th>
-		<th>Deaths per 1M</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr id='highlighted-dark'>
-		<td>Western Europe</td>
-		<td>10.739.681</td>
-		<td>17,1%</td>
-		<td>277.659</td>
-		<td>19,0%</td>
-		<td>2,6%</td>
-		<td>25.224</td>
-		<td>652</td>
-	</tr>
-	<tr id='highlighted-dark'>
-		<td>Eastern Europe</td>
-		<td>6.812.975</td>
-		<td>10,9%</td>
-		<td>117.798</td>
-		<td>8,1%</td>
-		<td>1,7%</td>
-		<td>20.012</td>
-		<td>346</td>
-	</tr>
-	<tr id='highlighted'>
-		<td>Total Europe</td>
-		<td>17.552.656</td>
-		<td>28,0%</td>
-		<td>395.457</td>
-		<td>27,1%</td>
-		<td>2,3%</td>
-		<td>23.319</td>
-		<td>525</td>
-	</tr>
-	<tr>
-		<td>North America</td>
-		<td>13.753.617</td>
-		<td>21,9%</td>
-		<td>278.905</td>
-		<td>19,1%</td>
-		<td>2,0%</td>
-		<td>37.524</td>
-		<td>761</td>
-	</tr>
-	<tr>
-		<td>Latin America and the Caribbean</td>
-		<td>13.069.332</td>
-		<td>20,8%</td>
-		<td>447.886</td>
-		<td>30,7%</td>
-		<td>3,4%</td>
-		<td>20.198</td>
-		<td>692</td>
-	</tr>
-	<tr>
-		<td>Asia-Pacific</td>
-		<td>12.446.240</td>
-		<td>19,8%</td>
-		<td>195.684</td>
-		<td>13,4%</td>
-		<td>1,6%</td>
-		<td>2.932</td>
-		<td>46</td>
-	</tr>
-	<tr>
-		<td>Middle East and North Africa</td>
-		<td>4.524.000</td>
-		<td>7,2%</td>
-		<td>110.604</td>
-		<td>7,6%</td>
-		<td>2,4%</td>
-		<td>8.425</td>
-		<td>206</td>
-	</tr>
-	<tr>
-		<td>Sub-Saharan Africa</td>
-		<td>1.433.917</td>
-		<td>2,3%</td>
-		<td>32.506</td>
-		<td>2,2%</td>
-		<td>2,3%</td>
-		<td>1.291</td>
-		<td>29</td>
-	</tr>
-	<tr>
-		<td>Global</td>
-		<td>62.779.762</td>
-		<td>&nbsp;</td>
-		<td>1.461.042</td>
-		<td>&nbsp;</td>
-		<td>2,3%</td>
-		<td>8.182</td>
-		<td>190</td>
-	</tr>
-	</tbody>
-</table>
-
-</Item>
-</Grid>
-
-
-
-
+	<Grid>
+		<Item>
+		<table className="metrics-table">
+			<thead>
+				<tr>
+					<th>Area</th>
+					<th>Total Cases</th>
+					<th>Cases %</th>
+					<th>Total Deaths</th>
+					<th>Deaths %</th>
+					<th>Mortality %</th>
+					<th>Cases per 1M</th>
+					<th>Deaths per 1M</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id='highlighted-dark'>
+					<td>Western Europe</td>
+					<td>10.739.681</td>
+					<td>17,1%</td>
+					<td>277.659</td>
+					<td>19,0%</td>
+					<td>2,6%</td>
+					<td>25.224</td>
+					<td>652</td>
+				</tr>
+				<tr id='highlighted-dark'>
+					<td>Eastern Europe</td>
+					<td>6.812.975</td>
+					<td>10,9%</td>
+					<td>117.798</td>
+					<td>8,1%</td>
+					<td>1,7%</td>
+					<td>20.012</td>
+					<td>346</td>
+				</tr>
+				<tr id='highlighted'>
+					<td>Total Europe</td>
+					<td>17.552.656</td>
+					<td>28,0%</td>
+					<td>395.457</td>
+					<td>27,1%</td>
+					<td>2,3%</td>
+					<td>23.319</td>
+					<td>525</td>
+				</tr>
+				<tr>
+					<td>North America</td>
+					<td>13.753.617</td>
+					<td>21,9%</td>
+					<td>278.905</td>
+					<td>19,1%</td>
+					<td>2,0%</td>
+					<td>37.524</td>
+					<td>761</td>
+				</tr>
+				<tr>
+					<td>Latin America and the Caribbean</td>
+					<td>13.069.332</td>
+					<td>20,8%</td>
+					<td>447.886</td>
+					<td>30,7%</td>
+					<td>3,4%</td>
+					<td>20.198</td>
+					<td>692</td>
+				</tr>
+				<tr>
+					<td>Asia-Pacific</td>
+					<td>12.446.240</td>
+					<td>19,8%</td>
+					<td>195.684</td>
+					<td>13,4%</td>
+					<td>1,6%</td>
+					<td>2.932</td>
+					<td>46</td>
+				</tr>
+				<tr>
+					<td>Middle East and North Africa</td>
+					<td>4.524.000</td>
+					<td>7,2%</td>
+					<td>110.604</td>
+					<td>7,6%</td>
+					<td>2,4%</td>
+					<td>8.425</td>
+					<td>206</td>
+				</tr>
+				<tr>
+					<td>Sub-Saharan Africa</td>
+					<td>1.433.917</td>
+					<td>2,3%</td>
+					<td>32.506</td>
+					<td>2,2%</td>
+					<td>2,3%</td>
+					<td>1.291</td>
+					<td>29</td>
+				</tr>
+				<tr>
+					<td>Global</td>
+					<td>62.779.762</td>
+					<td>&nbsp;</td>
+					<td>1.461.042</td>
+					<td>&nbsp;</td>
+					<td>2,3%</td>
+					<td>8.182</td>
+					<td>190</td>
+				</tr>
+			</tbody>
+		</table>
+	</Item>
+    </Grid>
   </div>
 </div>
 
 
 
 
-<div className="row" style={{
-        backgroundColor: `rgba(234,234,234,1)`
-      }}>
+<div className="row" style={{backgroundColor: `rgba(234,234,234,1)`}}>
     <div className="col">
+		<h2 style={{fontWeight: `normal`, color: "#222B3E"}}>Europe - Deaths per 1M</h2>
+		<Grid>
+  			<Item>
+				<ChartOne />
+				<Gap />
+			</Item>
+		</Grid>
 
+		<TextBox>
+			<p>The first wave of the pandemic (Feb-May 2020) was quite difficult, with a stable and controllable summer period, followed by a much more aggressive second wave, especially from October 2020 onwards. It is interesting to examine the differentiation by region of this general trend. The graph below, of deaths per million of population, demonstrates the outlined differences..</p>
+		</TextBox>
 
-
-    <h2
-      style={{
-        fontWeight: `normal`, color: "#222B3E"
-      }}
-    >Europe - Deaths per 1M</h2>
-
-<Grid>
-  <Item>
-<ChartOne />
-<Gap />
-</Item>
-</Grid>
-
-<TextBox>
-<p>The first wave of the pandemic (Feb-May 2020) was quite difficult, with a stable and controllable summer period, followed by a much more aggressive second wave, especially from October 2020 onwards. It is interesting to examine the differentiation by region of this general trend. The graph below, of deaths per million of population, demonstrates the outlined differences..</p>
-</TextBox>
-
-      </div>
-    </div>
+	</div>
+</div>
 
 
 
 <div className="row">
     <div className="col">
+	<Grid>
+		<Item>
+			<TitleChart>1st Wave - Deaths per 1M</TitleChart>
+			<ChartTwo />
+			<Gap/>
+			<TitleChart>2nd Wave - Deaths per 1M</TitleChart>
+			<ChartThree />
+			<Gap />
+		</Item>
+	</Grid>
+	</div>
+</div>
+<div className="row" style={{backgroundColor: `rgba(234,234,234,1)`}}>
+	<div className="col">
+		<h2 style={{fontWeight: `normal`, color: "#222B3E"}}>Phases by Regions</h2>
+			<Grid>
+				<Item>
+				<table className="metrics-table">
 
-
-
-    {/* <h2
-      style={{
-        fontWeight: `normal`
-      }}
-    >Europe - Deaths per 1M</h2> */}
-
-<Grid>
-  <Item>
-<ChartTwo />
-<Gap/>
-<ChartThree />
-<Gap />
-</Item>
-</Grid>
-{/* 
-<TextBox>
-<p>The first wave of the pandemic (Feb-May 2020) was quite difficult, with a stable and controllable summer period, followed by a much more aggressive second wave, especially from October 2020 onwards. It is interesting to examine the differentiation by region of this general trend. The graph below, of deaths per million of population, demonstrates the outlined differences..</p>
-</TextBox> */}
-
-      </div>
-    </div>
-
-
-
-
-
-	<div className="row" style={{
-        backgroundColor: `rgba(234,234,234,1)`
-      }}>
-    <div className="col">
-
-    <h2
-      style={{
-        fontWeight: `normal`, color: "#222B3E"
-      }}
-    >Phases by Regions</h2>
-
-
-
-
-<Grid>
-
-<Item>
-
-
-<table className="metrics-table">
-
-	<thead>
-	<tr>
-		<th>Europe - Regions</th>
-		<th># Countries</th>
-		<th>Total Cases per 1M</th>
-		<th>Total Deaths per 1M</th>
-		<th>% Mortality </th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td>Western Europe</td>
-		<td>17</td>
-		<td>26.494</td>
-		<td>685</td>
-		<td>1,9%</td>
-	</tr>
-	<tr>
-		<td>Ex East Block (Central Europe)</td>
-		<td>4</td>
-		<td>28.626</td>
-		<td>483</td>
-		<td>1,6%</td>
-	</tr>
-	<tr>
-		<td>Balkans</td>
-		<td>11</td>
-		<td>24.940</td>
-		<td>519</td>
-		<td>2,1%</td>
-	</tr>
-	<tr>
-		<td>Greece</td>
-		<td>1</td>
-		<td>9.718</td>
-		<td>216</td>
-		<td>2,2%</td>
-	</tr>
-	<tr>
-		<td>Baltic</td>
-		<td>5</td>
-		<td>15.937</td>
-		<td>238</td>
-		<td>1,1%</td>
-	</tr>
-	<tr>
-		<td>Scandinavian</td>
-		<td>3</td>
-		<td>8.331</td>
-		<td>93</td>
-		<td>1,2%</td>
-	</tr>
-	<tr>
-		<td>Sweden</td>
-		<td>1</td>
-		<td>23.766</td>
-		<td>653</td>
-		<td>2,7%</td>
-	</tr>
-	</tbody>
-</table>
-
-
-</Item>
-
-<Item>
+					<thead>
+					<tr>
+						<th>Europe - Regions</th>
+						<th># Countries</th>
+						<th>Total Cases per 1M</th>
+						<th>Total Deaths per 1M</th>
+						<th>% Mortality </th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Western Europe</td>
+						<td>17</td>
+						<td>26.494</td>
+						<td>685</td>
+						<td>1,9%</td>
+					</tr>
+					<tr>
+						<td>Ex East Block (Central Europe)</td>
+						<td>4</td>
+						<td>28.626</td>
+						<td>483</td>
+						<td>1,6%</td>
+					</tr>
+					<tr>
+						<td>Balkans</td>
+						<td>11</td>
+						<td>24.940</td>
+						<td>519</td>
+						<td>2,1%</td>
+					</tr>
+					<tr>
+						<td>Greece</td>
+						<td>1</td>
+						<td>9.718</td>
+						<td>216</td>
+						<td>2,2%</td>
+					</tr>
+					<tr>
+						<td>Baltic</td>
+						<td>5</td>
+						<td>15.937</td>
+						<td>238</td>
+						<td>1,1%</td>
+					</tr>
+					<tr>
+						<td>Scandinavian</td>
+						<td>3</td>
+						<td>8.331</td>
+						<td>93</td>
+						<td>1,2%</td>
+					</tr>
+					<tr>
+						<td>Sweden</td>
+						<td>1</td>
+						<td>23.766</td>
+						<td>653</td>
+						<td>2,7%</td>
+					</tr>
+					</tbody>
+				</table>
+			</Item>
+		<Item>
 
 
 <table className="metrics-table">
 	<thead>
 	<tr>
-		<th>Europe - Regions</th>
-		<th>Cases per 1M
-(Feb - May)</th>
-		<th>Cases per 1M
-(Jun - Aug)</th>
-		<th>Cases per 1M
-(Sep- Nov)</th>
-		<th>Deaths per 1M
-(Feb - May)</th>
-		<th>Deaths per 1M
-(Jun - Aug)</th>
-		<th>Deaths per 1M
-(Sep- Nov)</th>
+		<th className="wide-cell">Europe - Regions</th>
+		<th>Cases per 1M(Feb - May)</th>
+		<th>Cases per 1M(Jun - Aug)</th>
+		<th>Cases per 1M(Sep- Nov)</th>
+		<th>Deaths per 1M(Feb - May)</th>
+		<th>Deaths per 1M(Jun - Aug)</th>
+		<th>Deaths per 1M(Sep- Nov)</th>
 	</tr>
 	</thead>
 	<tbody>
@@ -993,51 +1020,40 @@ const GeneralFindings = () => (
 <Gap/>
 
 
-<h2
-      style={{
-        fontWeight: `normal`, color: "#222B3E"
-      }}
-    >GDP per Capita vs COVID-19 Test Policy</h2>
-
-<Grid>
-  <Item>
-
-<ChartFour/>
-<Gap />
-</Item>
-
-<TextBox>
-<p>The above graph demonstrates a positive correlation between GDP and COVID-19 testing policy. There are though some exceptions to this rule, with Belarus, Latvia, Lithuania performing significantly higher number of tests given their lower GDP, while the Netherlands did exactly the opposite. </p>
-</TextBox>
-
-</Grid>
-
-
-<Gap/>
-
-<h2
-      style={{
-        fontWeight: `normal`, color: "#222B3E"
-      }}
-    >GDP per Capita vs Deaths per 1M</h2>
-
-<Grid>
-  <Item>
-
-<ChartFive/>
-<Gap />
-</Item>
-
-<TextBox>
-<p>With respect to GDP per Capita, we note that there is a group of countries who perform well as far as deaths per million is concerned independent of the level of GDP per Capita.  (Balkan countries, ex-eastern block countries, Greece, Cyprus, Germany, Austria, Finland, Switzerland, Ireland and Norway).  While there is another group of countries of low and medium GDP per Capita who demonstrate much higher death per million index with outstanding the large western european countries (Spain, Italy, United Kingdom and France). It looks like the GDP per Capita is not a primary factor in the evolution of the pandemic in Europe.</p>
-</TextBox>
-
-</Grid>
-
-
-
 </div>
 </div>
+<WrapperCountriesGraphs>
+	<h2 style={{fontWeight: `normal`, color: "#222B3E"}}>GDP per Capita vs COVID-19 Test Policy</h2>
+	<Grid>
+  		<Item>
+			<ChartFour/>
+			<Gap />
+			</Item>
+			<TextBox>
+				<p>The above graph demonstrates a positive correlation between GDP and COVID-19 testing policy. There are though some exceptions to this rule, with Belarus, Latvia, Lithuania performing significantly higher number of tests given their lower GDP, while the Netherlands did exactly the opposite. </p>
+			</TextBox>
+	</Grid>
+	<Gap/>
+	<h2 style={{fontWeight: `normal`, color: "#222B3E"}}>GDP per Capita vs Deaths per 1M</h2>
+	<Grid>
+  		<Item>
+			
+			<img src="/graph-5.png" alt="GDP per Capita vs Deaths per 1M" />
+			<Gap />
+		</Item>
+		<TextBox>
+			<p>With respect to GDP per Capita, we note that there is a group of countries who perform well as far as deaths per million is concerned independent of the level of GDP per Capita.  (Balkan countries, ex-eastern block countries, Greece, Cyprus, Germany, Austria, Finland, Switzerland, Ireland and Norway).  While there is another group of countries of low and medium GDP per Capita who demonstrate much higher death per million index with outstanding the large western european countries (Spain, Italy, United Kingdom and France). It looks like the GDP per Capita is not a primary factor in the evolution of the pandemic in Europe.</p>
+		</TextBox>
+	</Grid>
+</WrapperCountriesGraphs>
+
+
+
+
+
+
+
+
 
 
 

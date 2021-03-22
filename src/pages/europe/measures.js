@@ -22,6 +22,12 @@ const Grid = styled.div`
   grid-gap: 2rem;
   align-self: center;
   justify-content: center;
+  width:100%;
+  max-width:1256px;
+  @media(max-width:1280px) {
+    max-width:1080px;
+    padding:0 32px;
+  }
 `;
 
 const GridB = styled.div`
@@ -31,6 +37,12 @@ const GridB = styled.div`
   grid-gap: 2rem;
   align-self: center;
   justify-content: center;
+  width:100%;
+  max-width:1256px;
+  @media(max-width:1280px) {
+    max-width:1080px;
+    padding:0 32px;
+  }
 `;
 
 const ItemSpan = styled.div`
@@ -41,15 +53,17 @@ width: 700px;
 	align-self: center;
 	justify-self: center;
 
-& h1 {color: white;
-margin:0;}
+& h1 {
+  color: white;
+  margin:0;
+}
 
 @media (max-width: 1280px) {
   width: 600px;
-  }
-  @media (max-width: 600px) {
-    width: 300px;
-    }
+}
+@media (max-width: 600px) {
+  width: 300px;
+}
 `
 
 const Item = styled.div`
@@ -57,16 +71,65 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-width: 600px;
-margin: 0 auto;
-
-
-@media (max-width: 1280px) {
-  width: 600px;
+width: 100%;
+max-width:1094px;
+@media(max-width:1280px) {
+  max-width:1080px;
+  svg {
+    max-width:100%;
+    height:auto;
   }
-  @media (max-width: 600px) {
-    width: 300px;
-    }
+}
+margin: 0 auto;
+.metrics-table-alt {
+  color: #606060;
+  font-family: "IBM Plex Sans - Light";
+  font-size: 19px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 22.74px;
+  text-align: left;
+  /* Text style for "0 - no res" */
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  /* Text style for ",  ,  ," */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  td {
+    padding:17px 26px;
+  }
+  ul {
+    margin:0;
+  }
+  
+}
+li {
+  color: #606060;
+  font-family: "IBM Plex Sans - Light";
+  font-size: 19px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 22.74px;
+  text-align: left;
+  /* Text style for "0 - no res" */
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  /* Text style for ",  ,  ," */
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  
+}
+
 `
 
 const TextBox = styled.div`

@@ -4,9 +4,6 @@ import styled from "styled-components"
 import Layout from "../../components/layout"
 import NavbarSubLinks from "../../components/in-depth/navbarsub"
 import ChartOne from "../../components/in-depth/europe/images/secondwave/a.svg"
-import ChartTwo from "../../components/in-depth/europe/images/secondwave/b.svg"
-
-
 
 const Grid = styled.div`
   display: grid;
@@ -15,6 +12,24 @@ const Grid = styled.div`
   grid-gap: 1rem;
   align-self: center;
   justify-content: center;
+  .large-item {
+	  max-width:1412px;
+	@media (max-width:1440px) {
+		max-width:1180px;
+	}
+	@media (max-width:1280px) {
+		max-width:100%;
+	}
+  }
+  color: #606060;
+  font-family: "IBM Plex Sans";
+  font-size: 24px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 44px;
+  text-align: left;
+  
+  
 `;
 
 const Item = styled.div`
@@ -22,39 +37,119 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-width: 1000px;
+width: 100%;
+max-width:1054px;
+min-width:800px;
 margin: 0 auto;
-
-@media (max-width: 1280px) {
-  width: 600px;
-  }
-  @media (max-width: 600px) {
-    width: 300px;
-    }
+@media (max-width:960px) {
+	min-width:640px;
+}
+@media (max-width:768px) {
+	min-width:80%;
+}
+.metrics-table {
+	@media(min-width:1440px) {
+		.wide-cell {
+			min-width:327px;
+		}
+		.wide-cellsec {
+			min-width:270px;
+		}
+		.mid-cell {
+			min-width:193px;
+		}
+	}
+	
+	
+	@media(max-width:1440px) {
+		padding:0 32px;
+		max-width:90%;
+	}
+	th {
+		color: #ffffff;
+		font-family: "IBM Plex Sans - Medium";
+		font-size: 19px;
+		font-weight: 500;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 22.74px;
+		text-align: center;
+		/* Text style for "Area" */
+		font-family: "IBM Plex Sans";
+		font-weight: 500;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		@media(max-width:768px) {
+			font-size: 16px;
+		}
+	}
+	td {
+		color: #606060;
+		font-family: "IBM Plex Sans - Light";
+		font-size: 19px;
+		font-weight: 300;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 22.74px;
+		text-align: center;
+		/* Text style for "Latin Amer" */
+		font-family: "IBM Plex Sans";
+		font-weight: 300;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		@media(max-width:768px) {
+			font-size: 16px;
+		}
+	}
+	
+}
 `
 
 const TextBox = styled.div`
 display: flex;
 flex-direction: column;
-width: 800px;
+width: 100%;
+max-width:1086px;
 margin: 0 auto;
+
+color: #606060;
+font-family: "IBM Plex Sans";
+font-size: 24px;
+font-style: normal;
+letter-spacing: normal;
+line-height: 44px;
+text-align: left;
+
+p {
+	margin-bottom:0;
+	line-height: 44px !important;
+}
+
+@media (max-width: 1440px) {
+	max-width: 960px;
+}
 
 @media (max-width: 1024px) {
   width: 80%
-
 }
 `
 
 const List = styled.ul`
-  list-style: none;
+  list-style-type: disc !important;
   overflow-x: auto;
   margin: 0 0 1rem;
   padding:0;
+  li {
+	list-style: disc inside none !important;
+	display: list-item !important;
+  }
 `;
 
 const ListItem = styled.li`
   display: block;
-
+  margin-bottom:0;
 `;
 
 const Gap = styled.div`
@@ -67,56 +162,35 @@ height: 2rem;
 
 
 const SecondWave= () => (
-    <Layout>
+<Layout>
 
-<div className="row">
-    <div className="col">
+	<div className="row">
+		<div className="col">
 
-    <NavbarSubLinks />
-      
-     <h1>2ND WAVE OF THE PANDEMIC (SEP TO NOV 2020)</h1>
+			<NavbarSubLinks />
+			<h1>2ND WAVE OF THE PANDEMIC (SEP TO NOV 2020)</h1>
+			<Gap/>
+			<TextBox>
+				<p>Some additional statistical data presented in the table below, will help us explain why the Balkan countries appear to have some of the highest deaths per million from COVID-19, while the Scandinavian countries appear to have some of the lowest deaths per million.</p>
+			</TextBox>
 
-     <Gap/>
-
-     {/* <Grid>
-  <Item>
-<ChartOne />
-<Gap />
-</Item>
-</Grid> */}
-  
-
-<TextBox>
-    <p>Some additional statistical data presented in the table below, will help us explain why the Balkan countries appear to have some of the highest deaths per million from COVID-19, while the Scandinavian countries appear to have some of the lowest deaths per million.
-</p>
-
-
-    </TextBox>
-
-    </div>
-    </div>
+		</div>
+	</div>
 
 
 	<div className="row" style={{
         backgroundColor: `rgba(234,234,234,1)`
       }}>
-    <div className="col">
-
-
-
-    <h2
-      style={{
-        fontWeight: `normal`
-      }}
-    >Phases by Regions</h2>
+    	<div className="col">
+			<h2 style={{fontWeight: `normal`}}>Phases by Regions</h2>
 
 <Grid>
   <Item>
   <table className="metrics-table">
 	<thead>
 	<tr>
-		<th>Sub - Regions</th>
-		<th>Regions</th>
+		<th className="wide-cell">Sub - Regions</th>
+		<th className="mid-cell">Regions</th>
 		<th>Average
 household size</th>
 		<th>1 member</th>
@@ -194,13 +268,13 @@ or over</th>
 <Gap />
 </Item>
 
-<Item>
+<Item className="large-item">
 
 <table className="metrics-table">
 	<thead>
 	<tr>
-		<th>Sub - Regions</th>
-		<th>Regions</th>
+		<th className="wide-cellsec">Sub - Regions</th>
+		<th className="mid-cell">Regions</th>
 		<th>GDP
 per Capita</th>
 		<th>Informal
@@ -304,14 +378,14 @@ deaths %</th>
 
 <TextBox>
 
-<p><strong>Some of factors that can explain the high death per million scores of the Balkan countries are the following:  </strong></p>
+	<p><strong>Some of factors that can explain the high death per million scores of the Balkan countries are the following:  </strong></p>
 
-<List>
-<ListItem>The high average household size (2,9), which may lead to domestic spread of the virus. 30% of households has 4+ members.</ListItem>
-<ListItem>The significantly lower GDP combined with a high Informal Employment percentage, factors that may indicate that people in these countries cannot respect the government lockdown rules, as they need to go out to seek a job, let alone that they cannot benefit of the state financial help, as the government has no way to identify them.</ListItem>
-<ListItem>Finally, the poor quality of the health system in the Balkan countries combined with high diabetes and cardiovascular disease prevalence, could also be responsible for the significantly higher deaths per million in this region.</ListItem>
-</List>
-<p><strong>Scandinavian countries</strong>, where deaths per million are much lower, can attribute this success to the low density of the population as well as the small household size (40% of the household are single households).  Also, even though they have the highest number of elderly care home facilities, they seem to have protected them much more successfully, with the exception of Sweden, who had a very different approach during the first wave of the pandemic.</p>
+	<List>
+		<ListItem>The high average household size (2,9), which may lead to domestic spread of the virus. 30% of households has 4+ members.</ListItem>
+		<ListItem>The significantly lower GDP combined with a high Informal Employment percentage, factors that may indicate that people in these countries cannot respect the government lockdown rules, as they need to go out to seek a job, let alone that they cannot benefit of the state financial help, as the government has no way to identify them.</ListItem>
+		<ListItem>Finally, the poor quality of the health system in the Balkan countries combined with high diabetes and cardiovascular disease prevalence, could also be responsible for the significantly higher deaths per million in this region.</ListItem>
+	</List>
+	<p><strong>Scandinavian countries</strong>, where deaths per million are much lower, can attribute this success to the low density of the population as well as the small household size (40% of the household are single households).  Also, even though they have the highest number of elderly care home facilities, they seem to have protected them much more successfully, with the exception of Sweden, who had a very different approach during the first wave of the pandemic.</p>
 
 </TextBox>
 
@@ -378,16 +452,15 @@ deaths %</th>
 
 
 <Grid>
-  <Item>
-<ChartTwo />
-<Gap />
-</Item>
+ 	<Item>
+	  <img src="/mobility-death.png" alt="Mobility vs Death per 1M November" />
+	<Gap />
+	</Item>
 </Grid>
     
 
-
 <TextBox>
-<p>The above graph presenting the relation between Death per 1M and Mobility, demonstrates a positive correlation that is: the higher the deaths per 1M Pop, the higher the mobility reduction. As strict measures such as lockdowns usually follow the pandemic rage. There is again a group of Central European and Balkan Countries which do not follow their trend, most probably for reason already discussed at the beginning of the section. </p>
+	<p>The above graph presenting the relation between Death per 1M and Mobility, demonstrates a positive correlation that is: the higher the deaths per 1M Pop, the higher the mobility reduction. As strict measures such as lockdowns usually follow the pandemic rage. There is again a group of Central European and Balkan Countries which do not follow their trend, most probably for reason already discussed at the beginning of the section. </p>
 </TextBox>
 
 

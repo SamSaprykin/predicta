@@ -3,7 +3,15 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 
-
+const Wrapper = styled.div`
+  width:100%;
+  @media(max-width:1480px) {
+    padding:0 32px;
+  }
+  @media(max-width:1280px) {
+    padding:64px 32px 0;
+  }
+`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -12,7 +20,15 @@ const Grid = styled.div`
   justify-content: center;
   background-color: #F6F6F6;
   border: 1px solid #A7A9AC;
-  
+  margin:0 auto;
+  @media(max-width:1920px) {
+    width:100%;
+    max-width:1440px;
+  }
+  @media(max-width:1280px) {
+    width:100%;
+    max-width:960px;
+  }
 
 `;
 
@@ -50,20 +66,12 @@ padding: .3rem;
 & h1 {color: white;
 margin:0;}
 
-@media (max-width: 1280px) {
-  width: 600px;
-  }
-  @media (max-width: 600px) {
-    width: 300px;
-    }
+
 `
 
 const Gap = styled.div`
-height: 10rem;
+height: 5rem;
 
-  @media (max-width: 1024px) {
-  
-  }
 `
 
 const Item = styled.div`
@@ -75,17 +83,14 @@ border-right: 1px solid #A7A9AC;
 text-align:center;
 
 
-@media (max-width: 1280px) {
-  width: 600px;
-  }
-  @media (max-width: 600px) {
-    width: 300px;
-    }
+@media(max-width:1480px) {
+  grid-column: span 2;
+}
 `
 
 const NavbarSubLinks = () => {
   return (
-    <>
+    <Wrapper>
 
 <Grid>
 
@@ -138,7 +143,7 @@ COVID-19</NavLink>
 
 
 
-    </>
+    </Wrapper>
   )
 }
 

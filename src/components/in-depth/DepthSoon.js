@@ -91,6 +91,7 @@ const TitleTable = styled.h2`
 
 const TableRow = styled.div`
     display:flex;
+    flex-wrap:wrap;
     justify-content:space-between;
     :last-child {
         border-right: 1px solid #a7a9ac;
@@ -119,6 +120,9 @@ const TableItem = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
+    @media (max-width:1280px) {
+        width:33%;
+    }
     @media (max-width:1440px) {
         font-size:18px;
     }

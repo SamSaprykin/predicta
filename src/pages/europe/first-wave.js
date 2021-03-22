@@ -21,6 +21,10 @@ const Grid = styled.div`
   grid-gap: 2rem;
   align-self: center;
   justify-content: center;
+  .age-table {
+	  width:100%;
+	  max-width:1346px;
+  }
 `;
 
 const Item = styled.div`
@@ -28,26 +32,99 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-width: 1000px;
+width: 100%;
+max-width:1094px;
 margin: 0 auto;
-
-@media (max-width: 1280px) {
-  width: 600px;
-  }
-  @media (max-width: 600px) {
-    width: 300px;
-    }
+min-width:927px;
+margin: 0 auto;
+@media (max-width: 1440px) {
+	min-width:960px;
+}
+@media (max-width:960px) {
+	min-width:640px;
+}
+@media (max-width:768px) {
+	max-width:100%;
+	svg {
+		max-width:90%;
+	}
+}
+.metrics-table {
+	.wide-cell {
+		min-width:206px;
+		@media(max-width:960px) {
+			min-width:auto;
+		}
+	}
+	.mid-cell {
+		min-width:160px;
+		@media(max-width:960px) {
+			min-width:auto;
+		}
+	}
+	@media(max-width:1440px) {
+		padding:0 32px;
+		max-width:90%;
+	}
+	th {
+		color: #ffffff;
+		font-family: "IBM Plex Sans - Medium";
+		font-size: 19px;
+		font-weight: 500;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 22.74px;
+		text-align: center;
+		/* Text style for "Area" */
+		font-family: "IBM Plex Sans";
+		font-weight: 500;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		@media(max-width:768px) {
+			font-size: 16px;
+		}
+	}
+	td {
+		color: #606060;
+		font-family: "IBM Plex Sans - Light";
+		font-size: 19px;
+		font-weight: 300;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 22.74px;
+		text-align: center;
+		/* Text style for "Latin Amer" */
+		font-family: "IBM Plex Sans";
+		font-weight: 300;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: normal;
+		@media(max-width:768px) {
+			font-size: 16px;
+		}
+	}
+	
+}
 `
 
 const TextBox = styled.div`
 display: flex;
 flex-direction: column;
-width: 800px;
+width: 100%;
+max-width:1085px;
 margin: 0 auto;
-
-@media (max-width: 1024px) {
-  width: 80%
-
+@media(max-width:768px) {
+	font-size: 16px;
+}
+@media (max-width: 1440px) {
+	max-width:960px;
+}
+@media (max-width: 1280px) {
+	padding:0 32px;
+}
+@media (max-width: 470px) {
+	padding:0 24px;
 }
 `
 
@@ -138,369 +215,351 @@ const FirstWave = () => (
 		<td>20</td>
 	</tr>
 	<tr id='highlighted-dark'>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>	
+		<td>Italy</td>
+		<td>31/1/2020</td>
+		<td>24/2/2020</td>
+		<td>24</td>
+		<td>8/3/2020</td>
+		<td>13</td>
 	</tr>
 	<tr id='highlighted-dark'>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr id='highlighted-dark'>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Russia</td>
+		<td>1/2/2020</td>
+		<td>18/3/2020</td>
+		<td>46</td>
+		<td>28/3/2020</td>
+		<td>10</td>
 		
 	</tr> 
 	<tr id='highlighted-dark'>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Spain</td>
+		<td>1/2/2020</td>
+		<td>2/3/2020</td>
+		<td>30</td>
+		<td>13/3/2020</td>
+		<td>11</td>
 		
 	</tr>
 	<tr id='highlighted-dark'>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>United Kingdom</td>
+		<td>1/2/2020</td>
+		<td>4/3/2020</td>
+		<td>32</td>
+		<td>24/3/2020</td>
+		<td>20</td>
 		
 	
 	</tr>
 	<tr id='highlighted-dark'>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Belgium</td>
+		<td>4/2/2020</td>
+		<td>5/3/2020</td>
+		<td>30</td>
+		<td>18/3/2020</td>
+		<td>13</td>
 		
 		
 	</tr>
 	<tr id='highlighted-dark'>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Sweden</td>
+		<td>5/2/2020</td>
+		<td>7/3/2020</td>
+		<td>31</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Austria</td>
+		<td>26/2/2020</td>
+		<td>9/3/2020</td>
+		<td>12</td>
+		<td>16/3/2020</td>
+		<td>7</td>
+		
+		
+	</tr>
+	<tr>
+		<td>Croatia</td>
+		<td>26/2/2020</td>
+		<td>20/3/2020</td>
+		<td>23</td>
+		<td>18/4/2020</td>
+		<td>29</td>
+		
+	</tr>
+	<tr>
+		<td>Switzerland</td>
+		<td>26/2/2020</td>
+		<td>7/3/2020</td>
+		<td>10</td>
+		<td>23/3/2020</td>
+		<td>16</td>
 	
 		
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Denmark</td>
+		<td>27/2/2020</td>
+		<td>10/3/2020</td>
+		<td>12</td>
+		<td>18/3/2020</td>
+		<td>8</td>
 	
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Greece</td>
+		<td>27/2/2020</td>
+		<td>13/3/2020</td>
+		<td>15</td>
+		<td>23/3/2020</td>
+		<td>10</td>
+		
+		
+	</tr>
+	<tr>
+		<td>North Macedonia</td>
+		<td>27/2/2020</td>
+		<td>23/3/2020</td>
+		<td>25</td>
+		<td>4/6/2020</td>
+		<td>73</td>
+		
+		
+	</tr>
+	<tr>
+		<td>Norway</td>
+		<td>27/2/2020</td>
+		<td>7/3/2020</td>
+		<td>9</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		
 		
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Romania</td>
+		<td>27/2/2020</td>
+		<td>15/3/2020</td>
+		<td>17</td>
+		<td>30/3/2020</td>
+		<td>15</td>
 		
 	
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Belarus</td>
+		<td>28/2/2020</td>
+		<td>31/3/2020</td>
+		<td>32</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		
 	</tr>
 	<tr>
+		<td>Estonia</td>
+		<td>28/2/2020</td>
+		<td>15/3/2020</td>
+		<td>16</td>
+		<td>30/3/2020</td>
+		<td>15</td>
+		
+		
+	</tr>
+	<tr>
+		<td>Lithuania</td>
+		<td>28/2/2020</td>
+		<td>22/3/2020</td>
+		<td>23</td>
+		<td>27/5/2020</td>
+		<td>66</td>
+		
+		
+	</tr>
+	<tr>
+		<td>Netherlands</td>
+		<td>28/2/2020</td>
+		<td>7/3/2020</td>
+		<td>8</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		
+	</tr>
+	<tr>
+		<td>Iceland</td>
+		<td>29/2/2020</td>
+		<td>13/3/2020</td>
+		<td>13</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		
 		
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Ireland</td>
+		<td>1/3/2020</td>
+		<td>15/3/2020</td>
+		<td>14</td>
+		<td>28/3/2020</td>
+		<td>13</td>
 		
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Luxembourg</td>
+		<td>1/3/2020</td>
+		<td>18/3/2020</td>
+		<td>17</td>
+		<td>16/3/2020</td>
+		<td>-2</td>
 	
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Czechia</td>
+		<td>2/3/2020</td>
+		<td>13/3/2020</td>
+		<td>11</td>
+		<td>16/3/2020</td>
+		<td>3</td>
+		
+	</tr>
+	<tr>
+		<td>Latvia</td>
+		<td>3/3/2020</td>
+		<td>21/3/2020</td>
+		<td>18</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Portugal</td>
+		<td>3/3/2020</td>
+		<td>14/3/2020</td>
+		<td>11</td>
+		<td>3/4/2020</td>
+		<td>20</td>
+		
+	</tr>
+	<tr>
+		<td>Poland</td>
+		<td>4/3/2020</td>
+		<td>15/3/2020</td>
+		<td>11</td>
+		<td>24/3/2020</td>
+		<td>9</td>
+		
+	</tr>
+	<tr>
+		<td>Ukraine</td>
+		<td>4/3/2020</td>
+		<td>26/3/2020</td>
+		<td>22</td>
+		<td>15/3/2020</td>
+		<td>-11</td>
+		
+	</tr>
+	<tr>
+		<td>Hungary</td>
+		<td>5/3/2020</td>
+		<td>21/3/2020</td>
+		<td>16</td>
+		<td>17/3/2020</td>
+		<td>-4</td>
+		
+	</tr>
+	<tr>
+		<td>Liechtenstein</td>
+		<td>5/3/2020</td>
+		<td>21/8/2020</td>
+		<td>169</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Slovenia</td>
+		<td>5/3/2020</td>
+		<td>14/3/2020</td>
+		<td>9</td>
+		<td>19/3/2020</td>
+		<td>5</td>
 	
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Bosnia and Herzegovina</td>
+		<td>6/3/2020</td>
+		<td>23/3/2020</td>
+		<td>17</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		
 		
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Malta</td>
+		<td>7/3/2020</td>
+		<td>23/3/2020</td>
+		<td>16</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		
 		
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Serbia</td>
+		<td>7/3/2020</td>
+		<td>20/3/2020</td>
+		<td>13</td>
+		<td>2/4/2020</td>
+		<td>13</td>
 		
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Slovakia</td>
+		<td>7/3/2020</td>
+		<td>19/3/2020</td>
+		<td>12</td>
+		<td>8/4/2020</td>
+		<td>20</td>
 		
 		
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Bulgaria</td>
+		<td>8/3/2020</td>
+		<td>20/3/2020</td>
+		<td>12</td>
+		<td>13/3/2020</td>
+		<td>-7</td>
+		
+	</tr>
+	<tr>
+		<td>Moldova</td>
+		<td>8/3/2020</td>
+		<td>24/3/2020</td>
+		<td>16</td>
+		<td>8/4/2020</td>
+		<td>15</td>
+		
+		
+	</tr>
+	<tr>
+		<td>Albania</td>
+		<td>9/3/2020</td>
+		<td>24/3/2020</td>
+		<td>15</td>
+		<td>2/4/2020</td>
+		<td>9</td>
 	
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Cyprus</td>
+		<td>10/3/2020</td>
+		<td>24/3/2020</td>
+		<td>14</td>
+		<td>24/3/2020</td>
+		<td>0</td>
 	
-		
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		
 		
 	</tr>
 	</tbody>
@@ -655,16 +714,10 @@ const FirstWave = () => (
 </div>
 
 
-<div className="row" style={{
-        backgroundColor: `#EAEAEA`
-      }}>
+<div className="row" style={{backgroundColor: `#EAEAEA`}}>
     <div className="col">
 
-	<h2
-      style={{
-        fontWeight: `normal`
-      }}
-    >COVID-19 Cases Age Distribution</h2>
+	<h2 style={{fontWeight: `normal`}}>COVID-19 Cases Age Distribution</h2>
  
      <Gap/>
 
@@ -740,7 +793,7 @@ const FirstWave = () => (
      <Gap/>
 
      <Grid>
-  <Item>
+  <Item className="age-table">
 
   <table className="metrics-table">
 	<thead>
@@ -768,232 +821,220 @@ Pop Age &gt; 70 years %</th>
 	</thead>
 	<tbody>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>United Kingdom</td>
+		<td>40,5</td>
+		<td>12,5</td>
+		<td>61,5</td>
+		<td>80,5</td>
+		<td>42,4</td>
+		<td>1,519</td>
+		<td>1,987</td>
+		<td>3,381</td>
+		<td>14,7%</td>
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Belgium</td>
+		<td>41,4</td>
+		<td>12,8</td>
+		<td>62,2</td>
+		<td>84,0</td>
+		<td>42,7</td>
+		<td>1,502</td>
+		<td>2,029</td>
+		<td>3,326</td>
+		<td>16,0%</td>
 	</tr>
 	<tr> 
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Netherlands</td>
+		<td>42,6</td>
+		<td>11,9</td>
+		<td>60,2</td>
+		<td>82,2</td>
+		<td>38,0</td>
+		<td>1,413</td>
+		<td>1,929</td>
+		<td>3,198</td>
+		<td>12,9%</td>
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>France</td>
+		<td>41,4</td>
+		<td>13,1</td>
+		<td>54,0</td>
+		<td>84,0</td>
+		<td>38,0</td>
+		<td>1,304</td>
+		<td>2,029</td>
+		<td>2,905</td>
+		<td>19,0%</td>
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Spain</td>
+		<td>42,7</td>
+		<td>13,8</td>
+		<td>60,4</td>
+		<td>82,6</td>
+		<td>37,1</td>
+		<td>1,414</td>
+		<td>1,934</td>
+		<td>2,689</td>
+		<td>11,3%</td>
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Italy</td>
+		<td>45,5</td>
+		<td>16,2</td>
+		<td>62,0</td>
+		<td>81,5</td>
+		<td>40,0</td>
+		<td>1,363</td>
+		<td>1,791</td>
+		<td>2,462</td>
+		<td>14,3%</td>
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Sweden</td>
+		<td>41,2</td>
+		<td>13,4</td>
+		<td>55,0</td>
+		<td>82,0</td>
+		<td>29,8</td>
+		<td>1,336</td>
+		<td>1,99</td>
+		<td>2,218</td>
+		<td>12,1%</td>
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Switzerland</td>
+		<td>42,4</td>
+		<td>12,6</td>
+		<td>51,9</td>
+		<td>85,4</td>
+		<td>22,8</td>
+		<td>1,224</td>
+		<td>2,014</td>
+		<td>1,807</td>
+		<td>5,4%</td>
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Portugal</td>
+		<td>42,2</td>
+		<td>14,9</td>
+		<td>49,1</td>
+		<td>84,9</td>
+		<td>21,9</td>
+		<td>1,164</td>
+		<td>2,012</td>
+		<td>1,467</td>
+		<td>4,3%</td>
 	</tr>
 	<tr>
+		<td>Estonia</td>
+		<td>42,7</td>
+		<td>13,5</td>
+		<td>52,1</td>
 		<td>&nbsp;</td>
+		<td>19,5</td>
+		<td>1,219</td>
 		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>1,442</td>
+		<td>3,4%</td>
 	</tr>
 	<tr>
+		<td>Denmark</td>
+		<td>42,2</td>
+		<td>12,3</td>
+		<td>47,9</td>
 		<td>&nbsp;</td>
+		<td>17,3</td>
+		<td>1,134</td>
 		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>1,404</td>
+		<td>4,9%</td>
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Greece</td>
+		<td>44,5</td>
+		<td>14,5</td>
+		<td>47,3</td>
+		<td>77,0</td>
+		<td>20,0</td>
+		<td>1,062</td>
+		<td>1,731</td>
+		<td>1,377</td>
+		<td>6,0%</td>
 	</tr>
 	<tr>
+		<td>Moldova</td>
+		<td>36,7</td>
+		<td>7,0</td>
+		<td>49,2</td>
 		<td>&nbsp;</td>
+		<td>8,8</td>
+		<td>1,341</td>
 		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>1,265</td>
+		<td>3,6%</td>
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>Germany</td>
+		<td>47,1</td>
+		<td>16,0</td>
+		<td>49,6</td>
+		<td>82,6</td>
+		<td>20,0</td>
+		<td>1,053</td>
+		<td>1,754;</td>
+		<td>1,253</td>
+		<td>4,6%</td>
 	</tr>
 	<tr>
+		<td>Norway</td>
+		<td>39,2</td>
+		<td>10,8</td>
+		<td>45,2</td>
 		<td>&nbsp;</td>
+		<td>12,9</td>
+		<td>1,153</td>
 		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>1,195</td>
+		<td>2,8%</td>
 	</tr>
 	<tr>
+		<td>Romania</td>
+		<td>41,1</td>
+		<td>11,7</td>
+		<td>48,4</td>
 		<td>&nbsp;</td>
+		<td>13,3</td>
+		<td>1,117</td>
 		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>1,136</td>
+		<td>6,5%</td>
 	</tr>
 	<tr>
+		<td>Finland</td>
+		<td>42,5</td>
+		<td>13,3</td>
+		<td>43,0</td>
 		<td>&nbsp;</td>
+		<td>12,1;</td>
+		<td>1,012</td>
 		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>0,909</td>
+		<td>4,6%</td>
 	</tr>
 	<tr>
+		<td>Latvia</td>
+		<td>43,6</td>
+		<td>14,1</td>
+		<td>43,4</td>
 		<td>&nbsp;</td>
+		<td>12,8</td>
+		<td>0,995</td>
 		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td>0,902</td>
+		<td>2,3%</td>
 	</tr>
 	</tbody>
 </table>
@@ -1053,8 +1094,8 @@ The above graph demonstrates the fact that many countries of the blue area of th
   <table className="metrics-table">
 	<thead>
 	<tr>
-		<th>Country</th>
-		<th>Report date</th>
+		<th className="wide-cell">Country</th>
+		<th className="mid-cell">Report date</th>
 		<th>Confirmed
 COVID-19
 Cases 
@@ -1110,8 +1151,8 @@ in the country</th>
 
 <tr>
 	<td>Norway</td>
-	<td>Unknown</td>
-		<td>25 May</td>
+	<td>25 May </td>
+		<td>Unknown</td>
 		<td>139</td>
 		<td>235</td>
 		<td>59%</td>
@@ -1126,6 +1167,15 @@ in the country</th>
 		<td>5,694</td>
 		<td>31%</td>
 		
+	</tr>
+	<tr>
+		<td>Spain </td>
+		<td>25 May</td>
+		<td>Unknown</td>
+		<td>19,066</td>
+		<td>28,752</td>
+		<td>66%</td>
+
 	</tr>
 	<tr>
 		<td>Sweden</td>
@@ -1143,16 +1193,6 @@ in the country</th>
 		<td>45,226</td>
 		<td>26%</td>
 	</tr>
-
-<tr>
-	<td>Spain </td>
-		<td>25 May</td>
-		<td>Unknown</td>
-		<td>19,066</td>
-		<td>28,752</td>
-		<td>66%</td>
-
-</tr>
 <tr>
 	<td>UK – Scotland</td>
 		<td>17 May</td>
