@@ -38,10 +38,16 @@ const Item = styled.div`
     th {
       text-align:left;
       padding-left:24px;
+      @media(max-width:768px) {
+        font-size: 12px;
+      }
     }
     td {
       text-align:left;
       padding-left:24px;
+      @media(max-width:768px) {
+        font-size: 12px;
+      }
     }
   }
 `;

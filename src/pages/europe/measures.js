@@ -100,8 +100,16 @@ margin: 0 auto;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+  th {
+    @media(max-width:768px) {
+			font-size: 12px;
+		}
+  }
   td {
     padding:17px 26px;
+    @media(max-width:768px) {
+			font-size: 12px;
+		}
   }
   ul {
     margin:0;

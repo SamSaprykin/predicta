@@ -66,6 +66,7 @@ margin: 0 auto;
 		padding:0 32px;
 		max-width:90%;
 	}
+
 	th {
 		color: #ffffff;
 		font-family: "IBM Plex Sans - Medium";
@@ -82,7 +83,7 @@ margin: 0 auto;
 		letter-spacing: normal;
 		line-height: normal;
 		@media(max-width:768px) {
-			font-size: 16px;
+			font-size: 12px;
 		}
 	}
 	td {
@@ -101,7 +102,7 @@ margin: 0 auto;
 		letter-spacing: normal;
 		line-height: normal;
 		@media(max-width:768px) {
-			font-size: 16px;
+			font-size: 12px;
 		}
 	}
 	

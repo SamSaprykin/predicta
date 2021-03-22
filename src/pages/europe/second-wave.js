@@ -81,7 +81,7 @@ margin: 0 auto;
 		letter-spacing: normal;
 		line-height: normal;
 		@media(max-width:768px) {
-			font-size: 16px;
+			font-size: 12px;
 		}
 	}
 	td {
@@ -100,7 +100,7 @@ margin: 0 auto;
 		letter-spacing: normal;
 		line-height: normal;
 		@media(max-width:768px) {
-			font-size: 16px;
+			font-size: 12px;
 		}
 	}
 	
