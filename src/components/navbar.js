@@ -5,24 +5,28 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import Icon from "../images/icon.svg"
 
+const NavContainer = styled.div`
+  width:100%;
+  background-color: #f8f8f8;
+`
 
 const Navigation = styled.nav`
   height: 4rem;
   display: flex;
   background-color: #f8f8f8;
   position: relative;
-  justify-content: center;
+  justify-content: space-between;
   text-transform: uppercase;
   margin: 0 auto;
   z-index: 2;
   align-self: center;
-  max-width: 100%;
-  @media (max-width: 960px) {
+  max-width: 1560px;
+  @media (max-width:1680px) {
     padding: 0 32px;
   }
+
   @media (max-width: 768px) {
     position: fixed;
-    padding: 0 32px;
     height: 8vh;
     top: 0;
     left: 0;
@@ -200,9 +204,11 @@ const Navbox = styled.div`
   display: flex;
   height: 100%;
   width:100%;
-  max-width:1200px;
+  max-width:1400px;
   align-items: center;
-
+  @media (max-width:1680px) {
+    max-width:1200px;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;
@@ -254,57 +260,60 @@ const Navbar = ({ menuLinks }) => {
   return (
 <>
     <header>
-    <Navigation>
-    <LogoWrap as={Link} to="/">
-      <Icon alt="Home Icon" />
-    </LogoWrap>
+      <NavContainer>
+      <Navigation>
+        <LogoWrap as={Link} to="/">
+          <Icon alt="Home Icon" />
+        </LogoWrap>
 
 
-      <Toggle
-        navbarOpen={navbarOpen}
-        onClick={() => setNavbarOpen(!navbarOpen)}
-      >
-        {navbarOpen ? <Hamburger open /> : <Hamburger />}
-      </Toggle>
-      {navbarOpen ? (
-        <Navbox>
-    <StyledUlB>
-      {menuLinks.map((link) => (
-        <StyledLi key={link.name}>
-          <StyledA
-            to = {link.link} 
-            aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
+          <Toggle
+            navbarOpen={navbarOpen}
+            onClick={() => setNavbarOpen(!navbarOpen)}
           >
-            {link.name}
-          </StyledA>
-        </StyledLi>
-      ))}
-    </StyledUlB>
-        </Navbox>
-      ) : (
-        <Navbox open>
-          <StyledUl>
-            {menuLinks.map((link) => (
-              <StyledLi key={link.name}>
-                <StyledA
-                  to = {link.link} activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}
-                  aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
-                >
-                  {link.name}
-                </StyledA>
-                {link.subMenu && link.subMenu.length > 0 ? (
-                  <DropDownBox aria-label="submenu">
-                    {link.subMenu.map((subLink) => (
-                      <DropDownA to = {subLink.link} key = {subLink.name}> {subLink.name} </DropDownA>
-                    ))}
-                  </DropDownBox>
-                ) : null}
-              </StyledLi>
-            ))}
-          </StyledUl>
-        </Navbox>
-      )}
-    </Navigation>
+            {navbarOpen ? <Hamburger open /> : <Hamburger />}
+          </Toggle>
+          {navbarOpen ? (
+            <Navbox>
+        <StyledUlB>
+          {menuLinks.map((link) => (
+            <StyledLi key={link.name}>
+              <StyledA
+                to = {link.link} 
+                aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
+              >
+                {link.name}
+              </StyledA>
+            </StyledLi>
+          ))}
+        </StyledUlB>
+            </Navbox>
+          ) : (
+            <Navbox open>
+              <StyledUl>
+                {menuLinks.map((link) => (
+                  <StyledLi key={link.name}>
+                    <StyledA
+                      to = {link.link} activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}
+                      aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
+                    >
+                      {link.name}
+                    </StyledA>
+                    {link.subMenu && link.subMenu.length > 0 ? (
+                      <DropDownBox aria-label="submenu">
+                        {link.subMenu.map((subLink) => (
+                          <DropDownA to = {subLink.link} key = {subLink.name}> {subLink.name} </DropDownA>
+                        ))}
+                      </DropDownBox>
+                    ) : null}
+                  </StyledLi>
+                ))}
+              </StyledUl>
+            </Navbox>
+          )}
+        </Navigation>
+      </NavContainer>
+  
     </header>
     </>
 

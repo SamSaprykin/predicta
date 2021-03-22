@@ -6,7 +6,10 @@ import Icon from "../images/icon.svg"
 import GlobalStyle from "./globalstyle.js"
 
 
-
+const NavContainer = styled.div`
+  width:100%;
+  background-color: #f8f8f8;
+`
 const Navigation = styled.nav`
   height: 4rem;
   display: flex;
@@ -18,8 +21,8 @@ const Navigation = styled.nav`
   padding: 0 3vw;
   z-index: 2;
   align-self: center;
-  max-width: 100%;
-
+  
+  max-width:1580px;
   @media (max-width: 1024px) {
     position: sticky;
     height: 8vh;
@@ -113,36 +116,40 @@ const Header = ({ menuLinks }) => (
   <>
   <header>
     <GlobalStyle />
-    <Navigation>
-    <LogoWrap as={Link} to="/">
-      <Icon alt="Home Icon" />
-    </LogoWrap>
+    <NavContainer>
+      <Navigation>
+      
+      
+      <LogoWrap as={Link} to="/">
+        <Icon alt="Home Icon" />
+      </LogoWrap>
 
-    
+      
 
-    <nav>
-      <StyledUl>
-        {menuLinks.map((link) => (
-          <StyledLi key={link.name}>
-            <StyledA
-              to = {link.link}
-              aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
-            >
-              {link.name}
-            </StyledA>
-            {link.subMenu && link.subMenu.length > 0 ? (
-              <DropDownBox aria-label="submenu">  
-                {link.subMenu.map((subLink) => (
-                  <DropDownA to = {subLink.link}>{subLink.name} </DropDownA>
-                ))}
-              </DropDownBox>
-            ) : null}
-          </StyledLi>
-        ))}
-      </StyledUl>
+      <nav>
+        <StyledUl>
+          {menuLinks.map((link) => (
+            <StyledLi key={link.name}>
+              <StyledA
+                to = {link.link}
+                aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
+              >
+                {link.name}
+              </StyledA>
+              {link.subMenu && link.subMenu.length > 0 ? (
+                <DropDownBox aria-label="submenu">  
+                  {link.subMenu.map((subLink) => (
+                    <DropDownA to = {subLink.link}>{subLink.name} </DropDownA>
+                  ))}
+                </DropDownBox>
+              ) : null}
+            </StyledLi>
+          ))}
+        </StyledUl>
 
-    </nav>  
-    </Navigation>
+      </nav>  
+      </Navigation>
+    </NavContainer>
   </header>
   </>
 )
