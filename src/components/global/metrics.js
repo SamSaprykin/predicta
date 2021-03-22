@@ -3,40 +3,78 @@ import styled from "styled-components"
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 1rem;
-  width: 1220px;
+  width: 100%;
+  max-width: 1640px;
   align-self: center;
   justify-content:center;
-
-
-
+  @media (max-width:1680px) {
+    padding: 0 32px;
+    max-width:1280px;
+  }
+  @media (max-width:1440px) {
+    padding: 0 32px;
+    max-width:1080px;
+    grid-template-columns: repeat(2, 1fr);
+  }
   @media (max-width: 1024px) {
+    width: 80%
+  }
+  @media (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
     width: 80%
- 
   }
-
+  th {
+		color: #ffffff;
+		font-family: "IBM Plex Sans - Medium";
+		font-size: 17px;
+		font-weight: 500;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 22.74px;
+		text-align: center;
+		/* Text style for "Area" */
+		font-family: "IBM Plex Sans";
+		font-weight: 500;
+		font-style: normal;
+		letter-spacing: normal;
+    line-height: normal;
+    height:55px;
+    @media (max-width: 1024px) {
+      font-size: 15px;
+    }
+		@media(max-width:768px) {
+			font-size: 12px;
+    }
+    
+	}
+	td {
+		color: #606060;
+		font-family: "IBM Plex Sans - Light";
+		font-size: 17px;
+		font-weight: 300;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 22.74px;
+		text-align: center;
+		/* Text style for "Latin Amer" */
+		font-family: "IBM Plex Sans";
+		font-weight: 300;
+		font-style: normal;
+		letter-spacing: normal;
+    line-height: normal;
+    @media (max-width: 1024px) {
+      font-size: 15px;
+    }
+		@media(max-width:768px) {
+			font-size: 12px;
+		}
+	}
 `;
 
-const GridLast = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 1rem;
-  width: 810px;
-  align-self: center;
-  justify-content:center;
 
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(1, 1fr);
-    width: 80%
- 
-  }
-
-`;
 
 
 const Item = styled.div`
@@ -701,12 +739,12 @@ const GlobalStats = () => (
 
 
 
-        </Grid>
+     
  
 
 
 
-        <GridLast>
+       
 
 
         <Item>
@@ -917,7 +955,7 @@ const GlobalStats = () => (
 </Item>
 
 
-</GridLast>
+</Grid>
 
       
     

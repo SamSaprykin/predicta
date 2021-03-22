@@ -36,7 +36,7 @@ const Index = () => (
         <Gender/>
       </div>
     </div>
-    <div className="row">
+    <div className="row" style={{backgroundColor: ` rgba(234,234,234,1)`}}>
       <div className="col">
         <MedianBox/>
        </div>

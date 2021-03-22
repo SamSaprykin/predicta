@@ -87,7 +87,7 @@ const Intro = () => (
     <TitleSection id ='approach'> Approach</TitleSection>
     <SubheadSection>The Project's Methodological Approach</SubheadSection>   
     <h4>A - Data Collection - Retrieval</h4>
-    <p>One challenging task was the detection of the right and most informational data sources, the type of data required and the extent of their availability for each country of the world. Data were collected from Official Health organizations like WHO - ECDC, UK - US Universities, Non-Profit Foundations like Wikipedia and Institutes like the World Bank. <br /> Data collected were grouped in 5 high-level categories:</p>
+    <p>One challenging task was the detection of the right and most informational data sources, the type of data required and the extent of their availability for each country of the world. Data were collected from Official Health organizations like WHO - ECDC, UK - US Universities, Non-Profit Foundations like Wikipedia and Institutes like the World Bank. <br/> <br /> Data collected were grouped in 5 high-level categories:</p>
     <List>
       <ListItem><strong>Virus:</strong> Patients and Deceased Counts, Demographics, Covid-19 Tests, Government Preventive Measures  and Citizens' Response.</ListItem>
       <ListItem><strong>Health System: </strong>Health centers' capabilities and vaccinations' policies.</ListItem>

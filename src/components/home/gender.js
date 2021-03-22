@@ -3,17 +3,20 @@ import styled from "styled-components"
 import CasesGender from "./images/gender-cases.svg";
 import DeathsGender from "./images/gender-deaths.svg";
 import MortalityGender from "./images/gender-mortality.svg";
-import Divider from "./images/divider.svg";
+
 
 
 const FlexCont = styled.div`
   display: flex;
-  max-width: 1200px;
+  max-width: 1280px;
+  width:100%;
   align-self: center;
-  @media (max-width: 1024px) {
-    grid-gap: 50px;
-    padding:0 32px;
+  justify-content:space-between;
+  align-items:center;
+  @media (max-width: 1440px) {
+    max-width: 1080px;
   }
+ 
   
   @media (max-width: 768px) {
     grid-gap: 0px;
@@ -34,6 +37,9 @@ const FlexCont = styled.div`
       font-size:20px;
     }
   }
+  .bit-item {
+    width:33%;
+  }
 `;
 
 const Item = styled.div`
@@ -42,17 +48,9 @@ const Item = styled.div`
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  width:33%;
+  width:20%;
   padding: .1rem;
-  & :nth-child(even) {
-    max-width: 200px;
-    @media (max-width: 1024px) {
-      max-width: 100px;
-    }
-    @media (max-width: 470px) {
-      max-width: 30px;
-    }
-  }
+
   @media (max-width: 1024px) {
     grid-gap: 50px;
     max-width: 200px;
@@ -69,6 +67,12 @@ color: #222B3E
 
 `
 
+const Divider = styled.div`
+  width:4px;
+  height:300px;
+  background-color:black;
+`
+
 const Gender = () => (
   <>
   <FlexCont>
@@ -78,19 +82,15 @@ const Gender = () => (
       </Title>
       <CasesGender/>
     </Item>
-    <Item>
-      <Divider/>
-    </Item>
+    <Divider />
     <Item> 
       <Title>
         <h2>Deaths by Gender</h2>
       </Title>
       <DeathsGender/>
     </Item>
-    <Item>
-      <Divider/>
-    </Item>
-    <Item> 
+    <Divider />
+    <Item className="bit-item"> 
       <Title>
         <h2>Mortality Rate by Gender</h2>
       </Title>

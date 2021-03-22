@@ -29,7 +29,7 @@ height: 220px;
 background-color: rgba(34, 43, 62, 1);
 border-radius: 100%;
 color: white;
-padding: 2rem;
+padding: 1.5rem;
 position: relative;
 
 h3  {

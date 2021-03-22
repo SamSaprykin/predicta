@@ -9,8 +9,11 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 width: 100%;
-max-width: 1200px;
+max-width: 1020px;
 margin: 0 auto;
+  @media (max-width: 1440px) {
+    max-width: 920px;
+  }
   @media (max-width: 1280px) {
     padding:0 32px;
   }
@@ -22,9 +25,6 @@ margin: 0 auto;
   }
   @media (max-width: 600px) {
     max-width: 500px;
-  }
-  @media (max-width: 470px) {
-    padding:0 24px;
   }
 `
 
