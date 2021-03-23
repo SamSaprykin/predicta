@@ -15,12 +15,13 @@ const GlobalStyle = createGlobalStyle`
 text-transform: uppercase; 
 margin-bottom: .6rem; 
 font-family: 'IBM Plex Sans',sans-serif; 
-font-size: 50px;
+font-size: 42px ;
 font-weight: 600;
 margin-bottom: 60px;
 };
 
 h2 {font-family: 'IBM Plex Sans',sans-serif; color: #222B3E; 
+
 };
 
 h3 {font-family: 'IBM Plex Sans',sans-serif; font-weight: normal; font-size: 35px;

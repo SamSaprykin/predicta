@@ -11,8 +11,8 @@ const IntroBox = styled.div`
   max-width: 800px;
   margin: 0 auto;
   h1 {
-    font-size:50px;
-    line-height:65px; 
+    font-size:42px;
+    line-height:1.1;
     margin-bottom:20px;
   }
   h2 {

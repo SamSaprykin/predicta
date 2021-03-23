@@ -57,8 +57,8 @@ const TitleSection = styled.h1`
   text-transform: uppercase;
   color: #222B3E;
   letter-spacing: 0px;
-  font-size:50px;
-  line-height:65px;
+  font-size:42px;
+  line-height:1.1;
   margin-bottom: 26px;
   @media (max-width: 1024px) {
     font-size:42px;
