@@ -5,7 +5,6 @@ import {Link} from "gatsby"
 
 
 const BackTop = ({goTo}) => {
-  console.log(goTo)
   return (
     goTo !== undefined ? (
         <Link to={`${goTo.pathname}#first-section`}>

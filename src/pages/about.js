@@ -11,7 +11,6 @@ import Issues from "../components/about/issues"
 //import SEO from "../components/seo"
 
 const Index = (props) => {
-  console.log(props)
   return (
     <Layout location={props.location}>
       <div className="row">

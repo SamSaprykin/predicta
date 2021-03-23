@@ -89,7 +89,7 @@ module.exports = {
     subMenu: [
       {
         name:'Risk Analysis',
-        link:'/advanced-statistics/risk-analysis',
+        link:'/advanced-statistics',
       },
       {
         name:'Statistical Tests',

@@ -10,7 +10,6 @@ const Wrapper = styled.div`
   
   @media(max-width:1440px) {
     padding:0 32px;
-    max-width:1280px;
   }
   @media(max-width:1280px) {
     padding:64px 32px 0;
@@ -27,7 +26,7 @@ const Grid = styled.div`
   margin:0 auto;
   @media(max-width:1920px) {
     width:100%;
-    max-width:1440px;
+    max-width:1280px;
   }
   
   @media(max-width:1280px) {

@@ -22,15 +22,13 @@ const Navigation = styled.nav`
   align-self: center;
   max-width: 1560px;
   @media (max-width:1920px) {
-    max-width: 1440px;
+    max-width: 1280px;
   }
   @media (max-width:1680px) {
     padding: 0 32px;
     justify-content:center;
   }
-  @media (max-width:1440px) {
-    max-width:1280px;
-  }
+ 
   @media (max-width: 768px) {
     position: fixed;
     height: 8vh;
@@ -101,7 +99,7 @@ const StyledA = styled(Link)`
     align-items: center;
     padding: 1rem 0rem;
     height: 100%;
-    width: 200px;
+    width: 190px;
     position:relative;
     z-index:10000;
     justify-content: center;
@@ -189,7 +187,7 @@ const DropDownA = styled(Link)`
     border-top: 3px solid white;
     padding: .5rem 0rem;
     font-size: 0.8rem;
-    width: 200px;
+    width: 190px;
     text-transform: capitalize;
     &:hover {background-color: #222A53};
     @media (max-width:1440px) {
