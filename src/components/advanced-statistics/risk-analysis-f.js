@@ -28,6 +28,8 @@ const Item = styled.div`
   width:100%;
   max-width:630px;
   margin:0 auto 64px;
+  
+  
 `
 
 const Gap = styled.div`
@@ -75,7 +77,7 @@ const Info = styled.p`
 `
 const RiskF = () => (
   <>
-    <TitleSection>Risk vs Gathering Size without Masks</TitleSection>
+    <TitleSection>Covid-19 vs Car Accident Odds of Death</TitleSection>
     <Grid>
       <Item>
         <ChartNine />

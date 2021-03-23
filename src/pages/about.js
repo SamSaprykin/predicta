@@ -10,34 +10,39 @@ import Issues from "../components/about/issues"
 //import Image from "../components/image"
 //import SEO from "../components/seo"
 
-const Index = () => (
-  <Layout>
-    <div className="row">
-      <div className="col">
-        <Intro />
+const Index = (props) => {
+  console.log(props)
+  return (
+    <Layout location={props.location}>
+      <div className="row">
+        <div className="col">
+          <Intro />
+        </div>
       </div>
-    </div>
-    <div className="row" style={{backgroundColor: ` rgba(234,234,234,1)`}}>
-      <div className="col">
-        <Insights />
+      <div className="row" style={{backgroundColor: ` rgba(234,234,234,1)`}}>
+        <div className="col">
+          <Insights />
+        </div>
       </div>
-    </div>
-    <div className="row">
-      <div className="col">
-        <Approach />
+      <div className="row">
+        <div className="col">
+          <Approach />
+        </div>
       </div>
-    </div>
-    <div className="row" style={{backgroundColor: `rgba(234,234,234,1)`}}>
-      <div className="col">
-        <Data />
+      <div className="row" style={{backgroundColor: `rgba(234,234,234,1)`}}>
+        <div className="col">
+          <Data />
+        </div>
       </div>
-    </div>
-    <div className="row">
-      <div className="col">
-        <Issues />
+      <div className="row">
+        <div className="col">
+          <Issues />
+        </div>
       </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+  
+}
+
 
 export default Index

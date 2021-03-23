@@ -93,7 +93,7 @@ const TitleSection = styled.h1`
 
 const GlobalStats = () => (
   <>
-  <TitleSection >Data Category & Relevant Sources</TitleSection>
+  <TitleSection id="data">Data Category & Relevant Sources</TitleSection>
   <TextBox>
     <p>To create the Master COVID-19 file 23 different data sources were finally used after extensive research and evaluation. These sources belong to Official Health organizations like WHO & ECDC, Universities from the UK & the US, Non-Profit Foundations like Wikipedia and Institutes like the World Bank. 213 countries' data were included in the Master File and a total of over 1000 KPIs were found or produced. </p>
   </TextBox>

@@ -9,9 +9,9 @@ import MedianBox from "../components/home/median-age-gender"
 import Ratios from "../components/home/ratios"
 //import SEO from "../components/seo"
 
-const Index = () => (
-  <Layout>
-    <div className="row">
+const Index = (props) => (
+  <Layout location={props.location}>
+    <div className="row" id="first-section">
       <div className="col">
         <Intro/>
       </div>

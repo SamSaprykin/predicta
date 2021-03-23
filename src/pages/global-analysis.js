@@ -14,9 +14,9 @@ import Demographics from "../components/global/demographics"
 //import Image from "../components/image"
 //import SEO from "../components/seo"
 
-const Global = () => (
-  <Layout>
-    <div className="row">
+const Global = (props) => (
+  <Layout location={props.location}>
+    <div className="row" id="first-section">
     <div className="col">
       <Intro/>
     </div>

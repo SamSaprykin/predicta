@@ -7,8 +7,10 @@ const Wrapper = styled.div`
   width:100%;
   max-width:1580px;
   margin:0 auto;
-  @media(max-width:1480px) {
+  
+  @media(max-width:1440px) {
     padding:0 32px;
+    max-width:1280px;
   }
   @media(max-width:1280px) {
     padding:64px 32px 0;
@@ -27,6 +29,7 @@ const Grid = styled.div`
     width:100%;
     max-width:1440px;
   }
+  
   @media(max-width:1280px) {
     width:100%;
     max-width:960px;
@@ -65,10 +68,28 @@ background-color: #222b3e;
 justify-content: center;
 padding: .3rem;
 
-& h1 {color: white;
-margin:0;}
 
-
+h1 {
+  font-size: 44px;
+  color: #ffffff;
+  letter-spacing: normal;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans";
+  font-size: 44px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom:0;
+  @media (max-width:1440px) {
+      font-size:38px;
+  }
+  @media (max-width:768px) {
+      font-size:32px;
+  }
+}
 `
 
 const Gap = styled.div`
@@ -85,7 +106,7 @@ border-right: 1px solid #A7A9AC;
 text-align:center;
 
 
-@media(max-width:1480px) {
+@media(max-width:1280px) {
   grid-column: span 2;
 }
 `

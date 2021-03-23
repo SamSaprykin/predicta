@@ -161,10 +161,10 @@ height: 2rem;
 `
 
 
-const SecondWave= () => (
-<Layout>
+const SecondWave= (props) => (
+<Layout location={props.location}>
 
-	<div className="row">
+	<div className="row" id="first-section">
 		<div className="col">
 
 			<NavbarSubLinks />

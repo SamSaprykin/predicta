@@ -4,56 +4,57 @@ import React from "react"
 import styled from "styled-components"
 //import NavFooter from "./navfooter"
 import FooterNav from "./footernav"
-
+import BackTop from "./backTop"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
 
 
 
-const Footer = () => (
+const Footer = ({location}) => {
+  return (
+    <FooterWrapper>
+      <FooterNav />
+      <FooterContent>
+        <CompanyInfo>
+          <p>18 Chatzikonstanti Str., 115 24 Athens, Greece  T. +30 210 69 31 040  F. +30210 69 31 079 &nbsp;  •  &nbsp;  E. info@predicta.gr &nbsp;   • &nbsp;  <a href="http://www.predicta.gr/" target="_blank" rel="noopener noreferrer">www.predicta.gr</a> </p>
+        </CompanyInfo>
+        <PrivacyPart>
+          <PrivacyItem to="/terms">
+            Terms &amp; Conditions
+          </PrivacyItem>
+          <PrivacyItem to="/privacy-policy">
+            Privacy policy
+          </PrivacyItem>
+          <SocialWrapper>
+            <a href="https://www.facebook.com/PREDICTA-SA-130541270342184/" target="_blank" rel="noopener noreferrer">
+              <img src="/fb-icon.png" alt="fb-icon" />
+            </a>
+            <a href="https://www.linkedin.com/company/predicta-s-a-former-spss-bi-greece-s-a" target="_blank" rel="noopener noreferrer">
+              <img src="/ln-icon.png" alt="linkedin-icon" />
+            </a>
+            <a href="https://twitter.com/predictasa" target="_blank" rel="noopener noreferrer">
+              <img src="/tw-icon.png" alt="twitter-icon" />
+            </a>
+          </SocialWrapper>
+        </PrivacyPart>
+      </FooterContent>
+      <FooterFooter>
+        <Link to="/">
+          <PredLogo src="/predicta-logo.svg" alt="logo-footer" />
+        </Link>
+        <RightsText>
+            All rights reserved
+        </RightsText>
+        <Link to="/">
+          <IbmLogo src="/ibm-logo.svg" alt="ibm-logo" />
+        </Link>
+      </FooterFooter>
+      <BackTop goTo={location} />
+    </FooterWrapper>
+  )
+}
 
-  <FooterWrapper>
-    <FooterNav />
-    <FooterContent>
-      <CompanyInfo>
-        <p>18 Chatzikonstanti Str., 115 24 Athens, Greece  T. +30 210 69 31 040  F. +30210 69 31 079 &nbsp;  •  &nbsp;  E. info@predicta.gr &nbsp;   • &nbsp;  <a href="http://www.predicta.gr/" target="_blank" rel="noopener noreferrer">www.predicta.gr</a> </p>
-      </CompanyInfo>
-      <PrivacyPart>
-        <PrivacyItem to="/terms">
-          Terms &amp; Conditions
-        </PrivacyItem>
-        <PrivacyItem to="/privacy-policy">
-          Privacy policy
-        </PrivacyItem>
-        <SocialWrapper>
-           <a href="https://www.facebook.com/PREDICTA-SA-130541270342184/" target="_blank" rel="noopener noreferrer">
-             <img src="/fb-icon.png" alt="fb-icon" />
-           </a>
-           <a href="https://www.linkedin.com/company/predicta-s-a-former-spss-bi-greece-s-a" target="_blank" rel="noopener noreferrer">
-             <img src="/ln-icon.png" alt="linkedin-icon" />
-           </a>
-           <a href="https://twitter.com/predictasa" target="_blank" rel="noopener noreferrer">
-             <img src="/tw-icon.png" alt="twitter-icon" />
-           </a>
-        </SocialWrapper>
-      </PrivacyPart>
-    </FooterContent>
-    <FooterFooter>
-      <Link to="/">
-        <PredLogo src="/predicta-logo.svg" alt="logo-footer" />
-      </Link>
-      <RightsText>
-          All rights reserved
-      </RightsText>
-      <Link to="/">
-        <IbmLogo src="/ibm-logo.svg" alt="ibm-logo" />
-      </Link>
-      
-    </FooterFooter>
-  </FooterWrapper>
-
-)
 
 const FooterContent = styled.div`
   display:flex;
@@ -97,6 +98,7 @@ const FooterWrapper = styled.div`
   width:100%;
   max-width: 1440px;
   padding: 0 32px;
+  position:relative;
   @media (max-width: 1440px) {
     max-width:1280px;
   }

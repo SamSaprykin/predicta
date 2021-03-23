@@ -153,9 +153,9 @@ const WrapperCountriesGraphs = styled.div`
 	flex-direction:column;
 	align-items:center;
 `
-const GeneralFindings = () => (
-  <Layout>
-    <div className="row">
+const GeneralFindings = (props) => (
+  <Layout location={props.location}>
+    <div className="row" id="first-section">
      <div className="col">
       <NavbarSubLinks />
 		<TextBox>

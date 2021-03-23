@@ -8,9 +8,9 @@ import Tech from "../components/technology/technology"
 import Partners from "../components/technology/partners"
 
 
-const Technology = () => (
-  <Layout>
-  <div className="row">
+const Technology = (props) => (
+  <Layout location={props.location}>
+  <div className="row" id="first-section">
     <div className="col">
         <Intro/>
     </div>

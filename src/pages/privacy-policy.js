@@ -23,10 +23,10 @@ height: 2rem;
   }
 `
 
-const Terms = () => (
-    <Layout>
+const Terms = (props) => (
+    <Layout location={props.location}>
 
-<div className="row">
+<div className="row" id="first-section">
     <div className="col">
       
      <h1>Privacy Policy</h1>

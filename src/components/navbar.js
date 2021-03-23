@@ -21,10 +21,16 @@ const Navigation = styled.nav`
   z-index: 2;
   align-self: center;
   max-width: 1560px;
+  @media (max-width:1920px) {
+    max-width: 1440px;
+  }
   @media (max-width:1680px) {
     padding: 0 32px;
+    justify-content:center;
   }
-
+  @media (max-width:1440px) {
+    max-width:1280px;
+  }
   @media (max-width: 768px) {
     position: fixed;
     height: 8vh;
@@ -104,6 +110,10 @@ const StyledA = styled(Link)`
       color: grey;
       background-color: transparent;
     }
+    @media (max-width:1440px) {
+      width: 170px;
+      font-size:.8rem;
+    }
     @media (max-width: 1280px) {
       padding: .5rem;
       width:150px;
@@ -138,7 +148,7 @@ const DropDownBox = styled.div`
     display: block;
 	  margin-top: -2.5rem;
 	  padding-top: 4rem;
-
+    
     &::after {
       position: absolute;
       content: " ";
@@ -149,6 +159,7 @@ const DropDownBox = styled.div`
       top: 0;
       margin-top: 53px;
       margin-left: -10px;
+      
       @media (max-width: 1080px) {
         margin-left:-16px;
       }
@@ -181,6 +192,9 @@ const DropDownA = styled(Link)`
     width: 200px;
     text-transform: capitalize;
     &:hover {background-color: #222A53};
+    @media (max-width:1440px) {
+      width: 170px;
+    }
     @media (max-width: 1080px) {
       padding: 0;
       width:140px;
@@ -209,6 +223,7 @@ const Navbox = styled.div`
   @media (max-width:1680px) {
     max-width:1200px;
   }
+  
   @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;

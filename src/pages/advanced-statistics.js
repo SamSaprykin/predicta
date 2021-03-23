@@ -11,9 +11,9 @@ import RiskE from "../components/advanced-statistics/risk-analysis-e"
 import RiskF from "../components/advanced-statistics/risk-analysis-f"
 //import SEO from "../components/seo"
 
-const Index = () => (
-  <Layout>
-    <div className="row">
+const Index = (props) => (
+  <Layout location={props.location}>
+    <div className="row"  id="first-section">
       <div className="col">
         <Intro />
       </div>

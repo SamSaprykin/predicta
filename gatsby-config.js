@@ -89,16 +89,16 @@ module.exports = {
     subMenu: [
       {
         name:'Risk Analysis',
-        link:'#riskanalysis',
+        link:'/advanced-statistics/risk-analysis',
       },
       {
         name:'Statistical Tests',
-        link:'#statisticaltests',
+        link:'/advanced-statistics/statistical-tests',
       }
     ,
     {
       name:'Modelling Scenarios',
-      link:'#modellingscenarios',
+      link:'/advanced-statistics/modelling-scenarios',
     },
     ]
  },
@@ -138,15 +138,7 @@ module.exports = {
         }
       }
     },
-
-    {
-      resolve: "gatsby-plugin-anchor-links",
-      options: {
-        offset: -100
-      }
-    },
-
-
+    `gatsby-plugin-anchor-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
