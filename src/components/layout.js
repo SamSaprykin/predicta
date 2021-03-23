@@ -56,13 +56,7 @@ background-color: rgba(96,96,96, 1);
 text-align: center;
 color:white;
 padding:3rem 3rem 5rem;
-@media (max-width: 1280px) {
-  padding:3rem 0;
-}
 
-@media (max-width: 1024px) {
-  padding: 20px 0;
-}
 `;
 
 const Layout = ({ children,location }) => (
@@ -102,7 +96,7 @@ const Layout = ({ children,location }) => (
         {children}
         </main>
         <FooterWrapper>
-        <Footer location={location} />
+          <Footer location={location} />
         </FooterWrapper>
         </Wrapper>
     

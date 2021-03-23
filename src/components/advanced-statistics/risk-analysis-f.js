@@ -2,6 +2,7 @@ import React from "react"
 //import { Link } from "gatsby"
 import styled from "styled-components"
 import ChartNine from "./images/chart-i.svg";
+import Label from "./images/label.svg"
 
 const Grid = styled.div`
   display: grid;
@@ -26,12 +27,46 @@ const Item = styled.div`
   align-items: center;
   flex-direction: column;
   width:100%;
-  max-width:630px;
+  max-width:927px;
+  @media (max-width: 1440px) {
+    max-width:800px;
+  }
   margin:0 auto 64px;
   
   
 `
 
+
+const ChartWrapper = styled.div`
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:100%;
+`
+
+const ChartContainer = styled.div`
+  margin-top:22px;
+  width:100%;
+  max-width:927px;
+  padding:61px 104px;
+  background-color:#f8f8f8;
+  border: 1px solid #A7A9AC;
+  svg {
+    width:719px;
+  }
+  @media (max-width: 1440px) {
+    padding:30px 52px;
+  }
+ 
+  @media (max-width: 768px) {
+    padding:24px;
+    svg {
+      width:100%;
+      max-width:600px;
+      height:auto;
+    }
+  }
+`
 const Gap = styled.div`
   height: 2rem;
 `
@@ -80,7 +115,12 @@ const RiskF = () => (
     <TitleSection>Covid-19 vs Car Accident Odds of Death</TitleSection>
     <Grid>
       <Item>
-        <ChartNine />
+          <ChartWrapper>
+            <Label />
+            <ChartContainer>
+              <ChartNine />
+            </ChartContainer>
+          </ChartWrapper>
         <Gap />
       </Item>
     </Grid>

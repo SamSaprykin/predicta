@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components"
 
 import ChartEight from "./images/chart-h.svg";
+import Label from "./images/label.svg"
 
 const Grid = styled.div`
   display: grid;
@@ -26,11 +27,43 @@ const Item = styled.div`
   align-items: center;
   flex-direction: column;
   width:100%;
-  max-width:630px;
+  max-width:927px;
+  @media (max-width: 1440px) {
+    max-width:800px;
+  }
   margin:0 auto 64px;
 `
 
+const ChartWrapper = styled.div`
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:100%;
+`
 
+const ChartContainer = styled.div`
+  margin-top:22px;
+  width:100%;
+  max-width:927px;
+  padding:61px 104px;
+  background-color:white;
+  border: 1px solid #A7A9AC;
+  svg {
+    width:719px;
+  }
+  @media (max-width: 1440px) {
+    padding:30px 52px;
+  }
+  @media (max-width: 768px) {
+    padding:24px;
+    svg {
+      width:100%;
+      max-width:600px;
+      height:auto;
+    }
+  }
+  
+`
 
 const TextBox = styled.div`
   max-width: 1080px;
@@ -62,7 +95,14 @@ const RiskE = () => (
       <Grid>
         <Item>
           <TitleSection>Risk by Venue vs Mask Usage</TitleSection>
-          <ChartEight />
+          <ChartWrapper>
+            <Label />
+            <ChartContainer>
+              <ChartEight />
+            </ChartContainer>
+          </ChartWrapper>
+         
+          
         </Item>
       </Grid>
       <TextBox>

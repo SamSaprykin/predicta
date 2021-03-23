@@ -34,6 +34,9 @@ const BackToTopWrapper = styled.div`
     svg {
       fill:red;
     }
+    
+    
+    
 `
 
 const IconUp = styled.img`

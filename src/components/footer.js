@@ -101,6 +101,7 @@ const FooterWrapper = styled.div`
   position:relative;
   @media (max-width: 1440px) {
     max-width:1280px;
+    padding: 0;
   }
   @media (max-width: 470px) {
     padding: 0 24px;
