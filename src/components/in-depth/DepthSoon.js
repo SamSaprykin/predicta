@@ -34,14 +34,9 @@ const DepthSoon = ({image, title, navItems}) => {
 
 const Wrapper = styled.div`
     width:100%;
-    max-width:1560px;
+    max-width:1280px;
     margin:85px auto 0;
-    @media(max-width:1920px) {
-        max-width:1440px;
-    }
-    @media (max-width:1680px) {
-        max-width:1280px;
-    }
+    
     @media (max-width:1440px) {
         max-width:1280px;
         padding:0 32px;

@@ -20,10 +20,8 @@ const Navigation = styled.nav`
   margin: 0 auto;
   z-index: 2;
   align-self: center;
-  max-width: 1560px;
-  @media (max-width:1920px) {
-    max-width: 1280px;
-  }
+  max-width: 1280px;
+  
   @media (max-width:1680px) {
     padding: 0 32px;
     justify-content:center;
