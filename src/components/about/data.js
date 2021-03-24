@@ -76,12 +76,12 @@ max-width: 1085px;
 }
 p {
   color: #606060;
-  font-size:25px;
-  line-height:30px;
+  font-size: 24px;
+  line-height: 44px;
   margin-bottom:0;
   @media (max-width:1440px) {
-    font-size:20px;
-    line-height:24px;
+    font-size: 19.20px;
+    line-height: 35.20px;
   }
 }
 @media (max-width: 1024px) {

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components"
 
-import ChartEight from "./images/chart-h.svg";
+import ChartEight from "./images/chart-risk.svg";
 import Label from "./images/label.svg"
 
 const Grid = styled.div`
@@ -39,6 +39,9 @@ const ChartWrapper = styled.div`
   flex-direction:column;
   align-items:center;
   width:100%;
+  .a {
+    stroke: none !important;
+  }
 `
 
 const ChartContainer = styled.div`
@@ -50,6 +53,7 @@ const ChartContainer = styled.div`
   border: 1px solid #A7A9AC;
   svg {
     width:719px;
+    
   }
   @media (max-width: 1440px) {
     padding:30px 52px;

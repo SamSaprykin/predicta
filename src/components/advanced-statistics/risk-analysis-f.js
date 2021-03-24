@@ -42,6 +42,9 @@ const ChartWrapper = styled.div`
   flex-direction:column;
   align-items:center;
   width:100%;
+  .a {
+    stroke: none !important;
+  }
 `
 
 const ChartContainer = styled.div`

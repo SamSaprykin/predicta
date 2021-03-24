@@ -16,7 +16,9 @@ const FlexCont = styled.div`
   @media (max-width: 1440px) {
     max-width: 1080px;
   }
- 
+  @media (max-width: 1024px) {
+    padding:0 32px;  
+  }
   
   @media (max-width: 768px) {
     grid-gap: 0px;
@@ -27,11 +29,10 @@ const FlexCont = styled.div`
   h2 {
     @media (max-width: 1024px) {
       margin-bottom: 2rem;
-      font-size: .6rem;   
+      font-size: 22px;   
     }
     @media (max-width: 768px) {
       margin-bottom: 0;
-      font-size:24px;
     }
     @media (max-width: 470px) {
       font-size:20px;
@@ -39,6 +40,10 @@ const FlexCont = styled.div`
   }
   .bit-item {
     width:33%;
+    margin-bottom:1rem;
+    h2 {
+      margin-bottom:2.5rem;
+    }
   }
 `;
 
@@ -48,11 +53,10 @@ const Item = styled.div`
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  width:20%;
+  width:23%;
   padding: .1rem;
 
   @media (max-width: 1024px) {
-    grid-gap: 50px;
     max-width: 200px;
   }
   @media (max-width: 768px) {
@@ -62,9 +66,10 @@ const Item = styled.div`
 
 const Title = styled.div`
 margin-bottom: 3rem;
-color: #222B3E
-
-
+color: #222B3E;
+@media (max-width: 1024px) {
+  margin-bottom: 1rem;
+}
 `
 
 const Divider = styled.div`

@@ -84,7 +84,7 @@ const SummerPeriod = (props) => (
 
 <TextBox>
     <p>As already mentioned during the summer months following the first wave of the pandemic, most European countries demonstrated a significant decrease in both COVID-19 diagnosed cases and deaths.
-The diagram below clearly presents this situation as most of the European countries fall in the quarter where cases per million and deaths per million are very low. On the other hand, we note that there is a group of countries that do not follow this pattern, mainly Balkan countries, which seem to enter the second wave towards the end of the summer.
+<br /> <br /> The diagram below clearly presents this situation as most of the European countries fall in the quarter where cases per million and deaths per million are very low. On the other hand, we note that there is a group of countries that do not follow this pattern, mainly Balkan countries, which seem to enter the second wave towards the end of the summer.
 </p>
 
 

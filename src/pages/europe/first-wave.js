@@ -123,10 +123,11 @@ margin: 0 auto;
   padding:0 32px;
 }
 p {
-	color: #222B3E;
+	letter-spacing: 0px;
+	color: #606060;
 	font-size:24px;
 	line-height:44px;
-	margin-bottom:0;
+	margin-bottom:24px;
 	@media (max-width:1440px) {
 	  font-size:19.20px;
 	  line-height:35.20px;
@@ -826,7 +827,7 @@ Pop Age &gt; 70 years %</th>
 	</tr>
 	</thead>
 	<tbody>
-	<tr>
+	<tr id='highlighted-dark'>
 		<td>United Kingdom</td>
 		<td>40,5</td>
 		<td>12,5</td>
@@ -838,7 +839,7 @@ Pop Age &gt; 70 years %</th>
 		<td>3,381</td>
 		<td>14,7%</td>
 	</tr>
-	<tr>
+	<tr id='highlighted-dark'>
 		<td>Belgium</td>
 		<td>41,4</td>
 		<td>12,8</td>
@@ -850,7 +851,7 @@ Pop Age &gt; 70 years %</th>
 		<td>3,326</td>
 		<td>16,0%</td>
 	</tr>
-	<tr> 
+	<tr id='highlighted-dark'> 
 		<td>Netherlands</td>
 		<td>42,6</td>
 		<td>11,9</td>
@@ -862,7 +863,7 @@ Pop Age &gt; 70 years %</th>
 		<td>3,198</td>
 		<td>12,9%</td>
 	</tr>
-	<tr>
+	<tr id='highlighted-dark'>
 		<td>France</td>
 		<td>41,4</td>
 		<td>13,1</td>
@@ -874,7 +875,7 @@ Pop Age &gt; 70 years %</th>
 		<td>2,905</td>
 		<td>19,0%</td>
 	</tr>
-	<tr>
+	<tr id='highlighted-dark'>
 		<td>Spain</td>
 		<td>42,7</td>
 		<td>13,8</td>
@@ -886,7 +887,7 @@ Pop Age &gt; 70 years %</th>
 		<td>2,689</td>
 		<td>11,3%</td>
 	</tr>
-	<tr>
+	<tr id='highlighted-dark'>
 		<td>Italy</td>
 		<td>45,5</td>
 		<td>16,2</td>
@@ -898,7 +899,7 @@ Pop Age &gt; 70 years %</th>
 		<td>2,462</td>
 		<td>14,3%</td>
 	</tr>
-	<tr>
+	<tr id='highlighted-dark'>
 		<td>Sweden</td>
 		<td>41,2</td>
 		<td>13,4</td>
@@ -958,7 +959,7 @@ Pop Age &gt; 70 years %</th>
 		<td>1,404</td>
 		<td>4,9%</td>
 	</tr>
-	<tr>
+	<tr id="highlighted">
 		<td>Greece</td>
 		<td>44,5</td>
 		<td>14,5</td>
@@ -982,7 +983,7 @@ Pop Age &gt; 70 years %</th>
 		<td>1,265</td>
 		<td>3,6%</td>
 	</tr>
-	<tr>
+	<tr id='highlighted-dark'>
 		<td>Germany</td>
 		<td>47,1</td>
 		<td>16,0</td>
@@ -1078,7 +1079,14 @@ Pop Age &gt; 70 years %</th>
 </Grid>
 
 <TextBox>
-The above graph demonstrates the fact that many countries of the blue area of the previous table have significantly higher number of elderly people care homes, which were severely hit by the COVID-19 pandemic as we will see in the table below.   Most of these countries did not protect early enough these elderly people care facilities, with the exception of Germany, which probably explains the demonstrated difference in the mortality rates.</TextBox>
+	<p>
+		The above graph demonstrates the fact that many countries of the blue area of the previous 
+		table have significantly higher number of elderly people care homes, which were severely 
+		hit by the COVID-19 pandemic as we will see in the table below.   Most of these countries 
+		did not protect early enough these elderly people care facilities, with the exception of Germany, 
+		which probably explains the demonstrated difference in the mortality rates.
+	</p>
+</TextBox>
 
       </div>
     </div>
@@ -1090,8 +1098,12 @@ The above graph demonstrates the fact that many countries of the blue area of th
 	<Gap />
 
     <TextBox>
-    In the table below we can see that almost 50% of the COVID 19 deaths happened in elderly people care facilities.</TextBox>
+		<p>
+			In the table below we can see that almost 50% of the COVID 19 deaths happened in elderly people 
+			care facilities.
 
+		</p>
+	</TextBox>
 <Grid>
   <Item>
   <Gap />
@@ -1217,8 +1229,15 @@ in the country</th>
 </Grid>
 
 <TextBox>
-The following graph demonstrates the average reduction of mobility during the first wave of the pandemic (March to May 2020) attributed to the lockdown policies applied by most of the European countries.  Most European countries reduced their population mobility over 50%. Italy, Spain, France, UK, Belgium demonstrate some of the highest reduction rates of mobility but failed to restrain the first wave of pandemic. We note that Germany had a reduction of population mobility of 40%.</TextBox>
+	<p>
+		The following graph demonstrates the average reduction of mobility during the first wave of the 
+		pandemic (March to May 2020) attributed to the lockdown policies applied by most of the European 
+		countries.  Most European countries reduced their population mobility over 50%. Italy, Spain, France, 
+		UK, Belgium demonstrate some of the highest reduction rates of mobility but failed to restrain 
+		the first wave of pandemic. We note that Germany had a reduction of population mobility of 40%.
 
+	</p>
+</TextBox>
       </div>
     </div>
 
