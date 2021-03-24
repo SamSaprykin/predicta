@@ -64,6 +64,7 @@ const NavbarLinks = () => {
   return (
     <>
       <Navigation>
+        <NavItem to="/">Home</NavItem>
         <NavItem to="/about">About</NavItem>
         <NavItem to="/global-analysis">Global Analysis</NavItem>
         <NavItem to="/in-depth">In Depth</NavItem>
