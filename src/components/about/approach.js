@@ -106,7 +106,7 @@ const Intro = () => (
     </List>
     <h5>B - Data Management</h5>
     <p>A Master COVID-19 dataset was constructed and an automated process was developed for its continuous enrichment. Data quality checks were performed before moving further with the analysis. A massive number of KPIs were calculated, enriching the original available information. E.g. KPIs were derived by groupings, ratios, rolling averages, percentages etc., on both day-to-day level and overall country level.</p>
-    <p>The Master File's information was standardized (by population or/and age), a statistical neccessity that leads to logical comparisons.</p>
+    <p>The Master File's information was standardized (by population or/and age), a statistical neccessity that leads to logical comparisons. Comparisons were possible obviously where reliable data were available.</p>
     <h5>C - Data Exploration</h5>
     <p>The virus evolution (number of cases and deaths) was examined with respect to two groups of factors, the first group containing socioeconomic and structural country characteristics such as GDP, quality of health system, climate, population density, etc., while the second group contains the goverment intervention measures such as lockdown policies and testing strategy. Factors found significant for the virus evolution were further examined via advanced statistical methods.  </p>
     <h5>D - Statistical Analysis</h5>
