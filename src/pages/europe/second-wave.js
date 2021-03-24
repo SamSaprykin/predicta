@@ -28,7 +28,9 @@ const Grid = styled.div`
   letter-spacing: normal;
   line-height: 44px;
   text-align: left;
-  
+  .item-image {
+	max-width:1000px;
+  } 
   
 `;
 
@@ -455,7 +457,7 @@ deaths %</th>
 
 
 <Grid>
- 	<Item>
+ 	<Item class="item-image">
 	  <img src="/mobility-death.png" alt="Mobility vs Death per 1M November" />
 	<Gap />
 	</Item>
