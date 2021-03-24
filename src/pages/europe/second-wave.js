@@ -110,40 +110,43 @@ margin: 0 auto;
 const TextBox = styled.div`
 display: flex;
 flex-direction: column;
-width: 100%;
-max-width:1086px;
-margin: 0 auto;
-
 color: #606060;
-font-family: "IBM Plex Sans";
-font-size: 24px;
-font-style: normal;
-letter-spacing: normal;
-line-height: 44px;
-text-align: left;
-
-p {
-	margin-bottom:0;
-	line-height: 44px !important;
+width:100%;
+max-width: 1085px;
+margin: 0 auto;
+@media (max-width:1440px) {
+  max-width:800px;
 }
-
-@media (max-width: 1440px) {
-	max-width: 960px;
-}
-
 @media (max-width: 1024px) {
-  width: 80%
+  width: 100%;
+  padding:0 32px;
+}
+p {
+	font-size:24px;
+	line-height:44px;
+	margin-bottom:0;
+	@media (max-width:1440px) {
+	  font-size:19.20px;
+	  line-height:35.20px;
+	}
 }
 `
 
 const List = styled.ul`
   list-style-type: disc !important;
   overflow-x: auto;
-  margin: 0 0 1rem;
+  margin: 0 0 2rem;
   padding:0;
   li {
 	list-style: disc inside none !important;
 	display: list-item !important;
+	font-size:24px;
+	line-height:44px;
+	margin-bottom:0;
+	@media (max-width:1440px) {
+	  font-size:19.20px;
+	  line-height:35.20px;
+	}
   }
 `;
 

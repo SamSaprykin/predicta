@@ -55,6 +55,7 @@ align-items: center;
 flex-direction: column;
 width: 100%;
 margin: 0 auto;
+
 img {
 	width:100%;
 	height:auto;
@@ -165,6 +166,9 @@ const WrapperCountriesGraphs = styled.div`
 	display:flex;
 	flex-direction:column;
 	align-items:center;
+	.item-image {
+		max-width:1040px;
+	}
 `
 const GeneralFindings = (props) => (
   <Layout location={props.location}>
@@ -1038,7 +1042,7 @@ const GeneralFindings = (props) => (
 <WrapperCountriesGraphs>
 	<h2 style={{fontWeight: `normal`, color: "#222B3E"}}>GDP per Capita vs COVID-19 Test Policy</h2>
 	<Grid>
-  		<Item>
+  		<Item className="item-image">
 			<ChartFour/>
 			<Gap />
 			</Item>
@@ -1049,7 +1053,7 @@ const GeneralFindings = (props) => (
 	<Gap/>
 	<h2 style={{fontWeight: `normal`, color: "#222B3E"}}>GDP per Capita vs Deaths per 1M</h2>
 	<Grid>
-  		<Item>
+  		<Item className="item-image">
 			
 			<img src="/graph-5.png" alt="GDP per Capita vs Deaths per 1M" />
 			<Gap />

@@ -113,19 +113,24 @@ const TextBox = styled.div`
 display: flex;
 flex-direction: column;
 width: 100%;
-max-width:1085px;
+max-width: 1085px;
 margin: 0 auto;
-@media(max-width:768px) {
-	font-size: 16px;
+@media (max-width:1440px) {
+  max-width:800px;
 }
-@media (max-width: 1440px) {
-	max-width:960px;
+@media (max-width: 1024px) {
+  width: 100%;
+  padding:0 32px;
 }
-@media (max-width: 1280px) {
-	padding:0 32px;
-}
-@media (max-width: 470px) {
-	padding:0 24px;
+p {
+	color: #222B3E;
+	font-size:24px;
+	line-height:44px;
+	margin-bottom:0;
+	@media (max-width:1440px) {
+	  font-size:19.20px;
+	  line-height:35.20px;
+	}
 }
 `
 
