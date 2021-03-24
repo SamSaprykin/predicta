@@ -167,7 +167,7 @@ const WrapperCountriesGraphs = styled.div`
 	flex-direction:column;
 	align-items:center;
 	.item-image {
-		max-width:1040px;
+		max-width:1000px;
 	}
 `
 const GeneralFindings = (props) => (
