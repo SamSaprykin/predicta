@@ -80,6 +80,17 @@ const TextBox = styled.div`
   @media (max-width: 1024px) {
     padding:0 32px;
   }
+  p {
+    letter-spacing: 0px;
+    color: #606060;
+    font-size:24px;
+    line-height:44px;
+    margin-bottom:80px;
+    @media (max-width:1440px) {
+      font-size:19.20px;
+      line-height:35.20px;
+    }
+  }
 `
 
 const TitleSection = styled.h2`
@@ -103,6 +114,15 @@ const Info = styled.p`
   margin: 0 auto;
   width:100%;
   max-width:1080px;
+  letter-spacing: 0px;
+  color: #606060;
+  font-size:24px;
+  line-height:44px;
+  margin-bottom:80px;
+  @media (max-width:1440px) {
+    font-size:19.20px;
+    line-height:35.20px;
+  }
   @media (max-width: 1440px) {
     max-width: 800px;
   }

@@ -114,12 +114,25 @@ const TextBox = styled.div`
 display: flex;
 flex-direction: column;
 width: 100%;
-max-width:1086px;
-margin: 0 auto;
-
-@media (max-width: 1024px) {
-  width: 80%
+margin:0 auto;
+max-width: 1085px;
+@media (max-width:1440px) {
+  max-width:800px;
 }
+@media (max-width: 1024px) {
+	width: 100%;
+	padding:0 32px;
+}
+p {
+
+  font-size: 24px;
+  line-height: 44px;
+  @media (max-width:1440px) {
+    font-size:19.20px;
+    line-height:35.20px;
+  }
+}
+
 `
 
 const Gap = styled.div`
@@ -159,9 +172,9 @@ const GeneralFindings = (props) => (
      <div className="col">
       <NavbarSubLinks />
 		<TextBox>
-		<h1>General Findings</h1>
-		<Gap/>
-		<p>COVID-19 PANDEMIC has hit Europe much more than other geographical regions of the world, having almost 30% of diagnosed cases and deaths. We can also see that there is a significant difference between Western and Eastern Europe, with Western Europe having almost 20% of cases and deaths.</p>
+			<h1>General Findings</h1>
+			<Gap/>
+			<p>COVID-19 PANDEMIC has hit Europe much more than other geographical regions of the world, having almost 30% of diagnosed cases and deaths. We can also see that there is a significant difference between Western and Eastern Europe, with Western Europe having almost 20% of cases and deaths.</p>
 
 		</TextBox>
 

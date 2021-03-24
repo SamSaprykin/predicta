@@ -9,17 +9,17 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-width: 800px;
-margin: 0 auto;
+width:100%;
 
 & svg {width: 50%}
-
-@media (max-width: 1024px) {
-  width: 80%
-
+margin: 0 auto;
+max-width: 1080px;
+@media (max-width: 1440px) {
+  max-width: 800px;
 }
-@media (max-width:768px) {
-  padding-top:60px;
+@media (max-width: 1024px) {
+  margin-top:90px;
+  padding:0 32px;
 }
 `
 

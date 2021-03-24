@@ -8,17 +8,32 @@ const IntroBox = styled.div`
   align-items: center;
   flex-direction: column;
   width:100%;
-  max-width: 800px;
+  max-width: 1085px;
   margin: 0 auto;
+  @media (max-width:1440px) {
+    max-width:800px;
+  }
   h1 {
     font-size:42px;
     line-height:1.1;
-    margin-bottom:20px;
+    margin-bottom:4px;
   }
   h2 {
     font-size:35px;
     line-height:42px;
     color: #606060;
+    font-weight:400;
+  }
+  p {
+    font-size:24px;
+    line-height:44px;
+    strong {
+      letter-spacing:-0.67px;
+    }
+    @media (max-width:1440px) {
+      font-size:19.20px;
+      line-height:35.20px;
+    }
   }
   @media (max-width: 1024px) {
     padding:0 32px;

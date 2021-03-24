@@ -40,11 +40,23 @@ const Gap = styled.div`
 const TextBox = styled.div`
   max-width: 1080px;
   margin: 0 auto;
+  tex-align:left;
   @media (max-width: 1440px) {
     max-width: 800px;
   }
   @media (max-width: 1024px) {
     padding:0 32px;
+  }
+  p {
+    letter-spacing: 0px;
+    color: #606060;
+    font-size:24px;
+    line-height:44px;
+    margin-bottom:60px;
+    @media (max-width:1440px) {
+      font-size:19.20px;
+      line-height:35.20px;
+    }
   }
 `
 

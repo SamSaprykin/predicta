@@ -34,10 +34,17 @@ const Item = styled.div`
   .small-metrics {
     max-width:600px;
   }
+  .metrics-table {
+    max-width:800px;
+  }
   table {
     th {
       text-align:left;
       padding-left:24px;
+      font-size:16px;
+      @media(max-width:1440px) {
+        font-size: 14px;
+      }
       @media(max-width:768px) {
         font-size: 12px;
       }
@@ -45,6 +52,10 @@ const Item = styled.div`
     td {
       text-align:left;
       padding-left:24px;
+      font-size:16px;
+      @media(max-width:1440px) {
+        font-size: 14px;
+      }
       @media(max-width:768px) {
         font-size: 12px;
       }
@@ -58,14 +69,20 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 width:100%;
-max-width:1280px;
 margin: 62px auto 48px;
-@media (max-width: 1440px) {
-  max-width: 1080px;
+max-width: 1085px;
+@media (max-width:1440px) {
+  max-width:800px;
 }
 p {
-  font-size:25px;
   color: #606060;
+  font-size:25px;
+  line-height:30px;
+  margin-bottom:0;
+  @media (max-width:1440px) {
+    font-size:20px;
+    line-height:24px;
+  }
 }
 @media (max-width: 1024px) {
   width:100%;

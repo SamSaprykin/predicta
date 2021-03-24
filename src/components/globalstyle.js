@@ -116,7 +116,28 @@ table.metrics-table-alt tbody{
   
 }
 
-
+th {
+  text-align:left;
+  padding-left:24px;
+  font-size:16px !important;
+  @media(max-width:1440px) {
+    font-size: 14px !important;
+  }
+  @media(max-width:768px) {
+    font-size: 12px !important;
+  }
+}
+td {
+  text-align:left;
+  padding-left:24px;
+  font-size:16px !important;
+  @media(max-width:1440px) {
+    font-size: 14px !important;
+  }
+  @media(max-width:768px) {
+    font-size: 12px !important;
+  }
+}
  
 `
 

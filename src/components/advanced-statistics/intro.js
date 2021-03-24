@@ -9,16 +9,20 @@ const IntroBox = styled.div`
   align-items: center;
   flex-direction: column;
   width:100%;
-  max-width: 1080px;
+  max-width: 1085px;
   margin: 0 auto;
+  @media (max-width:1440px) {
+    max-width:800px;
+  }
   p {
+    letter-spacing: 0px;
+    color: #606060;
     font-size:24px;
     line-height:44px;
-    color: #606060;
     margin-bottom:60px;
-    @media (max-width: 678px) {
-      font-size:20px;
-      line-height:1.5;
+    @media (max-width:1440px) {
+      font-size:19.20px;
+      line-height:35.20px;
     }
   }
   h2 {
@@ -38,16 +42,22 @@ const IntroBox = styled.div`
     color: #606060;
     margin-top:60px;
     font-family:IBM Plex Sans;
-    @media (max-width: 678px) {
-      font-size:20px;
-      line-height:1.5;
+    @media (max-width:1440px) {
+      font-size:19.20px;
+      line-height:35.20px;
     }
   }
   ul {
-    color: #606060;
     li {
-      @media (max-width: 678px) {
-        font-size:18px;
+      display: block;
+      letter-spacing: 0px;
+      color: #606060;
+      font-size:24px;
+      line-height:44px;
+      margin-bottom:0;
+      @media (max-width:1440px) {
+        font-size:19.20px;
+        line-height:35.20px;
       }
     }
   }

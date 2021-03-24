@@ -36,7 +36,7 @@ h3  {
   font-size: 2rem; 
   line-height: 1.2; 
   margin: 0; 
-  text-align: center
+  text-align: center;
 }
 p  {
   font-size: 1rem; 
@@ -122,12 +122,20 @@ h3 {
   line-height:42px;
   color:#606060;
   margin-bottom:3.5px;
+  @media (max-width:1440px) {
+    font-size:28.00px;
+    line-height:33.60px
+  }
 }
 p {
   font-size:35px;
   line-height:42px;
   letter-spacing: 0px;
   color: #222B3E;
+  @media (max-width:1440px) {
+    font-size:28.00px;
+    line-height:33.60px
+  }
 }
 @media (max-width: 1024px) {
   margin-top:0;
