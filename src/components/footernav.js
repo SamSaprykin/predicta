@@ -25,6 +25,9 @@ const Navigation = styled.nav`
     justify-content:flex-start;
     margin-bottom:50px;
   }
+  @media (max-width: 1080px) {
+    margin-bottom:24px;
+  }
 `
 
 
@@ -37,7 +40,7 @@ const NavItem = styled(Link)`
   position: relative;
   font-weight: 700;
   color: #fefefe;
-  font-size:25px;
+  font-size: 18px;
   line-height:30px;
   :hover {
     color: white;

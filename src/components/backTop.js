@@ -25,7 +25,7 @@ const BackToTopWrapper = styled.div`
     align-items:center;
     justify-content:center;
     position:absolute;
-    right:-40px;
+    right:-60px;
     bottom:-60px;
     border:1px solid #222b3e;
     background-color: #222b3e;
@@ -34,8 +34,18 @@ const BackToTopWrapper = styled.div`
       fill:red;
     }
     
-    
-    
+    @media(max-width:1300px) {
+      right:-20px;
+      bottom:-60px;
+    }
+    @media(max-width:1080px) {
+      right:20px;
+      bottom:60px;
+    }
+    @media(max-width:470px) {
+      right:12px;
+      bottom:32px;
+    }
 `
 
 const IconUp = styled.img`

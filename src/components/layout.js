@@ -56,7 +56,12 @@ background-color: rgba(96,96,96, 1);
 text-align: center;
 color:white;
 padding:3rem 3rem 5rem;
-
+@media (max-width:1280px) {
+  padding:2rem 1rem 5rem;
+}
+@media (max-width:1080px) {
+  padding:2rem 1rem 0;
+}
 `;
 
 const Layout = ({ children,location }) => (
