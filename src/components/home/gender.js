@@ -14,28 +14,25 @@ const FlexCont = styled.div`
   justify-content:space-between;
   align-items:center;
   @media (max-width: 1440px) {
-    max-width: 1080px;
+    max-width: 960px;
   }
   @media (max-width: 1024px) {
-    padding:0 32px;  
+    max-width:768px;  
   }
-  
   @media (max-width: 768px) {
+    padding:0 32px;
     grid-gap: 0px;
   }
-  @media (max-width: 470px) {
-    padding:0 24px;
-  }
   h2 {
+    font-size:26px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:22px;
+      line-height:32px;
+    }
     @media (max-width: 1024px) {
-      margin-bottom: 2rem;
-      font-size: 22px;   
-    }
-    @media (max-width: 768px) {
-      margin-bottom: 0;
-    }
-    @media (max-width: 470px) {
       font-size:20px;
+      line-height:30px;
     }
   }
   .bit-item {

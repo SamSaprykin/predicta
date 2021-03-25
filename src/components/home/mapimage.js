@@ -4,13 +4,9 @@ import { Link } from "gatsby"
 import Map from "./images/map.svg";
 
 const MapWrap = styled.div`
-
-
-& svg {width:1220px;}
-
-
-  @media (max-width: 1024px) {
- 
+  max-width:1280px;
+  @media(max-width:1440px) {
+    max-width:960px;
   }
 `
 

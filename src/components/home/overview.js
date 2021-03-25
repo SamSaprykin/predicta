@@ -7,15 +7,25 @@ const Grid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 55px;
-  width:auto;
   align-self:center;
-
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  align-self: center;
+  justify-self: center;
+  @media (max-width: 1440px) {
+    max-width:960px;
+  }
   @media (max-width: 1024px) {
-   grid-gap: 10px;
+    max-width: 768px; 
+    grid-gap: 10px;
+    padding:0 32px; 
   }
   @media (max-width: 600px) {
-    grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 470px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
@@ -31,44 +41,51 @@ border-radius: 100%;
 color: white;
 padding: 1.5rem;
 position: relative;
-
+align-self: center;
+justify-self: center;
 h3  {
-  font-size: 2rem; 
-  line-height: 1.2; 
-  margin: 0; 
+  font-size:26px;
+  line-height:38px;
+  margin-bottom:4px;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+}
+p {
+  font-size:18px;
+  line-height:38px;
   text-align: center;
+  margin-bottom:4px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
+  }
+  
+  
 }
-p  {
-  font-size: 1rem; 
-  line-height: 1.2; 
-  margin: 0; 
-  text-align: center
-}
+
 
 @media (max-width: 1024px) {
   padding: 1rem;
   width:180px;
   height:180px;
-  h3 {
-    font-size:24px;
-    line-height:1.1;
-  }
-  p {
-    font-size:18px;
-  }
+
 }
 
 @media (max-width: 768px) {
   padding: 1.5rem;
   width:160px;
   height:160px;
-  h3 {
-    font-size:24px;
-    line-height:1.1;
-  }
-  p {
-    font-size:16px;
-  }
+
 }
 
 `;
@@ -80,12 +97,24 @@ const GridB = styled.div`
   grid-gap: 40px;
   width:auto;
   align-self:center;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  @media (max-width: 1440px) {
+    max-width:960px;
+  }
   @media (max-width: 1024px) {
+    max-width: 768px; 
     grid-gap: 20px;
+  }
+  @media (max-width: 1024px) {
+    padding:0 32px; 
   }
   @media (max-width: 470px) {
     grid-template-columns: repeat(1, 1fr);
   }
+  
+  
 `;
 
 const GridC = styled.div`
@@ -93,15 +122,22 @@ const GridC = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 55px;
-  width: auto;
+  width: 100%;
+  max-width:960px;
   align-self: center;
   margin-top: 55px;
-
+  @media (max-width: 1440px) {
+    max-width:720px;
+  }
   @media (max-width: 1024px) {
+    max-width: 576px; 
+    grid-gap: 10px;
+    padding:0 32px; 
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;  
-    margin-top:20px;  
+    margin-top:20px;
   }
+
   @media (max-width: 470px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -118,51 +154,54 @@ position: relative;
 text-align:center;
 margin-top: 20px;
 h3 {
-  font-size:35px;
-  line-height:42px;
   color:#606060;
   margin-bottom:3.5px;
-  @media (max-width:1440px) {
-    font-size:28.00px;
-    line-height:33.60px
+  font-size:26px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
   }
 }
 p {
-  font-size:35px;
-  line-height:42px;
+ 
   letter-spacing: 0px;
   color: #222B3E;
-  @media (max-width:1440px) {
-    font-size:28.00px;
-    line-height:33.60px
+  font-size:26px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
   }
 }
-@media (max-width: 1024px) {
-  margin-top:0;
-  h3 {
-    font-size:28px;
-    line-height:1.1;
-  }
-  p {
-    font-size:28px;
-    line-height:1.1;
-    margin-bottom:8px;
-  }
-}
+
 
 `;
 
 const TitleSection = styled.h2`
   text-transform: capitalize;
   color: #222B3E;
-  letter-spacing: 0px;
-  font-size:42px;
-  line-height:1.1;
+  font-size:32px;
   margin-bottom:26px;
-  @media (max-width: 1024px) {
-    font-size:42px;
-    line-height:48px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
   }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+  
+  
 `
 
 const Gap = styled.div`
