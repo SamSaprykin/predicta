@@ -42,22 +42,22 @@ const Item = styled.div`
     th {
       text-align:left;
       padding-left:24px;
-      font-size:16px;
+      font-size:14px;
       @media(max-width:1440px) {
-        font-size: 14px;
+        font-size: 12px;
       }
-      @media(max-width:768px) {
+      @media(max-width:1024px) {
         font-size: 12px;
       }
     }
     td {
       text-align:left;
       padding-left:24px;
-      font-size:16px;
+      font-size:14px;
       @media(max-width:1440px) {
-        font-size: 14px;
+        font-size: 12px;
       }
-      @media(max-width:768px) {
+      @media(max-width:1024px) {
         font-size: 12px;
       }
     }
