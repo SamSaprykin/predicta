@@ -139,7 +139,7 @@ const GridC = styled.div`
   }
 
   @media (max-width: 470px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 

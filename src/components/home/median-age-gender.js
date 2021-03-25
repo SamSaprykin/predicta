@@ -35,6 +35,9 @@ const TitleSection = styled.h2`
     font-size:26px;
     line-height:30px;
   }
+  @media (max-width:768px) {
+    padding:0 32px;
+  }
 `
 
 const Gap = styled.div`

@@ -18,6 +18,7 @@ const IntroBox = styled.div`
   }
   @media (max-width:768px) {
     padding:0 32px;
+    margin-top:64px;
   }
   h1 {
     
