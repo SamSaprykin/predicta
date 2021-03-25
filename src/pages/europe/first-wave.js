@@ -25,6 +25,19 @@ const Grid = styled.div`
 	  width:100%;
 	  max-width:1346px;
   }
+  width:100%;
+  .big-item {
+	max-width:1280px !important;
+	@media(max-width:1440px) {
+		max-width:960px !important;
+	}
+	@media(max-width:1024px) {
+		max-width:768px !important;
+	}
+	@media(max-width:768px) {
+		padding:0 32px;
+	}
+  }
 `;
 
 const Item = styled.div`
@@ -32,22 +45,20 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-width: 100%;
-max-width:1094px;
+width:100%;
+max-width:960px;
 margin: 0 auto;
-min-width:927px;
-margin: 0 auto;
-@media (max-width: 1440px) {
-	min-width:960px;
+svg {
+	width:100%;
 }
-@media (max-width:960px) {
-	min-width:640px;
+@media(max-width:1440px) {
+	max-width:720px;
 }
-@media (max-width:768px) {
-	max-width:100%;
-	svg {
-		max-width:90%;
-	}
+@media(max-width:1024px) {
+	max-width:768px;
+}
+@media(max-width:768px) {
+    padding:0 32px;
 }
 .metrics-table {
 	.wide-cell {
@@ -112,26 +123,26 @@ margin: 0 auto;
 const TextBox = styled.div`
 display: flex;
 flex-direction: column;
-width: 100%;
-max-width: 1085px;
+width:100%;
+max-width: 800px;
 margin: 0 auto;
 @media (max-width:1440px) {
-  max-width:800px;
+  max-width:600px;
 }
 @media (max-width: 1024px) {
-  width: 100%;
   padding:0 32px;
 }
 p {
-	letter-spacing: 0px;
-	color: #606060;
-	font-size:24px;
-	line-height:44px;
-	margin-bottom:24px;
-	@media (max-width:1440px) {
-	  font-size:19.20px;
-	  line-height:35.20px;
-	}
+  font-size:18px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
+  }
 }
 `
 
@@ -143,6 +154,37 @@ height: 2rem;
   }
 `
 
+const TitleSection = styled.h1`
+  text-transform: uppercase;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:0;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+`
+const SubTitle = styled.h2`
+    color: #222B3E;
+    font-weight:400;
+    font-size:26px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:24px;
+      line-height:32px;
+    }
+    @media (max-width: 1024px) {
+      font-size:22px;
+      line-height:30px;
+    }
+`
+
 
 const FirstWave = (props) => (
     <Layout location={props.location}>
@@ -152,7 +194,7 @@ const FirstWave = (props) => (
 
     <NavbarSubLinks />
       
-     <h1>1ST WAVE OF THE PANDEMIC (FEB TO MAY 2020)</h1>
+     <TitleSection>1ST WAVE OF THE PANDEMIC (FEB TO MAY 2020)</TitleSection>
 
      <Gap/>
 
@@ -584,11 +626,11 @@ const FirstWave = (props) => (
 <div className="row">
     <div className="col">
 
-    <h2
+    <SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Prosperity Index 2019</h2>
+    >Prosperity Index 2019</SubTitle>
 
 <Grid>
 
@@ -611,11 +653,11 @@ const FirstWave = (props) => (
         backgroundColor: `#EAEAEA`}}>
     <div className="col">
 
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Airport Passengers 2019 (Million) </h2>
+    >Airport Passengers 2019 (Million) </SubTitle>
 
 <Grid>
 
@@ -641,11 +683,11 @@ const FirstWave = (props) => (
 
 
 
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Population Density </h2>
+    >Population Density </SubTitle>
 
 <Grid>
 
@@ -673,11 +715,11 @@ const FirstWave = (props) => (
         backgroundColor: `#EAEAEA`}}>
     <div className="col">
 
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Health System Index 2019</h2>
+    >Health System Index 2019</SubTitle>
 
 <Grid>
 
@@ -697,11 +739,11 @@ const FirstWave = (props) => (
 <div className="row">
     <div className="col">
 
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >ICU Beds per 100.000 Pop</h2>
+    >ICU Beds per 100.000 Pop</SubTitle>
 
 <Grid>
 
@@ -724,7 +766,7 @@ const FirstWave = (props) => (
 <div className="row" style={{backgroundColor: `#EAEAEA`}}>
     <div className="col">
 
-	<h2 style={{fontWeight: `normal`}}>COVID-19 Cases Age Distribution</h2>
+	<SubTitle style={{fontWeight: `normal`}}>COVID-19 Cases Age Distribution</SubTitle>
  
      <Gap/>
 
@@ -791,11 +833,11 @@ const FirstWave = (props) => (
 <div className="row">
     <div className="col">
 
-	 <h2
+	 <SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Countries – Age Statistics</h2>
+    >Countries – Age Statistics</SubTitle>
 
      <Gap/>
 
@@ -1065,11 +1107,11 @@ Pop Age &gt; 70 years %</th>
 
 
 
-    <h2
+    <SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Care Home Bed per 1000 Pop</h2>
+    >Care Home Bed per 1000 Pop</SubTitle>
 
 <Grid>
   <Item>
@@ -1249,11 +1291,11 @@ in the country</th>
 
 
 
-    <h2
+    <SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Avg Mobility Mar-May</h2>
+    >Avg Mobility Mar-May</SubTitle>
 
 <Grid>
   <Item>
@@ -1273,14 +1315,14 @@ in the country</th>
 
 
 
-    <h2
+    <SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Cases per 1M vs Deaths per 1M (Feb-May)</h2>
+    >Cases per 1M vs Deaths per 1M (Feb-May)</SubTitle>
 
 <Grid>
-  <Item>
+  <Item className="big-item">
 <ChartNine />
 <Gap />
 </Item>

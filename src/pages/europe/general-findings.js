@@ -18,9 +18,16 @@ const Grid = styled.div`
   align-self: center;
   justify-content: center;
   width:100%;
-  max-width:1256px;
+  max-width:960px;
   @media(max-width:1440px) {
-	  max-width:1080px;
+    max-width:720px;
+  }
+  @media(max-width:1024px) {
+    max-width:768px;
+    
+  }
+  @media(max-width:768px) {
+    padding:0 32px;
   }
   &h2 {font-size: 35px}
   .wide-cell {
@@ -29,6 +36,7 @@ const Grid = styled.div`
 		min-width:auto;
 	  }
   }
+  
 `;
 
 const GridB = styled.div`
@@ -47,6 +55,26 @@ const GridB = styled.div`
 	grid-template-columns: repeat(1, 1fr);
   }
 `;
+
+const GridC = styled.div`
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 2rem;
+	align-self: center;
+	justify-content: center;
+	width:100%;
+	max-width:1280px !important;
+	@media(max-width:1440px) {
+		max-width:960px !important;
+	}
+	@media(max-width:1024px) {
+		max-width:768px !important;
+	}
+	@media(max-width:768px) {
+		padding:0 32px;
+	}
+`
 
 const Item = styled.div`
 display: flex;
@@ -114,26 +142,27 @@ img {
 const TextBox = styled.div`
 display: flex;
 flex-direction: column;
-width: 100%;
-margin:0 auto;
-max-width: 1085px;
+width:100%;
+max-width: 800px;
+margin: 0 auto;
 @media (max-width:1440px) {
-  max-width:800px;
+  max-width:600px;
 }
 @media (max-width: 1024px) {
-	width: 100%;
-	padding:0 32px;
+  padding:0 32px;
 }
 p {
-
-  font-size: 24px;
-  line-height: 44px;
-  @media (max-width:1440px) {
-    font-size:19.20px;
-    line-height:35.20px;
+  font-size:18px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
   }
 }
-
 `
 
 const Gap = styled.div`
@@ -170,13 +199,45 @@ const WrapperCountriesGraphs = styled.div`
 		max-width:1000px;
 	}
 `
+
+const TitleSection = styled.h1`
+  text-transform: uppercase;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:24px;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+`
+const SubTitle = styled.h2`
+    color: #222B3E;
+    font-weight:400;
+    font-size:26px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:24px;
+      line-height:32px;
+    }
+    @media (max-width: 1024px) {
+      font-size:22px;
+      line-height:30px;
+    }
+`
+
 const GeneralFindings = (props) => (
   <Layout location={props.location}>
     <div className="row" id="first-section">
      <div className="col">
       <NavbarSubLinks />
 		<TextBox>
-			<h1>General Findings</h1>
+			<TitleSection>General Findings</TitleSection>
 			<Gap/>
 			<p>COVID-19 PANDEMIC has hit Europe much more than other geographical regions of the world, having almost 30% of diagnosed cases and deaths. We can also see that there is a significant difference between Western and Eastern Europe, with Western Europe having almost 20% of cases and deaths.</p>
 
@@ -300,7 +361,7 @@ const GeneralFindings = (props) => (
 
 <div className="row" style={{backgroundColor: `rgba(234,234,234,1)`}}>
     <div className="col">
-		<h2 style={{fontWeight: `normal`, color: "#222B3E"}}>Europe - Deaths per 1M</h2>
+		<SubTitle style={{fontWeight: `normal`, color: "#222B3E"}}>Europe - Deaths per 1M</SubTitle>
 		<Grid>
   			<Item>
 				<ChartOne />
@@ -333,7 +394,7 @@ const GeneralFindings = (props) => (
 </div>
 <div className="row" style={{backgroundColor: `rgba(234,234,234,1)`}}>
 	<div className="col">
-		<h2 style={{fontWeight: `normal`, color: "#222B3E"}}>Phases by Regions</h2>
+		<SubTitle style={{fontWeight: `normal`, color: "#222B3E"}}>Phases by Regions</SubTitle>
 			<Grid>
 				<Item>
 				<table className="metrics-table">
@@ -561,11 +622,11 @@ const GeneralFindings = (props) => (
 	<div className="row">
     <div className="col">
 
-	<h2
+	<SubTitle
       style={{
         fontWeight: `normal`, color: "#222B3E"
       }}
-    >Ranking - Cases & Deaths per 1M (Feb-Nov 2020)</h2>
+    >Ranking - Cases & Deaths per 1M (Feb-Nov 2020)</SubTitle>
 
 <GridB>
 
@@ -1040,20 +1101,20 @@ const GeneralFindings = (props) => (
 </div>
 </div>
 <WrapperCountriesGraphs>
-	<h2 style={{fontWeight: `normal`, color: "#222B3E"}}>GDP per Capita vs COVID-19 Test Policy</h2>
-	<Grid>
-  		<Item className="item-image">
+	<SubTitle style={{fontWeight: `normal`, color: "#222B3E"}}>GDP per Capita vs COVID-19 Test Policy</SubTitle>
+	<GridC>
+  		<Item className="big-item">
 			<ChartFour/>
 			<Gap />
 			</Item>
 			<TextBox>
 				<p>The above graph demonstrates a positive correlation between GDP and COVID-19 testing policy. There are though some exceptions to this rule, with Belarus, Latvia, Lithuania performing significantly higher number of tests given their lower GDP, while the Netherlands did exactly the opposite. </p>
 			</TextBox>
-	</Grid>
+	</GridC>
 	<Gap/>
-	<h2 style={{fontWeight: `normal`, color: "#222B3E"}}>GDP per Capita vs Deaths per 1M</h2>
-	<Grid>
-  		<Item className="item-image">
+	<SubTitle style={{fontWeight: `normal`, color: "#222B3E"}}>GDP per Capita vs Deaths per 1M</SubTitle>
+	<GridC>
+  		<Item className="big-item">
 			
 			<img src="/graph-5.png" alt="GDP per Capita vs Deaths per 1M" />
 			<Gap />
@@ -1061,7 +1122,7 @@ const GeneralFindings = (props) => (
 		<TextBox>
 			<p>With respect to GDP per Capita, we note that there is a group of countries who perform well as far as deaths per million is concerned independent of the level of GDP per Capita.  (Balkan countries, ex-eastern block countries, Greece, Cyprus, Germany, Austria, Finland, Switzerland, Ireland and Norway).  While there is another group of countries of low and medium GDP per Capita who demonstrate much higher death per million index with outstanding the large western european countries (Spain, Italy, United Kingdom and France). It looks like the GDP per Capita is not a primary factor in the evolution of the pandemic in Europe.</p>
 		</TextBox>
-	</Grid>
+	</GridC>
 </WrapperCountriesGraphs>
 
 

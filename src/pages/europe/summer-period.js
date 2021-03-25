@@ -37,23 +37,25 @@ const TextBox = styled.div`
 display: flex;
 flex-direction: column;
 width:100%;
-max-width: 1085px;
+max-width: 800px;
 margin: 0 auto;
 @media (max-width:1440px) {
-  max-width:800px;
+  max-width:600px;
 }
 @media (max-width: 1024px) {
-  width: 100%;
   padding:0 32px;
 }
 p {
-	font-size:24px;
-	line-height:44px;
-	margin-bottom:60px;
-	@media (max-width:1440px) {
-	  font-size:19.20px;
-	  line-height:35.20px;
-	}
+  font-size:18px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
+  }
 }
 `
 
@@ -63,6 +65,36 @@ height: 2rem;
   @media (max-width: 1024px) {
   
   }
+`
+const TitleSection = styled.h1`
+  text-transform: uppercase;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:24px;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+`
+const SubTitle = styled.h2`
+    color: #222B3E;
+    font-weight:400;
+    font-size:26px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:24px;
+      line-height:32px;
+    }
+    @media (max-width: 1024px) {
+      font-size:22px;
+      line-height:30px;
+    }
 `
 
 
@@ -74,7 +106,7 @@ const SummerPeriod = (props) => (
 
     <NavbarSubLinks />
       
-      <h1>SUMMER PERIOD (JUN ΤΟ AUG 2020)</h1>
+      <TitleSection>SUMMER PERIOD (JUN ΤΟ AUG 2020)</TitleSection>
      <Grid>
   <Item>
 
@@ -101,11 +133,11 @@ const SummerPeriod = (props) => (
 
 
 
-    <h2
+    <SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Cases per 1M vs Deaths per 1M (Jun-Aug)</h2>
+    >Cases per 1M vs Deaths per 1M (Jun-Aug)</SubTitle>
 
 <Grid>
   <Item>
@@ -131,11 +163,11 @@ const SummerPeriod = (props) => (
 <p>It is evident that the level of temperature influences the pandemic, as higher temperatures during the summer months decreased the number of incidents of COVID-19 and therefore almost minimized death per million indices.  </p>
 </TextBox>
 
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Temperature vs Deaths per 1M</h2>
+    >Temperature vs Deaths per 1M</SubTitle>
 
 
 <Grid>

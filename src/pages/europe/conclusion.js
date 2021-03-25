@@ -34,23 +34,30 @@ const TextBox = styled.div`
 display: flex;
 flex-direction: column;
 width:100%;
-max-width: 1085px;
+max-width: 800px;
 margin: 0 auto;
 @media (max-width:1440px) {
-  max-width:800px;
+  max-width:600px;
 }
 @media (max-width: 1024px) {
-  width: 100%;
   padding:0 32px;
 }
 p {
-	font-size:24px;
-	line-height:44px;
-	margin-bottom:0;
-	@media (max-width:1440px) {
-	  font-size:19.20px;
-	  line-height:35.20px;
-	}
+  letter-spacing: 0px;
+  color: #606060;
+  font-size:18px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
+  }
+  @media (max-width: 768px) {
+    padding:0 32px;
+  }
 }
 `
 
@@ -63,6 +70,22 @@ height: 2rem;
 `
 
 
+const TitleSection = styled.h1`
+  text-transform: uppercase;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:0;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+`
 const Conclusion = (props) => (
     <Layout location={props.location}>
 
@@ -71,7 +94,7 @@ const Conclusion = (props) => (
 
     <NavbarSubLinks />
       
-     <h1>Conclusion</h1>
+     <TitleSection>Conclusion</TitleSection>
 
      <Gap/>
 

@@ -23,9 +23,15 @@ const Grid = styled.div`
   align-self: center;
   justify-content: center;
   width:100%;
-  max-width:1256px;
-  @media(max-width:1280px) {
-    max-width:1080px;
+  max-width:960px;
+  @media(max-width:1440px) {
+    max-width:720px;
+  }
+  @media(max-width:1024px) {
+    max-width:768px;
+    
+  }
+  @media(max-width:768px) {
     padding:0 32px;
   }
 `;
@@ -38,9 +44,11 @@ const GridB = styled.div`
   align-self: center;
   justify-content: center;
   width:100%;
-  max-width:1256px;
-  @media(max-width:1280px) {
-    max-width:1080px;
+  max-width:1280px;
+  @media(max-width:1440px) {
+    max-width:960px;
+  }
+  @media(max-width:768px) {
     padding:0 32px;
   }
 `;
@@ -71,15 +79,23 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-width: 100%;
-max-width:1094px;
-@media(max-width:1280px) {
-  max-width:1080px;
-  svg {
-    max-width:100%;
-    height:auto;
+width:100%;
+  max-width:960px;
+  @media(max-width:1440px) {
+    max-width:720px;
   }
+  @media(max-width:1024px) {
+    max-width:768px;
+    
+  }
+  @media(max-width:768px) {
+    padding:0 32px;
 }
+svg {
+  max-width:100%;
+  height:auto;
+}
+
 margin: 0 auto;
 .metrics-table-alt {
   color: #606060;
@@ -107,6 +123,9 @@ margin: 0 auto;
   }
   td {
     padding:17px 26px;
+    @media(max-width:1440px) {
+			padding:4px 14px;
+		}
     @media(max-width:768px) {
 			font-size: 12px;
 		}
@@ -117,25 +136,17 @@ margin: 0 auto;
   
 }
 li {
-  color: #606060;
-  font-family: "IBM Plex Sans - Light";
-  font-size: 19px;
-  font-weight: 300;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 22.74px;
-  text-align: left;
-  /* Text style for "0 - no res" */
-  font-family: "IBM Plex Sans";
-  font-weight: 300;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  /* Text style for ",  ,  ," */
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  
+  color: #606060; 
+  font-size:18px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
+  }
 }
 
 `
@@ -144,23 +155,25 @@ const TextBox = styled.div`
 display: flex;
 flex-direction: column;
 width:100%;
-max-width: 1085px;
+max-width: 800px;
 margin: 0 auto;
 @media (max-width:1440px) {
-  max-width:800px;
+  max-width:600px;
 }
 @media (max-width: 1024px) {
-  width: 100%;
   padding:0 32px;
 }
 p {
-	font-size:24px;
-	line-height:44px;
-	margin-bottom:0;
-	@media (max-width:1440px) {
-	  font-size:19.20px;
-	  line-height:35.20px;
-	}
+	font-size:18px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
+  }
 }
 `
 
@@ -171,7 +184,37 @@ height: 2rem;
   
   }
 `
+const TitleSection = styled.h1`
+  text-transform: uppercase;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:0;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+`
 
+const SubTitle = styled.h2`
+    color: #222B3E;
+    font-weight:400;
+    font-size:26px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:24px;
+      line-height:32px;
+    }
+    @media (max-width: 1024px) {
+      font-size:22px;
+      line-height:30px;
+    }
+`
 
 const Measures = (props) => (
     <Layout location={props.location}>
@@ -181,7 +224,7 @@ const Measures = (props) => (
 
     <NavbarSubLinks />
       
-     <h1>MEASURES AGAINST COVID-19</h1>
+     <TitleSection>MEASURES AGAINST COVID-19</TitleSection>
 
      <Gap/>
 
@@ -204,11 +247,11 @@ const Measures = (props) => (
 
 
 
-    <h2
+    <SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Measures Imposed - Europe</h2>
+    >Measures Imposed - Europe</SubTitle>
 
 <Grid>
   <Item>
@@ -229,11 +272,11 @@ The graphs (Area Plots) that follow show some of the most important measures tha
     <div className="col">
 
 
-    <h2
+    <SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Measures Severity</h2>
+    >Measures Severity</SubTitle>
     
 <Grid>
 
@@ -363,11 +406,11 @@ travel controls</td>
 <GridB>
 <Item>
 
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >School Closing</h2>
+    >School Closing</SubTitle>
 
 
 <ChartTwo />
@@ -380,11 +423,11 @@ travel controls</td>
 
 <Item>
 
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Workplace Closing </h2>
+    >Workplace Closing </SubTitle>
 
 
 
@@ -396,11 +439,11 @@ travel controls</td>
 
 <Item>
 
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Restrictions on Gatherings</h2>
+    >Restrictions on Gatherings</SubTitle>
 
 
 
@@ -412,11 +455,11 @@ travel controls</td>
 
 <Item>
 
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >International Travel Control</h2>
+    >International Travel Control</SubTitle>
 
 
 
@@ -428,11 +471,11 @@ travel controls</td>
 
 <Item>
 
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >School Closing</h2>
+    >School Closing</SubTitle>
 
 
 
@@ -444,11 +487,11 @@ travel controls</td>
 
 <Item>
 
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Restrictions on Internal Movement</h2>
+    >Restrictions on Internal Movement</SubTitle>
 
 
 
@@ -458,11 +501,11 @@ travel controls</td>
 
 </Item>
 <ItemSpan>
-<h2
+<SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Facial Masks</h2>
+    >Facial Masks</SubTitle>
 
 
 
@@ -486,11 +529,11 @@ travel controls</td>
 
 
 
-    <h2
+    <SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Mobility in Europe</h2>
+    >Mobility in Europe</SubTitle>
 
 <Grid>
   <Item>

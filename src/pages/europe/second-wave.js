@@ -12,15 +12,8 @@ const Grid = styled.div`
   grid-gap: 1rem;
   align-self: center;
   justify-content: center;
-  .large-item {
-	  max-width:1412px;
-	@media (max-width:1440px) {
-		max-width:1180px;
-	}
-	@media (max-width:1280px) {
-		max-width:100%;
-	}
-  }
+  width:100%;
+  
   color: #606060;
   font-family: "IBM Plex Sans";
   font-size: 24px;
@@ -28,9 +21,18 @@ const Grid = styled.div`
   letter-spacing: normal;
   line-height: 44px;
   text-align: left;
-  .item-image {
-	max-width:1000px;
-  } 
+  .big-item {
+	max-width:1280px !important;
+	@media(max-width:1440px) {
+		max-width:960px !important;
+	}
+	@media(max-width:1024px) {
+		max-width:768px !important;
+	}
+	@media(max-width:768px) {
+		padding:0 32px;
+	}
+  }
   
 `;
 
@@ -40,15 +42,18 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 width: 100%;
-max-width:1054px;
-min-width:800px;
 margin: 0 auto;
-@media (max-width:960px) {
-	min-width:640px;
-}
-@media (max-width:768px) {
-	min-width:80%;
-}
+max-width:960px;
+  @media(max-width:1440px) {
+    max-width:720px;
+  }
+  @media(max-width:1024px) {
+    max-width:768px;
+    
+  }
+  @media(max-width:768px) {
+    padding:0 32px;
+  }
 .metrics-table {
 	@media(min-width:1440px) {
 		.wide-cell {
@@ -112,25 +117,26 @@ margin: 0 auto;
 const TextBox = styled.div`
 display: flex;
 flex-direction: column;
-color: #606060;
 width:100%;
-max-width: 1085px;
+max-width: 800px;
 margin: 0 auto;
 @media (max-width:1440px) {
-  max-width:800px;
+  max-width:600px;
 }
 @media (max-width: 1024px) {
-  width: 100%;
   padding:0 32px;
 }
 p {
-	font-size:24px;
-	line-height:44px;
-	margin-bottom:0;
-	@media (max-width:1440px) {
-	  font-size:19.20px;
-	  line-height:35.20px;
-	}
+  font-size:18px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
+  }
 }
 `
 
@@ -140,15 +146,16 @@ const List = styled.ul`
   margin: 0 0 2rem;
   padding:0;
   li {
-	list-style: disc inside none !important;
-	display: list-item !important;
-	font-size:24px;
-	line-height:44px;
-	margin-bottom:0;
-	@media (max-width:1440px) {
-	  font-size:19.20px;
-	  line-height:35.20px;
-	}
+	font-size:18px;
+  	line-height:38px;
+  	@media (max-width: 1440px) {
+    	font-size:16px;
+    	line-height:32px;
+  	}
+  	@media (max-width: 1024px) {
+    	font-size:15px;
+    	line-height:30px;
+  	}
   }
 `;
 
@@ -165,6 +172,36 @@ height: 2rem;
   }
 `
 
+const TitleSection = styled.h1`
+  text-transform: uppercase;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:0;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+`
+const SubTitle = styled.h2`
+    color: #222B3E;
+    font-weight:400;
+    font-size:26px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:24px;
+      line-height:32px;
+    }
+    @media (max-width: 1024px) {
+      font-size:22px;
+      line-height:30px;
+    }
+`
 
 const SecondWave= (props) => (
 <Layout location={props.location}>
@@ -173,7 +210,7 @@ const SecondWave= (props) => (
 		<div className="col">
 
 			<NavbarSubLinks />
-			<h1>2ND WAVE OF THE PANDEMIC (SEP TO NOV 2020)</h1>
+			<TitleSection>2ND WAVE OF THE PANDEMIC (SEP TO NOV 2020)</TitleSection>
 			<Gap/>
 			<TextBox>
 				<p>Some additional statistical data presented in the table below, will help us explain why the Balkan countries appear to have some of the highest deaths per million from COVID-19, while the Scandinavian countries appear to have some of the lowest deaths per million.</p>
@@ -187,7 +224,7 @@ const SecondWave= (props) => (
         backgroundColor: `rgba(234,234,234,1)`
       }}>
     	<div className="col">
-			<h2 style={{fontWeight: `normal`}}>Phases by Regions</h2>
+			<SubTitle style={{fontWeight: `normal`}}>Phases by Regions</SubTitle>
 
 <Grid>
   <Item>
@@ -406,11 +443,11 @@ deaths %</th>
 
 
 
-    <h2
+    <SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Mobility in November</h2>
+    >Mobility in November</SubTitle>
 
 <Grid>
   <Item>
@@ -449,15 +486,15 @@ deaths %</th>
     <div className="col">
 
 
-    <h2
+    <SubTitle
       style={{
         fontWeight: `normal`
       }}
-    >Mobility vs Death per 1M November</h2>
+    >Mobility vs Death per 1M November</SubTitle>
 
 
 <Grid>
- 	<Item class="item-image">
+ 	<Item class="big-item">
 	  <img src="/mobility-death.png" alt="Mobility vs Death per 1M November" />
 	<Gap />
 	</Item>
