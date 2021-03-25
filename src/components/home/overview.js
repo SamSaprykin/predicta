@@ -15,6 +15,7 @@ const Grid = styled.div`
   justify-self: center;
   @media (max-width: 1440px) {
     max-width:960px;
+    grid-gap: 36px;
   }
   @media (max-width: 1024px) {
     max-width: 768px; 
@@ -66,27 +67,26 @@ p {
     line-height:32px;
   }
   @media (max-width: 1024px) {
-    font-size:15px;
-    line-height:30px;
+    font-size:12px;
+    line-height:24px;
   }
   
   
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   padding: 1rem;
-  width:180px;
-  height:180px;
-
+  width:200px;
+  height:200px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   padding: 1.5rem;
   width:160px;
   height:160px;
-
 }
+
 
 `;
 
