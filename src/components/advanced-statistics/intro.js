@@ -9,58 +9,72 @@ const IntroBox = styled.div`
   align-items: center;
   flex-direction: column;
   width:100%;
-  max-width: 1085px;
+  max-width: 800px;
   margin: 0 auto;
   @media (max-width:1440px) {
-    max-width:800px;
+    max-width:600px;
+  }
+  @media (max-width: 768px) {
+    padding:0 32px;
   }
   p {
     letter-spacing: 0px;
     color: #606060;
-    font-size:24px;
-    line-height:44px;
-    margin-bottom:60px;
-    @media (max-width:1440px) {
-      font-size:19.20px;
-      line-height:35.20px;
+    font-size:18px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:16px;
+      line-height:32px;
+    }
+    @media (max-width: 1024px) {
+      font-size:15px;
+      line-height:30px;
+    }
+  }
+  ul {
+    li {
+      font-size:18px;
+      line-height:38px;
+      color: #606060;
+      @media (max-width: 1440px) {
+        font-size:16px;
+        line-height:32px;
+      }
+      @media (max-width: 1024px) {
+        font-size:15px;
+        line-height:30px;
+      }
     }
   }
   h2 {
     text-align:left;
     color: #606060;
     width:100%;
-    font-size:35px;
-    line-height:42px;
-    @media (max-width: 678px) {
-      font-size:28px;
-      line-height:36px;
+    font-size:26px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:24px;
+      line-height:32px;
+    }
+    @media (max-width: 1024px) {
+      font-size:22px;
+      line-height:30px;
     }
   }
   h5 {
-    font-size:24px;
-    line-height:44px;
+    font-size:18px;
+    line-height:38px;
     color: #606060;
-    margin-top:60px;
-    font-family:IBM Plex Sans;
-    @media (max-width:1440px) {
-      font-size:19.20px;
-      line-height:35.20px;
+    @media (max-width: 1440px) {
+      font-size:16px;
+      line-height:32px;
+    }
+    @media (max-width: 1024px) {
+      font-size:15px;
+      line-height:30px;
     }
   }
-  ul {
-    li {
-      display: block;
-      letter-spacing: 0px;
-      color: #606060;
-      font-size:24px;
-      line-height:44px;
-      margin-bottom:0;
-      @media (max-width:1440px) {
-        font-size:19.20px;
-        line-height:35.20px;
-      }
-    }
-  }
+  
   @media (max-width: 1024px) {
     padding:0 32px;
     margin-top:3rem;
@@ -72,15 +86,19 @@ const IntroBox = styled.div`
 
 `
 const TitleSection = styled.h1`
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #222B3E;
   letter-spacing: 0px;
-  font-size:42px;
-  line-height:1.1;
+  font-size:32px;
+  line-height:38px;
   margin-bottom:80px;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
   @media (max-width: 1024px) {
-    font-size:42px;
-    line-height:48px;
+    font-size:26px;
+    line-height:30px;
   }
 `
 

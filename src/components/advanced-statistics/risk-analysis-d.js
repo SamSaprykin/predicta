@@ -36,21 +36,23 @@ margin: 0 auto 32px;
 const TextBox = styled.div`
   max-width: 1080px;
   margin: 0 auto;
-  @media (max-width: 1440px) {
-    max-width: 800px;
+  tex-align:left;
+  max-width: 800px;
+  margin: 0 auto;
+  @media (max-width:1440px) {
+    max-width:600px;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     padding:0 32px;
   }
   p {
     letter-spacing: 0px;
     color: #606060;
-    font-size:24px;
-    line-height:44px;
-    margin-bottom:60px;
-    @media (max-width:1440px) {
-      font-size:19.20px;
-      line-height:35.20px;
+    font-size:18px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:16px;
+      line-height:32px;
     }
   }
 `
@@ -59,13 +61,15 @@ const TitleSection = styled.h1`
   text-transform: capitalize;
   color: #222B3E;
   letter-spacing: 0px;
-  font-size:35px;
-  line-height:42px;
-  margin-bottom:80px;
-  font-weight:400;
+  font-size:26px;
+  line-height:38px;
   @media (max-width: 1440px) {
-    font-size:32px;
-    line-height:34px;
+    font-size:24px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:22px;
+    line-height:30px;
   }
 `
 

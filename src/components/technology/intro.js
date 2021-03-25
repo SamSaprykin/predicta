@@ -24,14 +24,14 @@ max-width: 800px;
   padding-top:60px;
 }
 h1 {
-  font-size:26px;
+  font-size:32px;
   line-height:38px;
   @media (max-width: 1440px) {
-    font-size:24px;
+    font-size:28px;
     line-height:32px;
   }
   @media (max-width: 1024px) {
-    font-size:22px;
+    font-size:26px;
     line-height:30px;
   }
 }

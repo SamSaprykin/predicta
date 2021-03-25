@@ -41,6 +41,9 @@ h4 {margin-bottom:5px;}
 
   .row {
     padding: 5rem 0;
+    @media (max-width:1440px) {
+      padding 3.5rem 0;
+    }
     @media (max-width:1080px) {
       padding 2.5rem 0;
     }
@@ -119,9 +122,9 @@ table.metrics-table-alt tbody{
 th {
   text-align:left;
   padding-left:24px;
-  font-size:16px !important;
+  font-size:14px !important;
   @media(max-width:1440px) {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
   @media(max-width:768px) {
     font-size: 12px !important;
@@ -130,9 +133,9 @@ th {
 td {
   text-align:left;
   padding-left:24px;
-  font-size:16px !important;
+  font-size:14px !important;
   @media(max-width:1440px) {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
   @media(max-width:768px) {
     font-size: 12px !important;
