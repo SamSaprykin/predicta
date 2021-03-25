@@ -13,13 +13,26 @@ width:100%;
 
 & svg {width: 50%}
 margin: 0 auto;
-max-width: 1080px;
+max-width: 960px;
 @media (max-width: 1440px) {
-  max-width: 800px;
+  max-width: 720px;
 }
 @media (max-width: 1024px) {
+  max-width: 768px;
   margin-top:90px;
   padding:0 32px;
+}
+p {
+  font-size:18px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
+  }
 }
 `
 

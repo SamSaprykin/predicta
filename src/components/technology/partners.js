@@ -25,13 +25,16 @@ const Grid = styled.div`
 
 const LogoWrapper = styled.div`
   width:100%;
-  max-width:1240px;
+  max-width:960px;
   display:flex;
   flex-wrap:wrap;
   justify-content:space-between;
   align-items:center;
   @media (max-width: 1440px) {
-    max-width:800px;
+    max-width:720px;
+  }
+  @media (max-width: 1024px) {
+    max-width:768px;
   }
   img {
     height:120px;

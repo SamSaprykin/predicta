@@ -10,38 +10,22 @@ flex-wrap:wrap;
 align-items: center;
 flex-direction: row;
 width: 100%;
-max-width: 1313px;
+max-width: 960px;
 margin: 0 auto;
 @media (max-width:1440px) {
-  max-width:1080px;
+  max-width:720px;
 }
-@media (max-width: 1280px) {
+@media (max-width:1024px) {
+  max-width:768px;
+}
+@media (max-width:768px) {
   padding:0 32px;
-  max-width:960px;
-}
-@media (max-width: 1024px) {
-  max-width: 800px; 
-}
-@media (max-width: 768px) {
-  padding:0 48px;
-}
-@media (max-width: 600px) {
-  max-width: 500px;
 }
 .first {
-  width:100%;
-  max-width:876px;
-  @media (max-width:1440px) {
-    max-width:66%;
-  }
+  width:66%;
 }
 .second {
-  
-  width:100%;
-  max-width:409px;
-  @media (max-width:1440px) {
-    max-width:31%;
-  }
+  width:31%
 }
 .third {
   width:100%;
@@ -55,13 +39,26 @@ align-items: center;
 flex-direction: column;
 width:100%;
 margin: 0 auto;
-max-width: 1080px;
+max-width: 800px;
 @media (max-width: 1440px) {
-  max-width: 800px;
+  max-width: 600px;
 }
 @media (max-width: 1024px) {
-  width: 100%;
   padding:0 32px;
+}
+p {
+  letter-spacing: 0px;
+  color: #606060;
+  font-size:18px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
+  }
 }
 `
 
@@ -81,8 +78,8 @@ const Tech = () => (
 </ImageBox>
     <Gap />
     <TextBox>
-      <p>IBM SPSS MODELER is an extensive data mining & predictive analytics platform that is designed to integrate predictive intelligence into decisions made by individuals, groups, systems and the enterprise. By providing a range of advanced algorithms and techniques that include text analytics, entity analytics, decision management and optimization, IBM SPSS MODELER helps you consistently to make the right decisions, from the desktop or within operational systems.</p>
-      <p>As, IBM SPSS MODELER also interacts with exceptional efficiency with R and PYTHON software languages, a fact that expands the available analytical capabilities in an unlimited fashion, made possible the successful implementation of the presented project.</p>
+        <p>IBM SPSS MODELER is an extensive data mining & predictive analytics platform that is designed to integrate predictive intelligence into decisions made by individuals, groups, systems and the enterprise. By providing a range of advanced algorithms and techniques that include text analytics, entity analytics, decision management and optimization, IBM SPSS MODELER helps you consistently to make the right decisions, from the desktop or within operational systems.</p>
+        <p>As, IBM SPSS MODELER also interacts with exceptional efficiency with R and PYTHON software languages, a fact that expands the available analytical capabilities in an unlimited fashion, made possible the successful implementation of the presented project.</p>
 
     </TextBox>
     </>
