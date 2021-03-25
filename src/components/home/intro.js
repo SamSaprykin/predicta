@@ -39,11 +39,11 @@ const IntroBox = styled.div`
     color: #606060;
     font-weight:400;
     @media (max-width: 1440px) {
-      font-size:28px;
+      font-size:24px;
       line-height:32px;
     }
     @media (max-width: 1024px) {
-      font-size:26px;
+      font-size:22px;
       line-height:30px;
     }
   }

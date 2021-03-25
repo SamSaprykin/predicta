@@ -9,37 +9,59 @@ const IntroBox = styled.div`
   align-items: center;
   flex-direction: column;
   width:100%;
-  max-width: 1085px;
+  max-width: 800px;
   margin: 0 auto;
   @media (max-width:1440px) {
-    max-width:800px;
+    max-width:600px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+  h1 {
+    
+    margin-bottom:4px;
+    font-size:32px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:28px;
+      line-height:32px;
+    }
+    @media (max-width: 1024px) {
+      font-size:26px;
+      line-height:30px;
+    }
   }
   h2 {
-    font-size:35px;
-    line-height:42px;
+
     color: #606060;
     font-weight:400;
-    @media (max-width:1440px) {
-      font-size:28.00px;
-      line-height:33.60px;
+    font-size:26px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:24px;
+      line-height:32px;
+    }
+    @media (max-width: 1024px) {
+      font-size:22px;
+      line-height:30px;
     }
   }
   p {
-    font-size:24px;
-    line-height:44px;
-    @media (max-width:1440px) {
-      font-size:19.20px;
-      line-height:35.20px;
+    font-size:18px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:16px;
+      line-height:32px;
     }
-  }
-  @media (max-width: 1024px) {
-    padding:0 32px;
-    margin-top:3rem;
-    h2 {
-      font-size:28px;
-      line-height:1.1;
-      margin-bottom:48px;
+    @media (max-width: 1024px) {
+      font-size:15px;
+      line-height:30px;
     }
+    strong {
+      letter-spacing:-0.67px;
+    }
+    
   }
 
 `

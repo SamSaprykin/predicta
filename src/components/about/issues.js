@@ -7,12 +7,11 @@ justify-content: left;
 flex-direction: column;
 width: 100%;
 margin: 0 auto;
-max-width: 1085px;
+max-width: 800px;
 @media (max-width:1440px) {
-  max-width:800px;
+  max-width:600px;
 }
 @media (max-width: 1024px) {
-  width: 100%;
   padding:0 32px;
 }
 h4 {
@@ -20,15 +19,22 @@ h4 {
   font-size:24px;
   line-height:44px;
   color: #222B3E;
+  @media (max-width: 1440px) {
+    font-size:20px;
+  }
 }
 p {
   color: #222B3E;
-  font-size: 24px;
-  line-height: 44px;
+  font-size:18px;
+  line-height:38px;
   margin-bottom: 0;
-  @media (max-width:1440px) {
-    font-size:19.20px;
-    line-height:35.20px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
   }
 }
 `

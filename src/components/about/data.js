@@ -10,17 +10,18 @@ const Grid = styled.div`
   justify-content:center;
   align-items: start;
   width:100%;
-  max-width: 1280px;
+  max-width: 960px;
  
   @media (max-width: 1440px) {
-    max-width: 1080px;
+    max-width: 720px;
   }
   @media (max-width: 1024px) {
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    max-width: 768px;
+  }
+  @media (max-width:768px) {
     padding:0 32px;
   }
-
 `;
 
 const Item = styled.div`
@@ -70,18 +71,24 @@ align-items: center;
 flex-direction: column;
 width:100%;
 margin: 62px auto 48px;
-max-width: 1085px;
+max-width: 800px;
 @media (max-width:1440px) {
-  max-width:800px;
+  max-width:600px;
+}
+@media (max-width: 1024px) {
+  padding:0 32px;
 }
 p {
   color: #606060;
-  font-size: 24px;
-  line-height: 44px;
-  margin-bottom:0;
-  @media (max-width:1440px) {
-    font-size: 19.20px;
-    line-height: 35.20px;
+  font-size:18px;
+  line-height:38px;
+  @media (max-width: 1440px) {
+    font-size:16px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:15px;
+    line-height:30px;
   }
 }
 @media (max-width: 1024px) {
@@ -97,12 +104,16 @@ const TitleSection = styled.h1`
   text-transform: uppercase;
   color: #222B3E;
   letter-spacing: 0px;
-  font-size:42px;
-  line-height:1.1;
+  font-size:32px;
+  line-height:38px;
   margin-bottom:0;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
   @media (max-width: 1024px) {
-    font-size:42px;
-    line-height:48px;
+    font-size:26px;
+    line-height:30px;
   }
 `
 
