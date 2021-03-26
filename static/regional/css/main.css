@@ -699,6 +699,7 @@ h3,
 	background-color: #f6f6f6;
 	border: 1px solid #a7a9ac;
 	font-weight: 500;
+	font-size:16px;
 }
 
 .secondary-category {
@@ -751,6 +752,7 @@ h3,
 	background-color: #f6f6f6;
 	border: 1px solid #a7a9ac;
 	font-weight: 500;
+	font-size:16px;
 }
 
 @media (min-width: 768px) {

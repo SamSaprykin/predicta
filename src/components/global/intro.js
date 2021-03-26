@@ -23,9 +23,27 @@ const Grid = styled.div`
   }
 `;
 
+const TitleSection = styled.h1`
+  text-transform: uppercase;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:24px;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+`
+
+
 const Map = () => (
   <>
-  <h1 id='#maps'>Covid-19 Pandemic Evolution</h1>
+  <TitleSection id='#maps'>Covid-19 Pandemic Evolution</TitleSection>
 
   <Grid>
     <iframe className='responsive-iframe' src={withPrefix('../map/index.html')}></iframe>

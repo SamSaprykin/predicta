@@ -11,15 +11,19 @@ const Grid = styled.div`
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
   grid-gap: 4rem;
-  width: 800px;
+  width: 100%;
   align-self: center;
   justify-content:center;
-
+  max-width: 960px;
+ 
+  @media (max-width: 1440px) {
+    max-width: 720px;
+  }
   @media (max-width: 1024px) {
-      grid-template-columns: repeat(1, 1fr);
-      width: 80%
-   
-    }
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 768px;
+  }
+  
 
 `;
 
@@ -42,12 +46,44 @@ const Gap = styled.div`
 display: block;
 height: 3rem;
 `;
+const TitleSection = styled.h1`
+  text-transform: uppercase;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:0;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+`
 
+const SubheadSection = styled.h2`
+  margin-bottom:1rem;
+  color: #606060;
+  font-weight:400;
+  font-size:26px;
+  line-height:38px;
+  margin-bottom:42px;
+  @media (max-width: 1440px) {
+    font-size:24px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:22px;
+    line-height:30px;
+  }
+`
 
 const GeoAnalysis = () => (
   <>
  
-  <h1 id='demographics'>Demographics</h1>
+  <TitleSection id='demographics'>Demographics</TitleSection>
 
 
  <Gap />
@@ -58,14 +94,14 @@ const GeoAnalysis = () => (
         <Item>
 
 
-      <h3>Age Distribution Evolution</h3>
+      <SubheadSection>Age Distribution Evolution</SubheadSection>
       <Gap />
 
         <ChartOne/>
 </Item>
 
 <Item>
-<h3>Cases & Deaths Median Ages Evolution</h3>
+<SubheadSection>Cases & Deaths Median Ages Evolution</SubheadSection>
 <Gap />
 <ChartTwo/>
 
@@ -75,7 +111,7 @@ const GeoAnalysis = () => (
 <Item>
 
 
-<h3>Cases & Deaths by Gender Evolution</h3>
+<SubheadSection>Cases & Deaths by Gender Evolution</SubheadSection>
 <Gap />
 <ChartThree/>
 

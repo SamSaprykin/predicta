@@ -169,25 +169,7 @@ const Gap = styled.div`
 	height: 2rem;
 `
 
-const TitleChart = styled.h3`
-	color: #222b3e;
-	font-family: "IBM Plex Sans";
-	font-size: 35px;
-	font-style: normal;
-	letter-spacing: normal;
-	line-height: 42px;
-	text-align: center;
-	/* Text style for "1st Wave -" */
-	font-family: "IBM Plex Sans";
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: normal;
-	line-height: normal;
-	margin-bottom:35px;
-	@media(max-width:768px) {
-		font-size: 16px;
-	}
-`
+
 
 const WrapperCountriesGraphs = styled.div`
 	background: #E8E8E8;
@@ -382,10 +364,10 @@ const GeneralFindings = (props) => (
     <div className="col">
 	<Grid>
 		<Item>
-			<TitleChart>1st Wave - Deaths per 1M</TitleChart>
+			<SubTitle>1st Wave - Deaths per 1M</SubTitle>
 			<ChartTwo />
 			<Gap/>
-			<TitleChart>2nd Wave - Deaths per 1M</TitleChart>
+			<SubTitle>2nd Wave - Deaths per 1M</SubTitle>
 			<ChartThree />
 			<Gap />
 		</Item>

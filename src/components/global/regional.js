@@ -21,10 +21,27 @@ const Grid = styled.div`
   }
 `;
 
+const TitleSection = styled.h1`
+  text-transform: uppercase;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:0;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+`
+
 const GeoAnalysis = () => (
   <>
 
-  <h1 id='regional'>Regional Statistics</h1>
+  <TitleSection id='regional'>Regional Statistics</TitleSection>
 
         <Grid>
 

@@ -17,9 +17,44 @@ const Grid = styled.div`
   height:1500px;
 `;
 
+const TitleSection = styled.h1`
+  text-transform: uppercase;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:0;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+`
+
+const SubheadSection = styled.h2`
+  margin-bottom:1rem;
+  color: #606060;
+  font-weight:400;
+  font-size:26px;
+  line-height:38px;
+  margin-bottom:42px;
+  @media (max-width: 1440px) {
+    font-size:24px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:22px;
+    line-height:30px;
+  }
+`
+
+
 const GeoAnalysis = () => (
   <>
-  <h1 id='#maps'>Geographical Analysis</h1>
+  <TitleSection id='#maps'>Geographical Analysis</TitleSection>
 
 <Grid>
 

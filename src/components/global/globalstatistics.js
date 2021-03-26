@@ -16,15 +16,22 @@ const Grid = styled.div`
   grid-template-rows: auto;
   grid-gap: 2rem;
   width: 100%;
-  max-width:1220px;
   align-self: center;
   justify-content:center;
-  @media (max-width: 1280px) {
-      width:80%;
+  max-width:1280px;
+  @media (max-width: 1440px) {
+    max-width:960px;
+  }
+  @media (max-width: 1024px) {
+    max-width:768px;
   }
   @media (max-width: 960px) {
       grid-template-columns: repeat(1, 1fr);
   }
+  @media (max-width: 768px) {
+    padding:0 32px;
+  }
+  
 `;
 
 
@@ -43,10 +50,42 @@ display: block;
 height: 3rem;
 `;
 
+const TitleSection = styled.h1`
+  text-transform: uppercase;
+  color: #222B3E;
+  letter-spacing: 0px;
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:24px;
+  @media (max-width: 1440px) {
+    font-size:28px;
+    line-height:32px;
+  }
+  @media (max-width: 1024px) {
+    font-size:26px;
+    line-height:30px;
+  }
+`
+
+const SubTitle = styled.h2`
+    color: #222B3E;
+    font-weight:400;
+    font-size:26px;
+    line-height:38px;
+    @media (max-width: 1440px) {
+      font-size:24px;
+      line-height:32px;
+    }
+    @media (max-width: 1024px) {
+      font-size:22px;
+      line-height:30px;
+    }
+`
+
 const GlobalStats = () => (
   <>
  
-  <h1 id='global-statistics'>Global Statistics</h1>
+  <TitleSection id='global-statistics'>Global Statistics</TitleSection>
 
 
   <Gap />
@@ -55,7 +94,7 @@ const GlobalStats = () => (
         <Item>
 
 
-  <h3>Cases Monthly Evolution</h3>
+  <SubTitle>Cases Monthly Evolution</SubTitle>
  
         
         <ChartOne />
@@ -65,7 +104,7 @@ const GlobalStats = () => (
 
         <Item>
        
-  <h3>Cumulative Cases Distribution</h3>
+  <SubTitle>Cumulative Cases Distribution</SubTitle>
 
         <ChartTwo />
         
@@ -73,7 +112,7 @@ const GlobalStats = () => (
 
         <Item>
      
-  <h3>Deaths Monthly Evolution</h3>
+  <SubTitle>Deaths Monthly Evolution</SubTitle>
 
         <ChartThree />
         
@@ -81,7 +120,7 @@ const GlobalStats = () => (
 
         <Item>
             
-  <h3>Cumulative Deaths Distribution</h3>
+  <SubTitle>Cumulative Deaths Distribution</SubTitle>
 
         <ChartFour />
         
@@ -89,7 +128,7 @@ const GlobalStats = () => (
 
         <Item>
             
-  <h3>Mortality %</h3>
+  <SubTitle>Mortality %</SubTitle>
   
         <ChartFive />
         
@@ -97,7 +136,7 @@ const GlobalStats = () => (
 
         <Item>
              
-  <h3>Positivity %</h3>
+  <SubTitle>Positivity %</SubTitle>
 
         <ChartSix />
         
