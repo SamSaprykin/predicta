@@ -28,7 +28,10 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 margin: 0 auto 32px;
-
+width:100%;
+svg {
+  width:100%;
+}
 `
 
 
