@@ -13,9 +13,11 @@ const Grid = styled.div`
   justify-content:center;
   position: relative;
   width:100%;
-  max-width: 1400px;
-  height:720px;
-  
+  max-width: 1085px;
+  height:550px;
+  @media (max-width:1440px) {
+    max-width: 960px;
+  }
 `;
 
 const RankingTwo = () => (

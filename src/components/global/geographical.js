@@ -14,7 +14,7 @@ const Grid = styled.div`
   position: relative;
 	
   width: 100%;
-  height:1500px;
+  height:1100px;
 `;
 
 const TitleSection = styled.h1`

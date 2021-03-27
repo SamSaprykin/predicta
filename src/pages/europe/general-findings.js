@@ -64,9 +64,12 @@ const GridC = styled.div`
 	align-self: center;
 	justify-content: center;
 	width:100%;
-	max-width:1280px !important;
+	max-width:960px !important;
+	img {
+		margin-bottom:0;
+	}
 	@media(max-width:1440px) {
-		max-width:960px !important;
+		max-width:800px !important;
 	}
 	@media(max-width:1024px) {
 		max-width:768px !important;

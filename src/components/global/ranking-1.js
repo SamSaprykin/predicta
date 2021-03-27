@@ -13,11 +13,15 @@ const Grid = styled.div`
   justify-content:center;
   position: relative;
   width:100%;
-  max-width: 1280px;
-  height:720px;
+  max-width: 1085px;
+  height:550px;
   background-color: rgb(234, 234, 234);
-
   
+  @media (max-width:1440px) {
+    max-width: 960px;
+    height:550px;
+  }
+ 
 `;
 
 const TitleSection = styled.h1`

@@ -128,7 +128,18 @@ margin: 0 auto;
 		}
     @media(max-width:768px) {
 			font-size: 12px;
-		}
+    }
+    li {
+      font-size:14px;
+      @media (max-width: 1440px) {
+        font-size:12px;
+
+      }
+      @media (max-width: 1024px) {
+        font-size:12px;
+
+      }
+    }
   }
   ul {
     margin:0;
@@ -137,14 +148,14 @@ margin: 0 auto;
 }
 li {
   color: #606060; 
-  font-size:18px;
+  font-size:14px;
   line-height:38px;
   @media (max-width: 1440px) {
-    font-size:16px;
+    font-size:12px;
     line-height:32px;
   }
   @media (max-width: 1024px) {
-    font-size:15px;
+    font-size:12px;
     line-height:30px;
   }
 }

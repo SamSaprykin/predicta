@@ -27,7 +27,7 @@ const Grid = styled.div`
   }
   width:100%;
   .big-item {
-	max-width:1280px !important;
+	max-width:1085px !important;
 	@media(max-width:1440px) {
 		max-width:960px !important;
 	}

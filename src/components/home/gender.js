@@ -8,7 +8,7 @@ import MortalityGender from "./images/gender-mortality.svg";
 
 const FlexCont = styled.div`
   display: flex;
-  max-width: 1280px;
+  max-width: 1085px;
   width:100%;
   align-self: center;
   justify-content:space-between;

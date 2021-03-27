@@ -10,11 +10,11 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
-  grid-gap: 4rem;
+  grid-gap: 3rem;
   width: 100%;
   align-self: center;
   justify-content:center;
-  max-width: 960px;
+  max-width: 800px;
  
   @media (max-width: 1440px) {
     max-width: 720px;
@@ -95,14 +95,11 @@ const GeoAnalysis = () => (
 
 
       <SubheadSection>Age Distribution Evolution</SubheadSection>
-      <Gap />
-
         <ChartOne/>
 </Item>
 
 <Item>
 <SubheadSection>Cases & Deaths Median Ages Evolution</SubheadSection>
-<Gap />
 <ChartTwo/>
 
 </Item>
@@ -112,7 +109,7 @@ const GeoAnalysis = () => (
 
 
 <SubheadSection>Cases & Deaths by Gender Evolution</SubheadSection>
-<Gap />
+
 <ChartThree/>
 
 

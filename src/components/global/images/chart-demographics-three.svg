@@ -53,8 +53,8 @@
           <text id="Sep_to_Nov-2" data-name="Sep to Nov" transform="translate(1185.236 15167.721)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Sep to Nov</tspan></text>
         </g>
       </g>
-      <text id="Deaths" transform="translate(1135.495 14849.696)" fill="#606060" font-size="26" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-41.08" y="0">Deaths</tspan></text>
-      <text id="Cases" transform="translate(805.064 14849.696)" fill="#606060" font-size="26" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-34.814" y="0">Cases</tspan></text>
+      <text id="Deaths" transform="translate(1135.495 14849.696)" fill="#606060" font-size="16" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-41.08" y="0">Deaths</tspan></text>
+      <text id="Cases" transform="translate(805.064 14849.696)" fill="#606060" font-size="16" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-34.814" y="0">Cases</tspan></text>
     </g>
   </g>
 </svg>

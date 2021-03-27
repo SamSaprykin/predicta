@@ -659,7 +659,7 @@ h3,
 }
 
 .bg-light-gray {
-	background-color: #e8e8e8;
+	background-color: rgb(234, 234, 234);;
 }
 
 .container {
@@ -1007,6 +1007,7 @@ h3,
 	h3 {
 		font-size:24px !important;
 		line-height:32px !important;
+		margin-bottom: 16px !important;
 	}
 	.content-section {
 		width:100% !important;
@@ -1023,7 +1024,7 @@ h3,
 		margin-left: 0 !important;
 	}
 	.info-row {
-		padding: 0 32px !important;
+		padding: 0  !important;
 		margin:0 auto !important;
 		display: flex !important;
 		justify-content: space-between;
@@ -1041,12 +1042,13 @@ h3,
 
 @media (max-width: 1900px) {
 	.content-section {
-		padding: 90px 0 !important;
+		padding: 32px 0 !important;
 	}
 	.info-row .info-col {
 		width:100% !important;
 		max-width: 800px ;
 		margin-left: 0 !important;
+		height:auto !important;
 	}
 }
 
@@ -1058,15 +1060,21 @@ h3,
 
 
 @media (max-width:1440px) {
-	
+	.content-section.weekly-ranking .graph-box {
+		width: 100%;
+		height: 412px;
+		font-size: 12px;
+		color: #606060;
+	}
 	.country-holder h3 {
 		font-size:24px !important;
 		line-height:32px !important;
-		margin-top: 2px;
+		margin-bottom: 24px !important;
 	}
 	.content-section .h3 {
 		font-size:24px !important;
 		line-height:32px !important;
+		
 	}
 }
 
