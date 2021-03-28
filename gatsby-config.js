@@ -79,7 +79,7 @@ module.exports = {
       },
       {
         name:'Latin America',
-        link:'/depth-latin-america',
+        link:'/latin-america/general-findings',
       }
     ]
  },

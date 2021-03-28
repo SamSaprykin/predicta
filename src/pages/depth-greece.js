@@ -5,8 +5,35 @@ import DepthSoon from "../components/in-depth/DepthSoon"
 const DepthGreeceData = {
     image:"/depth-greece.png",
     title: "Greece",
-    navItems: [
-        "General Findings","Health Facilities & Deaths","Measures & Mobility","The Success During The First Wave","A Quick Comparison","Demographics","Conclusion",
+    navItems:[
+        {
+            title:"General Findings",
+            linkTo:"/"
+        },
+        {
+            title:"Health Facilities & Deaths",
+            linkTo:"/"
+        },
+        {
+            title:"Measures & Mobility",
+            linkTo:"/"
+        },
+        {
+            title:"The Success During The First Wave",
+            linkTo:"/"
+        },
+        {
+            title:"A Quick Comparison",
+            linkTo:"/"
+        },
+        {
+            title:"Demographics",
+            linkTo:"/"
+        },
+        {
+            title:"Conclusion",
+            linkTo:"/"
+        }
     ]
 }
 const DepthGreece = () => (

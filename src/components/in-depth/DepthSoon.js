@@ -15,8 +15,8 @@ const DepthSoon = ({image, title, navItems}) => {
                 {
                     navItems.map((item,index) => {
                         return (
-                            <TableItem key={index}>
-                                {item}
+                            <TableItem key={index} to={item.linkTo}>
+                                {item.title}
                             </TableItem>
                         )
                     })
@@ -24,10 +24,7 @@ const DepthSoon = ({image, title, navItems}) => {
             </TableRow>
             
         </Table>
-        <ImageContainer>
-            <ImageSoon src={image} />
-            <TextSoon>Coming soon</TextSoon>
-        </ImageContainer>
+       
     </Wrapper>
   )
 }
@@ -99,8 +96,9 @@ const TableRow = styled.div`
     }
 `
 
-const TableItem = styled.div`
+const TableItem = styled(Link)`
     text-align:center;
+    text-decoration:none;
     color: #222b3e;
     font-size: 14.4px;
     font-weight: 600;
@@ -140,37 +138,6 @@ const TableItem = styled.div`
     }
 `
 
-const ImageContainer = styled.div`
-    width:100%;
-    height:auto;
-    position:relative;
-    margin-top:32px;
-`
-const ImageSoon = styled.img`
 
-`
-
-const TextSoon = styled.h5`
-    position:absolute;
-    left:50%;
-    top:30%;
-    transform:translate(-50%,-50%);
-    color: #222b3e;
-    font-size: 50px;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: IBM Plex Sans;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    @media (max-width:768px) {
-        font-size:24px;
-    }
-`
 
 export default DepthSoon

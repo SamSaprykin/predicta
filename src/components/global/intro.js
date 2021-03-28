@@ -21,6 +21,7 @@ const Grid = styled.div`
   @media (max-width:1440px) {
     height:800px;
   }
+  
 `;
 
 const TitleSection = styled.h1`
@@ -37,6 +38,9 @@ const TitleSection = styled.h1`
   @media (max-width: 1024px) {
     font-size:26px;
     line-height:30px;
+  }
+  @media (max-width:768px) {
+    margin-top:60px;
   }
 `
 
