@@ -4,11 +4,11 @@ import styled from "styled-components"
 import {Link} from "gatsby"
 
 
-const BackTop = ({goTo}) => {
+const BackTop = ({goTo, visible}) => {
   return (
     goTo !== undefined ? (
-        <Link to={`${goTo.pathname}#first-section`}>
-          <BackToTopWrapper>
+        <Link to={`${goTo.pathname}#first-section`} >
+          <BackToTopWrapper   visible={visible}>
             <IconUp src="/carat-down.svg"/>
           </BackToTopWrapper>
         </Link>
@@ -19,14 +19,16 @@ const BackTop = ({goTo}) => {
 }
 
 const BackToTopWrapper = styled.div`
+    opacity:${props => props.visible === true ? "0" : "1"};
+    transition:all .3s ease-in-out;
     width:60px;
     height:60px;
     display:flex;
     align-items:center;
     justify-content:center;
-    position:absolute;
-    right:-60px;
-    bottom:-60px;
+    position:fixed;
+    right:60px;
+    top:80%;
     border:1px solid #222b3e;
     background-color: #222b3e;
     border-radius:100%;

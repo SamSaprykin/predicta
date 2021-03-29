@@ -95,7 +95,7 @@ const Layout = ({ children,location }) => (
         </Helmet> */}
         <GlobalStyle />
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <NavBar menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
+      <NavBar menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} location={location}/>
       <Wrapper> 
         <main>
         {children}

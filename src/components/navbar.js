@@ -1,10 +1,10 @@
 // Navbar.js
-
-import React, { useState } from "react"
+import React, {useState, useEffect} from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import Icon from "../images/icon.svg"
-
+import BackTop from "./backTop"
+import { useInView } from "react-intersection-observer"
 const NavContainer = styled.div`
   width:100%;
   background-color: #f8f8f8;
@@ -265,19 +265,31 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `
-const Navbar = ({ menuLinks }) => {
+const Navbar = ({ menuLinks, location }) => {
   const [navbarOpen, setNavbarOpen] = useState(false)
-
+  const [ref, inView] = useInView({
+    rootMargin: "0px",
+  })
+  const [visible, setVisible] = useState(false)
+  
+  useEffect(() => {
+      if (inView) {
+        setVisible(true)
+      } else {
+        setVisible(false)
+      }
+  }, [inView])
+  console.log(inView)
   return (
 <>
-    <header>
-      <NavContainer>
+    <header ref={ref}>
+      <NavContainer >
       <Navigation>
         <LogoWrap as={Link} to="/">
           <Icon alt="Home Icon" />
         </LogoWrap>
-
-
+        <BackTop goTo={location} visible={visible} />
+        
           <Toggle
             navbarOpen={navbarOpen}
             onClick={() => setNavbarOpen(!navbarOpen)}

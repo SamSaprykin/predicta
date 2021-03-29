@@ -7,8 +7,7 @@ import {
     PredictaText,
 } from "../../components/BlockElements/BlockElements";
 
-const DepthLatinData = {
-    image:"/depth-latin.png",
+const DepthLatinData = {  
     title:"Latin America",
     navItems:[
         {
@@ -27,8 +26,7 @@ const DepthLatinData = {
 }
 const Conclusion = (props) => (
     <Layout location={props.location}>
-        <DepthSoon 
-            image={DepthLatinData.image} 
+        <DepthSoon  
             title={DepthLatinData.title}
             navItems={DepthLatinData.navItems}
         />

@@ -9,13 +9,12 @@ import PredictaLogo from "./images/predicta-logo.svg";
 import IBMLogo from "./images/ibm-logo.svg";
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
 
 const Container = styled.div`
-  position:relative;
+  
 `
 const NavLink = styled(Link)`
 	color: white;
@@ -120,13 +119,20 @@ const List = styled.ul`
   list-style: none;
   overflow-x: auto;
   margin-bottom:0;
+  display:flex;
+  justify-content:space-between;
+  img {
+    margin-bottom:0;
+    margin-top:4px;
+    width:75%;
+    @media (max-width: 470px) {
+      width:32px;
+      height:32px;
+    }
+  }
 `;
 
-const ListItem = styled.li`
-  display: inline-block;
-  padding-right:1rem;
-  margin-bottom:0;
-`;
+
 
 const Gap = styled.div`
 display: block;
@@ -157,30 +163,22 @@ F. +30 210 69 31 079  &nbsp;  •  &nbsp;  E. info@predicta.gr &nbsp;   • &nbs
       </Item>
       <Item>
         <List>
-          <ListItem> <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon  style={{
-          color: `rgb(255 255 255)`,
-          textDecoration: `none`,
-          //backgroundColor: `white`,
-          borderRadius: `100%`,
-          padding:`2px`
-        }}  size='2x' icon={['fab', 'facebook-f']} /> </a></ListItem>
-
-         <ListItem> <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon  style={{
-          color: `rgb(255 255 255)`,
-          textDecoration: `none`,
-          //backgroundColor: `white`,
-          borderRadius: `100%`,
-          padding:`2px`
-        }}  size='2x' icon={['fab', 'linkedin']} /> </a></ListItem>
-
-         <ListItem> <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon  style={{
-          color: `rgb(255 255 255)`,
-          textDecoration: `none`,
-          //backgroundColor: `white`,
-          borderRadius: `100%`,
-          padding:`2px`
-        }}  size='2x' icon={['fab', 'twitter']} /> </a></ListItem>
-        
+          
+            <a href="https://www.facebook.com/PREDICTA-SA-130541270342184/" target="_blank" rel="noopener noreferrer">
+              <img src="/fb-icon.png" alt="fb-icon" />
+            </a>
+         
+          
+            <a href="https://www.linkedin.com/company/predicta-s-a-former-spss-bi-greece-s-a" target="_blank" rel="noopener noreferrer">
+              <img src="/ln-icon.png" alt="linkedin-icon" />
+            </a>
+          
+          
+            <a href="https://twitter.com/predictasa" target="_blank" rel="noopener noreferrer">
+              <img src="/tw-icon.png" alt="twitter-icon" />
+            </a>
+          
+          
         </List>
       </Item>
       <Gap />
@@ -212,7 +210,6 @@ paddingleft: `1rem`
 }}>
      <IBMLogo alt='IBM Logo'  />
      </ItemB>
-     <BackTop goTo={location} />
      </GridB>
   </Container>
 

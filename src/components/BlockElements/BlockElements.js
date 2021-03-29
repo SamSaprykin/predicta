@@ -28,7 +28,6 @@ const ContentContainer = styled.div`
     flex-direction:column;
     align-items:center;
     width:100%;
-    max-width: 800px;
     margin: 0 auto;
     margin-bottom: ${props => props.marginBottom};
     margin-top: ${props => props.marginTop};
@@ -37,14 +36,14 @@ const ContentContainer = styled.div`
           ? "1280px"
           : props.fontSize === "normal"
           ? "960px"
-          : props.fontSize};
+          : "960px"};
     @media (max-width:1440px) {
         max-width: ${props =>
             props.containerSize === "large"
               ? "960px"
               : props.fontSize === "normal"
               ? "720px"
-              : props.fontSize};
+              : "720px"};
     }
     @media (max-width:1024px) {
         padding:0 32px;
@@ -249,4 +248,56 @@ const Text = styled.p`
     line-height:30px;
   }
 `;
+
+
+ 
+
+export const SectionSideBySide = ({
+    rightSide,
+    leftSide,
+    ...otherProps
+}) => {
+  return (
+        <Layout>
+            <SectionRow >
+                <LeftSide>
+                    {leftSide} 
+                </LeftSide>
+                <RightSide>
+                    {rightSide}
+                </RightSide>
+            </SectionRow>
+        </Layout>
+  );
+};
+
+
+const Layout = styled.div`
+  width:100%;
+`
+
+const SectionRow = styled.div`
+  display:flex;
+  justify-content:space-between;
+  flex-direction: row;
+  margin:0 -24px;
+`
+
+const LeftSide = styled.div`
+  width: 50%;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  padding:0 24px;
+`
+const RightSide = styled.div`
+  width: 50%;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  padding:0 24px;
+`
+
+
+
 

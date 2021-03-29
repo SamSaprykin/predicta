@@ -18,7 +18,6 @@ import EmplotmentRate from "../../components/in-depth/latin-america/images/infom
 
 
 const DepthLatinData = {
-    image:"/depth-latin.png",
     title:"Latin America",
     navItems:[
         {

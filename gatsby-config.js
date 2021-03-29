@@ -75,7 +75,7 @@ module.exports = {
       },
       {
         name:'Greece',
-        link:'/depth-greece',
+        link:'/greece/general-findings',
       },
       {
         name:'Latin America',
