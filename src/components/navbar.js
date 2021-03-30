@@ -4,7 +4,78 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import Icon from "../images/icon.svg"
 import BackTop from "./backTop"
-import { useInView } from "react-intersection-observer"
+
+
+const Navbar = ({ menuLinks, location }) => {
+  const [navbarOpen, setNavbarOpen] = useState(false)
+  
+  
+  
+  
+  return (
+<>
+    <header>
+      <NavContainer >
+      <Navigation>
+        <LogoWrap as={Link} to="/">
+          <Icon alt="Home Icon" />
+        </LogoWrap>
+        <BackTop goTo={location}  />
+        
+          <Toggle
+            navbarOpen={navbarOpen}
+            onClick={() => setNavbarOpen(!navbarOpen)}
+          >
+            {navbarOpen ? <Hamburger open /> : <Hamburger />}
+          </Toggle>
+          {navbarOpen ? (
+            <Navbox>
+        <StyledUlB>
+          {menuLinks.map((link) => (
+            <StyledLi key={link.name}>
+              <StyledA
+                to = {link.link} 
+                aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
+              >
+                {link.name}
+              </StyledA>
+            </StyledLi>
+          ))}
+        </StyledUlB>
+            </Navbox>
+          ) : (
+            <Navbox open>
+              <StyledUl>
+                {menuLinks.map((link) => (
+                  <StyledLi key={link.name}>
+                    <StyledA
+                      to = {link.link} activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}
+                      aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
+                    >
+                      {link.name}
+                    </StyledA>
+                    {link.subMenu && link.subMenu.length > 0 ? (
+                      <DropDownBox aria-label="submenu">
+                        {link.subMenu.map((subLink) => (
+                          <DropDownA to = {subLink.link} key = {subLink.name}> {subLink.name} </DropDownA>
+                        ))}
+                      </DropDownBox>
+                    ) : null}
+                  </StyledLi>
+                ))}
+              </StyledUl>
+            </Navbox>
+          )}
+        </Navigation>
+      </NavContainer>
+  
+    </header>
+    </>
+
+  )
+}
+
+
 const NavContainer = styled.div`
   width:100%;
   background-color: #f8f8f8;
@@ -265,82 +336,5 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `
-const Navbar = ({ menuLinks, location }) => {
-  const [navbarOpen, setNavbarOpen] = useState(false)
-  const [ref, inView] = useInView({
-    rootMargin: "0px",
-  })
-  const [visible, setVisible] = useState(false)
-  
-  useEffect(() => {
-      if (inView) {
-        setVisible(true)
-      } else {
-        setVisible(false)
-      }
-  }, [inView])
-  console.log(inView)
-  return (
-<>
-    <header ref={ref}>
-      <NavContainer >
-      <Navigation>
-        <LogoWrap as={Link} to="/">
-          <Icon alt="Home Icon" />
-        </LogoWrap>
-        <BackTop goTo={location} visible={visible} />
-        
-          <Toggle
-            navbarOpen={navbarOpen}
-            onClick={() => setNavbarOpen(!navbarOpen)}
-          >
-            {navbarOpen ? <Hamburger open /> : <Hamburger />}
-          </Toggle>
-          {navbarOpen ? (
-            <Navbox>
-        <StyledUlB>
-          {menuLinks.map((link) => (
-            <StyledLi key={link.name}>
-              <StyledA
-                to = {link.link} 
-                aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
-              >
-                {link.name}
-              </StyledA>
-            </StyledLi>
-          ))}
-        </StyledUlB>
-            </Navbox>
-          ) : (
-            <Navbox open>
-              <StyledUl>
-                {menuLinks.map((link) => (
-                  <StyledLi key={link.name}>
-                    <StyledA
-                      to = {link.link} activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}
-                      aria-haspopup={link.subMenu && link.subMenu.length > 0 ? true : false}
-                    >
-                      {link.name}
-                    </StyledA>
-                    {link.subMenu && link.subMenu.length > 0 ? (
-                      <DropDownBox aria-label="submenu">
-                        {link.subMenu.map((subLink) => (
-                          <DropDownA to = {subLink.link} key = {subLink.name}> {subLink.name} </DropDownA>
-                        ))}
-                      </DropDownBox>
-                    ) : null}
-                  </StyledLi>
-                ))}
-              </StyledUl>
-            </Navbox>
-          )}
-        </Navigation>
-      </NavContainer>
-  
-    </header>
-    </>
-
-  )
-}
 
 export default Navbar

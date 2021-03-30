@@ -1,14 +1,34 @@
 
-import React from "react"
+import React, {useState, useEffect} from "react"
 import styled from "styled-components"
 import {Link} from "gatsby"
 
 
 const BackTop = ({goTo, visible}) => {
+  const [isScrolled, setScrolled] = useState(false)
+  const isBrowser = typeof window !== `undefined`
+  const handleScroll = e => {
+    let bodyOffset = document.body.getBoundingClientRect()
+
+    if (bodyOffset.top < -100) {
+      setScrolled(true)
+    } else {
+      setScrolled(false)
+    }
+  }
+
+  useEffect(() => {
+    if (!isBrowser) return null
+    window.addEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  })
+  console.log(isScrolled)
   return (
     goTo !== undefined ? (
         <Link to={`${goTo.pathname}#first-section`} >
-          <BackToTopWrapper   visible={visible}>
+          <BackToTopWrapper  isScrolled={isScrolled}>
             <IconUp src="/carat-down.svg"/>
           </BackToTopWrapper>
         </Link>
@@ -19,7 +39,7 @@ const BackTop = ({goTo, visible}) => {
 }
 
 const BackToTopWrapper = styled.div`
-    opacity:${props => props.visible === true ? "0" : "1"};
+    opacity:${props => props.isScrolled === true ? "1" : "0"};
     transition:all .3s ease-in-out;
     width:60px;
     height:60px;
@@ -35,18 +55,15 @@ const BackToTopWrapper = styled.div`
     svg {
       fill:red;
     }
+    @media(max-width:768px) {
+      right:24px;
+      width:48px;
+      height:48px;
+    }
     
-    @media(max-width:1300px) {
-      right:-20px;
-      bottom:-60px;
-    }
-    @media(max-width:1080px) {
-      right:20px;
-      bottom:60px;
-    }
     @media(max-width:470px) {
       right:12px;
-      bottom:32px;
+      
     }
 `
 

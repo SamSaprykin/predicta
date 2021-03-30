@@ -54,7 +54,7 @@ const SubheadSection = styled.h2`
 
 const GeoAnalysis = () => (
   <>
-  <TitleSection id='#maps'>Geographical Analysis</TitleSection>
+  <TitleSection id='geographicalanalysis'>Geographical Analysis</TitleSection>
 
 <Grid>
 

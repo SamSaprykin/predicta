@@ -49,7 +49,7 @@ const HealthFacilities = (props) => (
             title={DepthGreeceData.title}
             navItems={DepthGreeceData.navItems}
         />
-        <PredictaTitle marginBottom="80px" marginTop="120px">
+        <PredictaTitle marginBottom="80px" marginTop="120px" id="first-section">
             HEALTH FACILITIES &amp; DEATHS
         </PredictaTitle>
         <PredictaTextWrapper >

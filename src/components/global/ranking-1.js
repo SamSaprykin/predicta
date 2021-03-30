@@ -43,7 +43,7 @@ const TitleSection = styled.h1`
 
 const RankingOne = () => (
   <>
-  <TitleSection id='#maps'>Countries Weekly Ranking</TitleSection>
+  <TitleSection id='countryranking'>Countries Weekly Ranking</TitleSection>
     <Grid>
         <iframe className='responsive-iframe' scrolling='no' src={withPrefix('../geo-1/index.html')}></iframe>
     </Grid>

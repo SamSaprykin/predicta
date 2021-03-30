@@ -9,11 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-//import { Helmet } from 'react-helmet'
+
 import NavBar from "./navbar"
 import Footer from "./footer"
-//import Header from "./header"
-//import NavBar from "./navbar"
+import CookieNotice from "../components/cookieNotice"
 import "@fontsource/ibm-plex-sans"  
 import "@fontsource/ibm-plex-sans/700.css" // Weight 700 Bold
 import "@fontsource/ibm-plex-sans/600.css" // Weight 600 Semi-Bold
@@ -85,16 +84,8 @@ const Layout = ({ children,location }) => (
     `}
     render={ data => (
       <>
-        {/* <Helmet
-          title={'Predicta'}
-          meta={[
-            { name: 'description', content: 'Predicta' },
-            { name: 'keywords', content: 'sample' },
-          ]}
-        >
-        </Helmet> */}
-        <GlobalStyle />
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+      <GlobalStyle />
+      <CookieNotice />
       <NavBar menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} location={location}/>
       <Wrapper> 
         <main>

@@ -43,12 +43,12 @@ const DepthGreeceData = {
     ]
 }
 const Demographics = (props) => (
-    <Layout>
+    <Layout location={props.location}>
         <DepthSoon 
             title={DepthGreeceData.title}
             navItems={DepthGreeceData.navItems}
         />
-        <PredictaTitle marginBottom="80px" marginTop="120px">
+        <PredictaTitle marginBottom="80px" marginTop="120px" id="first-section">
             DEMOGRAPHICS
         </PredictaTitle>
         <PredictaTextWrapper >

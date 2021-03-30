@@ -51,7 +51,7 @@ const GeneralFindingsLatin = (props) => (
             title={DepthGreeceData.title}
             navItems={DepthGreeceData.navItems}
         />
-        <PredictaTitle marginBottom="80px" marginTop="120px">
+        <PredictaTitle marginBottom="80px" marginTop="120px" id="first-section">
             GENERAL FINDINGS
         </PredictaTitle>
         <PredictaTextWrapper>
