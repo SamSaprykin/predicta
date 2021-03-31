@@ -1588,10 +1588,11 @@ margin-bottom:5px;
 .map-block .map-pagination .pagination a:not(.btn-prev):not(.btn-next) {
 	width: 18px;
 	height: 18px;
+	margin-right: 0 !important;
 }
 
 .map-block .map-pagination .pagination li {
-	width: 22px;
+	width: 22px !important;
 	margin: 0 10px 0 17px;
 }
 
@@ -1684,7 +1685,6 @@ margin-bottom:5px;
 		border-top: 12px solid transparent;
 	}
 	.map-block .map-pagination .paging-holder {
-		max-width: 300px !important;
 		height:24px !important;
 		padding-top: 6px !important;
 		
@@ -1704,7 +1704,13 @@ margin-bottom:5px;
 }
 
 @media (max-width: 1440px) {
-
+	.current-month {
+		font-size: 24px !important;
+		position: absolute;
+		bottom: 60px;
+		left:50%;
+		transform: translate(-50%,0);
+	}
 	.map-block .map-box {
 		max-width:1000px !important;
 		margin:-250px auto 0;
@@ -1798,6 +1804,7 @@ margin-bottom:5px;
 	.map-holder {
 		margin-bottom: 180px !important;
 	}
+	
 }
 
 .map-frame {
