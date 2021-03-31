@@ -204,7 +204,7 @@ paddingleft: `1rem`
       </Link>
     </h1>
 
-     <p>© {new Date().getFullYear()} Predicta, All Rights Reserved</p>
+     <p>© {new Date().getFullYear()} All Rights Reserved. Designed by Veesion.gr</p>
      </ItemB>
      <ItemB style={{
 }}>

@@ -37,11 +37,6 @@ const Terms = (props) => (
 
 <TextBox>
 
-<h2
-      style={{
-        color: `red`
-      }}
-    >Cookies module script</h2>
 
 
 <h3>This website uses cookies</h3>
@@ -72,11 +67,7 @@ const Terms = (props) => (
 
 </p>  
 
-<h2
-      style={{
-        color: `red`
-      }}
-    >Privacy policy & cookies page script</h2>
+
 
 
 <h2>Privacy policy </h2>
@@ -153,7 +144,7 @@ const Terms = (props) => (
   The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies, we need your permission.
   This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.
   You can at any time change or withdraw your consent from the Cookie Declaration on our website.
-  Your consent applies to the following domains: www.predicta.gr, έχουμε άλλο domain?
+  Your consent applies to the following domains: www.predicta4covid.com.
 </p>
 
 {/* Your current state: Use necessary cookies only. 
