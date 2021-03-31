@@ -152,7 +152,7 @@ module.exports = {
           allowAdFeatures: false // default
         },
         googleTagManager: {
-          trackingId: process.env.GOOGLE_TAG_ID, // leave empty if you want to disable the tracker
+          trackingId: "G-C1VQGE32RQ", // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-google-tagmanager', // default
           dataLayerName: 'dataLayer', // default
         },
