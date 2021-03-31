@@ -66,6 +66,9 @@ const StyledContainer = styled.div`
   }
   div {
     margin:0 !important;
+    @media (max-width:470px) {
+      flex-direction:column;
+    }
   }
   #rcc-decline-button {
     padding:22px 32px !important;
@@ -135,6 +138,9 @@ const CookieContent = styled.div`
     padding:32px;
     display:flex;
     flex-direction:column;
+    @media (max-width:470px) {
+      padding:8px;
+    }
 `
 
 const ContentWrapper = styled.div`
@@ -145,6 +151,9 @@ const ContentWrapper = styled.div`
     flex-direction:column;
     width:100%;
     padding-bottom:40px;
+    @media (max-width:470px) {
+      padding-bottom:8px;
+    }
 `
 
 const LinksWrapper = styled.div`
@@ -163,5 +172,8 @@ const LinksWrapper = styled.div`
       width:350px;
       margin:15px;
       text-align:center;
+      @media (max-width:470px) {
+        margin:8px 0;
+      }
     }
 `
