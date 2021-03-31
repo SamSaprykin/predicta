@@ -1,6 +1,6 @@
 import React from "react"
 import CookieConsent from "react-cookie-consent"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 // GDPR Cookies
@@ -8,100 +8,160 @@ import { useLocation } from "@reach/router" // this helps tracking the location
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 
 
-const StyledContainer = styled.div`
-  max-width: 100%;
-  p {
-    margin-bottom: 20px;
-    @media (max-width:768px) {
-      margin-bottom: 0;
-    }
-  }
-  a,
-  button {
-    display: block;
-    width: 100%;
-    text-align: center;
-    transform: scale(1);
-    transition: all 200ms ease;
-    @media (max-width:768px) {
-      width: auto;
-    }
-  }
-  button {
-    width: calc(100% - 30px);
-    margin: 15px;
-    @media (max-width:768px) {
-      width: auto;
-    }
-  }
-  a:hover,
-  button:hover {
-    transition: all 200ms ease;
-    transform: scale(1.05);
-  }
-  & > div {
-    display: block !important;
-    width: calc(100vw - 20px) !important;
-    border-radius: 10px;
-    margin: 10px;
-    @media (max-width:768px) {
-      max-width: 1168px;
-      left: 0;
-      right: 0;
-      margin: 10px auto;
-      display: flex !important;
-      align-items: flex-end !important;
-    }
-    & > div {
-      @media (max-width:768px) {
-        display: flex;
-        align-items: flex-end;
-      }
-    }
-  }
-`
+
 
 const CookieNotice = () => (
   <StyledContainer>
-    <CookieConsent
+    <StyledCookieConsent
       debug={false}
       location="bottom"
-      buttonText="Accept Cookies"
+      buttonText="Allow all cookies"
       enableDeclineButton
       cookieName="gatsby-gdpr-google-tagmanager"
       onAccept={() => {
         initializeAndTrack(useLocation)
       }}
-      onDecline={() => {
-        window[`ga-disable-`] = true
-      }}
-      style={{
-        background: "#1f1f1f",
-        color: "#fff",
-        zIndex: "200",
-        padding: "20px",
-      }}
-      buttonStyle={{
-        background: "#8937f8",
-        color: "#fff",
-        fontWeight: "500",
-        fontSize: "14px",
-        padding: "12px 18px",
-        border: "4px solid #8937F8",
-        borderRadius: "4px",
-        cursor: "pointer",
-      }}
+      declineButtonText="Decline"
       expires={365}
-      
     >
-      <div>
-        <h3 style={{ color: "#fff", fontSize: "18px", fontWeight: "500" }}>
-          This Website uses cookie
+      <ContentWrapper>
+        <h3>
+          This Website uses cookies
         </h3>
-      </div>
+       
+        <CookieContent>
+          <CookieTitle>
+            PREDICTA is the controller of the personal data you make available through our website using our cookies.
+            We only use Performance cookies to analyse anonymous traffic only after your consent is provided.
+          </CookieTitle>   
+          <LinksWrapper>
+            <Link to="/privacy-policy" >Read our cookies policy </Link>
+            <Link to="/privacy-policy" >Read our privacy policy </Link>
+          </LinksWrapper>
+          
+        </CookieContent>
+       
+      </ContentWrapper>
       
-    </CookieConsent>
+    </StyledCookieConsent>
   </StyledContainer>
 )
 
 export default CookieNotice
+
+const StyledCookieConsent = styled(CookieConsent)`
+    
+`
+const StyledContainer = styled.div`
+  max-width: 100%;
+  
+  h3 {
+    margin-top:40px;
+    color:#222B3E;
+    width:100%;
+    font-size:32px;
+    line-height:1.1;
+    text-align:center;
+    font-weight:600;
+  }
+  div {
+    margin:0 !important;
+  }
+  #rcc-decline-button {
+    padding:22px 32px !important;
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 25px;
+    font-weight:600 !important;
+    color:white !important;
+    background-color:#222B3E !important;
+    width:350px;
+    text-align:center;
+  }
+  #rcc-confirm-button {
+    padding:22px 32px !important;
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 25px;
+    font-weight:600 !important;
+    color:white !important;
+    background-color:#222B3E !important;
+    width:350px;
+    text-align:center;
+  }
+  .CookieConsent {
+      background-color: #f8f8f8 !important;
+      flex-direction:column;
+      padding-bottom:20px;
+      div {
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin:0;
+      }
+      @media (max-width:470px) {
+          padding:0 24px !important;
+          div {
+              margin:0 auto !important;
+          }
+      }
+  }
+ 
+`
+
+const CookieTitle = styled.h5`
+    font-family: IBM Plex Sans, sans-serif;
+    margin-bottom:0 !important;
+    font-weight:400;
+    color: #777777;
+    font-size: 24px;
+    line-height:44px;
+    max-width:1100px;
+    margin:24px auto;
+    a {
+      text-decoration:underline;
+      color:#0023EB;
+    }
+    @media (max-width:768px) {
+        margin-left:0;
+    }
+    @media (max-width:470px) {
+        display:none;
+    }
+`
+
+const CookieContent = styled.div`
+    width:100%;
+    margin:0 auto;
+    padding:32px;
+    display:flex;
+    flex-direction:column;
+`
+
+const ContentWrapper = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:
+    position:relative;
+    flex-direction:column;
+    width:100%;
+    padding-bottom:40px;
+`
+
+const LinksWrapper = styled.div`
+    width:100%;
+    max-width:730px;
+    display:flex;
+    justify-content:center !important;
+    margin:0 auto !important;
+    a {
+      display:block;
+      text-decoration:none;
+      color: #777777;
+      font-weight:700;
+      font-size: 24px;
+      line-height:44px;
+      width:350px;
+      margin:15px;
+      text-align:center;
+    }
+`
