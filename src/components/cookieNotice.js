@@ -35,7 +35,7 @@ const CookieNotice = () => (
             We only use Performance cookies to analyse anonymous traffic only after your consent is provided.
           </CookieTitle>   
           <LinksWrapper>
-            <Link to="/privacy-policy" >Read our cookies policy </Link>
+            <Link to="/terms" >Read our cookies policy </Link>
             <Link to="/privacy-policy" >Read our privacy policy </Link>
           </LinksWrapper>
           
