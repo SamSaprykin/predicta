@@ -68,7 +68,7 @@ const CookieNotice = () => (
       location="bottom"
       buttonText="Accept Cookies"
       enableDeclineButton
-      cookieName="gatsby-gdpr-google-analytics"
+      cookieName="gatsby-gdpr-google-tagmanager"
       onAccept={() => {
         initializeAndTrack(useLocation)
       }}
