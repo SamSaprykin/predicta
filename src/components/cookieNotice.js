@@ -72,13 +72,14 @@ const CookieNotice = () => (
       onAccept={() => {
         initializeAndTrack(useLocation)
       }}
+      onDecline={() => {
+        window[`ga-disable-`] = true
+      }}
       style={{
         background: "#1f1f1f",
         color: "#fff",
         zIndex: "200",
         padding: "20px",
-        // display: "flex",
-        // alignItems: "flex-end",
       }}
       buttonStyle={{
         background: "#8937f8",
