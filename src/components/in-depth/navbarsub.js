@@ -69,7 +69,7 @@ padding: .3rem;
 
 
 h1 {
-  font-size: 44px;
+  font-size: 28px !important;
   color: #ffffff;
   letter-spacing: normal;
   line-height: 60px;
@@ -82,12 +82,6 @@ h1 {
   letter-spacing: normal;
   line-height: normal;
   margin-bottom:0;
-  @media (max-width:1440px) {
-      font-size:38px;
-  }
-  @media (max-width:768px) {
-      font-size:32px;
-  }
 }
 `
 
@@ -104,7 +98,9 @@ flex-direction: column;
 border-right: 1px solid #A7A9AC;
 text-align:center;
 
-
+a {
+  padding:3px 0 !important;
+}
 @media(max-width:1280px) {
   grid-column: span 2;
 }

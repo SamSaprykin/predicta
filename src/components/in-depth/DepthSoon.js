@@ -73,18 +73,13 @@ const TitleTable = styled.h2`
     text-align: center;
     text-transform: uppercase;
     font-family: "IBM Plex Sans";
-    font-size: 44px;
+    font-size: 28px;
     font-weight: 600;
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
     margin-bottom:0;
-    @media (max-width:1440px) {
-        font-size:38px;
-    }
-    @media (max-width:768px) {
-        font-size:32px;
-    }
+
 `
 
 const TableRow = styled.div`
@@ -111,7 +106,7 @@ const TableItem = styled(Link)`
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
-    padding:12px;
+    padding:3px;
     border-left: 1px solid #a7a9ac;
     border-bottom: 1px solid #a7a9ac;
     background-color: #f6f6f6;
@@ -119,9 +114,8 @@ const TableItem = styled(Link)`
     display:flex;
     align-items:center;
     justify-content:center;
-    height:58px;
+    height:46px;
     @media (max-width:1440px) {
-        padding:9px;
         font-size: 0.8rem;
         font-weight: 700;
         line-height: 1.4;
