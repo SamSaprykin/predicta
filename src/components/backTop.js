@@ -24,7 +24,7 @@ const BackTop = ({goTo, visible}) => {
       window.removeEventListener("scroll", handleScroll)
     }
   })
-  console.log(isScrolled)
+  
   return (
     goTo !== undefined ? (
         <Link to={`${goTo.pathname}#first-section`} >

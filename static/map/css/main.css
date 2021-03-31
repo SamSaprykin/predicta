@@ -723,10 +723,8 @@ h3,
 }
 
 .map-section .mobile-cap .holder {
-	padding: 20px;
-	background-color: rgba(255, 255, 255, .8);
-	color: #222b3e;
-	box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+	
+	width:70%;
 }
 
 .map-holder {
@@ -1705,7 +1703,7 @@ margin-bottom:5px;
 
 @media (max-width: 1440px) {
 	.current-month {
-		font-size: 24px !important;
+		font-size: 26px !important;
 		position: absolute;
 		bottom: 60px;
 		left:50%;
@@ -1807,7 +1805,32 @@ margin-bottom:5px;
 	
 }
 
+@media (max-width: 768px) {
+	.map-block .map-box {
+		max-width: 800px !important;
+		margin: 0 auto 0;
+	}
+	.map-section .map-frame {
+		position: relative;
+		min-height: 600px;
+	}
+	.map-section .map-frame {
+		position: relative;
+		min-height: 600px;
+	}
+	.pop-up-image {
+		width:50%;
+	}
+}
+
+@media (max-width: 470px) {
+	.pop-up-image {
+		width:100%;
+	}
+}
+
 .map-frame {
 	max-width:1280px !important;
 	margin:0 auto;
 }
+

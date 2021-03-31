@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@enzsft/react-cookie-consents": "^1.0.0",
     "@fontsource/ibm-plex-sans": "^4.2.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",

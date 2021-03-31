@@ -1,13 +1,10 @@
 import React from "react"
-import CookieConsent from "react-cookie-consent"
-// import { Link } from "gatsby"
+import {
+    CookieConsentsProvider,
+    useCookieConsents,
+} from "@enzsft/react-cookie-consents";
 import styled from "styled-components"
-
-// GDPR Cookies
-import { useLocation } from "@reach/router" // this helps tracking the location
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
-
-
 const StyledContainer = styled.div`
   max-width: 100%;
   p {
@@ -60,46 +57,37 @@ const StyledContainer = styled.div`
     }
   }
 `
+ 
+const WrapperBanner = styled.div`
+  position:fixed;
+  bottom:0;
+  background:white;
+  z-index:1000;
+`
+const CookieBanner = () => {
+    const cookieConsents = useCookieConsents();
+    
+    
+    const allConsents = cookieConsents.get();
+    console.log(allConsents)
+    return (
+      <WrapperBanner>
+        <span>
+          We use cookies to help give you the best experience on our site. By
+          continuing you agree to our use of cookies.
+        </span>
+        <button type="button" onClick={() => cookieConsents.add("gatsby-gdpr-google-tagmanager")}>
+          Accept and close
+        </button>
+      </WrapperBanner>
+    );
+};
 
 const CookieNotice = () => (
   <StyledContainer>
-    <CookieConsent
-      debug={false}
-      location="bottom"
-      buttonText="Accept Cookies"
-      enableDeclineButton
-      cookieName="gatsby-gdpr-google-analytics"
-      onAccept={() => {
-        initializeAndTrack(useLocation)
-      }}
-      style={{
-        background: "#1f1f1f",
-        color: "#fff",
-        zIndex: "200",
-        padding: "20px",
-        // display: "flex",
-        // alignItems: "flex-end",
-      }}
-      buttonStyle={{
-        background: "#8937f8",
-        color: "#fff",
-        fontWeight: "500",
-        fontSize: "14px",
-        padding: "12px 18px",
-        border: "4px solid #8937F8",
-        borderRadius: "4px",
-        cursor: "pointer",
-      }}
-      expires={365}
-      
-    >
-      <div>
-        <h3 style={{ color: "#fff", fontSize: "18px", fontWeight: "500" }}>
-          This Website uses cookie
-        </h3>
-      </div>
-      
-    </CookieConsent>
+    <CookieConsentsProvider cookieName="cookieConsents" expiryInDays={365}>
+        <CookieBanner />
+    </CookieConsentsProvider>   
   </StyledContainer>
 )
 
