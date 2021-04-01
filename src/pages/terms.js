@@ -36,7 +36,7 @@ const Terms = (props) => (
   
 
 <TextBox>
-Date: Month xx, 20xx
+Date: March 26, 2021
 <h2>Overview</h2>
 <p>The following are the terms of an agreement between you and PREDICTA. By accessing, 
   or using this Web site, you acknowledge that you have read, understand, and agree 
