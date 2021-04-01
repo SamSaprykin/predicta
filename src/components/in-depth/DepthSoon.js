@@ -15,7 +15,7 @@ const DepthSoon = ({image, title, navItems}) => {
                 {
                     navItems.map((item,index) => {
                         return (
-                            <TableItem key={index} to={item.linkTo}>
+                            <TableItem key={index} to={item.linkTo} activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}>
                                 {item.title}
                             </TableItem>
                         )
@@ -109,12 +109,15 @@ const TableItem = styled(Link)`
     padding:3px;
     border-left: 1px solid #a7a9ac;
     border-bottom: 1px solid #a7a9ac;
+    margin-top:-1px;
     background-color: #f6f6f6;
     flex-grow: 1;
     display:flex;
     align-items:center;
     justify-content:center;
     height:46px;
+    outline:none;
+
     @media (max-width:1440px) {
         font-size: 0.8rem;
         font-weight: 700;

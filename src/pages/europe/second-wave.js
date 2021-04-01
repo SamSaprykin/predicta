@@ -21,6 +21,7 @@ const Grid = styled.div`
   letter-spacing: normal;
   line-height: 44px;
   text-align: left;
+  
   .big-item {
 	max-width:1280px !important;
 	@media(max-width:1440px) {
@@ -31,6 +32,9 @@ const Grid = styled.div`
 	}
 	@media(max-width:768px) {
 		padding:0 32px;
+	}
+	img {
+		margin:0 auto;
 	}
   }
   
@@ -145,6 +149,8 @@ const List = styled.ul`
   overflow-x: auto;
   margin: 0 0 2rem;
   padding:0;
+  text-align:justify;
+  color:#606060;
   li {
 	font-size:18px;
   	line-height:38px;

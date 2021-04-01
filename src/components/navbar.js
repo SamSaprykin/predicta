@@ -15,7 +15,7 @@ const Navbar = ({ menuLinks, location }) => {
   return (
 <>
     <header>
-      <NavContainer >
+      <NavContainer id="navbar">
       <Navigation>
         <LogoWrap as={Link} to="/">
           <Icon alt="Home Icon" />

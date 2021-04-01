@@ -1704,10 +1704,6 @@ margin-bottom:5px;
 @media (max-width: 1440px) {
 	.current-month {
 		font-size: 26px !important;
-		position: absolute;
-		bottom: 60px;
-		left:50%;
-		transform: translate(-50%,0);
 	}
 	.map-block .map-box {
 		max-width:1000px !important;
@@ -1832,5 +1828,13 @@ margin-bottom:5px;
 .map-frame {
 	max-width:1280px !important;
 	margin:0 auto;
+}
+
+.current-month {
+	font-size: 36px !important;
+	position: absolute;
+	bottom: 60px;
+	left:50%;
+	transform: translate(-50%,0);
 }
 

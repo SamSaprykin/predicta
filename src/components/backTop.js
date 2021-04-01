@@ -27,7 +27,7 @@ const BackTop = ({goTo, visible}) => {
   
   return (
     goTo !== undefined ? (
-        <Link to={`${goTo.pathname}#first-section`} >
+        <Link to={`${goTo.pathname}#navbar`} >
           <BackToTopWrapper  isScrolled={isScrolled}>
             <IconUp src="/carat-down.svg"/>
           </BackToTopWrapper>
