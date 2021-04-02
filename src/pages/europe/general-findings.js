@@ -455,10 +455,10 @@ const GeneralFindings = (props) => (
 		<th className="wide-cell">Europe - Regions</th>
 		<th>Cases per 1M(Feb - May)</th>
 		<th>Cases per 1M(Jun - Aug)</th>
-		<th>Cases per 1M(Sep- Nov)</th>
+		<th>Cases per 1M(Sep - Nov)</th>
 		<th>Deaths per 1M(Feb - May)</th>
 		<th>Deaths per 1M(Jun - Aug)</th>
-		<th>Deaths per 1M(Sep- Nov)</th>
+		<th>Deaths per 1M(Sep - Nov)</th>
 	</tr>
 	</thead>
 	<tbody>
@@ -544,7 +544,7 @@ const GeneralFindings = (props) => (
 		<th>% Mortality
 (Jun - Aug)</th>
 		<th>% Mortality
-(Sep- Nov)</th>
+(Sep - Nov)</th>
 	</tr>
 	</thead>
 	<tbody>
