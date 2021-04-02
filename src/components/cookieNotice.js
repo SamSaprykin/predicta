@@ -7,41 +7,47 @@ import styled from "styled-components"
 import { useLocation } from "@reach/router" // this helps tracking the location
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 
-const CookieNotice = () => (
-  <StyledContainer>
-    <StyledCookieConsent
-      debug={false}
-      location="bottom"
-      buttonText="Allow all cookies"
-      enableDeclineButton
-      cookieName="gatsby-gdpr-google-tagmanager"
-      onAccept={() => {
-        initializeAndTrack(useLocation)
-      }}
-      declineButtonText="Decline"
-      expires={365}
-    >
-      <ContentWrapper>
-        <h3>
-          This Website uses cookies
-        </h3>
-       
-        <CookieContent>
-          <CookieTitle>
-            PREDICTA is the controller of the personal data you make available through our website using our cookies.
-            We only use Performance cookies to analyse anonymous traffic only after your consent is provided.
-          </CookieTitle>   
-          <LinksWrapper>
-            <a href="/privacy-policy" target="_blank">Read our privacy policy </a>
-          </LinksWrapper>
-          
-        </CookieContent>
-       
-      </ContentWrapper>
-      
-    </StyledCookieConsent>
-  </StyledContainer>
-)
+const CookieNotice = () => {
+  const location = useLocation();
+  const handleCookieAccept = () => {
+		initializeAndTrack(location);
+		console.log("Accepted");
+	};
+  return (
+    <StyledContainer>
+      <StyledCookieConsent
+        debug={false}
+        location="bottom"
+        buttonText="Allow all cookies"
+        enableDeclineButton
+        cookieName='gatsby-gdpr-google-analytics'
+        onAccept={() => handleCookieAccept()}
+        declineButtonText="Decline"
+        expires={365}
+      >
+        <ContentWrapper>
+          <h3>
+            This Website uses cookies
+          </h3>
+        
+          <CookieContent>
+            <CookieTitle>
+              PREDICTA is the controller of the personal data you make available through our website using our cookies.
+              We only use Performance cookies to analyse anonymous traffic only after your consent is provided.
+            </CookieTitle>   
+            <LinksWrapper>
+              <a href="/privacy-policy" target="_blank">Read our privacy policy </a>
+            </LinksWrapper>
+            
+          </CookieContent>
+        
+        </ContentWrapper>
+        
+      </StyledCookieConsent>
+    </StyledContainer>
+  )
+}
+
 
 export default CookieNotice
 

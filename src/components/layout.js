@@ -71,8 +71,7 @@ padding:3rem 3rem 5rem;
 const Layout = ({ children,location }) => {
   const dispatch = useContext(GlobalDispatchContext)
   const state = useContext(GlobalStateContext)
-  console.log(state)
-  console.log(dispatch)
+  
   return (
     <StaticQuery
     query={graphql`

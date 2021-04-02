@@ -3,7 +3,7 @@ import React, {useState} from "react"
 import styled from "styled-components"
 
 const MobileLayout = ({closed,dispatch}) => {
-  console.log(closed)
+  
   
   return (
     
