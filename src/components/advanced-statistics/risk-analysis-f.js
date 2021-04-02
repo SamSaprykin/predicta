@@ -102,7 +102,7 @@ const TextBox = styled.div`
 `
 
 const TitleSection = styled.h2`
-  text-transform: capitalize;
+  text-transform: none;
   color: #222B3E;
   letter-spacing: 0px;
   font-size:26px;
