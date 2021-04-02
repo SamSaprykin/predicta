@@ -114,7 +114,9 @@ const Intro = () => (
       <li>- <strong>Active cases</strong> include diagnosed cases, asymptomatic carriers or those that are pre-symptomatic but can still spread the virus (estimated).</li>
       <li>- The Risk of Infection for an individual is the ratio of the <strong>maximum Active cases per period</strong> of study, to the <strong>Greek population.</strong></li>
     </ul>
+    <p>
     <h5><strong>Selected Scenarios demonstrating the Risk of Infection in Greece, under variable situations, interpreting our pandemic experience and the ways preventive measures can influence this experience.</strong></h5>
+    </p>
   </IntroBox>
   </>
 )
