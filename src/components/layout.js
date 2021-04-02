@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useContext } from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
@@ -20,6 +20,10 @@ import "@fontsource/ibm-plex-sans/600.css" // Weight 600 Semi-Bold
 import "@fontsource/ibm-plex-sans/400.css" // Weight 600 Regular
 import "./layout.css"
 import GlobalStyle from "./globalstyle.js"
+import {
+  GlobalDispatchContext,
+  GlobalStateContext,
+} from "../context/GlobalContextProvider"
 
 
 if (typeof window !== "undefined") {
@@ -64,44 +68,55 @@ padding:3rem 3rem 5rem;
 }
 `;
 
-const Layout = ({ children,location }) => (
-  <StaticQuery
+const Layout = ({ children,location }) => {
+  const dispatch = useContext(GlobalDispatchContext)
+  const state = useContext(GlobalStateContext)
+  console.log(state)
+  console.log(dispatch)
+  return (
+    <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-            menuLinks {
-              name
-              link
-              subMenu {
-                name 
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+              menuLinks {
+                name
                 link
-              }
-           }
+                subMenu {
+                  name 
+                  link
+                }
+            }
+            }
           }
         }
-      }
-    `}
-    render={ data => (
-      <>
-      <GlobalStyle />
-      <MobileLayout />
-      <CookieNotice />
-      <NavBar menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} location={location}/>
-      <Wrapper> 
-        <main>
-        {children}
-        </main>
-        <FooterWrapper>
-          <Footer location={location} />
-        </FooterWrapper>
+      `}
+      render={data => (
+        <>
+        <GlobalStyle />
+        
+          <MobileLayout closed={state.closed} dispatch={dispatch} />
+        
+        <CookieNotice />
+        <NavBar menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} location={location}/>
+        <Wrapper> 
+          <main>
+          {children}
+          </main>
+          <FooterWrapper>
+            <Footer location={location} />
+          </FooterWrapper>
         </Wrapper>
-    
-      </>
-    )}
-  />
-)
+        </>
+      )}
+    />
+  )
+
+}
+  
+  
+
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

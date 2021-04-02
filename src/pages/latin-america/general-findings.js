@@ -16,25 +16,8 @@ import TitleGraphic2 from "../../components/in-depth/latin-america/images/title-
 import MobilityLatin from "../../components/in-depth/latin-america/images/mobility-per-monts-latin.svg"
 import TotalCasesLatin from "../../components/in-depth/latin-america/images/total-case-perM-latin.svg"
 import ExcessMortality from "../../components/in-depth/latin-america/images/excess-mortality-latin.svg"
+import { DepthLatinData } from "./navLinksLatin"
 
-const DepthLatinData = {
-    image:"/depth-latin.png",
-    title:"Latin America",
-    navItems:[
-        {
-            title:"General Findings",
-            linkTo:"/latin-america/general-findings"
-        },
-        {
-            title:"Socio-Economic and Health Factors",
-            linkTo:"/latin-america/socio-economic-and-healts-factors"
-        },
-        {
-            title:"Conclusion",
-            linkTo:"/latin-america/conclusion"
-        }
-    ]
-}
 const GeneralFindingsLatin = (props) => (
     <Layout location={props.location}>
         <DepthSoon 
