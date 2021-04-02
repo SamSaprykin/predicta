@@ -242,7 +242,7 @@ const FirstWave = (props) => (
 		<th>Days to<br></br> 100th Cases</th>
 		<th>Date of <br></br>100th Case</th>
 		<th>Date of <br></br>Lockdown</th>
-		<th>Days to Lock down<br></br>From 100th Case</th>
+		<th>Days to Lock down<br></br>from 100th Case</th>
 
 	</tr>
 	</thead>
