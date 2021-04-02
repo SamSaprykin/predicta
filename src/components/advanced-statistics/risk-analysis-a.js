@@ -82,7 +82,7 @@ const TitleSection = styled.h1`
 const RiskA = () => (
   <>
   
-  <TitleSection>Risk vs Gathering Size without Masks</TitleSection>
+  <TitleSection>Risk vs Gathering size without Masks</TitleSection>
   <Grid>
     <Item>
       <ChartOne />
