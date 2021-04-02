@@ -7,9 +7,6 @@ import styled from "styled-components"
 import { useLocation } from "@reach/router" // this helps tracking the location
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 
-
-
-
 const CookieNotice = () => (
   <StyledContainer>
     <StyledCookieConsent
@@ -35,7 +32,7 @@ const CookieNotice = () => (
             We only use Performance cookies to analyse anonymous traffic only after your consent is provided.
           </CookieTitle>   
           <LinksWrapper>
-            <Link to="/privacy-policy" >Read our privacy policy </Link>
+            <a href="/privacy-policy" target="_blank">Read our privacy policy </a>
           </LinksWrapper>
           
         </CookieContent>
@@ -93,6 +90,7 @@ const StyledContainer = styled.div`
       background-color: #f8f8f8 !important;
       flex-direction:column;
       padding-bottom:20px;
+      z-index:1000000000 !important;
       div {
         width:100%;
         display:flex;
