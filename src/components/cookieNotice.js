@@ -131,7 +131,9 @@ const CookieTitle = styled.h5`
         margin-left:0;
     }
     @media (max-width:470px) {
-        display:none;
+      font-size: 18px;
+      line-height:1.5;
+      margin-top:0;
     }
 `
 
