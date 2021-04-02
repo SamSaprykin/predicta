@@ -141,7 +141,7 @@ Date: March 26, 2021
 </p>
 
 <h2>
-  DISCLAIMER OF WARRANTY
+  Disclaimer of warranty
 </h2>
 <p>
   Use of this site is at your sole risk. All materials, information, products, software, programs, and services 
@@ -158,7 +158,7 @@ Date: March 26, 2021
 </p>
 
 <h2>
-  LIMITATION OF LIABILITY
+  Limitation of liability
 </h2>
 
 <p>
