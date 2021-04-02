@@ -15,7 +15,24 @@ import CardiovascularDeaths from "../../components/in-depth/latin-america/images
 import ObesityRate from "../../components/in-depth/latin-america/images/obesity-rate.svg"
 import GpdCapita from "../../components/in-depth/latin-america/images/gpd-per-capita-latin.svg"
 import EmplotmentRate from "../../components/in-depth/latin-america/images/infomal-employmant-rate-latin.svg"
-import { DepthLatinData } from "./navLinksLatin";
+const DepthLatinData = {
+    image:"/depth-latin.png",
+    title:"Latin America",
+    navItems:[
+        {
+            title:"General Findings",
+            linkTo:"/latin-america/general-findings"
+        },
+        {
+            title:"Socio-Economic and Health Factors",
+            linkTo:"/latin-america/socio-economic-and-healts-factors"
+        },
+        {
+            title:"Conclusion",
+            linkTo:"/latin-america/conclusion"
+        }
+    ]
+}
 
 const SocioEconomicLatin = (props) => (
     <Layout location={props.location}>
