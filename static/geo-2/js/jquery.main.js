@@ -48,6 +48,7 @@ function initLineChart() {
 		}
 
 		function formatData() {
+			loadData.sort(compareAscending)
 			loadData.forEach(function(d) {
 				var propName = d.Country;
 
@@ -65,6 +66,14 @@ function initLineChart() {
 					cases: d[holder.data('cases')]
 				});
 			});
+		}
+
+		function compareAscending(a,b) {
+			a = a.Country.toLowerCase();
+			b = b.Country.toLowerCase();
+
+			if(a>b) return 1;
+			if(a<b) return -1;
 		}
 
 		function initSlider() {

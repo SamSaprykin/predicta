@@ -22,7 +22,7 @@ const DepthGreeceData = {
             linkTo:"/greece/measures-mobility"
         },
         {
-            title:"The Success During The First Wave",
+            title:"The Success during the First Wave",
             linkTo:"/greece/success-during-the-first-wave"
         },
         {

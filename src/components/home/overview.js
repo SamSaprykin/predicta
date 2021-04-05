@@ -76,7 +76,7 @@ p {
 
 
 @media (max-width: 1440px) {
-  padding: 1rem;
+  padding: .5rem;
   width:200px;
   height:200px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components"
-import Median from "./images/median-age-gender.svg";
+import Median from "./images/median-age.svg";
 
 
 const ImageBox = styled.div`
