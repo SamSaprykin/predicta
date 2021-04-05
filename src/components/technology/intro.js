@@ -57,7 +57,7 @@ const Intro = () => (
 <>
   <IntroBox>
      <h1>Technology</h1>
-     <p>Retrieving and organizing the available data from a considerable number of sources (listed in detail in the ‘ABOUT’ section of this micro site), was a challenging task that could not have been accomplished successfully and promptly without the appropriate technological tools. Further to that, the statistical analysis of the data and the reporting of finding and results, demanded a wide range of user-friendly analytics capabilities. Last, but not least, the need to continuously update the created COVID-19 Master File as more data become available and the consequent need to update the analysis and findings, required an end - to - end analytics technological platform, which can support all the steps of the adopted methodology.</p>
+     <p>Retrieving and organizing the available data from a considerable number of sources (listed in detail in the ‘ABOUT’ section of this micro site), was a challenging task that could not have been accomplished successfully and promptly without the appropriate technological tools. Further to that, the statistical analysis of the data and the reporting of findings and results, demanded a wide range of user-friendly analytics capabilities. Last, but not least, the need to continuously update the created COVID-19 Master File as more data become available and the consequent need to update the analysis and findings, required an end - to - end analytics technological platform, which can support all the steps of the adopted methodology.</p>
   </IntroBox>
 </>
   
