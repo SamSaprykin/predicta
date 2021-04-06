@@ -67,8 +67,8 @@ const NavbarLinks = () => {
         <NavItem to="/">Home</NavItem>
         <NavItem to="/about">About</NavItem>
         <NavItem to="/global-analysis">Global Analysis</NavItem>
-        <NavItem to="/in-depth">In Depth</NavItem>
-        <NavItem to="/advanced-statistics">Advanced Statistics</NavItem>
+        <NavItem to="/greece/general-findings ">In Depth</NavItem>
+        <NavItem to="/advanced-statistics/risk-analysis">Advanced Statistics</NavItem>
         <NavItem to="/technology">Technology</NavItem>
         <NavItem to="/get-in-touch">Get In Touch</NavItem>
       </ Navigation>
