@@ -11,11 +11,28 @@ import RankingTwo from "../components/global/ranking-2"
 import GeoAnalysis from "../components/global/geographical"
 import Regional from "../components/global/regional"
 import Demographics from "../components/global/demographics"
-//import Image from "../components/image"
-//import SEO from "../components/seo"
+import SEO from "../components/seo"
+
+
+const globalAnalysisMetadata = {
+  Title: "Predicta",
+  Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+  Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+  Image: "/predicta-icon.png",
+  url:"https://www.predicta4covid.com/",
+  titleTemplate:"Predicta"
+}
 
 const Global = (props) => (
   <Layout location={props.location}>
+    <SEO 
+        title={globalAnalysisMetadata.Title} 
+        keywords={globalAnalysisMetadata.Keywords} 
+        description={globalAnalysisMetadata.Description} 
+        image={globalAnalysisMetadata.Image}
+        url={globalAnalysisMetadata.url}
+        titleTemplate={globalAnalysisMetadata.titleTemplate}
+    />
     <div className="row" id="first-section">
     <div className="col">
       <Intro/>

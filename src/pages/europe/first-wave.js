@@ -12,7 +12,16 @@ import ChartSix from "../../components/in-depth/europe/images/firstwave/f.svg"
 import ChartSeven from "../../components/in-depth/europe/images/firstwave/g.svg"
 import ChartEight from "../../components/in-depth/europe/images/firstwave/h.svg"
 import ChartNine from "../../components/in-depth/europe/images/firstwave/i.svg"
+import SEO from "../../components/seo"
 
+const europeFirstWaveMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
 
 const Grid = styled.div`
   display: grid;
@@ -188,7 +197,14 @@ const SubTitle = styled.h2`
 
 const FirstWave = (props) => (
     <Layout location={props.location}>
-
+	<SEO 
+      title={europeFirstWaveMetadata.Title} 
+      keywords={europeFirstWaveMetadata.Keywords} 
+      description={europeFirstWaveMetadata.Description} 
+      image={europeFirstWaveMetadata.Image}
+      url={europeFirstWaveMetadata.url}
+      titleTemplate={europeFirstWaveMetadata.titleTemplate}
+    />  
 <div className="row" id="first-section">
     <div className="col">
 

@@ -10,6 +10,17 @@ import {
     SectionSideBySide,
     PredictaText,
 } from "../../components/BlockElements/BlockElements";
+import SEO from "../../components/seo"
+
+const greeceGeneralMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
+
 const DepthGreeceData = {
     title: "Greece",
     navItems:[
@@ -46,6 +57,14 @@ const DepthGreeceData = {
 
 const GeneralFindingsLatin = (props) => (
     <Layout location={props.location}>
+        <SEO 
+            title={greeceGeneralMetadata.Title} 
+            keywords={greeceGeneralMetadata.Keywords} 
+            description={greeceGeneralMetadata.Description} 
+            image={greeceGeneralMetadata.Image}
+            url={greeceGeneralMetadata.url}
+            titleTemplate={greeceGeneralMetadata.titleTemplate}
+        /> 
         <DepthSoon 
             title={DepthGreeceData.title}
             navItems={DepthGreeceData.navItems}

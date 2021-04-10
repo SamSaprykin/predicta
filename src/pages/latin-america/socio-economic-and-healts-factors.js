@@ -15,6 +15,17 @@ import CardiovascularDeaths from "../../components/in-depth/latin-america/images
 import ObesityRate from "../../components/in-depth/latin-america/images/obesity-rate.svg"
 import GpdCapita from "../../components/in-depth/latin-america/images/gpd-per-capita-latin.svg"
 import EmplotmentRate from "../../components/in-depth/latin-america/images/infomal-employmant-rate-latin.svg"
+import SEO from "../../components/seo"
+
+const latinSocioEconomicMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
+
 const DepthLatinData = {
     image:"/depth-latin.png",
     title:"Latin America",
@@ -36,6 +47,14 @@ const DepthLatinData = {
 
 const SocioEconomicLatin = (props) => (
     <Layout location={props.location}>
+        <SEO 
+            title={latinSocioEconomicMetadata.Title} 
+            keywords={latinSocioEconomicMetadata.Keywords} 
+            description={latinSocioEconomicMetadata.Description} 
+            image={latinSocioEconomicMetadata.Image}
+            url={latinSocioEconomicMetadata.url}
+            titleTemplate={latinSocioEconomicMetadata.titleTemplate}
+        /> 
         <DepthSoon 
             image={DepthLatinData.image} 
             title={DepthLatinData.title}

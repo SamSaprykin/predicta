@@ -1,5 +1,4 @@
 import React from "react"
-//import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Intro from "../components/about/intro"
@@ -7,12 +6,28 @@ import Insights from "../components/about/insights"
 import Approach from "../components/about/approach"
 import Data from "../components/about/data"
 import Issues from "../components/about/issues"
-//import Image from "../components/image"
-//import SEO from "../components/seo"
+import SEO from "../components/seo"
+
+const aboutMetadata = {
+  Title: "Predicta",
+  Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+  Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+  Image: "/predicta-icon.png",
+  url:"https://www.predicta4covid.com/",
+  titleTemplate:"Predicta"
+}
 
 const Index = (props) => {
   return (
     <Layout location={props.location}>
+      <SEO 
+        title={aboutMetadata.Title} 
+        keywords={aboutMetadata.Keywords} 
+        description={aboutMetadata.Description} 
+        image={aboutMetadata.Image}
+        url={aboutMetadata.url}
+        titleTemplate={aboutMetadata.titleTemplate}
+      />
       <div className="row">
         <div className="col">
           <Intro />

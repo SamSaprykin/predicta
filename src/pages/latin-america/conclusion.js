@@ -6,6 +6,17 @@ import {
     PredictaTitle,
     PredictaText,
 } from "../../components/BlockElements/BlockElements";
+import SEO from "../../components/seo"
+
+const latinConclusionMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
+
 const DepthLatinData = {
     image:"/depth-latin.png",
     title:"Latin America",
@@ -27,6 +38,14 @@ const DepthLatinData = {
 
 const Conclusion = (props) => (
     <Layout location={props.location}>
+        <SEO 
+            title={latinConclusionMetadata.Title} 
+            keywords={latinConclusionMetadata.Keywords} 
+            description={latinConclusionMetadata.Description} 
+            image={latinConclusionMetadata.Image}
+            url={latinConclusionMetadata.url}
+            titleTemplate={latinConclusionMetadata.titleTemplate}
+        /> 
         <DepthSoon  
             title={DepthLatinData.title}
             navItems={DepthLatinData.navItems}

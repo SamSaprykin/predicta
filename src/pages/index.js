@@ -7,10 +7,29 @@ import Age from "../components/home/age"
 import Gender from "../components/home/gender"
 import MedianBox from "../components/home/median-age-gender"
 import Ratios from "../components/home/ratios"
-//import SEO from "../components/seo"
+import SEO from "../components/seo"
+
+
+const indexMetadata = {
+  Title: "Predicta",
+  Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+  Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+  Image: "/predicta-icon.png",
+  url:"https://www.predicta4covid.com/",
+  titleTemplate:"Predicta"
+}
 
 const Index = (props) => (
+ 
   <Layout location={props.location}>
+     <SEO 
+      title={indexMetadata.Title} 
+      keywords={indexMetadata.Keywords} 
+      description={indexMetadata.Description} 
+      image={indexMetadata.Image}
+      url={indexMetadata.url}
+      titleTemplate={indexMetadata.titleTemplate}
+    />
     <div className="row" id="first-section">
       <div className="col">
         <Intro/>

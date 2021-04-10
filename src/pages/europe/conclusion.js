@@ -3,32 +3,17 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../../components/layout"
 import NavbarSubLinks from "../../components/in-depth/navbarsub"
+import SEO from "../../components/seo"
 
+const europeConclusionMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
 
-// const Grid = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(1, 1fr);
-//   grid-template-rows: auto;
-//   grid-gap: 2rem;
-//   align-self: center;
-//   justify-content: center;
-// `;
-
-// const Item = styled.div`
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// flex-direction: column;
-// width: 800px;
-// margin: 0 auto;
-
-// @media (max-width: 1280px) {
-//   width: 600px;
-//   }
-//   @media (max-width: 600px) {
-//     width: 300px;
-//     }
-// `
 
 const TextBox = styled.div`
 display: flex;
@@ -88,7 +73,14 @@ const TitleSection = styled.h1`
 `
 const Conclusion = (props) => (
     <Layout location={props.location}>
-
+    <SEO 
+      title={europeConclusionMetadata.Title} 
+      keywords={europeConclusionMetadata.Keywords} 
+      description={europeConclusionMetadata.Description} 
+      image={europeConclusionMetadata.Image}
+      url={europeConclusionMetadata.url}
+      titleTemplate={europeConclusionMetadata.titleTemplate}
+    />     
 <div className="row" id="first-section">
     <div className="col">
 

@@ -5,7 +5,16 @@ import Layout from "../../components/layout"
 import NavbarSubLinks from "../../components/in-depth/navbarsub"
 import ChartOne from "../../components/in-depth/europe/images/summerperiod/a.svg"
 import ChartTwo from "../../components/in-depth/europe/images/summerperiod/b.svg"
+import SEO from "../../components/seo"
 
+const summerPeriodMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
 
 
 const Grid = styled.div`
@@ -100,7 +109,14 @@ const SubTitle = styled.h2`
 
 const SummerPeriod = (props) => (
     <Layout location={props.location}>
-
+    <SEO 
+      title={summerPeriodMetadata.Title} 
+      keywords={summerPeriodMetadata.Keywords} 
+      description={summerPeriodMetadata.Description} 
+      image={summerPeriodMetadata.Image}
+      url={summerPeriodMetadata.url}
+      titleTemplate={summerPeriodMetadata.titleTemplate}
+    /> 
 <div className="row" id="first-section">
     <div className="col">
 

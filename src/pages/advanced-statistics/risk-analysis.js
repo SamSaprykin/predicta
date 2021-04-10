@@ -9,10 +9,27 @@ import RiskC from "../../components/advanced-statistics/risk-analysis-c"
 import RiskD from "../../components/advanced-statistics/risk-analysis-d"
 import RiskE from "../../components/advanced-statistics/risk-analysis-e"
 import RiskF from "../../components/advanced-statistics/risk-analysis-f"
-//import SEO from "../components/seo"
+import SEO from "../../components/seo"
+
+const riskAnalysisMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
 
 const Index = (props) => (
   <Layout location={props.location}>
+    <SEO 
+        title={riskAnalysisMetadata.Title} 
+        keywords={riskAnalysisMetadata.Keywords} 
+        description={riskAnalysisMetadata.Description} 
+        image={riskAnalysisMetadata.Image}
+        url={riskAnalysisMetadata.url}
+        titleTemplate={riskAnalysisMetadata.titleTemplate}
+    />
     <div className="row"  id="first-section">
       <div className="col">
         <Intro />

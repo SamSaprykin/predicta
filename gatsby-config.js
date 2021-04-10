@@ -5,9 +5,8 @@ module.exports = {
     title: 'Predicta',
     description:'Test',
     author: '',
-    
+    siteUrl: `https://www.predicta4covid.com/`,
      menuLinks:[
-    
        {
         name:'About',
         link:'/about',
@@ -115,13 +114,9 @@ module.exports = {
   
 },
     ]
- },
-
-
-
-
+},
   plugins: [
-
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -167,7 +162,6 @@ module.exports = {
         icon: `src/images/predicta-icon.png`, // This path is relative to the root of the site.
       },
     }
-    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

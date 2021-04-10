@@ -1,7 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
+const modelingScenariosMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
 
 
 const ImageContainer = styled.div`
@@ -48,6 +57,14 @@ const TextSoon = styled.h5`
 
 const ModScene = () => (
   <Layout>
+      <SEO 
+        title={modelingScenariosMetadata.Title} 
+        keywords={modelingScenariosMetadata.Keywords} 
+        description={modelingScenariosMetadata.Description} 
+        image={modelingScenariosMetadata.Image}
+        url={modelingScenariosMetadata.url}
+        titleTemplate={modelingScenariosMetadata.titleTemplate}
+      />
       <ImageContainer>
                   <ImageSoon src="/modeling-scenarios-soon.png" />
                   <TextSoon>Coming soon</TextSoon>

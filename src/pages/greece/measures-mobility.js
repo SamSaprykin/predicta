@@ -9,7 +9,18 @@ import {
     SectionSideBySide,
     PredictaText,
 } from "../../components/BlockElements/BlockElements";
-import styled from "styled-components"
+import styled from "styled-components";
+import SEO from "../../components/seo";
+
+const measuresMobMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
+
 const DepthGreeceData = {
     title: "Greece",
     navItems:[
@@ -46,6 +57,14 @@ const DepthGreeceData = {
 
 const MeasuresMobility = (props) => (
     <Layout location={props.location}>
+        <SEO 
+            title={measuresMobMetadata.Title} 
+            keywords={measuresMobMetadata.Keywords} 
+            description={measuresMobMetadata.Description} 
+            image={measuresMobMetadata.Image}
+            url={measuresMobMetadata.url}
+            titleTemplate={measuresMobMetadata.titleTemplate}
+        /> 
         <DepthSoon 
             title={DepthGreeceData.title}
             navItems={DepthGreeceData.navItems}

@@ -4,6 +4,16 @@ import styled from "styled-components"
 import Layout from "../../components/layout"
 import NavbarSubLinks from "../../components/in-depth/navbarsub"
 import ChartOne from "../../components/in-depth/europe/images/secondwave/a.svg"
+import SEO from "../../components/seo"
+
+const secWaveMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
 
 const Grid = styled.div`
   display: grid;
@@ -211,7 +221,14 @@ const SubTitle = styled.h2`
 
 const SecondWave= (props) => (
 <Layout location={props.location}>
-
+	<SEO 
+      title={secWaveMetadata.Title} 
+      keywords={secWaveMetadata.Keywords} 
+      description={secWaveMetadata.Description} 
+      image={secWaveMetadata.Image}
+      url={secWaveMetadata.url}
+      titleTemplate={secWaveMetadata.titleTemplate}
+    /> 
 	<div className="row" id="first-section">
 		<div className="col">
 

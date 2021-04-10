@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
-
+import SEO from "../components/seo"
 
 
 const TextBox = styled.div`
@@ -23,9 +23,25 @@ height: 2rem;
   }
 `
 
+const termsMetadata = {
+  Title: "Predicta",
+  Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+  Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+  Image: "/predicta-icon.png",
+  url:"https://www.predicta4covid.com/",
+  titleTemplate:"Predicta"
+}
+
 const Terms = (props) => (
     <Layout location={props.location}>
-
+    <SEO 
+      title={termsMetadata.Title} 
+      keywords={termsMetadata.Keywords} 
+      description={termsMetadata.Description} 
+      image={termsMetadata.Image}
+      url={termsMetadata.url}
+      titleTemplate={termsMetadata.titleTemplate}
+    />
 <div className="row" id="first-section">
     <div className="col">
       

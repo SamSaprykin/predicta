@@ -12,7 +12,16 @@ import ChartSix from "../../components/in-depth/europe/images/measures/f.svg"
 import ChartSeven from "../../components/in-depth/europe/images/measures/g.svg"
 import ChartEight from "../../components/in-depth/europe/images/measures/h.svg"
 import ChartNine from "../../components/in-depth/europe/images/measures/i.svg"
+import SEO from "../../components/seo"
 
+const measuresMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
 
 
 const Grid = styled.div`
@@ -229,7 +238,14 @@ const SubTitle = styled.h2`
 
 const Measures = (props) => (
     <Layout location={props.location}>
-
+    <SEO 
+      title={measuresMetadata.Title} 
+      keywords={measuresMetadata.Keywords} 
+      description={measuresMetadata.Description} 
+      image={measuresMetadata.Image}
+      url={measuresMetadata.url}
+      titleTemplate={measuresMetadata.titleTemplate}
+    /> 
 <div className="row" id="first-section">
     <div className="col">
 

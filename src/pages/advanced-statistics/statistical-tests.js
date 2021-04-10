@@ -1,7 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
+const statTestsMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
 
 const ImageContainer = styled.div`
     width:100%;
@@ -46,6 +55,14 @@ const TextSoon = styled.h5`
 
 const StatTests = () => (
   <Layout>
+      <SEO 
+        title={statTestsMetadata.Title} 
+        keywords={statTestsMetadata.Keywords} 
+        description={statTestsMetadata.Description} 
+        image={statTestsMetadata.Image}
+        url={statTestsMetadata.url}
+        titleTemplate={statTestsMetadata.titleTemplate}
+      />
       <ImageContainer>
           <ImageSoon src="/stat-tests.svg" />
           <TextSoon>Coming soon</TextSoon>

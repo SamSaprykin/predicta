@@ -7,7 +7,16 @@ import ChartOne from "../../components/in-depth/europe/images/generalfindings/a.
 import ChartTwo from "../../components/in-depth/europe/images/generalfindings/b.svg"
 import ChartThree from "../../components/in-depth/europe/images/generalfindings/c.svg"
 import ChartFour from "../../components/in-depth/europe/images/generalfindings/d.svg"
+import SEO from "../../components/seo"
 
+const generalFindingsMetadata = {
+    Title: "Predicta",
+    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Image: "/predicta-icon.png",
+    url:"https://www.predicta4covid.com/",
+    titleTemplate:"Predicta"
+}
 
 
 const Grid = styled.div`
@@ -218,6 +227,14 @@ const SubTitle = styled.h2`
 
 const GeneralFindings = (props) => (
   <Layout location={props.location}>
+	<SEO 
+      title={generalFindingsMetadata.Title} 
+      keywords={generalFindingsMetadata.Keywords} 
+      description={generalFindingsMetadata.Description} 
+      image={generalFindingsMetadata.Image}
+      url={generalFindingsMetadata.url}
+      titleTemplate={generalFindingsMetadata.titleTemplate}
+    />  
     <div className="row" id="first-section">
      <div className="col">
       <NavbarSubLinks />
