@@ -215,7 +215,7 @@ paddingleft: `1rem`
      </ItemB>
      <ItemB style={{
 }}>
-     <img src="./ibm.png" alt="ibm-logo" />
+     <img src="/ibm.png" alt="ibm-logo" />
      </ItemB>
      </GridB>
   </Container>
