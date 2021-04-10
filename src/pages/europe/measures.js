@@ -15,9 +15,9 @@ import ChartNine from "../../components/in-depth/europe/images/measures/i.svg"
 import SEO from "../../components/seo"
 
 const measuresMetadata = {
-    Title: "Predicta",
+    Title: "Measures Against Covid-19 | Europe & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "All the countries try to contain the pandemic by implementing a variety of preventing measures.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

@@ -6,9 +6,9 @@ import NavbarSubLinks from "../../components/in-depth/navbarsub"
 import SEO from "../../components/seo"
 
 const europeConclusionMetadata = {
-    Title: "Predicta",
-    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Title: "Conclusion | Europe & the Covid-19 Pandemic",
+    Keywords: [`Europe Covid`,`predicta analytics`, `covid`, `predicta`],
+    Description: "Europe has been hit severely by the pandemic with Western Europe slightly more so than Eastern Europe ",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

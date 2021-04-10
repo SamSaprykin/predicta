@@ -24,9 +24,9 @@ height: 2rem;
 `
 
 const termsMetadata = {
-  Title: "Predicta",
+  Title: "Terms & Conditions | Predicta S.A.",
   Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-  Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+  Description: "Terms & Conditions for the Predicta4Covid.com microsite displaying the results of a statistical analysis",
   Image: "/predicta-icon.png",
   url:"https://www.predicta4covid.com/",
   titleTemplate:"Predicta"

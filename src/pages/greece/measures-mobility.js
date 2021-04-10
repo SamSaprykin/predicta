@@ -13,9 +13,9 @@ import styled from "styled-components";
 import SEO from "../../components/seo";
 
 const measuresMobMetadata = {
-    Title: "Predicta",
+    Title: "Measures & Mobility | Greece & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "The pandemic evolution in Greece can be further analyzed and explained, examining government preventive policies and their effect on citizens behavior and compliance.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

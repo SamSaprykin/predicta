@@ -19,9 +19,9 @@ import ExcessMortality from "../../components/in-depth/latin-america/images/exce
 import SEO from "../../components/seo"
 
 const latinGeneralMetadata = {
-    Title: "Predicta",
+    Title: "General Findings | Latin America & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "Latin America is a worldwide region badly affected from COVID-19 Pandemic.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

@@ -15,9 +15,9 @@ import ChartNine from "../../components/in-depth/europe/images/firstwave/i.svg"
 import SEO from "../../components/seo"
 
 const europeFirstWaveMetadata = {
-    Title: "Predicta",
+    Title: "The First Wave | Europe & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "Statistical analysis of Europe during the first wave of the pandemic from February 2020 to May 2020",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

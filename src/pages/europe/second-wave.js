@@ -7,9 +7,9 @@ import ChartOne from "../../components/in-depth/europe/images/secondwave/a.svg"
 import SEO from "../../components/seo"
 
 const secWaveMetadata = {
-    Title: "Predicta",
+    Title: "The Second Wave | Europe & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "Statistical analysis of Europe during the second wave of the pandemic from September 2020 to November 2020",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

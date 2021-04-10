@@ -9,9 +9,9 @@ import Issues from "../components/about/issues"
 import SEO from "../components/seo"
 
 const aboutMetadata = {
-  Title: "Predicta",
+  Title: "Investigating COVID-19's Global Evolution Factors",
   Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-  Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+  Description: "The findings and results of this project are considered worth of publicity and attention, as they may contribute to the wider global research, with the intention to better understand the situation",
   Image: "/predicta-icon.png",
   url:"https://www.predicta4covid.com/",
   titleTemplate:"Predicta"

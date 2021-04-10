@@ -9,9 +9,9 @@ import {
 import SEO from "../../components/seo"
 
 const latinConclusionMetadata = {
-    Title: "Predicta",
+    Title: "Conclusion | Latin America & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "Latin American countries overall faced unsurpassed difficulties in dealing with the Covid-19 pandemic",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

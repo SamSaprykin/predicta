@@ -15,9 +15,9 @@ import SEO from "../components/seo"
 
 
 const globalAnalysisMetadata = {
-  Title: "Predicta",
+  Title: "A Global Analysis of the Covid-19 Pandemic",
   Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-  Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+  Description: "Data and information regarding the evolution of the Covid-19 pandemic. globally, from December 2019 up to November 2020. Data includes monthly evolution of cases on a country level, positivity rates, mortality rates and more",
   Image: "/predicta-icon.png",
   url:"https://www.predicta4covid.com/",
   titleTemplate:"Predicta"

@@ -14,9 +14,9 @@ import {
 import SEO from "../../components/seo"
 
 const quickComparisonMetadata = {
-    Title: "Predicta",
+    Title: "A Quick Comparison | Greece & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "Overall, Greece was not hit by the pandemic, as brutally as the other countries of the Western World.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

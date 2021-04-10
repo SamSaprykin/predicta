@@ -11,9 +11,9 @@ import SEO from "../components/seo"
 
 
 const indexMetadata = {
-  Title: "Predicta",
+  Title: "A Statistical Analysis of the Covid-19 Pandemic by Predicta S.A.",
   Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-  Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+  Description: "PREDICTA's Experts provide an in-depth data analysis of the Covid-19 pandemic helping us understand, confront and predict relative incidents in the future",
   Image: "/predicta-icon.png",
   url:"https://www.predicta4covid.com/",
   titleTemplate:"Predicta"

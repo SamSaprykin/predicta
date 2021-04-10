@@ -10,9 +10,9 @@ import SEO from "../components/seo"
 
 
 const technologyMetadata = {
-  Title: "Predicta",
+  Title: "An End-to-End Analytics Technological Platform",
   Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-  Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+  Description: "User-friendly analytics capabilities and an end-to-end analytics technological platform enabled the analysis of a dynamic and diverse data set",
   Image: "/predicta-icon.png",
   url:"https://www.predicta4covid.com/",
   titleTemplate:"Predicta"

@@ -18,9 +18,9 @@ import EmplotmentRate from "../../components/in-depth/latin-america/images/infom
 import SEO from "../../components/seo"
 
 const latinSocioEconomicMetadata = {
-    Title: "Predicta",
+    Title: "Socio-Economic and Health Factors | Latin America & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "Socio-economic and health factors play a significant role in how Latin American countries have been affected by the pandemic ",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

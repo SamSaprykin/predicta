@@ -10,9 +10,9 @@ import ChartFour from "../../components/in-depth/europe/images/generalfindings/d
 import SEO from "../../components/seo"
 
 const generalFindingsMetadata = {
-    Title: "Predicta",
+    Title: "General Findings | Europe & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "COVID-19 PANDEMIC has hit Europe much more than other geographical regions of the world, having almost 30% of diagnosed cases and deaths.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

@@ -11,9 +11,9 @@ import {
 import SEO from "../../components/seo"
 
 const demographicsMetadata = {
-    Title: "Predicta",
+    Title: "Demographics | Greece & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "Demographic characteristics of infected populations altered considerably during the various phases of the pandemic",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

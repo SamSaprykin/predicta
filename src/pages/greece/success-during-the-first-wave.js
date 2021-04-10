@@ -12,9 +12,9 @@ import {
 import SEO from "../../components/seo"
 
 const successFirstWaveMetadata = {
-    Title: "Predicta",
+    Title: "Success During the First Wave | Greece & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "The epidemic curve of Greece 34 days elapsed from the first diagnosed case, until the epidemic curve reached its peak.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

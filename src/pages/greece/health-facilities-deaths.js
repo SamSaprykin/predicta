@@ -12,9 +12,9 @@ import {
 import SEO from "../../components/seo"
 
 const healthFacMetadata = {
-    Title: "Predicta",
+    Title: "Health Facilities & Deaths | Greece & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "Greece increased ICU beds to deal with increased demand as a result of the pandemic",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"

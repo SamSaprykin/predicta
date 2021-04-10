@@ -8,9 +8,9 @@ import ChartTwo from "../../components/in-depth/europe/images/summerperiod/b.svg
 import SEO from "../../components/seo"
 
 const summerPeriodMetadata = {
-    Title: "Predicta",
+    Title: "The Summer Period 2020 | Europe & the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "Most European countries demonstrated a significant decrease in both COVID-19 diagnosed cases and deaths.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"
