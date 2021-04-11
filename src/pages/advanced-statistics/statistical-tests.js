@@ -4,9 +4,9 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
 const statTestsMetadata = {
-    Title: "Predicta",
+    Title: "Statistical Tests | Advanced Statistics for the Covid-19 Pandemic",
     Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Analytics for Decision Making, is a leading provider of Predictive Analytics Solutions.",
+    Description: "Statistical tests carried out for the analysis and simulation of the risk of infection effect of the covid-19 pandemic across society and various situations",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
     titleTemplate:"Predicta"
