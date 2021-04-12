@@ -9,7 +9,7 @@ const modelingScenariosMetadata = {
     Description: "Modelling scenarios carried out of the analysis of the Covid-19 pandemic and it's effects, by the analytics team at Predicta S.A.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"Modelling Scenarios | Advanced Statistics for the Covid-19 Pandemic"
 }
 
 

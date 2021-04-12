@@ -17,7 +17,7 @@ const riskAnalysisMetadata = {
     Description: "Simulating the virus risk of infection effect on the society across different situations, based on size and density of gatherings/social clusters",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"Risk Analysis | Advanced Statistics for the Covid-19 Pandemic"
 }
 
 const Index = (props) => (

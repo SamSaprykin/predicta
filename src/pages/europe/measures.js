@@ -20,7 +20,7 @@ const measuresMetadata = {
     Description: "All the countries try to contain the pandemic by implementing a variety of preventing measures.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"Measures Against Covid-19 | Europe & the Covid-19 Pandemic"
 }
 
 

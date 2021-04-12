@@ -9,7 +9,7 @@ const statTestsMetadata = {
     Description: "Statistical tests carried out for the analysis and simulation of the risk of infection effect of the covid-19 pandemic across society and various situations",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"Statistical Tests | Advanced Statistics for the Covid-19 Pandemic"
 }
 
 const ImageContainer = styled.div`

@@ -12,7 +12,7 @@ const secWaveMetadata = {
     Description: "Statistical analysis of Europe during the second wave of the pandemic from September 2020 to November 2020",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"The Second Wave | Europe & the Covid-19 Pandemic"
 }
 
 const Grid = styled.div`

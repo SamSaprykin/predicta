@@ -17,7 +17,7 @@ const healthFacMetadata = {
     Description: "Greece increased ICU beds to deal with increased demand as a result of the pandemic",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"Health Facilities & Deaths | Greece & the Covid-19 Pandemic"
 }
 
 const DepthGreeceData = {

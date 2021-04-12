@@ -20,7 +20,7 @@ const europeFirstWaveMetadata = {
     Description: "Statistical analysis of Europe during the first wave of the pandemic from February 2020 to May 2020",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"The First Wave | Europe & the Covid-19 Pandemic"
 }
 
 const Grid = styled.div`
