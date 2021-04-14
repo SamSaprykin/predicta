@@ -470,7 +470,7 @@ travel controls</td>
       style={{
         fontWeight: `normal`
       }}
-    >Restrictions on Gatherings</SubTitle>
+    >Cancel Public Events</SubTitle>
 
 
 
@@ -502,7 +502,7 @@ travel controls</td>
       style={{
         fontWeight: `normal`
       }}
-    >School Closing</SubTitle>
+    >Restrictions on Gatherings</SubTitle>
 
 
 

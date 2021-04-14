@@ -75,7 +75,7 @@ const GeneralFindingsLatin = (props) => (
         <PredictaTextWrapper>
             <PredictaText>
                 Overall, Greece was not hit by the pandemic, as brutally as the other countries of the Western World. 
-                Geographical characteristics and government polices are the main factors explaining this differentiation. 
+                Geographical characteristics and government policies are the main factors explaining this differentiation. 
                 During the first wave of the pandemic (February to April 2020), Greece demonstrated a remarkable performance, 
                 as result of the prompt governmental response, while the second wave that developed from September 2020 
                 onwards proved to be much more severe, due to limited restrictions, accompanied by colder weather which 
