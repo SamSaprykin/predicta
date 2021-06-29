@@ -186,8 +186,8 @@
         </g>
       </g>
     </g>
-    <text id="_1_4" data-name="1,4" transform="translate(960 7441.4)" fill="#fff" font-size="55" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-41.222" y="0">1,4</tspan></text>
-    <text id="_1_2" data-name="1,2" transform="translate(960 7168)" fill="#fff" font-size="55" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-41.222" y="0">1,2</tspan></text>
+    <text id="_1_4" data-name="1,4" transform="translate(960 7441.4)" fill="#fff" font-size="55" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-41.222" y="0">1,0</tspan></text>
+    <text id="_1_2" data-name="1,2" transform="translate(960 7168)" fill="#fff" font-size="55" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-41.222" y="0">1,1</tspan></text>
     <rect id="Rectangle_14" data-name="Rectangle 14" width="448.432" height="82.333" transform="translate(331.819 7379.91)" fill="#222b3e"/>
     <text id="Cases_Age_70_11_" data-name="Cases Age 70+ (11%)" transform="translate(536.036 7435.651)" fill="#fff" font-size="27.774" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-176.516" y="0">Cases 70 + age group </tspan><tspan y="0" font-size="50" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"> </tspan><tspan y="0" font-size="41" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600">(11%)</tspan></text>
     <rect id="Rectangle_15" data-name="Rectangle 15" width="448.432" height="82.333" transform="translate(1139.749 7379.91)" fill="#222b3e"/>

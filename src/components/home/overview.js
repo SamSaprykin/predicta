@@ -230,51 +230,54 @@ const GridBox = () => (
     <Gap />
     <Grid>
       <Item>
-        <h3>62.779.735</h3> 
-        <p style={{color: `#fff`}}>Cases</p>
+        <h3>169.390.481</h3>
+        <p style={{ color: `#fff` }}>Cases</p>
       </Item>
       <Item>
-        <h3>8.183</h3>
-        <p style={{color: `#fff`}}>Cases per 1M Pop</p>
+        <h3>22.078</h3>
+        <p style={{ color: `#fff` }}>Cases per 1M Pop</p>
       </Item>
       <Item>
-        <h3>1.461.042</h3>
-        <p style={{color: `#fff`}}>Deaths</p>
+        <h3>3.523.403</h3>
+        <p style={{ color: `#fff` }}>Deaths</p>
       </Item>
       <Item>
-        <h3>190</h3>
-        <p style={{color: `#fff`}}>Deaths per 1M Pop</p>
+        <h3>459</h3>
+        <p style={{ color: `#fff` }}>Deaths per 1M Pop</p>
       </Item>
       <Item>
-        <h3>2,3%</h3>
-        <p style={{color: `#fff`}}>Mortality</p>
+        <h3>2,1%</h3>
+        <p style={{ color: `#fff` }}>Mortality</p>
       </Item>
       <Item>
         <h3>96%</h3>
-        <p style={{color: `#fff`}}>Deaths with Underlying Conditions</p>
+        <p style={{ color: `#fff` }}>Deaths with Underlying Conditions</p>
       </Item>
       <Item>
-        <h3>65,7%</h3>
-        <p style={{color: `#fff`}}>Recovery</p>
+        <h3>81,0%</h3>
+        <p style={{ color: `#fff` }}>Recovery</p>
       </Item>
-      <Item><h3>7,0%</h3><p style={{color: `#fff`}}>Positivity</p></Item>
+      <Item><h3>5,2%</h3><p style={{ color: `#fff` }}>Positivity</p></Item>
+      <Item>
+        <h3>9,7</h3>
+        <p style={{ color: `#fff` }}>Estimated Real Cases Multiplier</p>
+      </Item>
+      <Item>
+        <h3>24,7%</h3>
+        <p style={{ color: `#fff` }}>Population Immunity</p>
+      </Item>
+      <Item>
+        <h3>15,2%</h3>
+        <p style={{ color: `#fff` }}>Estimated Excess Deaths due to Covid-19</p>
+      </Item>
+      <Item>
+        <h3>17%</h3>
+        <p style={{ color: `#fff` }}>Population Vaccinated</p>
+      </Item>
     </Grid>
-    <GridC>
-      <Item>
-        <h3>7,1</h3>
-        <p style={{color: `#fff`}}>Estimated Real Cases Multiplier</p>
-      </Item>
-      <Item>
-        <h3>7,0%</h3>
-        <p style={{color: `#fff`}}>Population Immunity</p>
-      </Item>
-      <Item>
-        <h3>6,3%</h3>
-        <p style={{color: `#fff`}}>Estimated Excess Deaths due to Covid-19</p>
-      </Item>
-    </GridC>
-</>
-  );
+
+  </>
+);
 
 
 export default GridBox

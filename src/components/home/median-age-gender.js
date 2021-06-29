@@ -11,6 +11,11 @@ flex-direction: column;
 width: 100%;
 max-width: 960px;
 margin: 0 auto;
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
 @media (max-width: 1440px) {
   max-width: 720px;
 }
@@ -47,7 +52,7 @@ height: 2rem;
 
 const MedianBox = () => (
   <>
-    <TitleSection id =''>Median Age by Gender - (Cases & Deaths)</TitleSection>
+    <TitleSection id=''>Median Age by Gender - (Cases & Deaths)</TitleSection>
     <Gap />
     <ImageBox>
       <Median />

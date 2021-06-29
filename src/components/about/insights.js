@@ -60,7 +60,8 @@ color: white;
 position: absolute;
 top:-10%;
 & svg {
-  width:100%
+  max-width: 55px;
+  width:100%;
 }
 @media (max-width: 1024px) {
   svg {
@@ -118,7 +119,7 @@ const SubheadSection = styled.h2`
 `
 
 
-const reqSvgs = require.context ( './images', true, /\.svg$/ )
+const reqSvgs = require.context('./images', true, /\.svg$/)
 
 const icons = reqSvgs.keys().reduce((images, path) => {
   const key = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'))
@@ -136,79 +137,92 @@ const Temp = icons['temp']
 const Poor = icons['poor']
 const Door = icons['door']
 const Clock = icons['clock']
+const Cross = icons['cross']
+const Vaccine = icons['vaccine']
 
 
-  
+
 const GridBox = () => (
   <>
-  <TitleSection id ='insights'>
-    Insights
+    <TitleSection id='insights'>
+      Insights
   </TitleSection>
-  <SubheadSection>The project reveals significant findings:</SubheadSection>
+    <SubheadSection>The project reveals significant findings:</SubheadSection>
     <Grid>
       <Item>
-        <Icon> 
+        <Icon>
           <Equals />
         </Icon>
         <p>Men have equal probabilities of getting infected as Women.</p>
       </Item>
       <Item>
-        <Icon> 
+        <Icon>
           <Fourty />
         </Icon>
         <p>Men have about ~40% higher risk of dying.</p>
       </Item>
       <Item>
-        <Icon> 
+        <Icon>
           <Plane />
         </Icon>
         <p>Frequent flight connections between China, USA and Western Europe was the original cause of virus widespread.</p>
       </Item>
-      <Item> 
-        <Icon> 
+      <Item>
+        <Icon>
           <Old />
         </Icon>
         <p>High percentage of the elderly age segment and increased number of nursery homes led to increased mortality.</p>
       </Item>
-      <Item> 
-        <Icon> 
+      <Item>
+        <Icon>
           <Lock />
         </Icon>
         <p>Early imposement of restriction measures led to decreased citizens mobility and therefore to drastic limitation of the virus spread.</p>
       </Item>
       <Item>
-        <Icon> 
+        <Icon>
           <Down />
         </Icon>
-          <p>Once lockdown measures were imposed, ~22 days elapsed until the reproduction rate fell below 1 in Western Europe and ~38 days in Latin America.</p>
+        <p>Once lockdown measures were imposed, ~22 days elapsed until the reproduction rate fell below 1 in Western Europe and ~38 days in Latin America.</p>
       </Item>
-      <Item>  
-        <Icon> 
-          <Temp />  
+      <Item>
+        <Icon>
+          <Temp />
         </Icon>
         <p>Increased temperatures minimize infection, as extensive outdoor mobility is encouraged.</p>
       </Item>
-      <Item> 
-        <Icon> 
+      <Item>
+        <Icon>
           <Poor />
         </Icon>
         <p>Poverty and informal employment are significant spread accelerators in developing countries.</p>
       </Item>
-    </Grid>
-    <GridC>
+
       <Item>
-        <Icon> 
+        <Icon>
           <Door />
         </Icon>
         <p>Indoor recreation venues are considered superspreaders, while strolling in the nature is considered to be extremely safe.</p>
       </Item>
-      <Item> 
-        <Icon> 
+      <Item>
+        <Icon>
           <Clock />
         </Icon>
         <p>Lengthy indoor exposure increases infection, while mask usage and ventilation prevent the virus spread.</p>
       </Item>
-    </GridC> 
+      <Item>
+        <Icon>
+          < Vaccine />
+        </Icon>
+        <p>The greatest reduction effect on the pandemic occured, once 25% of a specific area population was vaccinated.</p>
+      </Item>
+      <Item>
+        <Icon>
+          <Cross />
+        </Icon>
+        <p>Vaccination of 50% of the 65+ age group resulted in considerable reduction in hospital admissions and deaths.</p>
+      </Item>
+    </Grid>
   </>
 );
 
