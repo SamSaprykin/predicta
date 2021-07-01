@@ -672,6 +672,10 @@ const GlobalStats = () => (
               <td>7.2%</td>
             </tr>
             <tr>
+              <td>Egypt</td>
+              <td>5.8%</td>
+            </tr>
+            <tr>
               <td>Somalia</td>
               <td>5.2%</td>
             </tr>
@@ -699,10 +703,7 @@ const GlobalStats = () => (
               <td>Zimbabwe</td>
               <td>4.1%</td>
             </tr>
-            <tr>
-              <td>Peru</td>
-              <td>3,7%</td>
-            </tr>
+
             <tr>
               <td>Afghanistan</td>
               <td>4.1%</td>
@@ -713,27 +714,27 @@ const GlobalStats = () => (
             </tr>
             <tr>
               <td>Liberia</td>
-              <td>3,9%</td>
+              <td>3.9%</td>
             </tr>
             <tr>
               <td>Hungary</td>
-              <td>3,4%</td>
+              <td>3.7%</td>
             </tr>
             <tr>
               <td>Tunisia</td>
-              <td>3,7%</td>
+              <td>3.7%</td>
             </tr>
             <tr>
               <td>Mali</td>
-              <td>3,6%</td>
+              <td>3.6%</td>
             </tr>
             <tr>
               <td>Niger</td>
-              <td>3,6%</td>
+              <td>3.6%</td>
             </tr>
             <tr>
               <td>Eswatini</td>
-              <td>3,6%</td>
+              <td>3.6%</td>
             </tr>
             <tr id='highlighted'>
               <td>Greece (# 36)</td>
@@ -741,7 +742,7 @@ const GlobalStats = () => (
             </tr>
             <tr>
               <td>Global AVG</td>
-              <td>2,1%</td>
+              <td>2.1%</td>
             </tr>
           </tbody>
         </table>
@@ -786,7 +787,7 @@ const GlobalStats = () => (
             </tr>
             <tr>
               <td>Colombia</td>
-              <td>40.0%%</td>
+              <td>40.0%</td>
             </tr>
             <tr>
               <td>Brazil</td>

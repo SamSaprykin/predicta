@@ -54,19 +54,19 @@ const SubheadSection = styled.h2`
 
 const GeoAnalysis = () => (
   <>
-  <TitleSection id='geographicalanalysis'>Geographical Analysis</TitleSection>
+    <TitleSection id='geographicalanalysis'>Geographical Analysis</TitleSection>
 
-<Grid>
+    <Grid>
 
-<iframe className='responsive-iframe' src={withPrefix('../geographical/index.html')}></iframe>
+      <iframe className='responsive-iframe' src={withPrefix('../geographical/index.html')}></iframe>
 
-</Grid>
+    </Grid>
 
 
-    
-    
-</>
-  );
+
+
+  </>
+);
 
 
 export default GeoAnalysis

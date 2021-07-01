@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components"
 
-import ChartOne from "./images/chart-demographics-one.svg";
-import ChartTwo from "./images/chart-demographics-two.svg";
-import ChartThree from "./images/chart-demographics-three.svg";
+import ChartOne from "./images/chart-demog-one.svg";
+import ChartTwo from "./images/chart-demog-two.svg";
+import ChartThree from "./images/chart-demog-three.svg";
 
 
 const Grid = styled.div`
@@ -82,47 +82,24 @@ const SubheadSection = styled.h2`
 
 const GeoAnalysis = () => (
   <>
- 
-  <TitleSection id='demographics'>Demographics</TitleSection>
-
-
- <Gap />
-
-      <Grid>
-
-
-        <Item>
-
-
-      <SubheadSection>Age Distribution Evolution</SubheadSection>
-        <ChartOne/>
-</Item>
-
-<Item>
-<SubheadSection>Cases & Deaths Median Ages Evolution</SubheadSection>
-<ChartTwo/>
-
-</Item>
-
-
-<Item>
-
-
-<SubheadSection>Cases & Deaths by Gender Evolution</SubheadSection>
-
-<ChartThree/>
-
-
-</Item>
-
-
-
-
-
-      </Grid>
-    
-</>
-  );
+    <TitleSection id='demographics'>Demographics</TitleSection>
+    <Gap />
+    <Grid>
+      <Item>
+        <SubheadSection>Age Distribution Evolution</SubheadSection>
+        <ChartOne />
+      </Item>
+      <Item>
+        <SubheadSection>Cases & Deaths Median Ages Evolution</SubheadSection>
+        <ChartTwo />
+      </Item>
+      <Item>
+        <SubheadSection>Cases & Deaths by Gender Evolution</SubheadSection>
+        <ChartThree />
+      </Item>
+    </Grid>
+  </>
+);
 
 
 export default GeoAnalysis
