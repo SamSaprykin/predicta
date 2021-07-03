@@ -15,7 +15,7 @@ const technologyMetadata = {
   Description: "User-friendly analytics capabilities and an end-to-end analytics technological platform enabled the analysis of a dynamic and diverse data set",
   Image: "/predicta-icon.png",
   url:"https://www.predicta4covid.com/",
-  titleTemplate:"Predicta"
+  titleTemplate:"An End-to-End Analytics Technological Platform"
 }
 
 const Technology = (props) => (

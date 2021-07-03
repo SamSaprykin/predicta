@@ -51,7 +51,7 @@ const privacyMetadata = {
   Description: "Privacy policy for the Predicta4Covid.com microsite displaying the results of a statistical analysis",
   Image: "/predicta-icon.png",
   url:"https://www.predicta4covid.com/",
-  titleTemplate:"Predicta"
+  titleTemplate:"Privacy Policy | Predicta S.A."
 }
 
 const Terms = (props) => (

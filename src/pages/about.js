@@ -14,7 +14,7 @@ const aboutMetadata = {
   Description: "The findings and results of this project are considered worth of publicity and attention, as they may contribute to the wider global research, with the intention to better understand the situation",
   Image: "/predicta-icon.png",
   url:"https://www.predicta4covid.com/",
-  titleTemplate:"Predicta"
+  titleTemplate:"Investigating COVID-19's Global Evolution Factors"
 }
 
 const Index = (props) => {

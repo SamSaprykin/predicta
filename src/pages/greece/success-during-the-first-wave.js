@@ -17,7 +17,7 @@ const successFirstWaveMetadata = {
     Description: "The epidemic curve of Greece 34 days elapsed from the first diagnosed case, until the epidemic curve reached its peak.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"Success During the First Wave | Greece & the Covid-19 Pandemic"
 }
 
 const DepthGreeceData = {
@@ -106,9 +106,9 @@ const SuccessFirstWave = (props) => (
                     Eighteen(18) different measures were applied in total, while five (5) of them, (28%) 
                     were targeted to specific geographical or population groups. It took from 11 to 67 days 
                     from the first diagnosed case, for each of these measures to be imposed, with the majority 
-                    beiing applied within the first 20 days. <br /> <br />
+                    being applied within the first 20 days. <br /> <br />
                     As Greece has land borders only to its north, 
-                    the incoming infection was easy to handled and the extensive border checks during the 
+                    the incoming infection was easy to be handled and the extensive border checks during the 
                     summer period proved to be effective enough.
                 </PredictaText>
             </PredictaTextWrapper>

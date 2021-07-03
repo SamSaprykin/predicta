@@ -16,7 +16,7 @@ const demographicsMetadata = {
     Description: "Demographic characteristics of infected populations altered considerably during the various phases of the pandemic",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"Demographics | Greece & the Covid-19 Pandemic"
 }
 
 const DepthGreeceData = {

@@ -14,7 +14,7 @@ const greeceConclusionMetadata = {
     Description: "Overall, Greece was not hit by the pandemic, as brutally as the other countries of the Western World. Geographical characteristics and government polices are the main factors explaining this differentiation.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"Conclusion | Greece & the Covid-19 Pandemic"
 }
 
 const DepthGreeceData = {
@@ -76,7 +76,7 @@ const Conclusion = (props) => (
                 the economy for a second time and to control the population mobility.  Overall, factors such 
                 as the Greek climate, the geographical structure and the living conditions of the elderly 
                 part of the population, contributed in positive way to the effects of the pandemic in Greece 
-                and led to a smaller number o1f Deaths per million population.
+                and led to a smaller number of Deaths per million population.
             </PredictaText>
         </PredictaTextWrapper>
     </Layout>

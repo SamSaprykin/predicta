@@ -11,7 +11,7 @@ const getInTouchMetadata = {
   Description: "Contact us for exchanging ideas or additional information. PREDICTA’s team has successfully championed advanced analytics for 35 years. Applying statistics, data mining and machine learning techniques they uncover hidden information for better predictions and decision making",
   Image: "/predicta-icon.png",
   url:"https://www.predicta4covid.com/",
-  titleTemplate:"Predicta"
+  titleTemplate:"Get in Touch | Predicta S.A."
 }
 
 const SecondPage = () => (

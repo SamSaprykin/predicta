@@ -13,7 +13,7 @@ const summerPeriodMetadata = {
     Description: "Most European countries demonstrated a significant decrease in both COVID-19 diagnosed cases and deaths.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"The Summer Period 2020 | Europe & the Covid-19 Pandemic"
 }
 
 

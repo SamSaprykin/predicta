@@ -15,7 +15,7 @@ const generalFindingsMetadata = {
     Description: "COVID-19 PANDEMIC has hit Europe much more than other geographical regions of the world, having almost 30% of diagnosed cases and deaths.",
     Image: "/predicta-icon.png",
     url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+    titleTemplate:"General Findings | Europe & the Covid-19 Pandemic"
 }
 
 
@@ -372,7 +372,7 @@ const GeneralFindings = (props) => (
 		</Grid>
 
 		<TextBox>
-			<p>The first wave of the pandemic (Feb-May 2020) was quite difficult, with a stable and controllable summer period, followed by a much more aggressive second wave, especially from October 2020 onwards. It is interesting to examine the differentiation by region of this general trend. The graph below, of deaths per million of population, demonstrates the outlined differences..</p>
+			<p>The first wave of the pandemic (Feb-May 2020) was quite difficult, with a stable and controllable summer period, followed by a much more aggressive second wave, especially from October 2020 onwards. It is interesting to examine the differentiation by region of this general trend. The graph below, of deaths per million of population, demonstrates the outlined differences.</p>
 		</TextBox>
 
 	</div>

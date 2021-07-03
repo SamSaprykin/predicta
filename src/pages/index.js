@@ -16,7 +16,7 @@ const indexMetadata = {
   Description: "PREDICTA's Experts provide an in-depth data analysis of the Covid-19 pandemic helping us understand, confront and predict relative incidents in the future",
   Image: "/predicta-icon.png",
   url:"https://www.predicta4covid.com/",
-  titleTemplate:"Predicta"
+  titleTemplate:"A Statistical Analysis of the Covid-19 Pandemic by Predicta S.A."
 }
 
 const Index = (props) => (
