@@ -465,7 +465,7 @@ function initCustomMap() {
 			var month = this.currMonth.slice(0, this.currMonth.indexOf('/'));
 			var year = this.currMonth.slice(this.currMonth.lastIndexOf('/') + 1);
 
-			this.currentMonthName.text(monthNames[month - 1] + year);
+			this.currentMonthName.text(monthNames[month - 1] + '' + year);
 		},
 		drawMap: function () {
 			var self = this;
