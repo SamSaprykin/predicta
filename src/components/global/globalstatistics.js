@@ -9,7 +9,6 @@ import ChartFive from "./images/chart-five.svg";
 import ChartSix from "./images/chart-six.svg";
 import ChartSeven from "./images/chart-seven.svg";
 
-
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -22,7 +21,6 @@ const Grid = styled.div`
 
   svg {
     max-width: 100%;
-   
   }
   @media (max-width: 1440px) {
     max-width:960px;
@@ -43,8 +41,35 @@ const Grid = styled.div`
 `;
 
 const GridA = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  width: 100%;
+  align-self: center;
+  justify-content:center;
+  max-width:1280px;
+  svg {
+    max-width: 100%;
+  }
+  @media (max-width: 1440px) {
+    max-width:960px;
+  }
+  @media (max-width: 1024px) {
+    max-width:768px;
+  }
+  @media (max-width: 960px) {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  @media (max-width: 768px) {
+    padding:0 32px;
+  }
   .centered {
     margin: 2rem auto;
+    width: 50%;
+    @media (max-width: 960px) {
+      width: 100%;
+   }
   }
 `
 
