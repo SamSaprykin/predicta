@@ -7,8 +7,8 @@
 	.st1{fill:none;stroke:#C4C4C4;stroke-width:1.417;stroke-linejoin:round;}
 	.st2{fill:none;stroke:#A7A9AC;stroke-width:1.417;stroke-miterlimit:10;}
 	.st3{fill:none;stroke:#C4C4C4;stroke-width:1.134;stroke-linejoin:round;}
-	.st4{fill:#606060;}
-	.st5{font-family:'ArialMT';}
+	.st4{fill:#606060;font-family:'IBM Plex Sans',sans-serif;}
+	.st5{font-family:'IBM Plex Sans',sans-serif;}
 	.st6{font-size:14.314px;}
 	.st7{fill:#58595B;}
 	.st8{fill:#4C5874;}
@@ -17,7 +17,7 @@
 	.st11{fill:#222B3E;}
 	.st12{fill:#404040;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
 	.st13{fill:#FFFFFF;}
-	.st14{font-size:22.144px;}
+	.st14{font-size:22px;}
 </style>
 <g transform="translate(-463.765 -13745.731)">
 	<rect x="464.5" y="13829.8" class="st0" width="991.1" height="384.8"/>
@@ -85,9 +85,9 @@
 <rect id="Rectangle_384_2_" x="406.9" y="24.3" class="st9" width="188.5" height="35.5"/>
 <rect id="Rectangle_384_1_" x="212.5" y="24.3" class="st10" width="188.5" height="35.5"/>
 <rect id="Rectangle_384" x="15" y="24.3" class="st11" width="188.5" height="35.5"/>
-<text transform="matrix(1 0 0 1 410.9802 49.8848)" class="st13 st5 st14">Sep ‘20 to Nov ‘20</text>
-<text transform="matrix(1 0 0 1 603.9455 49.7422)" class="st13 st5 st14">Dec ‘20 to Feb ‘21</text>
-<text transform="matrix(1 0 0 1 801.1832 49.7422)" class="st13 st5 st14">Mar ‘21 to Apr ’21</text>
-<text transform="matrix(1 0 0 1 219.9841 49.8848)" class="st13 st5 st14">Jun ‘20 to Aug ‘20</text>
-<text transform="matrix(1 0 0 1 36.8514 50.3935)" class="st13 st5 st14">Up to May  ‘20</text>
+<text transform="matrix(1 0 0 1 409.9802 49.8848)" class="st13 st5 st14">Sep ‘20 to Nov ‘20</text>
+<text transform="matrix(1 0 0 1 602.9455 49.8848)" class="st13 st5 st14">Dec ‘20 to Feb ‘21</text>
+<text transform="matrix(1 0 0 1 800.1832 49.8848)" class="st13 st5 st14">Mar ‘21 to Apr ’21</text>
+<text transform="matrix(1 0 0 1 218.9841 49.8848)" class="st13 st5 st14">Jun ‘20 to Aug ‘20</text>
+<text transform="matrix(1 0 0 1 40.8514 49.8848)" class="st13 st5 st14">Up to May  ‘20</text>
 </svg>

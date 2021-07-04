@@ -13,7 +13,7 @@ const Grid = styled.div`
   justify-content:center;
   position: relative;
   width: 100%;
-  max-width:1000px;
+  max-width:1100px;
   height:650px;
 
   
@@ -39,21 +39,21 @@ const TitleSection = styled.h1`
 const GeoAnalysis = () => (
   <>
 
-  <TitleSection id='regional'>Regional Statistics</TitleSection>
+    <TitleSection id='regional'>Regional Statistics</TitleSection>
 
-        <Grid>
+    <Grid>
 
-        <iframe className='responsive-iframe' src={withPrefix('../regional/index.html')}></iframe>
+      <iframe className='responsive-iframe' src={withPrefix('../regional/index.html')}></iframe>
 
-</Grid>
-
-
+    </Grid>
 
 
-    
-    
-</>
-  );
+
+
+
+
+  </>
+);
 
 
 export default GeoAnalysis

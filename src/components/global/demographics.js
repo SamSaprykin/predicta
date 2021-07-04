@@ -23,7 +23,13 @@ const Grid = styled.div`
     grid-template-columns: repeat(1, 1fr);
     max-width: 768px;
   }
-  
+  svg {
+    max-width: 800px; 
+    
+    @media (max-width: 1440px) {
+      max-width: 720px;
+    }
+  }
 
 `;
 

@@ -3,16 +3,16 @@
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 923.9 449.9" style="enable-background:new 0 0 923.9 449.9;" xml:space="preserve">
 <style type="text/css">
-	.pts0{fill:#FFFFFF;}
-	.pst1{fill:#606060;}
-	.pst2{font-family:'ArialMT';}
-	.pst3{font-size:14.314px;}
-	.pst4{fill:#222B3E;}
-	.pst5{fill:#D02F34;}
-	.st6{font-size:15.564px;}
-	.st7{font-family:'Arial-BoldMT';}
-	.st8{font-size:39.659px;}
-	.st9{font-size:17.66px;}
+	.pts0{fill:#FFFFFF;font-family:'IBM Plex Sans',sans-serif;}
+	.pst1{fill:#606060;font-family:'IBM Plex Sans',sans-serif;}
+	.pst2{font-family:'IBM Plex Sans',sans-serif;}
+	.pst3{font-size:14.314px;font-family:'IBM Plex Sans',sans-serif;}
+	.pst4{fill:#222B3E;font-family:'IBM Plex Sans',sans-serif;}
+	.pst5{fill:#D02F34;font-family:'IBM Plex Sans',sans-serif;}
+	.st6{font-size:15.564px;font-family:'IBM Plex Sans',sans-serif;}
+	.st7{font-family:'IBM Plex Sans',sans-serif;}
+	.st8{font-size:39.659px;font-weight: 600;font-family:'IBM Plex Sans',sans-serif;}
+	.st9{font-size:17.66px;font-family:'IBM Plex Sans',sans-serif;}
 </style>
 <g transform="translate(-498.074 -15261.336)">
 	<rect x="498.8" y="15290.8" class="pts0" width="922.4" height="419.7"/>
