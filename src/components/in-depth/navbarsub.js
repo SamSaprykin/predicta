@@ -110,54 +110,56 @@ const NavbarSubLinks = () => {
   return (
     <Wrapper>
 
-<Grid>
+      <Grid>
 
-<ItemFull>
+        <ItemFull>
 
-<h1 id ='approach'> Europe</h1>
+          <h1 id='approach'> Europe</h1>
 
-</ItemFull>
+        </ItemFull>
 
-<Item>
+        <Item>
 
-<NavLink to="/europe/general-findings" activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}>General Findings</NavLink>
+          <NavLink to="/europe/general-findings" activeStyle={{ backgroundColor: `#222b3e`, color: `white` }}>General Findings</NavLink>
 
-</Item>
+        </Item>
 
-<Item>
+        <Item>
 
-<NavLink to="/europe/first-wave" activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}>1st Wave of the Pandemic<br></br>
-(Feb to May 2020)</NavLink>
-</Item>
+          <NavLink to="/europe/first-wave" activeStyle={{ backgroundColor: `#222b3e`, color: `white` }}>
+            1st Wave <br />  of the Pandemic<br></br>(Feb to May 2020)
+          </NavLink>
+        </Item>
 
-<Item>
+        <Item>
 
+          <NavLink to="/europe/summer-period" activeStyle={{ backgroundColor: `#222b3e`, color: `white` }}>
+            Summer Period<br></br>(Jun to Aug 2020)<br></br>temperature effect
+          </NavLink>
 
-<NavLink to="/europe/summer-period" activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}>Summer Period<br></br>
-(Jun to Aug 2020)</NavLink>
+        </Item>
 
-</Item>
+        <Item>
 
-<Item>
+          <NavLink to="/europe/second-wave" activeStyle={{ backgroundColor: `#222b3e`, color: `white` }}>
+            2nd & 3rd Wave <br /> of the Pandemic <br /> (Sep 20 to May 21)<br></br>
+          </NavLink>
+        </Item>
 
-<NavLink to="/europe/second-wave" activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}>2nd Wave of the Pandemic<br></br>
-(Sep to Nov 2020)</NavLink>
-</Item>
+        <Item>
 
-<Item>
-
-<NavLink to="/europe/measures" activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}>Measures Against<br></br>
+          <NavLink to="/europe/measures" activeStyle={{ backgroundColor: `#222b3e`, color: `white` }}>Measures Against<br></br>
 COVID-19</NavLink>
 
-</Item>
-<Item>
-<NavLink to="/europe/conclusion" activeStyle = {{ backgroundColor: `#222b3e`, color: `white` }}>Conclusion</NavLink>
-</Item>
+        </Item>
+        <Item>
+          <NavLink to="/europe/conclusion" activeStyle={{ backgroundColor: `#222b3e`, color: `white` }}>Conclusion</NavLink>
+        </Item>
 
 
-</Grid>
+      </Grid>
 
-<Gap />
+      <Gap />
 
 
 

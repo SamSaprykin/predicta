@@ -15,12 +15,12 @@ import ChartNine from "../../components/in-depth/europe/images/measures/i.svg"
 import SEO from "../../components/seo"
 
 const measuresMetadata = {
-    Title: "Measures Against Covid-19 | Europe & the Covid-19 Pandemic",
-    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "All the countries try to contain the pandemic by implementing a variety of preventing measures.",
-    Image: "/predicta-icon.png",
-    url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+  Title: "Measures Against Covid-19 | Europe & the Covid-19 Pandemic",
+  Keywords: [`covid analytics`, `predicta analytics`, `covid`, `predicta`],
+  Description: "All the countries try to contain the pandemic by implementing a variety of preventing measures.",
+  Image: "/predicta-icon.png",
+  url: "https://www.predicta4covid.com/",
+  titleTemplate: "Predicta"
 }
 
 
@@ -237,348 +237,363 @@ const SubTitle = styled.h2`
 `
 
 const Measures = (props) => (
-    <Layout location={props.location}>
-    <SEO 
-      title={measuresMetadata.Title} 
-      keywords={measuresMetadata.Keywords} 
-      description={measuresMetadata.Description} 
+  <Layout location={props.location}>
+    <SEO
+      title={measuresMetadata.Title}
+      keywords={measuresMetadata.Keywords}
+      description={measuresMetadata.Description}
       image={measuresMetadata.Image}
       url={measuresMetadata.url}
       titleTemplate={measuresMetadata.titleTemplate}
-    /> 
-<div className="row" id="first-section">
-    <div className="col">
+    />
+    <div className="row" id="first-section">
+      <div className="col">
 
-    <NavbarSubLinks />
-      
-     <TitleSection>MEASURES AGAINST COVID-19</TitleSection>
+        <NavbarSubLinks />
 
-     <Gap/>
+        <TitleSection>MEASURES AGAINST COVID-19</TitleSection>
 
-    
-<TextBox>
-    <p>All the countries try to contain the pandemic by implementing a variety of preventing measures. The graph below demonstrates European countries percentage, that imposed every measures.
-</p>
+        <Gap />
 
 
-    </TextBox>
+        <TextBox>
+          <p>
+            All the countries try to contain the pandemic by implementing a variety of preventing
+            measures. The graph below demonstrates European countries percentage,
+            that imposed every measures.
+          </p>
 
-    </div>
+
+        </TextBox>
+
+      </div>
     </div>
 
 
     <div className="row" style={{
-        backgroundColor: `rgba(234,234,234,1)`
-      }}>
-    <div className="col">
+      backgroundColor: `rgba(234,234,234,1)`
+    }}>
+      <div className="col">
 
 
 
-    <SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >Measures Imposed - Europe</SubTitle>
+        <SubTitle
+          style={{
+            fontWeight: `normal`
+          }}
+        >Measures Imposed - Europe</SubTitle>
 
-<Grid>
-  <Item>
-<ChartOne />
-<Gap />
-</Item>
-</Grid>
+        <Grid>
+          <Item>
+            <ChartOne />
+            <Gap />
+          </Item>
+        </Grid>
 
-<TextBox>
-<p>The measures that implied by more than 70% of the countries were: limitations of gatherings, school closure, economic measures, strengthening health system, restrictions in travelling and Lockdowns.
-The graphs (Area Plots) that follow show some of the most important measures that governments imposed to fight the pandemic. The graphs describe the severity of the measures during the months of pandemic. The table below shows the levels of severity for the measures.</p>
-</TextBox>
+        <TextBox>
+          <p>
+            The measures that implied by more than 70% of the countries were: limitations of gatherings,
+            school closure, economic measures, strengthening health system, restrictions in travelling
+            and Lockdowns. The graphs (Area Plots) that follow show some of the most important measures
+            that governments imposed to fight the pandemic.<br /> <br />  The graphs describe the severity
+            of the measures during the months of pandemic. The table below shows the levels of severity
+            for the measures.
+          </p>
+        </TextBox>
 
       </div>
     </div>
 
     <div className="row">
-    <div className="col">
+      <div className="col">
 
 
-    <SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >Measures Severity</SubTitle>
-    
-<Grid>
+        <SubTitle
+          style={{
+            fontWeight: `normal`
+          }}
+        >Measures Severity</SubTitle>
 
-    <Item>
-    <table className="metrics-table-alt">
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Severity</th>
-	
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td>School closing</td>
+        <Grid>
 
-		<td>
-      <ul>
-      <li>0 - no measures</li>
-<li>1 - recommend closing or all schools open with alterations resulting in significant differences
+          <Item>
+            <table className="metrics-table-alt">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Severity</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>School closing</td>
+
+                  <td>
+                    <ul>
+                      <li>0 - no measures</li>
+                      <li>1 - recommend closing or all schools open with alterations resulting in significant differences
       compared to non-Covid-19 operations</li>
-<li>2 - require closing (only some levels or categories, eg just high school, or just public schools)</li>
-<li>3 - require closing all levels</li>
-</ul>
+                      <li>2 - require closing (only some levels or categories, eg just high school, or just public schools)</li>
+                      <li>3 - require closing all levels</li>
+                    </ul>
 
-</td>
-	</tr>
+                  </td>
+                </tr>
 
-	<tr>
-		<td>Workplace closing</td>
-		<td>
-      <ul>
-      <li>0 - no measures</li>
-<li>1 - recommend closing (or recommend work from home)</li>
-<li>2 - require closing (or work from home) for some sectors or categories of workers</li>
-<li>3 - require closing (or work from home) for all-but-essential workplaces (eg grocery stores, doctors)</li>
+                <tr>
+                  <td>Workplace closing</td>
+                  <td>
+                    <ul>
+                      <li>0 - no measures</li>
+                      <li>1 - recommend closing (or recommend work from home)</li>
+                      <li>2 - require closing (or work from home) for some sectors or categories of workers</li>
+                      <li>3 - require closing (or work from home) for all-but-essential workplaces (eg grocery stores, doctors)</li>
 
-</ul>
+                    </ul>
 
-</td>
-	</tr>
-  <tr>
-		<td>Cancel public events</td>
-		<td>
-      <ul>
-      <li>0 - no measures</li>
-<li>1 - recommend cancelling</li>
-<li>2 - require cancelling</li>
-</ul>
-</td>
-	</tr>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cancel public events</td>
+                  <td>
+                    <ul>
+                      <li>0 - no measures</li>
+                      <li>1 - recommend cancelling</li>
+                      <li>2 - require cancelling</li>
+                    </ul>
+                  </td>
+                </tr>
 
-  <tr>
-		<td>Restrictions
+                <tr>
+                  <td>Restrictions
 on gatherings</td>
-		<td>
-      <ul>
-      <li>0 - no restrictions</li>
-    <li>1 - restrictions on very large gatherings (the limit is above 1000 people)</li>
-    <li>2 - restrictions on gatherings between 101-1000 people</li>
-    <li>3 - restrictions on gatherings between 11-100 people</li>
-    <li>4 - restrictions on gatherings of 10 people or less</li>
-    
-    </ul>
-    
-    </td>
-	</tr>
+                  <td>
+                    <ul>
+                      <li>0 - no restrictions</li>
+                      <li>1 - restrictions on very large gatherings (the limit is above 1000 people)</li>
+                      <li>2 - restrictions on gatherings between 101-1000 people</li>
+                      <li>3 - restrictions on gatherings between 11-100 people</li>
+                      <li>4 - restrictions on gatherings of 10 people or less</li>
+
+                    </ul>
+
+                  </td>
+                </tr>
 
 
-  <tr>
-		<td>Restrictions
+                <tr>
+                  <td>Restrictions
 on internal movement</td>
-		<td>
-      <ul>
-      <li>0 - no measures</li>
-    <li>1 - recommend not to travel between regions/cities</li>
-    <li>2 - internal movement restrictions in place</li>
-    </ul>
-    
-    </td>
-	</tr>
+                  <td>
+                    <ul>
+                      <li>0 - no measures</li>
+                      <li>1 - recommend not to travel between regions/cities</li>
+                      <li>2 - internal movement restrictions in place</li>
+                    </ul>
 
-  <tr>
-		<td>International
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>International
 travel controls</td>
-		<td>
-      <ul>
-        <li>0 - no restrictions</li>
-<li>1 - screening arrivals</li>
-<li>2 - quarantine arrivals from some or all regions</li>
-<li>3 - ban arrivals from some regions</li>
-<li>4 - ban on all regions or total border closure</li>
-</ul>
+                  <td>
+                    <ul>
+                      <li>0 - no restrictions</li>
+                      <li>1 - screening arrivals</li>
+                      <li>2 - quarantine arrivals from some or all regions</li>
+                      <li>3 - ban arrivals from some regions</li>
+                      <li>4 - ban on all regions or total border closure</li>
+                    </ul>
 
-</td>
-	</tr>
+                  </td>
+                </tr>
 
-  <tr>
-		<td>Facial Coverings</td>
-		<td>
-      <ul><li>0 - No policy</li>
-<li>1 - Recommended</li>
-<li>2 - Required in some specified shared/public spaces outside the home with other people present, 
+                <tr>
+                  <td>Facial Coverings</td>
+                  <td>
+                    <ul><li>0 - No policy</li>
+                      <li>1 - Recommended</li>
+                      <li>2 - Required in some specified shared/public spaces outside the home with other people present,
       or some situations when social distancing not possible</li>
-<li>3 - Required in all shared/public spaces outside the home with other people present or all situations 
+                      <li>3 - Required in all shared/public spaces outside the home with other people present or all situations
       when social distancing not possible</li>
-<li>4 - Required outside the home at all times regardless of location or presence of other people</li>
-</ul>
-</td>
-	</tr>
-	</tbody>
-</table>
+                      <li>4 - Required outside the home at all times regardless of location or presence of other people</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
 
-</Item>
-</Grid>
+          </Item>
+        </Grid>
 
       </div>
     </div>
 
 
     <div className="row" style={{
-        backgroundColor: `rgba(234,234,234,1)`
-      }}>
-    <div className="col">
+      backgroundColor: `rgba(234,234,234,1)`
+    }}>
+      <div className="col">
 
 
-<GridB>
-<Item>
+        <GridB>
+          <Item>
 
-<SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >School Closing</SubTitle>
-
-
-<ChartTwo />
-
-<Gap/>
-
-</Item>
+            <SubTitle
+              style={{
+                fontWeight: `normal`
+              }}
+            >School Closing</SubTitle>
 
 
+            <ChartTwo />
 
-<Item>
+            <Gap />
 
-<SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >Workplace Closing </SubTitle>
+          </Item>
 
 
 
-<ChartThree />
+          <Item>
 
-<Gap/>
-
-</Item>
-
-<Item>
-
-<SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >Restrictions on Gatherings</SubTitle>
+            <SubTitle
+              style={{
+                fontWeight: `normal`
+              }}
+            >Workplace Closing </SubTitle>
 
 
 
-<ChartFour />
+            <ChartThree />
 
-<Gap/>
+            <Gap />
 
-</Item>
+          </Item>
 
-<Item>
+          <Item>
 
-<SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >International Travel Control</SubTitle>
-
-
-
-<ChartFive />
-
-<Gap/>
-
-</Item>
-
-<Item>
-
-<SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >School Closing</SubTitle>
+            <SubTitle
+              style={{
+                fontWeight: `normal`
+              }}
+            >Restrictions on Gatherings</SubTitle>
 
 
 
-<ChartSix />
-<Gap/>
+            <ChartFour />
 
+            <Gap />
 
-</Item>
+          </Item>
 
-<Item>
+          <Item>
 
-<SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >Restrictions on Internal Movement</SubTitle>
-
-
-
-<ChartSeven />
-
-<Gap/>
-
-</Item>
-<ItemSpan>
-<SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >Facial Masks</SubTitle>
+            <SubTitle
+              style={{
+                fontWeight: `normal`
+              }}
+            >International Travel Control</SubTitle>
 
 
 
-<ChartEight />
+            <ChartFive />
 
-<Gap/>
+            <Gap />
 
-</ItemSpan>
+          </Item>
 
-</GridB>
+          <Item>
 
-<TextBox>
-<p>The above measures influenced country population mobility as the following graph demonstrates.</p></TextBox>
-
-</div>
-</div>
-
-
-<div className="row">
-    <div className="col">
+            <SubTitle
+              style={{
+                fontWeight: `normal`
+              }}
+            >School Closing</SubTitle>
 
 
 
-    <SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >Mobility in Europe</SubTitle>
+            <ChartSix />
+            <Gap />
 
-<Grid>
-  <Item>
-<ChartNine />
-<Gap />
-</Item>
-</Grid>
 
-<TextBox>
-<p>During the first wave of the pandemic (Feb-May 2020) we see a considerable reduction in mobility in most European countries due to lockdown policies. After that period mobility remained low apart from Park mobility. Government policies such as work from home or closing business kept mobility low, while the good weather encouraged outdoor mobility.</p>
-</TextBox>
+          </Item>
+
+          <Item>
+
+            <SubTitle
+              style={{
+                fontWeight: `normal`
+              }}
+            >Restrictions on Internal Movement</SubTitle>
+
+
+
+            <ChartSeven />
+
+            <Gap />
+
+          </Item>
+          <ItemSpan>
+            <SubTitle
+              style={{
+                fontWeight: `normal`
+              }}
+            >Facial Masks</SubTitle>
+
+
+
+            <ChartEight />
+
+            <Gap />
+
+          </ItemSpan>
+
+        </GridB>
+
+        <TextBox>
+          <p>The above measures influenced country population mobility as the following graph demonstrates.</p></TextBox>
+
+      </div>
+    </div>
+
+
+    <div className="row">
+      <div className="col">
+
+
+
+        <SubTitle
+          style={{
+            fontWeight: `normal`
+          }}
+        >Mobility in Europe</SubTitle>
+
+        <Grid>
+          <Item>
+            <ChartNine />
+            <Gap />
+          </Item>
+        </Grid>
+
+        <TextBox>
+          <p>
+            All along the three waves of the pandemic (Feb 2020-May 2021) we see a considerable reduction in
+            mobility in most European countries due to lockdown policies. Overall mobility remained low apart
+            from Park mobility, which increased during the summer months and generally remained higher that
+            other activities, as it was the only recreation option. Government policies such as work from home
+            or closing business kept mobility low, while the good weather encouraged outdoor mobility.
+          </p>
+        </TextBox>
 
       </div>
     </div>
 
 
 
-</Layout>
+  </Layout>
 )
 
 export default Measures

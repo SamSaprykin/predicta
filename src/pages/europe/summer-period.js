@@ -8,12 +8,12 @@ import ChartTwo from "../../components/in-depth/europe/images/summerperiod/b.svg
 import SEO from "../../components/seo"
 
 const summerPeriodMetadata = {
-    Title: "The Summer Period 2020 | Europe & the Covid-19 Pandemic",
-    Keywords: [`covid analytics`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Most European countries demonstrated a significant decrease in both COVID-19 diagnosed cases and deaths.",
-    Image: "/predicta-icon.png",
-    url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+  Title: "The Summer Period 2020 | Europe & the Covid-19 Pandemic",
+  Keywords: [`covid analytics`, `predicta analytics`, `covid`, `predicta`],
+  Description: "Most European countries demonstrated a significant decrease in both COVID-19 diagnosed cases and deaths.",
+  Image: "/predicta-icon.png",
+  url: "https://www.predicta4covid.com/",
+  titleTemplate: "Predicta"
 }
 
 
@@ -108,59 +108,59 @@ const SubTitle = styled.h2`
 
 
 const SummerPeriod = (props) => (
-    <Layout location={props.location}>
-    <SEO 
-      title={summerPeriodMetadata.Title} 
-      keywords={summerPeriodMetadata.Keywords} 
-      description={summerPeriodMetadata.Description} 
+  <Layout location={props.location}>
+    <SEO
+      title={summerPeriodMetadata.Title}
+      keywords={summerPeriodMetadata.Keywords}
+      description={summerPeriodMetadata.Description}
       image={summerPeriodMetadata.Image}
       url={summerPeriodMetadata.url}
       titleTemplate={summerPeriodMetadata.titleTemplate}
-    /> 
-<div className="row" id="first-section">
-    <div className="col">
+    />
+    <div className="row" id="first-section">
+      <div className="col">
 
-    <NavbarSubLinks />
-      
-      <TitleSection>SUMMER PERIOD (JUN ΤΟ AUG 2020)</TitleSection>
-     <Grid>
-  <Item>
+        <NavbarSubLinks />
 
-</Item>
-</Grid>
-  
+        <TitleSection>SUMMER PERIOD (JUN ΤΟ AUG 2020) – TEMPERATURE EFFECT</TitleSection>
+        <Grid>
+          <Item>
 
-<TextBox>
-    <p>As already mentioned during the summer months following the first wave of the pandemic, most European countries demonstrated a significant decrease in both COVID-19 diagnosed cases and deaths.
+          </Item>
+        </Grid>
+
+
+        <TextBox>
+          <p>As already mentioned during the summer months following the first wave of the pandemic, most European countries demonstrated a significant decrease in both COVID-19 diagnosed cases and deaths.
 <br /> <br /> The diagram below clearly presents this situation as most of the European countries fall in the quarter where cases per million and deaths per million are very low. On the other hand, we note that there is a group of countries that do not follow this pattern, mainly Balkan countries, which seem to enter the second wave towards the end of the summer.
 </p>
 
 
-    </TextBox>
+        </TextBox>
 
-    </div>
+      </div>
     </div>
 
 
     <div className="row" style={{
-        backgroundColor: `rgba(234,234,234,1)`
-      }}>
-    <div className="col">
+      backgroundColor: `rgba(234,234,234,1)`
+    }}>
+      <div className="col">
 
 
 
-    <SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >Cases per 1M vs Deaths per 1M (Jun-Aug)</SubTitle>
+        <SubTitle
+          style={{
+            fontWeight: `normal`
+          }}
+        >Cases per 1M vs Deaths per 1M (Jun-Aug)</SubTitle>
 
-<Grid>
-  <Item>
-<ChartOne />
-<Gap />
-</Item>
-</Grid>
+        <Grid>
+          <Item>
+            <ChartOne />
+            <Gap />
+          </Item>
+        </Grid>
 
 
 
@@ -168,38 +168,40 @@ const SummerPeriod = (props) => (
     </div>
 
     <div className="row">
-    <div className="col">
+      <div className="col">
 
 
 
-    
 
 
-<TextBox>
-<p>It is evident that the level of temperature influences the pandemic, as higher temperatures during the summer months decreased the number of incidents of COVID-19 and therefore almost minimized death per million indices.  </p>
-</TextBox>
 
-<SubTitle
-      style={{
-        fontWeight: `normal`
-      }}
-    >Temperature vs Deaths per 1M</SubTitle>
+        <TextBox>
+          <p>It is evident that the level of temperature influences the pandemic, as higher temperatures during the summer months decreased the number of incidents of COVID-19 and therefore almost minimized death per million indices.  </p>
+        </TextBox>
 
-
-<Grid>
-  <Item>
-<ChartTwo />
-<Gap />
-</Item>
-</Grid>
+        <SubTitle
+          style={{
+            fontWeight: `normal`
+          }}
+        >Temperature vs Deaths per 1M</SubTitle>
 
 
-<TextBox>
-<p>We also note that in both waves (first and second wave) the deaths per million index increases from 15 degrees Celsius onwards. 
-Having said that, the mobility indexes graph we saw in previous section highlights the increased mobility in the parks during summer months, which may provide an additional explanation for the decrease in deaths per million during the summer period.
+        <Grid>
+          <Item>
+            <ChartTwo />
+            <Gap />
+          </Item>
+        </Grid>
 
-</p>
-</TextBox>
+
+        <TextBox>
+          <p>
+            We also note that in both waves (first and second wave) the Deaths per Million index increases
+            from 15 degrees Celsius onwards. Having said that, the mobility indexes graph we saw in previous
+            section highlights the increased mobility in the parks during summer months, which may provide
+            an additional explanation for the decrease in Deaths per Million during the summer period.
+          </p>
+        </TextBox>
 
       </div>
     </div>
@@ -207,7 +209,7 @@ Having said that, the mobility indexes graph we saw in previous section highligh
 
 
 
-</Layout>
+  </Layout>
 )
 
 export default SummerPeriod

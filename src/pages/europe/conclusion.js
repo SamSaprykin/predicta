@@ -6,12 +6,12 @@ import NavbarSubLinks from "../../components/in-depth/navbarsub"
 import SEO from "../../components/seo"
 
 const europeConclusionMetadata = {
-    Title: "Conclusion | Europe & the Covid-19 Pandemic",
-    Keywords: [`Europe Covid`,`predicta analytics`, `covid`, `predicta`],
-    Description: "Europe has been hit severely by the pandemic with Western Europe slightly more so than Eastern Europe ",
-    Image: "/predicta-icon.png",
-    url:"https://www.predicta4covid.com/",
-    titleTemplate:"Predicta"
+  Title: "Conclusion | Europe & the Covid-19 Pandemic",
+  Keywords: [`Europe Covid`, `predicta analytics`, `covid`, `predicta`],
+  Description: "Europe has been hit severely by the pandemic with Western Europe slightly more so than Eastern Europe ",
+  Image: "/predicta-icon.png",
+  url: "https://www.predicta4covid.com/",
+  titleTemplate: "Predicta"
 }
 
 
@@ -72,38 +72,45 @@ const TitleSection = styled.h1`
   }
 `
 const Conclusion = (props) => (
-    <Layout location={props.location}>
-    <SEO 
-      title={europeConclusionMetadata.Title} 
-      keywords={europeConclusionMetadata.Keywords} 
-      description={europeConclusionMetadata.Description} 
+  <Layout location={props.location}>
+    <SEO
+      title={europeConclusionMetadata.Title}
+      keywords={europeConclusionMetadata.Keywords}
+      description={europeConclusionMetadata.Description}
       image={europeConclusionMetadata.Image}
       url={europeConclusionMetadata.url}
       titleTemplate={europeConclusionMetadata.titleTemplate}
-    />     
-<div className="row" id="first-section">
-    <div className="col">
+    />
+    <div className="row" id="first-section">
+      <div className="col">
 
-    <NavbarSubLinks />
-      
-     <TitleSection>Conclusion</TitleSection>
+        <NavbarSubLinks />
 
-     <Gap/>
+        <TitleSection>Conclusion</TitleSection>
 
-  
+        <Gap />
+        <TextBox>
+          <p>
+            As a conclusion, we can say that the pandemic hit Europe severely. In the first wave,
+            western countries had a high number of cases and deaths. COVID-19 hit especially
+            prosperous countries with high mobility in their airports. Eastern countries had a
+            little more time for preventive actions, so they minimized the spread of the virus
+            during the first wave. Another important issue is that half of the deaths in first
+            wave took place in elderly care homes, demonstrating the importance to protect these
+            places. During the second and third wave, apart from western countries, poor countries
+            in the Balkan region and in Central Europe were also seriously hit, from COVID-19.
+            Scandinavian countries, except Sweden, as well as Baltic countries, were the most
+            successful in the battle against COVID-19 until now. Without the restrictive measures
+            imposed by most countries, the disruption of the health care systems would have been
+            catastrophic, as we saw happening in Bergamo, Italy at the beginning of the pandemic.
+          </p>
+        </TextBox>
 
-<TextBox>
-    <p>As a conclusion, we can say that the pandemic hit Europe severely. In the first wave, western countries had a high number of cases and deaths.  COVID-19 hit especially prosperous countries with high mobility in their airports. Eastern countries had a little more time for preventive actions, so they minimized the spread of the virus. Another important issue is that half of the deaths in first wave took place in elderly care homes, showing us the importance to protect these places. In the second wave, apart from western countries, poor countries in the region of Balkans and Central Europe also suffered strongly from COVID-19. Scandinavian countries with the exception of Sweden, as well as Baltic countries, were the most successful in the battle against COVID-19 until now. This virus is so aggressive that without prevention measures, can lead to the disruption of the healthcare system as we watched happening in Bergamo, Italy, at the beginning of the pandemic.
-</p>
-
-
-    </TextBox>
-
+      </div>
     </div>
-    </div>
 
 
-</Layout>
+  </Layout>
 )
 
 export default Conclusion
