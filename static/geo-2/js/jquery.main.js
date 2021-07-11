@@ -23,10 +23,12 @@ function initLineChart() {
 		var countryItems = jQuery();
 		var width = chartHolder.outerWidth() - margin.left - margin.right;
 		var height = chartHolder.outerHeight() - margin.top - margin.bottom;
-		var svg, wrapper, xScale, yScale, xAxis, yAxis, labels, border, line, valueline;
+		var svg, wrapper, xScale, xScale2, yScale, xAxis, yAxis, xAxisYear, labels, border, line, valueline;
+		var dateFormat = d3.timeParse('%Y-%V');
 		var lineData = {};
 		var loadData = {};
 		var allData = {};
+		var year = null;
 
 		d3.csv(holder.data('url'))
 			.then(function(data) {
@@ -48,9 +50,11 @@ function initLineChart() {
 		}
 
 		function formatData() {
-			loadData.sort(compareAscending)
-			loadData.forEach(function(d) {
+			loadData.sort(compareAscending);
+
+			loadData.forEach(function(d, i) {
 				var propName = d.Country;
+				var date = d.Year_Week.split('-');
 
 				if (!allData[propName]) {
 					allData[propName] = [];
@@ -62,18 +66,10 @@ function initLineChart() {
 				}
 
 				allData[propName].push({
-					week: d.Week,
+					week: dateFormat(d.Year_Week),
 					cases: d[holder.data('cases')]
 				});
 			});
-		}
-
-		function compareAscending(a,b) {
-			a = a.Country.toLowerCase();
-			b = b.Country.toLowerCase();
-
-			if(a>b) return 1;
-			if(a<b) return -1;
 		}
 
 		function initSlider() {
@@ -119,6 +115,8 @@ function initLineChart() {
 		}
 
 		function drawChart() {
+			year = null;
+
 			svg = d3.select(chartHolder[0])
 				.append('svg')
 				.attr('width', width + margin.left + margin.right)
@@ -127,13 +125,17 @@ function initLineChart() {
 			wrapper = svg.append('g')
 				.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-			xScale = d3.scaleLinear()
+			xScale = d3.scaleTime()
 				.range([0, width])
-				.domain([d3.min(lineData, function(d) {
-					return +d.week;
-				}), d3.max(lineData, function(d) {
-					return +d.week;
-				})]);
+				.domain(d3.extent(lineData, function(d) {
+					return d.week;
+				}));
+
+			xScale2 = d3.scaleTime()
+				.range([0, width])
+				.domain(d3.extent(lineData, function(d) {
+					return d.week;
+				}));
 
 			yScale = d3.scaleLinear()
 				.range([0, height])
@@ -144,11 +146,45 @@ function initLineChart() {
 			xAxis = wrapper.append('g')
 				.attr('class', 'x axis')
 				.attr('transform', 'translate(0, 0)')
-				.call(d3.axisTop(xScale).tickSize(0).ticks(lineData.length / 2).tickPadding(17));
+				.call(d3.axisTop(xScale)
+					.ticks(d3.timeMonday.every(Math.ceil(lineData.length / 20)))
+					.tickFormat(d3.timeFormat('%V'))
+					.tickSize(0).tickPadding(17));
+
+			xAxisYear = wrapper.append('g')
+				.attr('class', 'axisYear')
+				.attr('transform', 'translate(0, 0)')
+				.call(d3.axisTop(xScale2)
+					.ticks(d3.timeMonday.every(1))
+					.tickFormat(d3.timeFormat('%Y %V'))
+					.tickSize(52).tickPadding(5));
+
+			wrapper.selectAll('.axisYear text')
+				.each(function(d, i) {
+					if (i === 0) this.closest('.tick').remove();
+
+					var currYear = this.innerHTML.split(' ');
+
+					if (currYear[0] === year) {
+						jQuery(this).closest('.tick').hide();
+					} else {
+						this.innerHTML = currYear[0];
+						year = currYear[0];
+					}
+				});
+
+			wrapper.selectAll('.x.axis text')
+				.each(function(d, i) {
+					if (this.innerHTML == '01') {
+						jQuery(this).closest('.tick').hide();
+					}
+				});
+
+			wrapper.selectAll('.axisYear .domain').remove();
 
 			yAxis = wrapper.append('g')
 				.attr('class', 'y axis')
-				.call(d3.axisLeft(yScale).tickSize(0).ticks(height / 40).tickPadding(23));
+				.call(d3.axisLeft(yScale).tickSize(0).tickPadding(23));
 
 			valueline = d3.line()
 				.x(function(d) {
@@ -161,11 +197,11 @@ function initLineChart() {
 
 			border = wrapper.append('line')
 				.attr('x1', -12)
-				.attr('y1', 1)
+				.attr('y1', 0)
 				.attr('x2', width + 12)
-				.attr('y2', 1)
+				.attr('y2', 0)
 				.style('stroke', '#606060')
-    			.style('stroke-width', 1)
+				.style('stroke-width', 1)
 				.attr('class', 'border');
 
 			line = wrapper.append('path')
@@ -222,15 +258,48 @@ function initLineChart() {
 
 			svg.attr('width', width + margin.left + margin.right);
 
-			xScale = d3.scaleLinear()
+			xScale = d3.scaleTime()
 				.range([0, width])
-				.domain([d3.min(lineData, function(d) {
-					return +d.week;
-				}), d3.max(lineData, function(d) {
-					return +d.week;
-				})]);
+				.domain(d3.extent(lineData, function(d) {
+					return d.week;
+				}));
 
-			xAxis.call(d3.axisTop(xScale).tickSize(0).ticks(lineData.length / 2).tickPadding(17));
+			xScale2 = d3.scaleTime()
+				.range([0, width])
+				.domain(d3.extent(lineData, function(d) {
+					return d.week;
+				}));
+
+			xAxis.call(d3.axisTop(xScale)
+				.ticks(d3.timeMonday.every(Math.ceil(lineData.length / 22)))
+				.tickFormat(d3.timeFormat('%V'))
+				.tickSize(0).tickPadding(17));
+
+			xAxisYear.call(d3.axisTop(xScale2)
+				.ticks(d3.timeMonday.every(1))
+				.tickFormat(d3.timeFormat('%Y %V'))
+				.tickSize(52).tickPadding(5));
+
+			wrapper.selectAll('.axisYear text').each(function(d, i) {
+				if (i === 0) this.closest('.tick').remove();
+
+				var currYear = this.innerHTML.split(' ');
+
+				if (currYear[0] === year) {
+					jQuery(this).closest('.tick').hide();
+				} else {
+					this.innerHTML = currYear[0];
+					year = currYear[0];
+				}
+			});
+
+			wrapper.selectAll('.x.axis text').each(function(d, i) {
+				if (this.innerHTML == '01') {
+					jQuery(this).closest('.tick').hide();
+				}
+			});
+
+			wrapper.selectAll('.axisYear .domain').remove();
 
 			border.attr('x2', width + 12);
 
@@ -251,6 +320,14 @@ function initLineChart() {
 				});
 		}
 	});
+
+	function compareAscending(a, b) {
+		a = a.Country.toLowerCase();
+		b = b.Country.toLowerCase();
+
+		if (a > b) return 1;
+		if (a < b) return -1;
+	}
 
 	function round(number, increment, offset) {
 		return Math.ceil((number - offset) / increment) * increment + offset;
