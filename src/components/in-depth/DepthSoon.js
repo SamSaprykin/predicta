@@ -9,19 +9,18 @@ const DepthSoon = ({ image, title, navItems }) => {
         <TableHeader>
           <TitleTable>{title}</TitleTable>
         </TableHeader>
-        <TableRow>
-          {navItems.map((item, index) => {
-            return (
-              <TableItem
-                key={index}
-                to={item.linkTo}
-                activeStyle={{ backgroundColor: `#222b3e`, color: `white` }}
-              >
-                {item.title}
-              </TableItem>
-            );
-          })}
-        </TableRow>
+
+        {navItems.map((item, index) => {
+          return (
+            <TableItem
+              key={index}
+              to={item.linkTo}
+              activeStyle={{ backgroundColor: `#222b3e`, color: `white` }}
+            >
+              {item.title}
+            </TableItem>
+          );
+        })}
       </Table>
     </Wrapper>
   );
@@ -49,12 +48,17 @@ const Wrapper = styled.div`
 `;
 
 const Table = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
   margin-bottom: 32px;
+  :last-child {
+    border-right: 1px solid #a7a9ac;
+  }
 `;
 
 const TableHeader = styled.div`
+  grid-column: span 8;
   border: 1px solid #a7a9ac;
   background-color: #222b3e;
   width: 100%;
@@ -78,15 +82,6 @@ const TitleTable = styled.h2`
   margin-bottom: 0;
 `;
 
-const TableRow = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  :last-child {
-    border-right: 1px solid #a7a9ac;
-  }
-`;
-
 const TableItem = styled(Link)`
   text-align: center;
   text-decoration: none;
@@ -102,7 +97,7 @@ const TableItem = styled(Link)`
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
-  padding: 3px;
+  padding: 3px 16px;
   border-left: 1px solid #a7a9ac;
   border-bottom: 1px solid #a7a9ac;
   margin-top: -1px;
@@ -111,7 +106,7 @@ const TableItem = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 46px;
+  height: 80px;
   outline: none;
 
   @media (max-width: 1440px) {
