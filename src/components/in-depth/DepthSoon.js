@@ -9,18 +9,19 @@ const DepthSoon = ({ image, title, navItems }) => {
         <TableHeader>
           <TitleTable>{title}</TitleTable>
         </TableHeader>
-
-        {navItems.map((item, index) => {
-          return (
-            <TableItem
-              key={index}
-              to={item.linkTo}
-              activeStyle={{ backgroundColor: `#222b3e`, color: `white` }}
-            >
-              {item.title}
-            </TableItem>
-          );
-        })}
+        <TableRow>
+          {navItems.map((item, index) => {
+            return (
+              <TableItem
+                key={index}
+                to={item.linkTo}
+                activeStyle={{ backgroundColor: `#222b3e`, color: `white` }}
+              >
+                {item.title}
+              </TableItem>
+            );
+          })}
+        </TableRow>
       </Table>
     </Wrapper>
   );
@@ -48,9 +49,8 @@ const Wrapper = styled.div`
 `;
 
 const Table = styled.div`
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 32px;
   :last-child {
     border-right: 1px solid #a7a9ac;
@@ -83,6 +83,7 @@ const TitleTable = styled.h2`
 `;
 
 const TableItem = styled(Link)`
+  flex-grow: 1;
   text-align: center;
   text-decoration: none;
   color: #222b3e;
@@ -123,6 +124,15 @@ const TableItem = styled(Link)`
     font-size: 14px;
     line-height: 18px;
     width: 50%;
+  }
+`;
+
+const TableRow = styled.div`
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  :last-child {
+    border-right: 1px solid #a7a9ac;
   }
 `;
 
