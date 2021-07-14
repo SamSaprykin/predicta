@@ -14,6 +14,7 @@ import DiabetsPrevelance from "../../components/in-depth/latin-america/images/di
 import CardiovascularDeaths from "../../components/in-depth/latin-america/images/deats-cardiovascular-latin.svg";
 import ObesityRate from "../../components/in-depth/latin-america/images/obesity-rate.svg";
 import GpdCapita from "../../components/in-depth/latin-america/images/gpd-per-capita-latin.svg";
+import ChartLatin from "../../components/in-depth/latin-america/images/chart-latin.svg";
 import EmplotmentRate from "../../components/in-depth/latin-america/images/infomal-employmant-rate-latin.svg";
 import SEO from "../../components/seo";
 
@@ -94,9 +95,9 @@ const SocioEconomicLatin = (props) => (
           A clear effect the GDP level.
         </PredictaText>
       </PredictaTextWrapper>
-      <PredictaSubTitle>Informal Employment Rate (Total)</PredictaSubTitle>
+
       <PredictaContentContainer containerSize="normal">
-        <EmplotmentRate className="living graph" />
+        <ChartLatin className="living graph" />
       </PredictaContentContainer>
     </div>
     <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
