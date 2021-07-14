@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 import Layout from "../../components/layout";
 import DepthSoon from "../../components/in-depth/DepthSoon";
 import {
@@ -12,7 +13,6 @@ import {
 import CasesOneMillione from "../../components/in-depth/latin-america/images/cases-per-1M-latin.svg";
 import DeathsOneMillione from "../../components/in-depth/latin-america/images/deaths-per-1M-latin.svg";
 import TitleGraphic from "../../components/in-depth/latin-america/images/title-graphic-latin.svg";
-import TitleGraphic2 from "../../components/in-depth/latin-america/images/title-graphic-latin-2.svg";
 import MobilityLatin from "../../components/in-depth/latin-america/images/mobility-per-monts-latin.svg";
 import TotalCasesLatin from "../../components/in-depth/latin-america/images/total-case-perM-latin.svg";
 import ExcessMortality from "../../components/in-depth/latin-america/images/excess-mortality-latin.svg";
@@ -511,7 +511,7 @@ const GeneralFindingsLatin = (props) => (
         <PredictaSubTitle marginTop="32px" marginBottom="24px">
           Mobility per Month by Country
         </PredictaSubTitle>
-        <TitleGraphic2 className="title-graph" />
+        <TitleGraphic className="title-graph" />
         <MobilityLatin className="graph" />
         <PredictaText marginBottom="40px">
           The above mobility graph demonstrates the reduction of population
@@ -525,9 +525,9 @@ const GeneralFindingsLatin = (props) => (
     <div className="row">
       <PredictaContentContainer containerSize="normal">
         <PredictaSubTitle marginBottom="24px">
-          Total Cases per 1M vs Total Deaths per 1M (Feb-Nov)
+          Total Cases per 1M vs Total Deaths per 1M (Feb ‘20-May ‘21)
         </PredictaSubTitle>
-        <TotalCasesLatin className="graph-dark" />
+        <img src="/deaths-per-1mln-latin.png" alt="deaths-per-1mln-latin" />
         <PredictaText>
           The previous scatterplot correlating Cases per 1M with Deaths per 1M
           by country, groups the Latin American countries in interesting
@@ -551,8 +551,8 @@ const GeneralFindingsLatin = (props) => (
             </li>
           </ul>
           An overall finding is that most Latin America countries have more than
-          200 Deaths per 1M, while a considerable number of countries have more
-          than 700 Deaths per 1M.
+          500 Deaths per 1M, while a considerable number of countries have more
+          than 1000 Deaths per 1M.
         </PredictaText>
       </PredictaContentContainer>
     </div>
@@ -561,13 +561,31 @@ const GeneralFindingsLatin = (props) => (
         <PredictaSubTitle marginBottom="24px">
           Excess Mortality
         </PredictaSubTitle>
-        <ExcessMortality className="graph" />
+        <img src="/mortality-latin.png" alt="mortality-latin" />
         <PredictaText marginBottom="60px">
           Another indicator demonstrating the severity of COVID-19 pandemic in
           Latin America is the above histogram where we can see that the
           mortality due to COVID-19 (Excess Mortality) is much higher than the
-          global figure (calculated as an average of the European and North
-          American countries).
+          global figure.
+        </PredictaText>
+      </PredictaContentContainer>
+    </div>
+    <div className="row">
+      <PredictaContentContainer containerSize="normal">
+        <PredictaSubTitle marginBottom="24px">
+          % Vaccinated - Dose
+        </PredictaSubTitle>
+        <img src="/vaccination-latin.png" alt="% Vaccinated - Dose" />
+        <PredictaText>
+          Most of Latin America Countries have vaccinated with at least one dose
+          a small proportion of their population (less than 20%), except for
+          Chile, Uruguay and Dominican Republic which vaccinated with at least
+          one dose more than 30% of their population. Chile’s paradox, is that
+          despite the successful vaccination program, there was a substantial
+          third wave of the pandemic. The reason for this paradox is probably
+          the early opening of many social activities and possibly the fact that
+          one dose of vaccine is not sufficient for new mutations, such as the
+          Brazilian one.
         </PredictaText>
       </PredictaContentContainer>
     </div>
