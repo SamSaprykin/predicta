@@ -129,7 +129,7 @@ const NavbarSubLinks = () => {
             to="/europe/summer-period"
             activeStyle={{ backgroundColor: `#222b3e`, color: `white` }}
           >
-            Summer Period<br></br>(Jun to Aug 2020)<br></br>temperature effect
+            Summer Period<br></br>(Jun to Aug 2020)<br></br>Temperature effect
           </NavLink>
         </Item>
 
