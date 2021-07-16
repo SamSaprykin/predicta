@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import ChartOne from "./images/chart-demog-one.svg";
+import ChartOne from "./images/chart-demog-one1.svg";
 import ChartTwo from "./images/chart-demog-two.svg";
 import ChartThree from "./images/chart-demog-three.svg";
 

@@ -10,10 +10,10 @@ import {
   PredictaSubTitle,
   PredictaText,
 } from "../../components/BlockElements/BlockElements";
-import CasesOneMillione from "../../components/in-depth/latin-america/images/cases-per-1M-latin.svg";
-import DeathsOneMillione from "../../components/in-depth/latin-america/images/deaths-per-1M-latin.svg";
+import CasesOneMillione from "../../components/in-depth/latin-america/images/cases-per-1M-latin1.svg";
+import DeathsOneMillione from "../../components/in-depth/latin-america/images/deaths-per-1M-latin1.svg";
 import TitleGraphic from "../../components/in-depth/latin-america/images/title-graphic-latin.svg";
-import MobilityLatin from "../../components/in-depth/latin-america/images/mobility-per-monts-latin.svg";
+import MobilityLatin from "../../components/in-depth/latin-america/images/mobility-per-monts-latin1.svg";
 import TotalCasesLatin from "../../components/in-depth/latin-america/images/total-case-perM-latin.svg";
 import ExcessMortality from "../../components/in-depth/latin-america/images/excess-mortality-latin.svg";
 import SEO from "../../components/seo";
