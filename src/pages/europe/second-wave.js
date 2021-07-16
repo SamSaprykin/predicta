@@ -36,6 +36,7 @@ const Grid = styled.div`
 
   .big-item {
     max-width: 1280px !important;
+    margin: 0 auto;
     @media (max-width: 1440px) {
       max-width: 960px !important;
     }
