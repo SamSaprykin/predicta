@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import Layout from "../../components/layout";
 import DepthSoon from "../../components/in-depth/DepthSoon";
 import {
@@ -37,6 +38,10 @@ const DepthLatinData = {
   ],
 };
 
+const SpaceElem = styled.div`
+  height: 250px;
+`;
+
 const Conclusion = (props) => (
   <Layout location={props.location}>
     <SEO
@@ -62,6 +67,7 @@ const Conclusion = (props) => (
         continuous disastrous results.
       </PredictaText>
     </PredictaTextWrapper>
+    <SpaceElem />
   </Layout>
 );
 

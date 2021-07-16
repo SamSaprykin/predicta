@@ -437,6 +437,8 @@ const GeneralFindingsLatin = (props) => (
           on the reported cases, are about 7% and 3% accordingly.
         </PredictaText>
       </PredictaTextWrapper>
+    </div>
+    <div className="row">
       <PredictaSubTitle>Reported vs Estimated Cases</PredictaSubTitle>
       <PredictaContentContainer marginTop="60px" containerSize="normal">
         <img
@@ -445,7 +447,7 @@ const GeneralFindingsLatin = (props) => (
         />
       </PredictaContentContainer>
     </div>
-    <div className="row">
+    <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
       <PredictaContentContainer marginTop="60px" containerSize="large">
         <SectionSideBySide
           leftSide={
