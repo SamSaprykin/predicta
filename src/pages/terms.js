@@ -29,7 +29,7 @@ const termsMetadata = {
   Description: "Terms & Conditions for the Predicta4Covid.com microsite displaying the results of a statistical analysis",
   Image: "/predicta-icon.png",
   url:"https://www.predicta4covid.com/",
-  titleTemplate:"Predicta"
+  titleTemplate:"Terms & Conditions | Predicta S.A."
 }
 
 const Terms = (props) => (

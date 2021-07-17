@@ -12,7 +12,7 @@ const europeConclusionMetadata = {
     "Europe has been hit severely by the pandemic with Western Europe slightly more so than Eastern Europe ",
   Image: "/predicta-icon.png",
   url: "https://www.predicta4covid.com/",
-  titleTemplate: "Predicta",
+  titleTemplate: "Conclusion | Europe & the Covid-19 Pandemic",
 };
 
 const TextBox = styled.div`

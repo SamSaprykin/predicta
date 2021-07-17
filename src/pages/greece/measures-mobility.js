@@ -19,7 +19,7 @@ const measuresMobMetadata = {
     "The pandemic evolution in Greece can be further analyzed and explained, examining government preventive policies and their effect on citizens behavior and compliance.",
   Image: "/predicta-icon.png",
   url: "https://www.predicta4covid.com/",
-  titleTemplate: "Predicta",
+  titleTemplate: "Measures & Mobility | Greece & the Covid-19 Pandemic",
 };
 
 const DepthGreeceData = {

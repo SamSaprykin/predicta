@@ -16,7 +16,7 @@ const latinConclusionMetadata = {
     "Latin American countries overall faced unsurpassed difficulties in dealing with the Covid-19 pandemic",
   Image: "/predicta-icon.png",
   url: "https://www.predicta4covid.com/",
-  titleTemplate: "Predicta",
+  titleTemplate: "Conclusion | Latin America & the Covid-19 Pandemic",
 };
 
 const DepthLatinData = {

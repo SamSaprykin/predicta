@@ -20,7 +20,7 @@ const globalAnalysisMetadata = {
     "Data and information regarding the evolution of the Covid-19 pandemic. globally, from December 2019 up to November 2020. Data includes monthly evolution of cases on a country level, positivity rates, mortality rates and more",
   Image: "/predicta-icon.png",
   url: "https://www.predicta4covid.com/",
-  titleTemplate: "Predicta",
+  titleTemplate: "A Global Analysis of the Covid-19 Pandemic",
 };
 
 const Global = (props) => (

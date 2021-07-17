@@ -19,7 +19,7 @@ const greeceGeneralMetadata = {
     "Geographical characteristics and government policies differentiation from Western Europe in terms of the effects of the pandemic",
   Image: "/predicta-icon.png",
   url: "https://www.predicta4covid.com/",
-  titleTemplate: "Predicta",
+  titleTemplate: "General Findings | Greece & the Covid-19 Pandemic",
 };
 
 const DepthGreeceData = {

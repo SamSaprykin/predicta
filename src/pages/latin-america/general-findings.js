@@ -20,7 +20,7 @@ const latinGeneralMetadata = {
     "Latin America is a worldwide region badly affected from COVID-19 Pandemic.",
   Image: "/predicta-icon.png",
   url: "https://www.predicta4covid.com/",
-  titleTemplate: "Predicta",
+  titleTemplate: "General Findings | Latin America & the Covid-19 Pandemic",
 };
 
 const DepthLatinData = {

@@ -26,7 +26,8 @@ const latinSocioEconomicMetadata = {
     "Socio-economic and health factors play a significant role in how Latin American countries have been affected by the pandemic ",
   Image: "/predicta-icon.png",
   url: "https://www.predicta4covid.com/",
-  titleTemplate: "Predicta",
+  titleTemplate:
+    "Socio-Economic and Health Factors | Latin America & the Covid-19 Pandemic",
 };
 
 const DepthLatinData = {

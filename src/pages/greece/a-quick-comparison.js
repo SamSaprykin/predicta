@@ -20,7 +20,7 @@ const quickComparisonMetadata = {
     "Overall, Greece was not hit by the pandemic, as brutally as the other countries of the Western World.",
   Image: "/predicta-icon.png",
   url: "https://www.predicta4covid.com/",
-  titleTemplate: "Predicta",
+  titleTemplate: "A Quick Comparison | Greece & the Covid-19 Pandemic",
 };
 const DepthGreeceData = {
   title: "Greece",

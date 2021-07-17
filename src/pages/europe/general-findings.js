@@ -14,7 +14,7 @@ const generalFindingsMetadata = {
     "COVID-19 PANDEMIC has hit Europe much more than other geographical regions of the world, having almost 30% of diagnosed cases and deaths.",
   Image: "/predicta-icon.png",
   url: "https://www.predicta4covid.com/",
-  titleTemplate: "Predicta",
+  titleTemplate: "General Findings | Europe & the Covid-19 Pandemic",
 };
 
 const Grid = styled.div`
