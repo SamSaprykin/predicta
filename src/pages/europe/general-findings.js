@@ -398,7 +398,7 @@ const GeneralFindings = (props) => (
         <Grid>
           <Item>
             <SubTitle>Deaths per 1M</SubTitle>
-            <ChartTwo />
+            <img src="/deaths-depth-europe.png" alt="deaths depth europe" />
             <Gap />
             <TextBox>
               <p>

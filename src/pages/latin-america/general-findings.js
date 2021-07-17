@@ -10,12 +10,7 @@ import {
   PredictaSubTitle,
   PredictaText,
 } from "../../components/BlockElements/BlockElements";
-import CasesOneMillione from "../../components/in-depth/latin-america/images/cases-per-1M-latin1.svg";
-import DeathsOneMillione from "../../components/in-depth/latin-america/images/deaths-per-1M-latin1.svg";
 import TitleGraphic from "../../components/in-depth/latin-america/images/title-graphic-latin.svg";
-import MobilityLatin from "../../components/in-depth/latin-america/images/mobility-per-monts-latin1.svg";
-import TotalCasesLatin from "../../components/in-depth/latin-america/images/total-case-perM-latin.svg";
-import ExcessMortality from "../../components/in-depth/latin-america/images/excess-mortality-latin.svg";
 import SEO from "../../components/seo";
 
 const latinGeneralMetadata = {
@@ -495,12 +490,12 @@ const GeneralFindingsLatin = (props) => (
           Cases per 1M - MA 7 Days
         </PredictaSubTitle>
         <TitleGraphic className="title-graph" />
-        <CasesOneMillione className="graph" />
+        <img src="/cases-latin.png" alt="deaths-latin" />
         <PredictaSubTitle marginTop="32px" marginBottom="24px">
           Deaths per 1M - MA 7 Days
         </PredictaSubTitle>
         <TitleGraphic className="title-graph" />
-        <DeathsOneMillione className="graph" />
+        <img src="/deaths-latin.png" alt="deaths-latin" />
         <PredictaText marginBottom="40px">
           From June 2020 where for that region of the world winter starts, we
           can see a gradual increase of cases and deaths with some countries
@@ -512,7 +507,7 @@ const GeneralFindingsLatin = (props) => (
           Mobility per Month by Country
         </PredictaSubTitle>
         <TitleGraphic className="title-graph" />
-        <MobilityLatin className="graph" />
+        <img src="/mobility-latin.png" alt="Mobility per Month by Country" />
         <PredictaText marginBottom="40px">
           The above mobility graph demonstrates the reduction of population
           mobility up the middle of May 2020, a result of the early imposed

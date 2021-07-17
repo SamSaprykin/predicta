@@ -90,7 +90,7 @@ const GeoAnalysis = () => (
     <Grid>
       <Item>
         <SubheadSection>Age Distribution Evolution</SubheadSection>
-        <ChartOne />
+        <img src="/age-distribiution.png" alt="Age Distribution Evolution" />
       </Item>
       <Item>
         <SubheadSection>Cases & Deaths Median Ages Evolution</SubheadSection>

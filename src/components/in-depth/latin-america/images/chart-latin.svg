@@ -7,7 +7,7 @@
 	.st1{fill:none;}
 	.st2{fill:none;stroke:#A7A9AC;stroke-width:1.5591;stroke-miterlimit:10;}
 	.st3{fill:none;stroke:#A6A6A6;stroke-width:1.3582;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st4{fill:#FFFFFF;}
+	.st4{fill:#FFFFFF;fill:white !important;}
 	.st5{font-family:'ArialMT';}
 	.st6{font-size:14.31px;}
 	.st7{font-size:21px;}
@@ -33,7 +33,7 @@
 	.st27{fill:#049904;}
 	.st28{fill:#02269B;}
 	.st29{fill:#35036B;}
-	text{fill:white !important;}
+	
 </style>
 <g id="Слой_2">
 </g>

@@ -1322,7 +1322,6 @@ const FirstWave = (props) => (
         >
           Cases per 1M vs Deaths per 1M (Feb-May)
         </SubTitle>
-
         <Grid>
           <Item className="big-item">
             <ChartNine />
