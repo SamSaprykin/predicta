@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Map from "./images/map.svg"
+import WorldMap from "./images/world-map.svg"
 
 
 const ImageBox = styled.div`
@@ -11,6 +11,11 @@ flex-direction: column;
 width: 100%;
 max-width: 1280px;
 margin: 0 auto;
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
 @media (max-width: 1440px) {
   max-width:960px;
 }
@@ -41,10 +46,10 @@ const TitleSection = styled.h2`
 
 
 const Cases = () => (
-<>
-  <TitleSection id ='#map'>Cases per 1M Pop (end Nov. 2020)</TitleSection>
+  <>
+    <TitleSection id='#map'>Cases per 1M Pop (End of May 2021)</TitleSection>
     <ImageBox>
-      <Map alt="Main Map" />
+      <WorldMap alt="New Map" />
     </ImageBox>
   </>
 )

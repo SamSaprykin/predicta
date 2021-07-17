@@ -44,13 +44,13 @@ const TitleSection = styled.h2`
 
 const GridBox = () => (
   <>
-    <TitleSection id ='' style={{textTransform: `capitalize`}}>Age Ratios</TitleSection>
+    <TitleSection id='' style={{ textTransform: `capitalize` }}>Age Ratios</TitleSection>
     <Gap />
     <ImageBox>
       <AgeRatios />
-    </ImageBox>  
+    </ImageBox>
   </>
-  );
+);
 
 
 export default GridBox

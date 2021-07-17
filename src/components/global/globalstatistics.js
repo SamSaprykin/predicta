@@ -7,8 +7,7 @@ import ChartThree from "./images/chart-three.svg";
 import ChartFour from "./images/chart-four.svg";
 import ChartFive from "./images/chart-five.svg";
 import ChartSix from "./images/chart-six.svg";
-
-
+import ChartSeven from "./images/chart-seven.svg";
 
 const Grid = styled.div`
   display: grid;
@@ -19,6 +18,10 @@ const Grid = styled.div`
   align-self: center;
   justify-content:center;
   max-width:1280px;
+
+  svg {
+    max-width: 100%;
+  }
   @media (max-width: 1440px) {
     max-width:960px;
   }
@@ -32,7 +35,43 @@ const Grid = styled.div`
     padding:0 32px;
   }
   
+  .centered {
+    margin: 0 auto;
+  }
 `;
+
+const GridA = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  width: 100%;
+  align-self: center;
+  justify-content:center;
+  max-width:1280px;
+  svg {
+    max-width: 100%;
+  }
+  @media (max-width: 1440px) {
+    max-width:960px;
+  }
+  @media (max-width: 1024px) {
+    max-width:768px;
+  }
+  @media (max-width: 960px) {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  @media (max-width: 768px) {
+    padding:0 32px;
+  }
+  .centered {
+    margin: 2rem auto;
+    width: 50%;
+    @media (max-width: 960px) {
+      width: 100%;
+   }
+  }
+`
 
 
 const Item = styled.div`
@@ -84,71 +123,80 @@ const SubTitle = styled.h2`
 
 const GlobalStats = () => (
   <>
- 
-  <TitleSection id='global-statistics'>Global Statistics</TitleSection>
+
+    <TitleSection id='global-statistics'>Global Statistics</TitleSection>
 
 
-  <Gap />
-      <Grid>
+    <Gap />
+    <Grid>
 
-        <Item>
+      <Item>
 
 
-  <SubTitle>Cases Monthly Evolution</SubTitle>
- 
-        
+        <SubTitle>Cases Monthly Evolution</SubTitle>
+
+
         <ChartOne />
 
-        </Item>
+      </Item>
 
 
-        <Item>
-       
-  <SubTitle>Cumulative Cases Distribution</SubTitle>
+      <Item>
+
+        <SubTitle>Cumulative Cases Distribution</SubTitle>
 
         <ChartTwo />
-        
-        </Item>
 
-        <Item>
-     
-  <SubTitle>Deaths Monthly Evolution</SubTitle>
+      </Item>
+
+      <Item>
+
+        <SubTitle>Deaths Monthly Evolution</SubTitle>
 
         <ChartThree />
-        
-        </Item>
 
-        <Item>
-            
-  <SubTitle>Cumulative Deaths Distribution</SubTitle>
+      </Item>
+
+      <Item>
+
+        <SubTitle>Cumulative Deaths Distribution</SubTitle>
 
         <ChartFour />
-        
-        </Item>
 
-        <Item>
-            
-  <SubTitle>Mortality %</SubTitle>
-  
+      </Item>
+
+      <Item>
+
+        <SubTitle>Mortality %</SubTitle>
+
         <ChartFive />
-        
-        </Item>
 
-        <Item>
-             
-  <SubTitle>Positivity %</SubTitle>
+      </Item>
+
+      <Item>
+
+        <SubTitle>Positivity %</SubTitle>
 
         <ChartSix />
-        
-        </Item>
+
+      </Item>
 
 
 
 
-      </Grid>
-    
-</>
-  );
+    </Grid>
+    <GridA>
+      <Item className="centered">
+
+        <SubTitle>Vaccinated at Least 1 Dose %</SubTitle>
+
+        <ChartSeven />
+
+      </Item>
+    </GridA>
+
+  </>
+);
 
 
 export default GlobalStats

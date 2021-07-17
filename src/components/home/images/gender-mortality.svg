@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 470.596 338.407">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 540.596 338.407">
   <g id="Group_543" data-name="Group 543" transform="translate(-1322.051 -5147.017)">
     <g id="Group_55" data-name="Group 55">
-      <text id="_3_" data-name="3%" transform="translate(1744.647 5463.424)" fill="#222b3e" font-size="80.016" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-47.962" y="0">3</tspan><tspan y="0" font-size="49.911">%</tspan></text>
+      <text id="_3_" data-name="3%" transform="translate(1744.647 5463.424)" fill="#222b3e" font-size="80.016" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-47.962" y="0">2.5</tspan><tspan y="0" font-size="49.911">%</tspan></text>
       <g id="Group_525" data-name="Group 525">
         <g id="Group_51" data-name="Group 51">
           <g id="Group_50" data-name="Group 50">
@@ -12,7 +12,7 @@
         <path id="Path_399" data-name="Path 399" d="M1381.139,5360.663h294.64v102.76h-294.64v-102.76Z" fill="#222b3e" fill-rule="evenodd"/>
       </g>
       <g id="Group_53" data-name="Group 53">
-        <text id="_2_1_" data-name="2,1%" transform="translate(1691.5 5249.776)" fill="#d02f34" font-size="80.016" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-83.93" y="0">2,1</tspan><tspan y="0" font-size="49.911">%</tspan></text>
+        <text id="_2_1_" data-name="2,1%" transform="translate(1691.5 5249.776)" fill="#d02f34" font-size="80.016" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="600"><tspan x="-83.93" y="0">1.9</tspan><tspan y="0" font-size="49.911">%</tspan></text>
         <g id="Group_524" data-name="Group 524">
           <g id="Group_52" data-name="Group 52">
             <path id="Path_400" data-name="Path 400" d="M1355.13,5155.441a8.427,8.427,0,1,0-8.427,8.427A8.429,8.429,0,0,0,1355.13,5155.441Z" fill="#d02f34"/>

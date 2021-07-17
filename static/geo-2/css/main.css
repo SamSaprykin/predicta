@@ -661,7 +661,7 @@ h3,
 }
 
 .container {
-	padding: 0;
+	padding: 0 15px;
 	max-width: 1740px;
 	margin: 0 auto;
 }
@@ -916,7 +916,7 @@ h3,
 	}
 
 	.container {
-		padding: 0 ;
+		padding: 0 30px;
 	}
 
 	.content-section {
@@ -981,94 +981,4 @@ h3,
 		min-width: 280px;
 	}
 }
-
-
-
-@media (max-width: 1440px) {
-	h3 {
-		font-size:24px !important;
-		line-height:32px !important;
-		margin-bottom: 16px !important;
-	}
-	.content-section {
-		width:100% !important;
-		max-width: 1280px !important;
-		margin: 0 auto;
-		padding: 48px 32px !important;
-		font-size:24px !important;
-		line-height:32px !important;
-	}
-	
-	.info-row .info-col {
-		width: 100% !important;
-		max-width:700px;
-		margin-left: 0 !important;
-	}
-	.info-row {
-		padding: 0  !important;
-		margin:0 auto !important;
-		display: flex !important;
-		justify-content: space-between;
-	}
-
-	.country-holder {
-		width: 206px;
-		margin: 0;
-	}
-	.country-slider .slick-slide {
-		font-size: 16px !important;
-	}
-	
-}
-
-@media (max-width: 1900px) {
-	.content-section {
-		padding: 32px 0 !important;
-	}
-	.info-row .info-col {
-		width:100% !important;
-		max-width: 800px ;
-		margin-left: 0 !important;
-		height:auto !important;
-	}
-}
-
-@media (max-width:960px) {
-	.info-row {
-		padding: 0 24px!important;
-	}
-}
-
-
-@media (max-width:1440px) {
-	.content-section.weekly-ranking .graph-box {
-		width: 100%;
-		height: 412px;
-		font-size: 12px;
-		color: #606060;
-	}
-	.country-holder h3 {
-		font-size:24px !important;
-		line-height:32px !important;
-		margin-bottom: 24px !important;
-	}
-	.content-section .h3 {
-		font-size:24px !important;
-		line-height:32px !important;
-		
-	}
-}
-
-@media (max-width: 1024px) {
-	h3 {
-		font-size:22px !important;
-		line-height:30px !important;
-	}
-	
-}
-
-
-
-
-
-
+

@@ -1,8 +1,8 @@
 import React from "react";
-import styled from "styled-components"
-//import { Helmet } from "react-helmet"
-//import { Link } from "gatsby"
-import { withPrefix } from "gatsby"
+import styled from "styled-components";
+// import { Helmet } from "react-helmet"
+// import { Link } from "gatsby"
+import { withPrefix } from "gatsby";
 
 const Grid = styled.div`
   display: grid;
@@ -10,45 +10,47 @@ const Grid = styled.div`
   grid-template-rows: auto;
   grid-gap: 2rem;
   align-self: center;
-  justify-content:center;
+  justify-content: center;
   position: relative;
-  width:100%;
+  width: 100%;
   max-width: 1085px;
-  height:550px;
+  height: 730px;
   background-color: rgb(234, 234, 234);
-  
-  @media (max-width:1440px) {
+
+  @media (max-width: 1440px) {
     max-width: 960px;
-    height:550px;
+    height: 730px;
   }
- 
 `;
 
 const TitleSection = styled.h1`
   text-transform: uppercase;
-  color: #222B3E;
+  color: #222b3e;
   letter-spacing: 0px;
-  font-size:32px;
-  line-height:38px;
-  margin-bottom:24px;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 24px;
   @media (max-width: 1440px) {
-    font-size:28px;
-    line-height:32px;
+    font-size: 28px;
+    line-height: 32px;
   }
   @media (max-width: 1024px) {
-    font-size:26px;
-    line-height:30px;
+    font-size: 26px;
+    line-height: 30px;
   }
-`
+`;
 
 const RankingOne = () => (
   <>
-  <TitleSection id='countryranking'>Countries Weekly Ranking</TitleSection>
+    <TitleSection id="countryranking">Countries Weekly Ranking</TitleSection>
     <Grid>
-        <iframe className='responsive-iframe' scrolling='no' src={withPrefix('../geo-1/index.html')}></iframe>
+      <iframe
+        className="responsive-iframe"
+        scrolling="no"
+        src={withPrefix("../geo-1/index.html")}
+      ></iframe>
     </Grid>
   </>
 );
 
-
-export default RankingOne
+export default RankingOne;
