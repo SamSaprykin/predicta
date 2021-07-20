@@ -33,7 +33,7 @@ const DepthGreeceData = {
       linkTo: "/greece/health-facilities-deaths",
     },
     {
-      title: "Mesures Mobility-RT",
+      title: "Measures Mobility-RT",
       linkTo: "/greece/measures-mobility",
     },
     {
