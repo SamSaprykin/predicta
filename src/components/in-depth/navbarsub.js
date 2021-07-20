@@ -30,7 +30,7 @@ const Grid = styled.div`
 
   @media (max-width: 1280px) {
     width: 100%;
-    max-width: 960px;
+    max-width: 1080px;
   }
 `;
 
@@ -94,7 +94,7 @@ const Item = styled.div`
     padding: 3px 0 !important;
   }
   @media (max-width: 1280px) {
-    grid-column: span 2;
+    grid-column: span 1;
   }
 `;
 
