@@ -123,7 +123,7 @@ const VaccinationEffect = (props) => (
           Vaccination % by min 1 Dose
         </PredictaSubTitle>
         <img
-          src="/depth-greece/min-1-dose.png"
+          src="/depth-greece/min-1-dose.jpg"
           alt="Compare vaccination Europe Greece"
         />
       </PredictaContentContainer>
