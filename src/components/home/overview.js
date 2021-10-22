@@ -216,23 +216,23 @@ const GridBox = () => (
     <Gap />
     <Grid>
       <Item>
-        <h3>169.390.481</h3>
+        <h3>216.228.626</h3>
         <p style={{ color: `#fff` }}>Cases</p>
       </Item>
       <Item>
-        <h3>22.078</h3>
+        <h3>28.183</h3>
         <p style={{ color: `#fff` }}>Cases per 1M Pop</p>
       </Item>
       <Item>
-        <h3>3.523.403</h3>
+        <h3>4.373.186</h3>
         <p style={{ color: `#fff` }}>Deaths</p>
       </Item>
       <Item>
-        <h3>459</h3>
+        <h3>570</h3>
         <p style={{ color: `#fff` }}>Deaths per 1M Pop</p>
       </Item>
       <Item>
-        <h3>2,1%</h3>
+        <h3>2,0%</h3>
         <p style={{ color: `#fff` }}>Mortality</p>
       </Item>
       <Item>
@@ -240,27 +240,27 @@ const GridBox = () => (
         <p style={{ color: `#fff` }}>Deaths with Underlying Conditions</p>
       </Item>
       <Item>
-        <h3>81,0%</h3>
+        <h3>90%</h3>
         <p style={{ color: `#fff` }}>Recovery</p>
       </Item>
       <Item>
-        <h3>5,2%</h3>
+        <h3>4,4%</h3>
         <p style={{ color: `#fff` }}>Positivity</p>
       </Item>
       <Item>
-        <h3>9,7</h3>
+        <h3>14,0</h3>
         <p style={{ color: `#fff` }}>Estimated Real Cases Multiplier</p>
       </Item>
       <Item>
-        <h3>24,7%</h3>
+        <h3>29,3%</h3>
         <p style={{ color: `#fff` }}>Population Immunity</p>
       </Item>
       <Item>
-        <h3>15,2%</h3>
+        <h3>18,7%</h3>
         <p style={{ color: `#fff` }}>Estimated Excess Deaths due to Covid-19</p>
       </Item>
       <Item>
-        <h3>11%</h3>
+        <h3>41%</h3>
         <p style={{ color: `#fff` }}>Population Vaccinated</p>
       </Item>
     </Grid>
