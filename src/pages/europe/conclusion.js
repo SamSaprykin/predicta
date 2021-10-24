@@ -98,12 +98,11 @@ const Conclusion = (props) => (
             the importance to protect these places. During the second and third
             wave, apart from western countries, poor countries in the Balkan
             region and in Central Europe were also seriously hit, from COVID-19.
-            Scandinavian countries, except Sweden, as well as Baltic countries,
-            were the most successful in the battle against COVID-19 until now.
-            Without the restrictive measures imposed by most countries, the
-            disruption of the health care systems would have been catastrophic,
-            as we saw happening in Bergamo, Italy at the beginning of the
-            pandemic.
+            Scandinavian countries, as well as Baltic countries, were the most
+            successful in the battle against COVID-19 until now. Without the
+            restrictive measures imposed by most countries, the disruption of
+            the health care systems would have been catastrophic, as we saw
+            happening in Bergamo, Italy at the beginning of the pandemic.
           </p>
         </TextBox>
       </div>
