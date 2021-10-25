@@ -3,15 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "../../components/layout";
 import NavbarSubLinks from "../../components/in-depth/navbarsub";
-import ChartOne from "../../components/in-depth/europe/images/vaccination/vacc-1.svg";
-import ChartTwo from "../../components/in-depth/europe/images/firstwave/b.svg";
-import ChartThree from "../../components/in-depth/europe/images/firstwave/c.svg";
-import ChartFour from "../../components/in-depth/europe/images/firstwave/d.svg";
-import ChartFive from "../../components/in-depth/europe/images/firstwave/e.svg";
-import ChartSix from "../../components/in-depth/europe/images/firstwave/f.svg";
-import ChartSeven from "../../components/in-depth/europe/images/firstwave/g.svg";
-import ChartEight from "../../components/in-depth/europe/images/firstwave/h.svg";
-import ChartNine from "../../components/in-depth/europe/images/firstwave/i.svg";
+
 import SEO from "../../components/seo";
 
 const europeFirstWaveMetadata = {
@@ -83,11 +75,18 @@ const Item = styled.div`
         min-width: auto;
       }
     }
-    @media (max-width: 1440px) {
+    @media (max-width: 960px) {
+      max-width: 100%;
       padding: 0 32px;
-      max-width: 90%;
     }
+    #highlighted-dark-blue {
+      background-color: #587393;
+      color: white;
 
+      td {
+        color: white;
+      }
+    }
     th {
       color: #ffffff;
       font-family: "IBM Plex Sans - Medium";
@@ -513,10 +512,225 @@ const FirstWave = (props) => (
                 <td>56,7%</td>
                 <td>54,9%</td>
               </tr>
+              <tr>
+                <td>Estonia</td>
+                <td>55,2%</td>
+                <td>67,1%</td>
+                <td>77,1%</td>
+                <td>72,7%</td>
+                <td>70,5%</td>
+                <td>61,9%</td>
+                <td>63,5%</td>
+              </tr>
+              <tr>
+                <td>Poland</td>
+                <td>51,2%</td>
+                <td>67,6%</td>
+                <td>86,2%</td>
+                <td>72,8%</td>
+                <td>64,7%</td>
+                <td>54,0%</td>
+                <td>48,3%</td>
+              </tr>
+              <tr>
+                <td>Slovenia</td>
+                <td>48,2%</td>
+                <td>77,2%</td>
+                <td>85,8%</td>
+                <td>75,5%</td>
+                <td>67,6%</td>
+                <td>50,5%</td>
+                <td>49,9%</td>
+              </tr>
+              <tr>
+                <td>Latvia</td>
+                <td>46,5%</td>
+                <td>44,1%</td>
+                <td>55,7%</td>
+                <td>57,4%</td>
+                <td>54,6%</td>
+                <td>52,9%</td>
+                <td>58,4%</td>
+              </tr>
+              <tr>
+                <td>Slovakia</td>
+                <td>43,8%</td>
+                <td>59,1%</td>
+                <td>74,1%</td>
+                <td>63,9%</td>
+                <td>55,4%</td>
+                <td>45,6%</td>
+                <td>43,3%</td>
+              </tr>
+              <tr>
+                <td>Serbia</td>
+                <td>43,1%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Croatia</td>
+                <td>42,6%</td>
+                <td>58,0%</td>
+                <td>75,2%</td>
+                <td>70,2%</td>
+                <td>58,1%</td>
+                <td>43,1%</td>
+                <td>29,6%</td>
+              </tr>
+              <tr>
+                <td>North Macedonia</td>
+                <td>35,0%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Montenegro</td>
+                <td>34,2%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Kosovo</td>
+                <td>30,9%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Russia</td>
+                <td>30,4%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Albania</td>
+                <td>29,4%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Albania</td>
+                <td>29,4%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Romania</td>
+                <td>27,6%</td>
+                <td>20,3%</td>
+                <td>37,5%</td>
+                <td>39,7%</td>
+                <td>39,1%</td>
+                <td>32,7%</td>
+                <td>28,9%</td>
+              </tr>
+              <tr>
+                <td>Bosnia and Herzegovina</td>
+                <td>17,4%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Belarus</td>
+                <td>17,2%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Bulgaria</td>
+                <td>15,8%</td>
+                <td>21,2%</td>
+                <td>32,8%</td>
+                <td>31,2%</td>
+                <td>26,8%</td>
+                <td>19,5%</td>
+                <td>13,2%</td>
+              </tr>
+              <tr>
+                <td>Moldova</td>
+                <td>14,2%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Ukraine</td>
+                <td>12,8%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
             </tbody>
           </table>
           <Gap />
         </Item>
+      </div>
+    </div>
+    <div
+      className="row"
+      style={{
+        backgroundColor: `white`,
+      }}
+    >
+      <div className="col">
+        <TextBox>
+          <p>
+            The following graph demonstrates the high positive correlation
+            (0.85) between countries’ HDI (Human Development Index) and
+            Vaccination percentage. We note that countries with low HDI have
+            significantly lower percentage of vaccination, an issue which may
+            affect negatively the long term pandemic containment.
+          </p>
+        </TextBox>
+
+        <Grid>
+          <Item>
+            <img src="/vaccin.png" alt="vaccination" />
+          </Item>
+        </Grid>
+        <Gap />
       </div>
     </div>
     <div
@@ -528,21 +742,106 @@ const FirstWave = (props) => (
       <div className="col">
         <TextBox>
           <p>
-            Following, there is graph demonstrating the positive correlation
-            between country GDP and Vaccination percentage with minimum one
-            dose. We can see that poor countries have significantly lower
-            percentage of vaccination, an issue which may affect negatively the
-            long term pandemic containment.
+            The table below demonstrates selected pandemic KPIs in three
+            European country groups, formed by their level of vaccination.{" "}
+            <br /> <br /> We can clearly see that Countries with over 70%
+            vaccinated population are more prosperous, better educated, more
+            healthy, more democratic, leading to overall lower negative effects
+            from the pandemic.
           </p>
         </TextBox>
-
-        <Grid>
-          <Item>
-            <img src="/vaccin.png" alt="vaccination" />
-          </Item>
-        </Grid>
-        <Gap />
-        <Gap />
+        <Item>
+          <table className="metrics-table">
+            <thead>
+              <tr>
+                <th className="wide-cell">KPI's</th>
+                <th className="mid-cell">Vaccinations &gt;=70%</th>
+                <th>Vaccinations &gt;= 55% -70%</th>
+                <th>Vaccinations &lt; 55%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mortality% Jun &apos;21 - Aug&apos;21 </td>
+                <td>1,5%</td>
+                <td>1,6%</td>
+                <td>2,6%</td>
+              </tr>
+              <tr>
+                <td>Cases per 1M Jun &apos;21 - Aug&apos;21 </td>
+                <td>14.594</td>
+                <td>12.331</td>
+                <td>3.305</td>
+              </tr>
+              <tr>
+                <td>Deaths per 1M Jun &apos;21 - Aug&apos;21 </td>
+                <td>42</td>
+                <td>59</td>
+                <td>73</td>
+              </tr>
+              <tr id="highlighted-dark">
+                <td>Prosperity Index </td>
+                <td>78,2</td>
+                <td>75,9</td>
+                <td>68,3</td>
+              </tr>
+              <tr id="highlighted">
+                <td>Health Score </td>
+                <td>81,4</td>
+                <td>79,4</td>
+                <td>75,3</td>
+              </tr>
+              <tr id="highlighted">
+                <td>% With Perceived Good Health</td>
+                <td>71,0</td>
+                <td>66,6</td>
+                <td>60,0</td>
+              </tr>
+              <tr id="highlighted">
+                <td>Life Expectancy </td>
+                <td>82,8</td>
+                <td>81,2</td>
+                <td>78,0</td>
+              </tr>
+              <tr id="highlighted">
+                <td>% Aged &gt;=65 </td>
+                <td>19,3</td>
+                <td>18,9</td>
+                <td>18,4</td>
+              </tr>
+              <tr id="highlighted-dark-blue">
+                <td>Education Score </td>
+                <td>83,1</td>
+                <td>81,6</td>
+                <td>76,1</td>
+              </tr>
+              <tr id="highlighted-dark-blue">
+                <td>Personal Freedom </td>
+                <td>85,2</td>
+                <td>77,3</td>
+                <td>65,1</td>
+              </tr>
+              <tr id="highlighted-dark-blue">
+                <td>Social Capital </td>
+                <td>64,0</td>
+                <td>59,7</td>
+                <td>48,1</td>
+              </tr>
+              <tr id="highlighted-dark-blue">
+                <td>Religious Index </td>
+                <td>0,37</td>
+                <td>0,41</td>
+                <td>0,57</td>
+              </tr>
+              <tr id="highlighted-dark-blue">
+                <td>Num Of Countries </td>
+                <td>11</td>
+                <td>10</td>
+                <td>7</td>
+              </tr>
+            </tbody>
+          </table>
+        </Item>
         <Gap />
       </div>
     </div>

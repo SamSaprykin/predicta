@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "../../components/layout";
 import NavbarSubLinks from "../../components/in-depth/navbarsub";
-import ChartOne from "../../components/in-depth/europe/images/measures/a.svg";
 import ChartTwo from "../../components/in-depth/europe/images/measures/school.svg";
 import ChartThree from "../../components/in-depth/europe/images/measures/workplace.svg";
 import ChartFour from "../../components/in-depth/europe/images/measures/public-events.svg";
@@ -271,7 +270,11 @@ const Measures = (props) => (
 
         <Grid>
           <Item>
-            <ChartOne />
+            <img
+              src="/Measures-Imposed-Europe.png"
+              alt="Measures Imposed - Europe"
+            />
+
             <Gap />
           </Item>
         </Grid>
@@ -281,9 +284,9 @@ const Measures = (props) => (
             The measures that implied by more than 70% of the countries were:
             limitations of gatherings, school closure, economic measures,
             strengthening health system, restrictions in travelling and
-            Lockdowns. The graphs (Area Plots) that follow show some of the most
-            important measures that governments imposed to fight the pandemic.
-            <br /> <br /> The graphs describe the severity of the measures
+            Lockdowns. <br /> <br /> The graphs (Area Plots) that follow show
+            some of the most important measures that governments imposed to
+            fight the pandemic. The graphs describe the severity of the measures
             during the months of pandemic. The table below shows the levels of
             severity for the measures.
           </p>
@@ -457,8 +460,7 @@ const Measures = (props) => (
               School Closing
             </SubTitle>
 
-            <ChartTwo />
-
+            <img src="/school-closing-europe.png" alt="School Closing" />
             <Gap />
           </Item>
 
@@ -471,8 +473,7 @@ const Measures = (props) => (
               Workplace Closing
             </SubTitle>
 
-            <ChartThree />
-
+            <img src="/workplace-closing-europe.png" alt="Workplace Closing" />
             <Gap />
           </Item>
 
@@ -485,8 +486,10 @@ const Measures = (props) => (
               Cancel Public Events
             </SubTitle>
 
-            <ChartFour />
-
+            <img
+              src="/cancel-public-events-europe.png"
+              alt="Cancel Public Events"
+            />
             <Gap />
           </Item>
 
@@ -499,8 +502,10 @@ const Measures = (props) => (
               Restrictions on Gatherings
             </SubTitle>
 
-            <ChartFive />
-
+            <img
+              src="/restriction-on-gathering-europe.png"
+              alt="Restrictions on Gatherings"
+            />
             <Gap />
           </Item>
 
@@ -513,7 +518,10 @@ const Measures = (props) => (
               Restrictions on Internal Movement
             </SubTitle>
 
-            <ChartSix />
+            <img
+              src="/restricion-on-movement-europe.png"
+              alt="Restrictions on Internal Movement"
+            />
             <Gap />
           </Item>
 
@@ -525,8 +533,10 @@ const Measures = (props) => (
             >
               International Travel Control
             </SubTitle>
-
-            <ChartSeven />
+            <img
+              src="/travel-control-europe.png"
+              alt="International Travel Control"
+            />
 
             <Gap />
           </Item>
@@ -539,8 +549,7 @@ const Measures = (props) => (
               Facial Masks
             </SubTitle>
 
-            <ChartEight />
-
+            <img src="/facial-masks-europe.png" alt="Facial Masks" />
             <Gap />
           </ItemSpan>
         </GridB>
