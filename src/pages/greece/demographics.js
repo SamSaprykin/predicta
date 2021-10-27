@@ -83,9 +83,10 @@ const Demographics = (props) => (
         age, with younger infected people during the summer period due to
         holiday gatherings and vacations, while in the autumn the working
         population was the one mostly affected. The majority of deceased people
-        had underlying health conditions and were of old age. Overall, 3% of the
-        reported cases died and their median age was 78 years. Finally, men have
-        a higher risk to die from COVID-19 compared to women (3.4% vs 2.6%).
+        had underlying health conditions and were of old age. Overall, 2,3% of
+        the reported cases died and their median age was 77 years. Finally, men
+        have a higher risk to die from COVID-19 compared to women (2.6% vs
+        2.0%).
       </PredictaText>
     </PredictaTextWrapper>
     <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
@@ -142,13 +143,13 @@ const Demographics = (props) => (
               <td>44,4</td>
               <td>45,9</td>
             </tr>
-            <tr className="total">
-              <td>Total</td>
-              <td>51,8%</td>
-              <td>48,2%</td>
-              <td>45,2</td>
-              <td>44,5</td>
-              <td>45,8</td>
+            <tr>
+              <td>Jun-Aug&apos;21</td>
+              <td>51,0%</td>
+              <td>49,0%</td>
+              <td>41,6</td>
+              <td>40,9</td>
+              <td>42,4</td>
             </tr>
           </tbody>
         </Table>
@@ -204,13 +205,13 @@ const Demographics = (props) => (
               <td>77,5</td>
               <td>80,0</td>
             </tr>
-            <tr className="total">
-              <td>Total</td>
-              <td>58,7%</td>
-              <td>41,3%</td>
-              <td>78,3</td>
-              <td>77,1</td>
-              <td>79,5</td>
+            <tr>
+              <td>Jun-Aug&apos;21</td>
+              <td>57,1%</td>
+              <td>42,9%</td>
+              <td>77,3</td>
+              <td>76,3</td>
+              <td>78,6</td>
             </tr>
           </tbody>
         </Table>
@@ -266,13 +267,13 @@ const Demographics = (props) => (
               <td>95,1%</td>
               <td>4,9%</td>
             </tr>
-            <tr className="total">
-              <td>Total</td>
-              <td>3,0%</td>
-              <td>3,4%</td>
+            <tr>
+              <td>Overall</td>
+              <td>2,3%</td>
               <td>2,6%</td>
-              <td>95,5%</td>
-              <td>4,5%</td>
+              <td>2,0%</td>
+              <td>95,3%</td>
+              <td>4,7%</td>
             </tr>
           </tbody>
         </Table>

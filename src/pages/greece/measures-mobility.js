@@ -131,6 +131,20 @@ const MeasuresMobility = (props) => (
       </PredictaTextWrapper>
     </div>
     <div className="row">
+      <PredictaTextWrapper>
+        <PredictaText marginBottom="30px">
+          During the autumn the extra measure of wearing protective masks
+          everywhere was imposed as the second wave of the pandemic was in
+          progress. But mobility was only half reduced compared to the first
+          lockdown, as a second strict lockdown would have been disastrous for
+          the economy. <br /> <br /> Despite the noticed reduced mobility from
+          November ’20 until April ’21, resulting from the 2nd (November ’20)
+          and the 3rd lockdown (February ’21), the effect on the spread of the
+          virus is not as successful as the one during the first lockdown (March
+          ’20). <br /> <br /> Domestic infection, as well as the more contagious
+          British mutation, possibly explain this phenomenon.
+        </PredictaText>
+      </PredictaTextWrapper>
       <PredictaSubTitle marginBottom="30px">
         Cases per 1M - Positivity MA 7 - Tests per 1M
       </PredictaSubTitle>
@@ -143,18 +157,20 @@ const MeasuresMobility = (props) => (
           src="/depth-greece/cases-positivity-greece.png"
           alt="Cases per 1M - Positivity MA 7 - Tests per 1M"
         />
+        <PredictaTextWrapper>
+          <PredictaText marginBottom="30px">
+            From the end of the summer (September 2020) the number of tests
+            performed were substantially increased for the local population,
+            resulting to higher values of positivity as the virus spread started
+            to increase, especially at the period of 2nd and 3rd Wave. This
+            policy greatly facilitated early detection of the pandemic trend,
+            depicted by the above noted pattern of the three entities (tests,
+            cases, positivity), which tend to converge as the virus outbreaks.
+            Summer ’21 was greatly affected by vaccination, testing and relaxed
+            restriction policies.
+          </PredictaText>
+        </PredictaTextWrapper>
       </PredictaContentContainer>
-      <PredictaTextWrapper>
-        <PredictaText marginBottom="30px">
-          From the end of the summer (September 2020) the number of tests
-          performed were substantially increased for the local population,
-          resulting to higher values of positivity as the virus spread started
-          to increase, especially at the period of 2nd and 3rd Wave. This policy
-          greatly facilitated early detection of the pandemic trend, depicted by
-          the above noted pattern of the three entities (tests, cases,
-          positivity), which tend to converge as the virus outbreaks.
-        </PredictaText>
-      </PredictaTextWrapper>
     </div>
     <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
       <PredictaSubTitle marginBottom="30px">

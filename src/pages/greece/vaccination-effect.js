@@ -85,15 +85,15 @@ const VaccinationEffect = (props) => (
         vaccinate as many as possible citizens with at least the first dose. The
         results of the alternative approaches are presented in the following
         graph, where we can see that while Greece is below the European rate by
-        5%, concerning the citizens vaccinated by minimum 1 dose (42%), is ahead
-        by 1% concerning the fully vaccinated population (24%).
+        9%, concerning the citizens vaccinated by minimum 1 dose (57%) and by 5%
+        concerning the fully vaccinated population (54%).
       </PredictaText>
     </PredictaTextWrapper>
     <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
-      <PredictaContentContainer marginTop="60px" containerSize="normal">
+      <PredictaContentContainer marginTop="20px" containerSize="normal">
         <PredictaSubTitle
           marginBottom="20px"
-          marginTop="120px"
+          marginTop="20px"
           id="first-section"
         >
           Greece vs Europe Vaccinations
@@ -112,7 +112,8 @@ const VaccinationEffect = (props) => (
             prioritizing older people to minimize the risk of infection, but it
             is also influenced by the citizens’ will to be vaccinated. The
             following graph demonstrates the evolution of vaccination by age
-            group.
+            group. The flattening of the curves during the last weeks of the
+            vaccination period indicates citizens’ reluctance to be vaccinated.
           </PredictaText>
         </PredictaTextWrapper>
         <PredictaSubTitle
@@ -120,56 +121,140 @@ const VaccinationEffect = (props) => (
           marginTop="120px"
           id="first-section"
         >
-          Vaccination % by min 1 Dose
+          At least 1 Vaccine Dose Uptake
         </PredictaSubTitle>
         <img
-          src="/depth-greece/min-1-dose.jpg"
-          alt="Compare vaccination Europe Greece"
+          src="/depth-greece/at-least-one-dose-uptake-countries.png"
+          alt="At least 1 Vaccine Dose Uptake"
         />
       </PredictaContentContainer>
     </div>
     <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
-      <PredictaContentContainer marginTop="60px" containerSize="normal">
+      <PredictaContentContainer marginTop="20px" containerSize="normal">
         <PredictaTextWrapper>
           <PredictaText marginBottom="60px">
-            In the following three graphs, the vaccination effect on the
-            pandemic is demonstrated taking into account two major age groups
-            (0-64 vs 65+) and their vaccinated percentage. In the cases graph we
-            can see clearly that the older group, once reaching 50% vaccination
-            produces smaller numbers of cases than the younger group. This
-            difference increases further, once the total population reaches 25%
-            vaccination. Similarly, death rates of both age groups coincide,
-            once 25% of the total population is vaccinated and ICU beds
-            occupation is lower for the older group.
+            <PredictaTextWrapper>
+              <PredictaText marginBottom="60px">
+                Greece is below EU average in all age groups and most noticeably
+                in 80+ population by 14%.
+              </PredictaText>
+            </PredictaTextWrapper>
           </PredictaText>
         </PredictaTextWrapper>
-        <PredictaContentContainer marginTop="100px" containerSize="normal">
-          <PredictaSubTitle marginTop="100px" id="first-section">
-            Cases as % of 3rd Wave Peak
-          </PredictaSubTitle>
-          <img
-            src="/depth-greece/cases-3rd-vawe-peak.png"
-            alt="cases-3rd-vawe-peak"
-          />
-        </PredictaContentContainer>
-        <PredictaContentContainer marginTop="100px" containerSize="normal">
-          <PredictaSubTitle marginTop="100px" id="first-section">
-            Deaths as % of 3rd Wave Peak
-          </PredictaSubTitle>
-          <img
-            src="/depth-greece/cases-3vawe-peak.png"
-            alt="cases-3vawe-peak"
-          />
-        </PredictaContentContainer>
-        <PredictaContentContainer marginTop="100px" containerSize="normal">
-          <PredictaSubTitle marginTop="100px" id="first-section">
-            ICU as % of 3rd Wave Peak
-          </PredictaSubTitle>
-          <img
-            src="/depth-greece/icu-3vawe-peak.png"
-            alt="Compare vaccination Europe Greece"
-          />
-        </PredictaContentContainer>
+        <PredictaSubTitle
+          marginBottom="20px"
+          marginTop="20px"
+          id="first-section"
+        >
+          At least 1 Vaccine Dose Uptake
+        </PredictaSubTitle>
+        <img
+          src="/depth-greece/1-dose-compare.png"
+          alt="At least 1 Vaccine Dose Uptake"
+        />
+      </PredictaContentContainer>
+    </div>
+    <div className="row">
+      <PredictaContentContainer marginTop="20px" containerSize="normal">
+        <PredictaTextWrapper>
+          <PredictaText marginBottom="60px">
+            <PredictaTextWrapper>
+              <PredictaText marginBottom="60px">
+                The Balkans, including Greece show a hesitation in vaccinations
+                in both junior and senior age groups, compared to the rest
+                Europe, attributed to social/religious structures.
+              </PredictaText>
+            </PredictaTextWrapper>
+          </PredictaText>
+        </PredictaTextWrapper>
+        <PredictaSubTitle
+          marginBottom="20px"
+          marginTop="20px"
+          id="first-section"
+        >
+          European Vaccinations
+        </PredictaSubTitle>
+        <img
+          src="/depth-greece/europe-vaccination.png"
+          alt="European Vaccinations"
+        />
+      </PredictaContentContainer>
+    </div>
+    <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
+      <PredictaContentContainer marginTop="20px" containerSize="normal">
+        <PredictaTextWrapper>
+          <PredictaText marginBottom="60px">
+            <PredictaTextWrapper>
+              <PredictaText marginBottom="60px">
+                However, the positive effect of vaccinations can be clearly seen
+                on the pie chart below, demonstrating that 9 out of 10 ICU
+                Patients had not been vaccinated.
+              </PredictaText>
+            </PredictaTextWrapper>
+          </PredictaText>
+        </PredictaTextWrapper>
+        <PredictaSubTitle
+          marginBottom="20px"
+          marginTop="20px"
+          id="first-section"
+        >
+          ICU Patients
+        </PredictaSubTitle>
+        <img src="/depth-greece/ICU-Patients.png" alt="ICU-Patients" />
+      </PredictaContentContainer>
+    </div>
+    <div className="row">
+      <PredictaContentContainer marginTop="20px" containerSize="normal">
+        <PredictaTextWrapper>
+          <PredictaText marginBottom="60px">
+            <PredictaTextWrapper>
+              <PredictaText marginBottom="60px">
+                In the following three graphs, the vaccination effect on the
+                pandemic is demonstrated taking into account two major age
+                groups (0-64 vs 65+) and their vaccinated percentage. In the
+                cases graph we can see clearly that the older group, once
+                reaching 50% vaccination produces smaller numbers of cases than
+                the younger group. This difference increases further, once the
+                total population reaches 25% vaccination. Similarly, death rates
+                of both age groups coincide, once 25% of the total population is
+                vaccinated and ICU beds occupation is lower for the older group.
+              </PredictaText>
+            </PredictaTextWrapper>
+          </PredictaText>
+        </PredictaTextWrapper>
+        <PredictaSubTitle
+          marginBottom="20px"
+          marginTop="20px"
+          id="first-section"
+        >
+          Cases as % of all Waves Peak
+        </PredictaSubTitle>
+        <img
+          src="/depth-greece/Cases-as-Waves-Peak.png"
+          alt="Cases as % of all Waves Peak"
+        />
+        <PredictaSubTitle
+          marginBottom="20px"
+          marginTop="20px"
+          id="first-section"
+        >
+          Deaths as % of all Waves Peak
+        </PredictaSubTitle>
+        <img
+          src="/depth-greece/Deaths-Waves-Peak.png"
+          alt="Deaths as % of all Waves Peak"
+        />
+        <PredictaSubTitle
+          marginBottom="20px"
+          marginTop="20px"
+          id="first-section"
+        >
+          ICU as % of all Waves Peak
+        </PredictaSubTitle>
+        <img
+          src="/depth-greece/ICU-all-waves-peak.png"
+          alt=" ICU as % of all Waves Peak"
+        />
       </PredictaContentContainer>
     </div>
   </Layout>

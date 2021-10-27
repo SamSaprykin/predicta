@@ -104,6 +104,10 @@ const GeneralFindingsLatin = (props) => (
         despite the high number of Tests (over – 100.000 in 1M), the fatigue of
         the population prevented the discipline to the quarantine measures,
         resulting in similar morbidity as the one of the second wave.
+        <br /> <br />
+        Within summer of ‘21, touristic mobility and testing policy resulted in
+        high numbers of cases, but in reduced number of deaths proportionally
+        due to the effect of vaccinations.
       </PredictaText>
     </PredictaTextWrapper>
     <PredictaContentContainer marginTop="60px" containerSize="large">
@@ -333,22 +337,77 @@ const GeneralFindingsLatin = (props) => (
             <td>3,9%</td>
           </tr>
           <tr>
-            <td>Total</td>
-            <td>401.638</td>
-            <td></td>
-            <td>12.040</td>
-            <td></td>
+            <td>Jun&lsquo;21</td>
+            <td>20.528</td>
+            <td>3,5%</td>
+            <td>622</td>
+            <td>4,6%</td>
             <td>3,0%</td>
+            <td>3,0%</td>
+            <td>1.914</td>
+            <td>58</td>
+            <td>90.768</td>
+            <td>2,1%</td>
+          </tr>
+          <tr>
+            <td>Jul&lsquo;21</td>
+            <td>68.723</td>
+            <td>11,8%</td>
+            <td>247</td>
+            <td>1,8%</td>
+            <td>0,4%</td>
+            <td>2,6%</td>
+            <td>6.408</td>
+            <td>23</td>
+            <td>191.701</td>
+            <td>3,3%</td>
+          </tr>
+          <tr>
+            <td>Aug&lsquo;21</td>
+            <td>93.106</td>
+            <td>15,9%</td>
+            <td>677</td>
+            <td>5,0%</td>
+            <td>0,7%</td>
+            <td>2,3%</td>
+            <td>8.682</td>
+            <td>63</td>
+            <td>241.010</td>
+            <td>3,6%</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>583.995</td>
             <td></td>
-            <td>37.450</td>
-            <td>1123</td>
-            <td>913.414</td>
-            <td>4,1%</td>
+            <td>13.586</td>
+            <td></td>
+            <td>2,3%</td>
+            <td></td>
+            <td>54.454</td>
+            <td>1267</td>
+            <td>1.436.893</td>
+            <td>3,8%</td>
           </tr>
         </tbody>
       </Table>
     </PredictaContentContainer>
     <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
+      <PredictaTextWrapper>
+        <PredictaText marginTop="40px" marginBottom="40px">
+          The distribution of COVID-19 cases among the two most populated areas
+          in the country is depicted below, showing that after the summer period
+          Thessaloniki’s transmission grows, while we notice a lower
+          transmission in the Capital’s area. In Spring, the opposite pattern
+          was noticed with Attica having half of the cases in the country.
+        </PredictaText>
+      </PredictaTextWrapper>
+      <PredictaSubTitle>% Cases per Region</PredictaSubTitle>
+      <PredictaContentContainer marginTop="60px" containerSize="normal">
+        <img src="/depth-greece/cases-greece.png" alt="% Cases per Region" />
+      </PredictaContentContainer>
+    </div>
+
+    <div className="row">
       <PredictaTextWrapper>
         <PredictaText>
           The evolution of the infection severity is best demonstrated in the
@@ -390,7 +449,7 @@ const GeneralFindingsLatin = (props) => (
         </PredictaText>
       </PredictaTextWrapper>
     </div>
-    <div className="row">
+    <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
       <PredictaTextWrapper>
         <PredictaText>
           Greece during the second and third wave of the pandemic falls among
@@ -408,7 +467,7 @@ const GeneralFindingsLatin = (props) => (
         />
       </PredictaContentContainer>
     </div>
-    <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
+    <div className="row">
       <PredictaTextWrapper>
         <PredictaText marginTop="40px" marginBottom="40px">
           Comparing Deaths per 1M population between Greece and the rest of
@@ -426,19 +485,21 @@ const GeneralFindingsLatin = (props) => (
           alt="Deaths and ICU patients"
         />
       </PredictaContentContainer>
-
+    </div>
+    <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
       <PredictaTextWrapper>
         <PredictaText marginTop="40px" marginBottom="40px">
-          Based on models’ estimations for Greece, we have reached a conclusion
-          that cases reported are about 21% of the total infections considering
-          both asymptomatic and pre-symptomatic cases. Accordingly, the
-          estimated actual mortality (IFR) is about 0.5% (4 times lower than
-          mortality calculated on diagnosed cases). Hospital and ICU admissions
-          on the reported cases, are about 7% and 3% accordingly.
+          Based on models’ estimations the cases reported are about 30% of the
+          total infections considering both asymptomatic and pre-symptomatic
+          cases. As a result of that the actual mortality (IFR) is about 0.9% (3
+          times lower than mortality calculated on diagnosed cases).
+          Consequently, hospital and ICU admissions on the estimated cases, is
+          about 5% and 2% respectively. The following three graphs are not
+          updated, as the increased number of daily tests and the vaccination
+          effect prevent a valid comparison.
         </PredictaText>
       </PredictaTextWrapper>
-    </div>
-    <div className="row">
+
       <PredictaSubTitle>Reported vs Estimated Cases</PredictaSubTitle>
       <PredictaContentContainer marginTop="60px" containerSize="normal">
         <img
@@ -447,7 +508,7 @@ const GeneralFindingsLatin = (props) => (
         />
       </PredictaContentContainer>
     </div>
-    <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
+    <div className="row">
       <PredictaContentContainer marginTop="60px" containerSize="large">
         <SectionSideBySide
           leftSide={
