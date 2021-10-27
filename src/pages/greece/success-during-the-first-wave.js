@@ -6,7 +6,6 @@ import {
   PredictaTextWrapper,
   PredictaTitle,
   PredictaSubTitle,
-  SectionSideBySide,
   PredictaText,
 } from "../../components/BlockElements/BlockElements";
 import SEO from "../../components/seo";
@@ -34,12 +33,16 @@ const DepthGreeceData = {
       linkTo: "/greece/health-facilities-deaths",
     },
     {
-      title: "Measures Mobility-RT",
-      linkTo: "/greece/measures-mobility",
+      title: "Demographics Age Effect",
+      linkTo: "/greece/demographics",
     },
     {
       title: "The Effect of Vaccinations",
       linkTo: "/greece/vaccination-effect",
+    },
+    {
+      title: "Measures Mobility-RT",
+      linkTo: "/greece/measures-mobility",
     },
     {
       title: "The Success during the First Wave",
@@ -48,10 +51,6 @@ const DepthGreeceData = {
     {
       title: "A Quick Comparison",
       linkTo: "/greece/a-quick-comparison",
-    },
-    {
-      title: "Demographics Age Effect",
-      linkTo: "/greece/demographics",
     },
     {
       title: "Conclusion",
@@ -90,10 +89,9 @@ const SuccessFirstWave = (props) => (
       <PredictaSubTitle>1st Wave of Greece</PredictaSubTitle>
       <PredictaContentContainer marginTop="20px" containerSize="normal">
         <img
-          src="/depth-greece/first-wave-label.svg"
+          src="/depth-greece/first-wave-success.png"
           alt="1st Wave of Greece label"
         />
-        <img src="/depth-greece/first-wave.svg" alt="1st Wave of Greece" />
       </PredictaContentContainer>
     </div>
     <div className="row">

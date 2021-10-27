@@ -34,12 +34,16 @@ const DepthGreeceData = {
       linkTo: "/greece/health-facilities-deaths",
     },
     {
-      title: "Measures Mobility-RT",
-      linkTo: "/greece/measures-mobility",
+      title: "Demographics Age Effect",
+      linkTo: "/greece/demographics",
     },
     {
       title: "The Effect of Vaccinations",
       linkTo: "/greece/vaccination-effect",
+    },
+    {
+      title: "Measures Mobility-RT",
+      linkTo: "/greece/measures-mobility",
     },
     {
       title: "The Success during the First Wave",
@@ -48,10 +52,6 @@ const DepthGreeceData = {
     {
       title: "A Quick Comparison",
       linkTo: "/greece/a-quick-comparison",
-    },
-    {
-      title: "Demographics Age Effect",
-      linkTo: "/greece/demographics",
     },
     {
       title: "Conclusion",
@@ -100,6 +100,8 @@ const MeasuresMobility = (props) => (
           alt="Mobility MA 7 Days"
         />
       </PredictaContentContainer>
+    </div>
+    <div className="row">
       <PredictaSubTitle marginBottom="30px">
         Transportation MA 7 Days - Workplaces MA 7 Days - Cases 1M MA 7 Days
       </PredictaSubTitle>
@@ -130,7 +132,7 @@ const MeasuresMobility = (props) => (
         </PredictaText>
       </PredictaTextWrapper>
     </div>
-    <div className="row">
+    <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
       <PredictaTextWrapper>
         <PredictaText marginBottom="30px">
           During the autumn the extra measure of wearing protective masks
@@ -172,7 +174,7 @@ const MeasuresMobility = (props) => (
         </PredictaTextWrapper>
       </PredictaContentContainer>
     </div>
-    <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
+    <div className="row">
       <PredictaSubTitle marginBottom="30px">
         Milestones of the Greek pandemic
       </PredictaSubTitle>
@@ -245,7 +247,7 @@ const MeasuresMobility = (props) => (
         </Table>
       </PredictaContentContainer>
     </div>
-    <div className="row">
+    <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
       <PredictaTextWrapper>
         <PredictaText marginBottom="60px">
           In the following graph it is impressive to see the negative

@@ -34,12 +34,16 @@ const DepthGreeceData = {
       linkTo: "/greece/health-facilities-deaths",
     },
     {
-      title: "Measures Mobility-RT",
-      linkTo: "/greece/measures-mobility",
+      title: "Demographics Age Effect",
+      linkTo: "/greece/demographics",
     },
     {
       title: "The Effect of Vaccinations",
       linkTo: "/greece/vaccination-effect",
+    },
+    {
+      title: "Measures Mobility-RT",
+      linkTo: "/greece/measures-mobility",
     },
     {
       title: "The Success during the First Wave",
@@ -48,10 +52,6 @@ const DepthGreeceData = {
     {
       title: "A Quick Comparison",
       linkTo: "/greece/a-quick-comparison",
-    },
-    {
-      title: "Demographics Age Effect",
-      linkTo: "/greece/demographics",
     },
     {
       title: "Conclusion",

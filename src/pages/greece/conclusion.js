@@ -30,12 +30,16 @@ const DepthGreeceData = {
       linkTo: "/greece/health-facilities-deaths",
     },
     {
-      title: "Measures Mobility-RT",
-      linkTo: "/greece/measures-mobility",
+      title: "Demographics Age Effect",
+      linkTo: "/greece/demographics",
     },
     {
       title: "The Effect of Vaccinations",
       linkTo: "/greece/vaccination-effect",
+    },
+    {
+      title: "Measures Mobility-RT",
+      linkTo: "/greece/measures-mobility",
     },
     {
       title: "The Success during the First Wave",
@@ -44,10 +48,6 @@ const DepthGreeceData = {
     {
       title: "A Quick Comparison",
       linkTo: "/greece/a-quick-comparison",
-    },
-    {
-      title: "Demographics Age Effect",
-      linkTo: "/greece/demographics",
     },
     {
       title: "Conclusion",
@@ -82,8 +82,10 @@ const Conclusion = (props) => (
         economy for a second time and to control the population mobility.
         Overall, factors such as the Greek climate, the geographical structure
         and the living conditions of the elderly part of the population,
-        contributed in positive way to the effects of the pandemic in Greece and
-        led to a smaller number of Deaths per million population.
+        contributed in a positive way to the effects of the pandemic in Greece
+        and led to a smaller number of Deaths per million population. However,
+        the reluctance towards vaccination, especially in senior ages, increased
+        the relevant mortality, while virus variants accelerated transmission.
       </PredictaText>
     </PredictaTextWrapper>
   </Layout>
