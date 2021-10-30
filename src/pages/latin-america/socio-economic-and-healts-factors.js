@@ -13,8 +13,6 @@ import {
 import DiabetsPrevelance from "../../components/in-depth/latin-america/images/diabets-prevelance.svg";
 import CardiovascularDeaths from "../../components/in-depth/latin-america/images/deats-cardiovascular-latin.svg";
 import ObesityRate from "../../components/in-depth/latin-america/images/obesity-rate.svg";
-import GpdCapita from "../../components/in-depth/latin-america/images/gpd-per-capita-latin.svg";
-import ChartLatin from "../../components/in-depth/latin-america/images/chart-latin.svg";
 import EmplotmentRate from "../../components/in-depth/latin-america/images/infomal-employmant-rate-latin.svg";
 import SEO from "../../components/seo";
 
@@ -95,10 +93,16 @@ const SocioEconomicLatin = (props) => (
           Chile, Uruguay and Panama perform considerable higher number of tests.
           A clear effect the GDP level.
         </PredictaText>
+        <PredictaSubTitle>
+          Tests per 1M vs GDP per Capita (Feb ’20-Aug ’21)
+        </PredictaSubTitle>
       </PredictaTextWrapper>
 
       <PredictaContentContainer containerSize="normal">
-        <ChartLatin className="living graph" />
+        <img
+          src="/Tests-per-vs-GDP.png"
+          alt=" Tests per 1M vs GDP per Capita (Feb ’20-Aug ’21)"
+        />
       </PredictaContentContainer>
     </div>
     <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
