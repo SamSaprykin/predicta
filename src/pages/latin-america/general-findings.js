@@ -201,15 +201,15 @@ const GeneralFindingsLatin = (props) => (
               <td>Montenegro</td>
               <td>2.758</td>
             </tr>
-            <tr>
+            <tr id="highlighted">
               <td>Brazil</td>
               <td>2.750</td>
             </tr>
-            <tr id="highlighted">
+            <tr>
               <td>Bulgaria</td>
               <td>2.686</td>
             </tr>
-            <tr>
+            <tr id="highlighted">
               <td>Peru</td>
               <td>2.589</td>
             </tr>
@@ -217,7 +217,7 @@ const GeneralFindingsLatin = (props) => (
               <td>Argentina</td>
               <td>2.486</td>
             </tr>
-            <tr>
+            <tr id="highlighted">
               <td>Colombia</td>
               <td>2.082</td>
             </tr>
@@ -225,7 +225,7 @@ const GeneralFindingsLatin = (props) => (
               <td>Slovakia</td>
               <td>2.289</td>
             </tr>
-            <tr>
+            <tr id="highlighted">
               <td>Paraguay</td>
               <td>2.233</td>
             </tr>
@@ -245,11 +245,11 @@ const GeneralFindingsLatin = (props) => (
               <td>Mexico</td>
               <td>2.026</td>
             </tr>
-            <tr id="highlighted">
+            <tr>
               <td>Tunisia</td>
               <td>2.003</td>
             </tr>
-            <tr id="highlighted">
+            <tr>
               <td>United Kingdom</td>
               <td>1.978</td>
             </tr>
@@ -257,7 +257,7 @@ const GeneralFindingsLatin = (props) => (
               <td>Poland</td>
               <td>1.970</td>
             </tr>
-            <tr>
+            <tr id="highlighted">
               <td>Chile</td>
               <td>1.948</td>
             </tr>
@@ -265,15 +265,15 @@ const GeneralFindingsLatin = (props) => (
               <td>U.S.A</td>
               <td>1.911</td>
             </tr>
-            <tr>
+            <tr id="highlighted">
               <td>Ecuador</td>
               <td>1.861</td>
             </tr>
-            <tr id="highlighted">
+            <tr>
               <td>Slovenia</td>
               <td>1.837</td>
             </tr>
-            <tr>
+            <tr id="highlighted">
               <td>Uruguay</td>
               <td>1.742</td>
             </tr>
@@ -281,7 +281,7 @@ const GeneralFindingsLatin = (props) => (
               <td>Portugal</td>
               <td>1.722</td>
             </tr>
-            <tr id="highlighted">
+            <tr>
               <td>France</td>
               <td>1.686</td>
             </tr>
@@ -289,7 +289,7 @@ const GeneralFindingsLatin = (props) => (
               <td>Spain</td>
               <td>1.683</td>
             </tr>
-            <tr>
+            <tr id="highlighted">
               <td>Panama</td>
               <td>1.654</td>
             </tr>
@@ -297,7 +297,7 @@ const GeneralFindingsLatin = (props) => (
               <td>Bolivia</td>
               <td>1.601</td>
             </tr>
-            <tr id="highlighted">
+            <tr>
               <td>Romania</td>
               <td>1.590</td>
             </tr>
