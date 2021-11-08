@@ -1,60 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" style="background: white" viewBox="0 0 780.355 369.51">
-  <defs>
-    <linearGradient id="linear-gradient" x1="-9.506" y1="47308.977" x2="-9.506" y2="47307.977" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#6083cb"/>
-      <stop offset="0.5" stop-color="#3e70ca"/>
-      <stop offset="1" stop-color="#2e61ba"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="-9.792" y1="29113.988" x2="-9.792" y2="29112.988" xlink:href="#linear-gradient"/>
-    <linearGradient id="linear-gradient-3" x1="-10.079" y1="3077.172" x2="-10.079" y2="3076.172" xlink:href="#linear-gradient"/>
-    <linearGradient id="linear-gradient-4" x1="-10.365" y1="792.471" x2="-10.365" y2="791.471" xlink:href="#linear-gradient"/>
-  </defs>
-  <g id="Group_731" data-name="Group 731" transform="translate(-1079 -4065)">
-    <rect id="Rectangle_388" data-name="Rectangle 388" width="780.355" height="369.51" transform="translate(1079 4065)" fill="#fff"/>
-    <g id="Group_511" data-name="Group 511" transform="translate(-7.92 -29.189)">
-      <path id="Path_657" data-name="Path 657" d="M1187.878,4152.961h656.048m-656.048,32.6h656.048m-656.048,32.7h656.048m-656.048,32.7h656.048m-656.048,32.7h656.048m-656.048,32.526h656.048m-656.048,32.7h656.048" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
-      <rect id="Rectangle_390" data-name="Rectangle 390" width="38.727" height="0.172" transform="translate(1198.34 4381.385)" fill="url(#linear-gradient)"/>
-      <rect id="Rectangle_391" data-name="Rectangle 391" width="38.727" height="0.279" transform="translate(1257.979 4381.277)" fill="url(#linear-gradient-2)"/>
-      <rect id="Rectangle_392" data-name="Rectangle 392" width="38.727" height="2.644" transform="translate(1317.617 4378.913)" fill="url(#linear-gradient-3)"/>
-      <rect id="Rectangle_393" data-name="Rectangle 393" width="38.727" height="10.286" transform="translate(1377.26 4371.271)" fill="url(#linear-gradient-4)"/>
-      <rect id="Rectangle_394" data-name="Rectangle 394" width="38.727" height="19.724" transform="translate(1436.903 4361.833)" fill="none"/>
-      <rect id="Rectangle_395" data-name="Rectangle 395" width="38.727" height="33.6" transform="translate(1496.537 4347.957)" fill="none"/>
-      <rect id="Rectangle_396" data-name="Rectangle 396" width="38.727" height="56.677" transform="translate(1556.18 4324.869)" fill="none"/>
-      <rect id="Rectangle_397" data-name="Rectangle 397" width="38.727" height="82.688" transform="translate(1615.824 4298.868)" fill="none"/>
-      <rect id="Rectangle_398" data-name="Rectangle 398" width="38.727" height="110.302" transform="translate(1675.468 4271.255)" fill="none"/>
-      <rect id="Rectangle_399" data-name="Rectangle 399" width="38.727" height="149.33" transform="translate(1735.101 4232.227)" fill="none"/>
-      <rect id="Rectangle_400" data-name="Rectangle 400" width="38.738" height="2.644" transform="translate(1317.616 4378.913)" fill="#222b3e"/>
-      <rect id="Rectangle_401" data-name="Rectangle 401" width="38.727" height="10.286" transform="translate(1377.26 4371.271)" fill="#222b3e"/>
-      <rect id="Rectangle_402" data-name="Rectangle 402" width="38.727" height="19.724" transform="translate(1436.903 4361.833)" fill="#222b3e"/>
-      <rect id="Rectangle_403" data-name="Rectangle 403" width="38.727" height="33.6" transform="translate(1496.537 4347.957)" fill="#222b3e"/>
-      <rect id="Rectangle_404" data-name="Rectangle 404" width="38.727" height="56.677" transform="translate(1556.18 4324.869)" fill="#222b3e"/>
-      <rect id="Rectangle_405" data-name="Rectangle 405" width="38.727" height="82.688" transform="translate(1615.824 4298.868)" fill="#222b3e"/>
-      <rect id="Rectangle_406" data-name="Rectangle 406" width="38.727" height="205.018" transform="translate(1794.744 4176.539)" fill="#222b3e"/>
-      <rect id="Rectangle_407" data-name="Rectangle 407" width="38.727" height="149.33" transform="translate(1735.101 4232.227)" fill="#222b3e"/>
-      <rect id="Rectangle_408" data-name="Rectangle 408" width="38.727" height="110.301" transform="translate(1675.462 4271.255)" fill="#222b3e"/>
-      <rect id="Rectangle_409" data-name="Rectangle 409" width="38.727" height="205.018" transform="translate(1794.744 4176.539)" fill="none"/>
-      <line id="Line_56" data-name="Line 56" x2="656.048" transform="translate(1187.878 4381.556)" fill="none" stroke="#a7a9ac" stroke-miterlimit="10" stroke-width="1.417"/>
-      <text id="_0" data-name="0" transform="translate(1170.036 4385.085)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">0</tspan></text>
-      <text id="_10000000" data-name="10000000" transform="translate(1109.92 4353.131)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">10000000</tspan></text>
-      <text id="_20000000" data-name="20000000" transform="translate(1109.92 4320.484)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">20000000</tspan></text>
-      <text id="_30000000" data-name="30000000" transform="translate(1109.92 4287.817)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">30000000</tspan></text>
-      <text id="_40000000" data-name="40000000" transform="translate(1109.92 4255.16)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">40000000</tspan></text>
-      <text id="_50000000" data-name="50000000" transform="translate(1109.92 4222.503)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">50000000</tspan></text>
-      <text id="_60000000" data-name="60000000" transform="translate(1109.92 4189.855)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">60000000</tspan></text>
-      <text id="_70000000" data-name="70000000" transform="translate(1109.92 4157.189)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">70000000</tspan></text>
-      <rect id="Rectangle_410" data-name="Rectangle 410" width="38.738" height="0.279" transform="translate(1257.973 4380.566)" fill="#222b3e"/>
-      <rect id="Rectangle_411" data-name="Rectangle 411" width="38.727" height="0.172" transform="translate(1198.34 4380.673)" fill="#222b3e"/>
-      <text id="Jan" transform="translate(1211.317 4411.361)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Jan</tspan></text>
-      <text id="Feb" transform="translate(1267.969 4411.361)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Feb</tspan></text>
-      <text id="Mar" transform="translate(1326.881 4411.361)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Mar</tspan></text>
-      <text id="Apr" transform="translate(1387.629 4411.361)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Apr</tspan></text>
-      <text id="May" transform="translate(1444.99 4411.361)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">May</tspan></text>
-      <text id="Jun" transform="translate(1506.391 4411.361)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Jun</tspan></text>
-      <text id="Jul" transform="translate(1568.66 4411.361)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Jul</tspan></text>
-      <text id="Aug" transform="translate(1624.87 4411.361)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Aug</tspan></text>
-      <text id="Sep" transform="translate(1684.748 4411.361)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Sep</tspan></text>
-      <text id="Oct" transform="translate(1745.7 4411.361)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Oct</tspan></text>
-      <text id="Nov" transform="translate(1803.595 4411.361)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="0" y="0">Nov</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 756.26 370.927">
+  <g id="Group_431" data-name="Group 431" transform="translate(-1091.855 -4064.349)">
+    <rect id="Rectangle_311" data-name="Rectangle 311" width="754.844" height="369.51" transform="translate(1092.564 4065.057)" fill="#fff" stroke="#a7a9ac" stroke-width="1.417"/>
+    <g id="Group_82" data-name="Group 82">
+      <rect id="Rectangle_312" data-name="Rectangle 312" width="618.995" height="225.811" transform="translate(1211.376 4128.293)" fill="none" stroke="#a7a9ac" stroke-width="1.417"/>
+      <line id="Line_22" data-name="Line 22" x2="618.995" transform="translate(1211.376 4153.574)" fill="none" stroke="#a7a9ac" stroke-width="1.417"/>
+      <line id="Line_23" data-name="Line 23" x2="618.995" transform="translate(1211.376 4179.66)" fill="none" stroke="#a7a9ac" stroke-width="1.417"/>
+      <line id="Line_24" data-name="Line 24" x2="618.995" transform="translate(1211.376 4204.043)" fill="none" stroke="#a7a9ac" stroke-width="1.417"/>
+      <line id="Line_25" data-name="Line 25" x2="618.995" transform="translate(1211.376 4228.495)" fill="none" stroke="#a7a9ac" stroke-width="1.417"/>
+      <line id="Line_26" data-name="Line 26" x2="618.995" transform="translate(1211.376 4254.581)" fill="none" stroke="#a7a9ac" stroke-width="1.417"/>
+      <line id="Line_27" data-name="Line 27" x2="618.995" transform="translate(1211.376 4278.964)" fill="none" stroke="#a7a9ac" stroke-width="1.417"/>
+      <line id="Line_28" data-name="Line 28" x2="618.995" transform="translate(1211.376 4305.05)" fill="none" stroke="#a7a9ac" stroke-width="1.417"/>
+      <line id="Line_29" data-name="Line 29" x2="618.995" transform="translate(1211.376 4332.159)" fill="none" stroke="#a7a9ac" stroke-width="1.417"/>
     </g>
+    <rect id="Rectangle_313" data-name="Rectangle 313" width="19.1" height="1.469" transform="translate(1217.934 4352.634)" fill="#222b3e"/>
+    <rect id="Rectangle_314" data-name="Rectangle 314" width="19.1" height="1.469" transform="translate(1248.787 4352.634)" fill="#222b3e"/>
+    <rect id="Rectangle_315" data-name="Rectangle 315" width="19.1" height="1.469" transform="translate(1279.64 4352.634)" fill="#222b3e"/>
+    <rect id="Rectangle_316" data-name="Rectangle 316" width="19.1" height="2.938" transform="translate(1310.493 4351.165)" fill="#222b3e"/>
+    <rect id="Rectangle_317" data-name="Rectangle 317" width="19.1" height="5.877" transform="translate(1341.347 4348.227)" fill="#222b3e"/>
+    <rect id="Rectangle_318" data-name="Rectangle 318" width="19.1" height="8.815" transform="translate(1372.2 4345.288)" fill="#222b3e"/>
+    <rect id="Rectangle_319" data-name="Rectangle 319" width="20.569" height="16.161" transform="translate(1401.584 4337.942)" fill="#222b3e"/>
+    <rect id="Rectangle_320" data-name="Rectangle 320" width="20.569" height="23.507" transform="translate(1432.437 4330.596)" fill="#222b3e"/>
+    <rect id="Rectangle_321" data-name="Rectangle 321" width="20.569" height="30.853" transform="translate(1463.29 4323.25)" fill="#222b3e"/>
+    <rect id="Rectangle_322" data-name="Rectangle 322" width="20.569" height="41.138" transform="translate(1494.143 4312.966)" fill="#222b3e"/>
+    <rect id="Rectangle_323" data-name="Rectangle 323" width="20.569" height="57.299" transform="translate(1524.997 4296.805)" fill="#222b3e"/>
+    <rect id="Rectangle_324" data-name="Rectangle 324" width="20.569" height="74.929" transform="translate(1555.85 4279.174)" fill="#222b3e"/>
+    <rect id="Rectangle_325" data-name="Rectangle 325" width="20.569" height="92.56" transform="translate(1586.703 4261.544)" fill="#222b3e"/>
+    <rect id="Rectangle_326" data-name="Rectangle 326" width="20.569" height="102.844" transform="translate(1617.556 4251.259)" fill="#222b3e"/>
+    <rect id="Rectangle_327" data-name="Rectangle 327" width="20.569" height="114.598" transform="translate(1648.409 4239.506)" fill="#222b3e"/>
+    <rect id="Rectangle_328" data-name="Rectangle 328" width="20.569" height="135.166" transform="translate(1679.263 4218.937)" fill="#222b3e"/>
+    <rect id="Rectangle_329" data-name="Rectangle 329" width="20.569" height="154.266" transform="translate(1710.116 4199.837)" fill="#222b3e"/>
+    <rect id="Rectangle_330" data-name="Rectangle 330" width="20.569" height="164.55" transform="translate(1740.969 4189.553)" fill="#222b3e"/>
+    <rect id="Rectangle_331" data-name="Rectangle 331" width="20.569" height="177.773" transform="translate(1771.822 4176.33)" fill="#222b3e"/>
+    <rect id="Rectangle_332" data-name="Rectangle 332" width="19.1" height="196.873" transform="translate(1802.675 4157.23)" fill="#222b3e"/>
+    <text id="_0" data-name="0" transform="translate(1196.266 4357.042)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-8" y="0">0</tspan></text>
+    <text id="_50.000.000" data-name="50.000.000" transform="translate(1196.266 4311.496)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-76" y="0">50.000.000</tspan></text>
+    <text id="_100.000.000" data-name="100.000.000" transform="translate(1196.266 4267.421)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-85" y="0">100.000.000</tspan></text>
+    <text id="_150.000.000" data-name="150.000.000" transform="translate(1196.266 4221.876)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-85" y="0">150.000.000</tspan></text>
+    <text id="_200.000.000" data-name="200.000.000" transform="translate(1196.266 4176.331)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-85" y="0">200.000.000</tspan></text>
+    <text id="_250.000.000" data-name="250.000.000" transform="translate(1196.266 4130.786)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-85" y="0">250.000.000</tspan></text>
+    <text id="Jan" transform="translate(1239.055 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-23" y="0">Jan</tspan></text>
+    <text id="_20" data-name="&apos;20" transform="translate(1240.175 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="Feb" transform="translate(1269.334 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-23" y="0">Feb</tspan></text>
+    <text id="_20-2" data-name="&apos;20" transform="translate(1270.958 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="Mar" transform="translate(1299.948 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-24" y="0">Mar</tspan></text>
+    <text id="_20-3" data-name="&apos;20" transform="translate(1301.741 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="Apr" transform="translate(1331.558 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-22" y="0">Apr</tspan></text>
+    <text id="_20-4" data-name="&apos;20" transform="translate(1332.522 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="May" transform="translate(1360.644 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-26" y="0">May</tspan></text>
+    <text id="_20-5" data-name="&apos;20" transform="translate(1363.306 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="Jun" transform="translate(1392.744 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-23" y="0">Jun</tspan></text>
+    <text id="_20-6" data-name="&apos;20" transform="translate(1394.089 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="Jul" transform="translate(1425.481 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-19" y="0">Jul</tspan></text>
+    <text id="_20-7" data-name="&apos;20" transform="translate(1424.871 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="Aug" transform="translate(1453.707 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-24" y="0">Aug</tspan></text>
+    <text id="_20-8" data-name="&apos;20" transform="translate(1455.653 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="Sep" transform="translate(1484.666 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-24" y="0">Sep</tspan></text>
+    <text id="_20-9" data-name="&apos;20" transform="translate(1486.437 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="Oct" transform="translate(1516.429 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-22" y="0">Oct</tspan></text>
+    <text id="_20-10" data-name="&apos;20" transform="translate(1517.219 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="Nov" transform="translate(1545.904 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-25" y="0">Nov</tspan></text>
+    <text id="_20-11" data-name="&apos;20" transform="translate(1548.001 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="Dec" transform="translate(1576.93 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-24" y="0">Dec</tspan></text>
+    <text id="_20-12" data-name="&apos;20" transform="translate(1578.785 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;20</tspan></text>
+    <text id="Jan-2" data-name="Jan" transform="translate(1608.446 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-23" y="0">Jan</tspan></text>
+    <text id="_21" data-name="&apos;21" transform="translate(1609.566 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;21</tspan></text>
+    <text id="Feb-2" data-name="Feb" transform="translate(1638.726 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-23" y="0">Feb</tspan></text>
+    <text id="_21-2" data-name="&apos;21" transform="translate(1640.35 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;21</tspan></text>
+    <text id="Mar-2" data-name="Mar" transform="translate(1669.34 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-24" y="0">Mar</tspan></text>
+    <text id="_21-3" data-name="&apos;21" transform="translate(1671.132 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;21</tspan></text>
+    <text id="Apr-2" data-name="Apr" transform="translate(1700.948 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-22" y="0">Apr</tspan></text>
+    <text id="_21-4" data-name="&apos;21" transform="translate(1701.914 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;21</tspan></text>
+    <text id="May-2" data-name="May" transform="translate(1730.034 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-26" y="0">May</tspan></text>
+    <text id="_21-5" data-name="&apos;21" transform="translate(1732.697 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;21</tspan></text>
+    <text id="Jun-2" data-name="Jun" transform="translate(1762.135 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-23" y="0">Jun</tspan></text>
+    <text id="_21-6" data-name="&apos;21" transform="translate(1763.479 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;21</tspan></text>
+    <text id="Jul-2" data-name="Jul" transform="translate(1794.872 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-19" y="0">Jul</tspan></text>
+    <text id="_21-7" data-name="&apos;21" transform="translate(1794.262 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;21</tspan></text>
+    <text id="Aug-2" data-name="Aug" transform="translate(1823.099 4376.141)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-24" y="0">Aug</tspan></text>
+    <text id="_21-8" data-name="&apos;21" transform="translate(1825.045 4393.771)" fill="#606060" font-size="14.314" font-family="IBMPlexSans, IBM Plex Sans"><tspan x="-20" y="0">&apos;21</tspan></text>
   </g>
 </svg>

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Grid = styled.div`
   display: grid;
@@ -9,10 +9,10 @@ const Grid = styled.div`
   width: 100%;
   max-width: 1280px;
   align-self: center;
-  justify-content:center;
+  justify-content: center;
   @media (max-width: 1440px) {
-    max-width:1280px;
-    padding:0 32px;
+    max-width: 1280px;
+    padding: 0 32px;
   }
   @media (max-width: 1280px) {
     grid-template-columns: repeat(2, 1fr);
@@ -22,98 +22,88 @@ const Grid = styled.div`
   }
   @media (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
-    width: 80%
+    width: 80%;
   }
   th {
-		color: #ffffff;
-		font-family: "IBM Plex Sans - Medium";
-		font-size: 17px;
-		font-weight: 500;
-		font-style: normal;
-		letter-spacing: normal;
-		line-height: 22.74px;
-		text-align: center;
-		/* Text style for "Area" */
-		font-family: "IBM Plex Sans";
-		font-weight: 500;
-		font-style: normal;
-		letter-spacing: normal;
+    color: #ffffff;
+    font-family: "IBM Plex Sans - Medium";
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22.74px;
+    text-align: center;
+    /* Text style for "Area" */
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
     line-height: normal;
-    height:55px;
+    height: 55px;
     @media (max-width: 1024px) {
       font-size: 15px;
     }
-		@media(max-width:768px) {
-			font-size: 12px;
+    @media (max-width: 768px) {
+      font-size: 12px;
     }
-    
-	}
-	td {
-		color: #606060;
-		font-family: "IBM Plex Sans - Light";
-		font-size: 17px;
-		font-weight: 300;
-		font-style: normal;
-		letter-spacing: normal;
-		line-height: 22.74px;
-		text-align: center;
-		/* Text style for "Latin Amer" */
-		font-family: "IBM Plex Sans";
-		font-weight: 300;
-		font-style: normal;
-		letter-spacing: normal;
+  }
+  td {
+    color: #606060;
+    font-family: "IBM Plex Sans - Light";
+    font-size: 17px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22.74px;
+    text-align: center;
+    /* Text style for "Latin Amer" */
+    font-family: "IBM Plex Sans";
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
     line-height: normal;
     @media (max-width: 1024px) {
       font-size: 15px;
     }
-		@media(max-width:768px) {
-			font-size: 12px;
-		}
-	}
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
 `;
 
-
-
-
 const Item = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: auto;
-background-color: transparent;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
 `;
 
 const TitleSection = styled.h1`
   text-transform: uppercase;
-  color: #222B3E;
+  color: #222b3e;
   letter-spacing: 0px;
-  font-size:32px;
-  line-height:38px;
-  margin-bottom:24px;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 24px;
   @media (max-width: 1440px) {
-    font-size:28px;
-    line-height:32px;
+    font-size: 28px;
+    line-height: 32px;
   }
   @media (max-width: 1024px) {
-    font-size:26px;
-    line-height:30px;
+    font-size: 26px;
+    line-height: 30px;
   }
-`
-
+`;
 
 const GlobalStats = () => (
   <>
-
-    <TitleSection id='toptwenty'>Top 20 Country Metrics</TitleSection>
+    <TitleSection id="toptwenty">Top 20 Country Metrics</TitleSection>
 
     <Grid>
-
       <Item>
-
         <table className="metrics-table">
           <thead>
             <tr>
@@ -124,106 +114,97 @@ const GlobalStats = () => (
           <tbody>
             <tr>
               <td>United States of America</td>
-              <td>32.914.424</td>
+              <td>38.787.699</td>
             </tr>
             <tr>
               <td>India</td>
-              <td>28.063.044</td>
+              <td>32.784.390</td>
             </tr>
             <tr>
               <td>Brazil</td>
-              <td>16.510.456</td>
+              <td>20.780.671</td>
             </tr>
             <tr>
               <td>France</td>
-              <td>5.937.976</td>
+              <td>6.928.459</td>
             </tr>
             <tr>
               <td>Russia</td>
-              <td>5.021.138</td>
+              <td>6.868.186</td>
             </tr>
             <tr>
               <td>United Kingdom</td>
-              <td>4.438.076</td>
+              <td>6.711.670</td>
             </tr>
             <tr>
               <td>Turkey</td>
-              <td>4.395.698</td>
-            </tr>
-            <tr>
-              <td>Italy</td>
-              <td>4.209.966</td>
+              <td>5.519.225</td>
             </tr>
             <tr>
               <td>Argentina</td>
-              <td>3.723.845</td>
-            </tr>
-            <tr>
-              <td>Spain</td>
-              <td>3.710.017</td>
-            </tr>
-            <tr>
-              <td>Germany</td>
-              <td>3.655.986</td>
-            </tr>
-            <tr>
-              <td>Colombia</td>
-              <td>3.353.645</td>
+              <td>5.165.113</td>
             </tr>
             <tr>
               <td>Iran</td>
-              <td>2.903.715</td>
+              <td>4.962.365</td>
             </tr>
             <tr>
-              <td>Poland</td>
-              <td>2.858.819</td>
+              <td>Colombia</td>
+              <td>4.895.842</td>
             </tr>
             <tr>
-              <td>Mexico</td>
-              <td>2.409.400</td>
+              <td>Spain</td>
+              <td>4.867.754</td>
             </tr>
             <tr>
-              <td>Ukraine</td>
-              <td>2.222.278</td>
-            </tr>
-            <tr>
-              <td>Peru</td>
-              <td>1.958.540</td>
+              <td>Italy</td>
+              <td>4.528.462</td>
             </tr>
             <tr>
               <td>Indonesia</td>
-              <td>1.813.527</td>
+              <td>4.081.625</td>
             </tr>
             <tr>
-              <td>Netherlands</td>
-              <td>1.647.078</td>
+              <td>Germany</td>
+              <td>3.917.716</td>
             </tr>
             <tr>
-              <td>Czechia</td>
-              <td>1.646.233</td>
+              <td>Mexico</td>
+              <td>3.333.597</td>
             </tr>
-            <tr id='highlighted'>
+            <tr>
+              <td>Poland</td>
+              <td>2.875.206</td>
+            </tr>
+            <tr>
+              <td>South Africa</td>
+              <td>2.753.743</td>
+            </tr>
+            <tr>
+              <td>Ukraine</td>
+              <td>2.306.080</td>
+            </tr>
+            <tr>
+              <td>Peru</td>
+              <td>2.156.116</td>
+            </tr>
+            <tr>
+              <td>Philippines</td>
+              <td>1.976.621</td>
+            </tr>
+            <tr id="highlighted">
               <td>Greece (# 48)</td>
-              <td>401.638</td>
+              <td>583.995</td>
             </tr>
             <tr>
               <td>Global AVG</td>
-              <td>795.261</td>
+              <td>1.015.158</td>
             </tr>
           </tbody>
         </table>
-
-
-
-
-
-
-
       </Item>
 
-
       <Item>
-
         <table className="metrics-table">
           <thead>
             <tr>
@@ -233,103 +214,98 @@ const GlobalStats = () => (
           </thead>
           <tbody>
             <tr>
-              <td>Czechia</td>
-              <td>154.579</td>
+              <td>Montenegro</td>
+              <td>182.996</td>
             </tr>
             <tr>
               <td>Bahrain</td>
-              <td>145.338</td>
+              <td>166.235</td>
             </tr>
             <tr>
               <td>Gibraltar</td>
-              <td>125.082</td>
+              <td>156.204</td>
             </tr>
             <tr>
-              <td>Slovenia</td>
-              <td>120.910</td>
-            </tr>
-            <tr>
-              <td>Luxembourg</td>
-              <td>114.357</td>
-            </tr>
-            <tr>
-              <td>Sweden</td>
-              <td>104.005</td>
-            </tr>
-            <tr>
-              <td>Serbia</td>
-              <td>102.258</td>
-            </tr>
-            <tr>
-              <td>United States of America</td>
-              <td>100.024</td>
-            </tr>
-            <tr>
-              <td>Israel</td>
-              <td>98.162</td>
-            </tr>
-            <tr>
-              <td>Lithuania</td>
-              <td>97.482</td>
-            </tr>
-            <tr>
-              <td>Estonia</td>
-              <td>97.228</td>
-            </tr>
-            <tr>
-              <td>Netherlands</td>
-              <td>95.305</td>
-            </tr>
-            <tr>
-              <td>Belgium</td>
-              <td>92.343</td>
-            </tr>
-            <tr>
-              <td>France</td>
-              <td>88.609</td>
-            </tr>
-            <tr>
-              <td>Panama</td>
-              <td>88.195</td>
-            </tr>
-            <tr>
-              <td>Croatia</td>
-              <td>86.783</td>
+              <td>Czechia</td>
+              <td>156.194</td>
             </tr>
             <tr>
               <td>Georgia</td>
-              <td>86.013</td>
-            </tr>
-            <tr>
-              <td>Uruguay</td>
-              <td>83.480</td>
-            </tr>
-            <tr>
-              <td>Argentina</td>
-              <td>83.157</td>
+              <td>137.517</td>
             </tr>
             <tr>
               <td>Cyprus</td>
-              <td>82.989</td>
+              <td>130.005</td>
             </tr>
-            <tr id='highlighted'>
+            <tr>
+              <td>Slovenia</td>
+              <td>127.158</td>
+            </tr>
+            <tr>
+              <td>Israel</td>
+              <td>124.667</td>
+            </tr>
+            <tr>
+              <td>Luxembourg</td>
+              <td>123.707</td>
+            </tr>
+            <tr>
+              <td>U.S.A.</td>
+              <td>117.872</td>
+            </tr>
+            <tr>
+              <td>Argentina</td>
+              <td>115.342</td>
+            </tr>
+            <tr>
+              <td>Netherlands</td>
+              <td>112.204</td>
+            </tr>
+            <tr>
+              <td>Uruguay</td>
+              <td>111.362</td>
+            </tr>
+            <tr>
+              <td>Sweden</td>
+              <td>109.403</td>
+            </tr>
+            <tr>
+              <td>Serbia</td>
+              <td>109.112</td>
+            </tr>
+            <tr>
+              <td>Panama</td>
+              <td>106.855</td>
+            </tr>
+            <tr>
+              <td>Estonia</td>
+              <td>106.597</td>
+            </tr>
+            <tr>
+              <td>Lithuania</td>
+              <td>106.295</td>
+            </tr>
+            <tr>
+              <td>Spain</td>
+              <td>103.708</td>
+            </tr>
+            <tr>
+              <td>France</td>
+              <td>103.390</td>
+            </tr>
+            <tr id="highlighted">
               <td>Greece (# 77)</td>
               <td>37.450</td>
             </tr>
             <tr>
               <td>Global AVG</td>
-              <td>34.642</td>
+              <td>45.404</td>
             </tr>
-
           </tbody>
         </table>
-
-
-
       </Item>
 
       <Item>
-
         <table className="metrics-table">
           <thead>
             <tr>
@@ -339,102 +315,98 @@ const GlobalStats = () => (
           </thead>
           <tbody>
             <tr>
+              <td>United Arab Emirates</td>
+              <td>89,5%</td>
+            </tr>
+            <tr>
+              <td>Portugal</td>
+              <td>84,7%</td>
+            </tr>
+            <tr>
               <td>Malta</td>
-              <td>72.4%</td>
-            </tr>
-            <tr>
-              <td>Seychelles</td>
-              <td>71.6%</td>
-            </tr>
-            <tr>
-              <td>Israel</td>
-              <td>63.0%</td>
-            </tr>
-            <tr>
-              <td>Canada</td>
-              <td>59.0%</td>
-            </tr>
-            <tr>
-              <td>United Kingdom</td>
-              <td>58.3%</td>
-            </tr>
-            <tr>
-              <td>Maldives</td>
-              <td>57.4%</td>
-            </tr>
-            <tr>
-              <td>Bahrain</td>
-              <td>57.0%</td>
-            </tr>
-            <tr>
-              <td>Mongolia</td>
-              <td>56.8%</td>
-            </tr>
-            <tr>
-              <td>Chile</td>
-              <td>56.6%</td>
-            </tr>
-            <tr>
-              <td>Hungary</td>
-              <td>53.9%</td>
-            </tr>
-            <tr>
-              <td>Uruguay</td>
-              <td>53.7%</td>
-            </tr>
-            <tr>
-              <td>Iceland</td>
-              <td>52.0%</td>
+              <td>84,1%</td>
             </tr>
             <tr>
               <td>Qatar</td>
-              <td>51.9%</td>
+              <td>82,5%</td>
             </tr>
             <tr>
-              <td>United Arab Emirates</td>
-              <td>51.4%</td>
+              <td>Singapore</td>
+              <td>79,4%</td>
             </tr>
             <tr>
-              <td>United States of America</td>
-              <td>50.5%</td>
+              <td>Monaco</td>
+              <td>79,0%</td>
             </tr>
             <tr>
-              <td>Finland</td>
-              <td>45.3%</td>
+              <td>Iceland</td>
+              <td>78,4%</td>
             </tr>
             <tr>
-              <td>Germany</td>
-              <td>45.1%</td>
+              <td>Spain</td>
+              <td>78,2%</td>
             </tr>
             <tr>
-              <td>Cyprus</td>
-              <td>44.4%</td>
+              <td>Uruguay</td>
+              <td>77,3%</td>
             </tr>
             <tr>
-              <td>Austria</td>
-              <td>41.8%</td>
+              <td>Chile</td>
+              <td>76,2%</td>
+            </tr>
+            <tr>
+              <td>Denmark</td>
+              <td>76,1%</td>
+            </tr>
+            <tr>
+              <td>Faroe Islands</td>
+              <td>75,6%</td>
+            </tr>
+            <tr>
+              <td>Ireland</td>
+              <td>75,5%</td>
+            </tr>
+            <tr>
+              <td>Seychelles</td>
+              <td>75,5%</td>
+            </tr>
+            <tr>
+              <td>Canada</td>
+              <td>75,1%</td>
+            </tr>
+            <tr>
+              <td>China</td>
+              <td>74,8%</td>
             </tr>
             <tr>
               <td>Belgium</td>
-              <td>41.4%</td>
+              <td>73,7%</td>
             </tr>
-            <tr id='highlighted'>
+            <tr>
+              <td>Finland</td>
+              <td>73,3%</td>
+            </tr>
+            <tr>
+              <td>Norway</td>
+              <td>73,2%</td>
+            </tr>
+            <tr>
+              <td>France</td>
+              <td>72,8%</td>
+            </tr>
+            <tr id="highlighted">
               <td>Greece (# 36)</td>
-              <td>36%</td>
+              <td>57,3%</td>
             </tr>
             <tr>
               <td>Global AVG</td>
-              <td>17%</td>
+              <td>41%</td>
             </tr>
           </tbody>
         </table>
-
-
-
       </Item>
 
       <Item>
-
         <table className="metrics-table">
           <thead>
             <tr>
@@ -445,101 +417,97 @@ const GlobalStats = () => (
           <tbody>
             <tr>
               <td>United States of America</td>
-              <td>583.916</td>
-            </tr>
-            <tr>
-              <td>India</td>
-              <td>462.090</td>
+              <td>628.896</td>
             </tr>
             <tr>
               <td>Brazil</td>
-              <td>329.206</td>
+              <td>580.341</td>
             </tr>
             <tr>
-              <td>France</td>
-              <td>223.786</td>
-            </tr>
-            <tr>
-              <td>Russia</td>
-              <td>127.097</td>
-            </tr>
-            <tr>
-              <td>United Kingdom</td>
-              <td>125.683</td>
-            </tr>
-            <tr>
-              <td>Turkey</td>
-              <td>120.037</td>
-            </tr>
-            <tr>
-              <td>Italy</td>
-              <td>108.911</td>
-            </tr>
-            <tr>
-              <td>Argentina</td>
-              <td>87.857</td>
-            </tr>
-            <tr>
-              <td>Spain</td>
-              <td>87.691</td>
-            </tr>
-            <tr>
-              <td>Germany</td>
-              <td>79.904</td>
-            </tr>
-            <tr>
-              <td>Colombia</td>
-              <td>77.045</td>
-            </tr>
-            <tr>
-              <td>Iran</td>
-              <td>75.227</td>
-            </tr>
-            <tr>
-              <td>Poland</td>
-              <td>73.210</td>
+              <td>India</td>
+              <td>438.666</td>
             </tr>
             <tr>
               <td>Mexico</td>
-              <td>69.434</td>
+              <td>258.496</td>
             </tr>
             <tr>
-              <td>Ukraine</td>
-              <td>56.055</td>
-            </tr>
-            <tr>
-              <td>Peru</td>
-              <td>51.291</td>
+              <td>Russia</td>
+              <td>181.760</td>
             </tr>
             <tr>
               <td>Indonesia</td>
-              <td>50.395</td>
+              <td>132.840</td>
             </tr>
             <tr>
-              <td>Netherlands</td>
-              <td>47.014</td>
+              <td>United Kingdom</td>
+              <td>131.801</td>
             </tr>
             <tr>
-              <td>Czechia</td>
-              <td>30.168</td>
+              <td>Italy</td>
+              <td>128.783</td>
             </tr>
-            <tr id='highlighted'>
-              <td>Greece (# 40)</td>
-              <td>12.040</td>
+            <tr>
+              <td>Colombia</td>
+              <td>124.755</td>
+            </tr>
+            <tr>
+              <td>France</td>
+              <td>113.000</td>
+            </tr>
+            <tr>
+              <td>Argentina</td>
+              <td>111.320</td>
+            </tr>
+            <tr>
+              <td>Iran</td>
+              <td>107.116</td>
+            </tr>
+            <tr>
+              <td>Germany</td>
+              <td>91.615</td>
+            </tr>
+            <tr>
+              <td>Peru</td>
+              <td>84.173</td>
+            </tr>
+            <tr>
+              <td>South Africa</td>
+              <td>81.446</td>
+            </tr>
+            <tr>
+              <td>Spain</td>
+              <td>78.995</td>
+            </tr>
+            <tr>
+              <td>Poland</td>
+              <td>74.810</td>
+            </tr>
+            <tr>
+              <td>Turkey</td>
+              <td>56.067</td>
+            </tr>
+            <tr>
+              <td>Ukraine</td>
+              <td>54.544</td>
+            </tr>
+            <tr>
+              <td>Chile</td>
+              <td>36.910</td>
+            </tr>
+            <tr id="highlighted">
+              <td>Greece (# 42)</td>
+              <td>13.586</td>
             </tr>
             <tr>
               <td>Global AVG</td>
-              <td>16.543</td>
+              <td>20.532</td>
             </tr>
           </tbody>
         </table>
-
-
-
       </Item>
 
       <Item>
-
         <table className="metrics-table">
           <thead>
             <tr>
@@ -550,103 +518,97 @@ const GlobalStats = () => (
           <tbody>
             <tr>
               <td>Hungary</td>
-              <td>3.040</td>
-            </tr>
-            <tr>
-              <td>Czechia</td>
-              <td>2.820</td>
+              <td>3.073</td>
             </tr>
             <tr>
               <td>Bosnia and Herzegovina</td>
-              <td>2.792</td>
+              <td>2.967</td>
             </tr>
             <tr>
               <td>Gibraltar</td>
-              <td>2.789</td>
+              <td>2.878</td>
             </tr>
             <tr>
               <td>North Macedonia</td>
-              <td>2.602</td>
+              <td>2.839</td>
+            </tr>
+            <tr>
+              <td>Czechia</td>
+              <td>2.833</td>
             </tr>
             <tr>
               <td>Montenegro</td>
-              <td>2.544</td>
-            </tr>
-            <tr>
-              <td>Bulgaria</td>
-              <td>2.518</td>
-            </tr>
-            <tr>
-              <td>Slovakia</td>
-              <td>2.251</td>
+              <td>2.758</td>
             </tr>
             <tr>
               <td>Brazil</td>
-              <td>2.189</td>
+              <td>2.750</td>
             </tr>
             <tr>
-              <td>Belgium</td>
-              <td>2.157</td>
+              <td>Bulgaria</td>
+              <td>2.686</td>
             </tr>
             <tr>
               <td>Peru</td>
-              <td>2.136</td>
-            </tr>
-            <tr>
-              <td>Italy</td>
-              <td>2.082</td>
-            </tr>
-            <tr>
-              <td>Croatia</td>
-              <td>1.951</td>
-            </tr>
-            <tr>
-              <td>Poland</td>
-              <td>1.928</td>
-            </tr>
-            <tr>
-              <td>United Kingdom</td>
-              <td>1.907</td>
-            </tr>
-            <tr>
-              <td>Slovenia</td>
-              <td>1.800</td>
-            </tr>
-            <tr>
-              <td>United States of America</td>
-              <td>1.774</td>
-            </tr>
-            <tr>
-              <td>Mexico</td>
-              <td>1.754</td>
-            </tr>
-            <tr>
-              <td>Colombia</td>
-              <td>1.742</td>
+              <td>2.589</td>
             </tr>
             <tr>
               <td>Argentina</td>
-              <td>1.720</td>
+              <td>2.486</td>
             </tr>
-            <tr id='highlighted'>
-              <td>Greece (# 46) </td>
-              <td>1.123</td>
+            <tr>
+              <td>Colombia</td>
+              <td>2.478</td>
+            </tr>
+            <tr>
+              <td>Slovakia</td>
+              <td>2.289</td>
+            </tr>
+            <tr>
+              <td>Paraguay</td>
+              <td>2.233</td>
+            </tr>
+            <tr>
+              <td>Belgium</td>
+              <td>2.193</td>
+            </tr>
+            <tr>
+              <td>Italy</td>
+              <td>2.134</td>
+            </tr>
+            <tr>
+              <td>Croatia</td>
+              <td>2.030</td>
+            </tr>
+            <tr>
+              <td>Mexico</td>
+              <td>2.026</td>
+            </tr>
+            <tr>
+              <td>Tunisia</td>
+              <td>2.003</td>
+            </tr>
+            <tr>
+              <td>United Kingdom</td>
+              <td>1.978</td>
+            </tr>
+            <tr>
+              <td>Poland</td>
+              <td>1.970</td>
+            </tr>
+            <tr id="highlighted">
+              <td>Greece (# 48) </td>
+              <td>1.267</td>
             </tr>
             <tr>
               <td>Global AVG</td>
-              <td>582</td>
+              <td>716</td>
             </tr>
           </tbody>
         </table>
-
-
-
       </Item>
 
-
-
       <Item>
-
         <table className="metrics-table">
           <thead>
             <tr>
@@ -657,102 +619,98 @@ const GlobalStats = () => (
           <tbody>
             <tr>
               <td>Yemen</td>
-              <td>19.6%</td>
-            </tr>
-            <tr>
-              <td>Mexico</td>
-              <td>9.3%</td>
+              <td>18,8%</td>
             </tr>
             <tr>
               <td>Sudan</td>
-              <td>7.9%</td>
+              <td>7,8%</td>
+            </tr>
+            <tr>
+              <td>Mexico</td>
+              <td>7,8%</td>
             </tr>
             <tr>
               <td>Syria</td>
-              <td>7.2%</td>
-            </tr>
-            <tr>
-              <td>Egypt</td>
-              <td>5.8%</td>
-            </tr>
-            <tr>
-              <td>Somalia</td>
-              <td>5.2%</td>
+              <td>7,2%</td>
             </tr>
             <tr>
               <td>Ecuador</td>
-              <td>4.8%</td>
+              <td>6,4%</td>
+            </tr>
+            <tr>
+              <td>Egypt</td>
+              <td>5,8%</td>
+            </tr>
+            <tr>
+              <td>Somalia</td>
+              <td>5,5%</td>
+            </tr>
+            <tr>
+              <td>Taiwan</td>
+              <td>5,2%</td>
             </tr>
             <tr>
               <td>China</td>
-              <td>4.6%</td>
+              <td>4,7%</td>
+            </tr>
+            <tr>
+              <td>Afghanistan</td>
+              <td>4,6%</td>
             </tr>
             <tr>
               <td>Bosnia and Herzegovina</td>
-              <td>4.5%</td>
-            </tr>
-            <tr>
-              <td>Bulgaria</td>
-              <td>4.2%</td>
-            </tr>
-            <tr>
-              <td>United Republic of Tanzania</td>
-              <td>4.1%</td>
-            </tr>
-            <tr>
-              <td>Zimbabwe</td>
-              <td>4.1%</td>
-            </tr>
-
-            <tr>
-              <td>Afghanistan</td>
-              <td>4.1%</td>
-            </tr>
-            <tr>
-              <td>Bolivia</td>
-              <td>3.9%</td>
+              <td>4,6%</td>
             </tr>
             <tr>
               <td>Liberia</td>
-              <td>3.9%</td>
+              <td>4,4%</td>
+            </tr>
+
+            <tr>
+              <td>Bulgaria</td>
+              <td>4,2%</td>
+            </tr>
+            <tr>
+              <td>Peru</td>
+              <td>3,9%</td>
+            </tr>
+            <tr>
+              <td>Myanmar</td>
+              <td>3,9%</td>
+            </tr>
+            <tr>
+              <td>Bolivia</td>
+              <td>3,8%</td>
             </tr>
             <tr>
               <td>Hungary</td>
-              <td>3.7%</td>
+              <td>3,7%</td>
             </tr>
             <tr>
-              <td>Tunisia</td>
-              <td>3.7%</td>
+              <td>United Republic of Tanzania</td>
+              <td>3,7%</td>
+            </tr>
+            <tr>
+              <td>Comoros</td>
+              <td>3,6%</td>
             </tr>
             <tr>
               <td>Mali</td>
-              <td>3.6%</td>
+              <td>3,6%</td>
             </tr>
-            <tr>
-              <td>Niger</td>
-              <td>3.6%</td>
-            </tr>
-            <tr>
-              <td>Eswatini</td>
-              <td>3.6%</td>
-            </tr>
-            <tr id='highlighted'>
+            <tr id="highlighted">
               <td>Greece (# 36)</td>
-              <td>3.0%</td>
+              <td>2,3%</td>
             </tr>
             <tr>
               <td>Global AVG</td>
-              <td>2.1%</td>
+              <td>2,0%</td>
             </tr>
           </tbody>
         </table>
-
-
-
       </Item>
 
       <Item>
-
         <table className="metrics-table">
           <thead>
             <tr>
@@ -762,88 +720,88 @@ const GlobalStats = () => (
           </thead>
           <tbody>
             <tr>
-              <td>Honduras</td>
-              <td>97.4%</td>
-            </tr>
-            <tr>
               <td>Peru</td>
-              <td>72.1%</td>
+              <td>87,5%</td>
             </tr>
             <tr>
               <td>Bolivia</td>
-              <td>64.3%</td>
-            </tr>
-            <tr>
-              <td>Tunisia</td>
-              <td>57.5%</td>
+              <td>82,0%</td>
             </tr>
             <tr>
               <td>Jordan</td>
-              <td>53.9%</td>
-            </tr>
-            <tr>
-              <td>San Marino</td>
-              <td>41.1%</td>
-            </tr>
-            <tr>
-              <td>Colombia</td>
-              <td>40.0%</td>
-            </tr>
-            <tr>
-              <td>Brazil</td>
-              <td>36.6%</td>
-            </tr>
-            <tr>
-              <td>Bahrain</td>
-              <td>35.5%</td>
-            </tr>
-            <tr>
-              <td>Mexico</td>
-              <td>34.9%</td>
-            </tr>
-            <tr>
-              <td>Panama</td>
-              <td>34.9%</td>
+              <td>59,3%</td>
             </tr>
             <tr>
               <td>Paraguay</td>
-              <td>33.3%</td>
+              <td>58,3%</td>
             </tr>
             <tr>
-              <td>Ecuador</td>
-              <td>31.8%</td>
+              <td>Colombia</td>
+              <td>56,8%</td>
             </tr>
             <tr>
               <td>Oman</td>
-              <td>29.9%</td>
+              <td>52,0%</td>
+            </tr>
+            <tr>
+              <td>Bahrain</td>
+              <td>51,7%</td>
+            </tr>
+            <tr>
+              <td>Ecuador</td>
+              <td>49,9%</td>
+            </tr>
+            <tr>
+              <td>Brazil</td>
+              <td>45,9%</td>
+            </tr>
+            <tr>
+              <td>San Marino</td>
+              <td>41,1%</td>
+            </tr>
+            <tr>
+              <td>Mexico</td>
+              <td>40,3%</td>
             </tr>
             <tr>
               <td>Kuwait</td>
-              <td>29.4%</td>
+              <td>40,2%</td>
+            </tr>
+            <tr>
+              <td>Panama</td>
+              <td>38,6%</td>
             </tr>
             <tr>
               <td>Chile</td>
-              <td>28.2%</td>
+              <td>29.9%</td>
+            </tr>
+            <tr>
+              <td>British Virgin Islands</td>
+              <td>35,6%</td>
+            </tr>
+            <tr>
+              <td>Argentina</td>
+              <td>33,7%</td>
+            </tr>
+            <tr>
+              <td>Iran</td>
+              <td>32,7%</td>
             </tr>
             <tr>
               <td>North Macedonia</td>
-              <td>28.1%</td>
-            </tr>
-            <tr>
-              <td>Czechia</td>
-              <td>27.9%</td>
+              <td>30,7%</td>
             </tr>
             <tr>
               <td>Montenegro</td>
-              <td>27.0%</td>
+              <td>29,3%</td>
             </tr>
             <tr>
-              <td>Bosnia and Herzegovina</td>
-              <td>25.6%</td>
+              <td>Czechia</td>
+              <td>28,0%</td>
             </tr>
-            <tr id='highlighted'>
+            <tr id="highlighted">
               <td>Greece (# 67)</td>
-              <td>9.8%</td>
+              <td>11,2%</td>
             </tr>
             <tr>
               <td>Global AVG</td>
@@ -851,15 +809,9 @@ const GlobalStats = () => (
             </tr>
           </tbody>
         </table>
-
-
-
       </Item>
 
-
-
       <Item>
-
         <table className="metrics-table">
           <thead>
             <tr>
@@ -870,100 +822,97 @@ const GlobalStats = () => (
           <tbody>
             <tr>
               <td>Denmark</td>
-              <td>9.565.101</td>
+              <td>13.965.074</td>
             </tr>
             <tr>
               <td>Gibraltar</td>
-              <td>7.572.561</td>
-            </tr>
-            <tr>
-              <td>Cyprus</td>
-              <td>5.495.818</td>
-            </tr>
-            <tr>
-              <td>United Arab Emirates</td>
-              <td>5.034.223</td>
+              <td>10.032.543</td>
             </tr>
             <tr>
               <td>Austria</td>
-              <td>4.614.454</td>
+              <td>8.477.406</td>
+            </tr>
+            <tr>
+              <td>Cyprus</td>
+              <td>7.692.892</td>
+            </tr>
+            <tr>
+              <td>United Arab Emirates</td>
+              <td>7.481.365</td>
             </tr>
             <tr>
               <td>Luxembourg</td>
-              <td>4.557.594</td>
+              <td>5.367.240</td>
             </tr>
             <tr>
               <td>United Kingdom</td>
-              <td>2.660.145</td>
+              <td>3.965.771</td>
             </tr>
             <tr>
               <td>Bahrain</td>
-              <td>2.645.697</td>
+              <td>3.361.985</td>
             </tr>
             <tr>
               <td>Czechia</td>
-              <td>2.300.406</td>
-            </tr>
-            <tr>
-              <td>Malta</td>
-              <td>2.093.824</td>
+              <td>3.356.089</td>
             </tr>
             <tr>
               <td>Singapore</td>
-              <td>2.027.680</td>
-            </tr>
-            <tr>
-              <td>San Marino</td>
-              <td>1.945.670</td>
+              <td>3.010.325</td>
             </tr>
             <tr>
               <td>Iceland</td>
-              <td>1.943.178</td>
+              <td>2.851.323</td>
             </tr>
             <tr>
-              <td>Wallis and Futuna</td>
-              <td>1.737.113</td>
+              <td>Malta</td>
+              <td>2.696.579</td>
             </tr>
             <tr>
-              <td>Maldives</td>
-              <td>1.586.270</td>
+              <td>San Marino</td>
+              <td>2.218.528</td>
             </tr>
             <tr>
               <td>Israel</td>
-              <td>1.580.427</td>
+              <td>2.064.847</td>
             </tr>
             <tr>
-              <td>Aruba</td>
-              <td>1.544.010</td>
-            </tr>
-            <tr>
-              <td>United States of America</td>
-              <td>1.442.204</td>
+              <td>Georgia</td>
+              <td>2.032.656</td>
             </tr>
             <tr>
               <td>Latvia</td>
-              <td>1.431.850</td>
+              <td>1.919.248</td>
             </tr>
             <tr>
               <td>France</td>
-              <td>1.303.020</td>
+              <td>1.906.556</td>
             </tr>
-            <tr id='highlighted'>
-              <td>Greece (# 44)</td>
-              <td>917.519</td>
+            <tr>
+              <td>Wallis and Futuna</td>
+              <td>1.862.839</td>
+            </tr>
+            <tr>
+              <td>U.S.A.</td>
+              <td>1.760.387</td>
+            </tr>
+            <tr>
+              <td>Portugal</td>
+              <td>1.678.249</td>
+            </tr>
+            <tr id="highlighted">
+              <td>Greece (# 32)</td>
+              <td>1.508.012</td>
             </tr>
             <tr>
               <td>Global AVG</td>
-              <td>730.967</td>
+              <td>858.331</td>
             </tr>
-
           </tbody>
         </table>
-
       </Item>
 
       <Item>
-
         <table className="metrics-table">
           <thead>
             <tr>
@@ -973,105 +922,98 @@ const GlobalStats = () => (
           </thead>
           <tbody>
             <tr>
-              <td>Algeria</td>
-              <td>57.6%</td>
-            </tr>
-            <tr>
-              <td>Mexico</td>
-              <td>34.9%</td>
+              <td>Brazil</td>
+              <td>37,1%</td>
             </tr>
             <tr>
               <td>Honduras</td>
-              <td>33.9%</td>
+              <td>35,5%</td>
             </tr>
             <tr>
-              <td>Brazil</td>
-              <td>33.8%</td>
+              <td>Mexico</td>
+              <td>34,9%</td>
             </tr>
             <tr>
               <td>Ecuador</td>
-              <td>31.0%</td>
-            </tr>
-            <tr>
-              <td>Paraguay</td>
-              <td>27.7%</td>
-            </tr>
-            <tr>
-              <td>Argentina</td>
-              <td>27.1%</td>
-            </tr>
-            <tr>
-              <td>Costa Rica</td>
-              <td>26.7%</td>
-            </tr>
-            <tr>
-              <td>Bolivia</td>
-              <td>25.4%</td>
-            </tr>
-            <tr>
-              <td>Syria</td>
-              <td>24.7%</td>
-            </tr>
-            <tr>
-              <td>Montenegro</td>
-              <td>24.1%</td>
-            </tr>
-            <tr>
-              <td>Tunisia</td>
-              <td>23.7%</td>
+              <td>29,4%</td>
             </tr>
             <tr>
               <td>Suriname</td>
-              <td>23.5%</td>
+              <td>28,1%</td>
             </tr>
             <tr>
-              <td>Moldova</td>
-              <td>22.9%</td>
+              <td>Paraguay</td>
+              <td>26,5%</td>
             </tr>
             <tr>
-              <td>Ukraine</td>
-              <td>21.6%</td>
+              <td>Tunisia</td>
+              <td>26,0%</td>
             </tr>
             <tr>
-              <td>Serbia</td>
-              <td>21.4%</td>
+              <td>Argentina</td>
+              <td>23,7%</td>
             </tr>
             <tr>
-              <td>Madagascar</td>
-              <td>21.4%</td>
+              <td>Costa Rica</td>
+              <td>23,2%</td>
             </tr>
             <tr>
-              <td>Democratic Rep. of Congo</td>
-              <td>21.0%</td>
+              <td>Bolivia</td>
+              <td>22,0%</td>
+            </tr>
+            <tr>
+              <td>Guatemala</td>
+              <td>21,8%</td>
+            </tr>
+            <tr>
+              <td>Afghanistan</td>
+              <td>21,4%</td>
+            </tr>
+            <tr>
+              <td>Libya</td>
+              <td>20,7%</td>
+            </tr>
+            <tr>
+              <td>Colombia</td>
+              <td>20,7%</td>
+            </tr>
+            <tr>
+              <td>Nepal</td>
+              <td>20,1%</td>
+            </tr>
+            <tr>
+              <td>Albania</td>
+              <td>19,8%</td>
             </tr>
             <tr>
               <td>Haiti</td>
-              <td>20.8%</td>
+              <td>19,6%</td>
             </tr>
             <tr>
-              <td>Bosnia and Herzegovina</td>
-              <td>20.5%</td>
+              <td>Namibia</td>
+              <td>19,5%</td>
             </tr>
-            <tr id='highlighted'>
-              <td>Greece (# 131)</td>
-              <td>4.1%</td>
+            <tr>
+              <td>Central African Republic</td>
+              <td>19,5%</td>
+            </tr>
+            <tr>
+              <td>Dem. Rep. of the Congo</td>
+              <td>19,2%</td>
+            </tr>
+            <tr id="highlighted">
+              <td>Greece (# 140)</td>
+              <td>3,6%</td>
             </tr>
             <tr>
               <td>Global AVG</td>
-              <td>5.2%</td>
+              <td>4,4%</td>
             </tr>
           </tbody>
         </table>
-
       </Item>
-
-
     </Grid>
-
-
-
   </>
 );
 
-
-export default GlobalStats
+export default GlobalStats;

@@ -94,11 +94,17 @@ const GeoAnalysis = () => (
       </Item>
       <Item>
         <SubheadSection>Cases & Deaths Median Ages Evolution</SubheadSection>
-        <ChartTwo />
+        <img
+          src="/cases-median-age-evolution.png"
+          alt="Cases & Deaths Median Ages Evolution"
+        />
       </Item>
       <Item>
         <SubheadSection>Cases & Deaths by Gender Evolution</SubheadSection>
-        <ChartThree />
+        <img
+          src="/cases-deaths-gender-evo.png"
+          alt="Cases & Deaths by Gender Evolution<"
+        />
       </Item>
     </Grid>
   </>

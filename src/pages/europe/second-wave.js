@@ -282,7 +282,6 @@ const SecondWave = (props) => (
         <SubTitle style={{ fontWeight: `normal` }}>
           Social & Health by Regions
         </SubTitle>
-
         <Grid>
           <Item>
             <table className="metrics-table">
@@ -462,15 +461,16 @@ const SecondWave = (props) => (
           <p>
             <strong>
               Some of factors that can explain the high death per million scores
-              of the Balkan countries are the following:{" "}
+              of the Eastern European countries are the following:{" "}
             </strong>
           </p>
 
           <List>
             <ListItem>
               {" "}
-              - The high average household size (2,9), which may lead to
-              domestic spread of the virus. 30% of households has 4+ members.
+              - The high average household size e.g Balkans (2,9), which may
+              lead to domestic spread of the virus. 30% of households has 4+
+              members.
             </ListItem>
             <ListItem>
               {" "}
@@ -483,10 +483,21 @@ const SecondWave = (props) => (
             </ListItem>
             <ListItem>
               {" "}
-              - Finally, the poor quality of the health system in the Balkan
-              countries combined with high diabetes and cardiovascular disease
-              prevalence, could also be responsible for the significantly higher
-              deaths per million in this region.
+              - Finally, the poor quality of the health system in Eastern
+              European countries combined with health problems, could also be
+              responsible for the significantly higher deaths per million in
+              this region. Scandinavian countries, where Deaths per Million are
+              much lower, can attribute this success to the low density of the
+              population as well as the small household size (40% of the
+              household are single households). Also, even though they have the
+              highest number of elderly care home facilities, they seem to have
+              protected them much more successfully, with the exception of
+              Sweden, who had a very different approach during the first wave of
+              the pandemic. It worth noting that Hungary and the Chech Republic
+              demonstrated some to the worse Deaths rates per 1M, during the
+              second and third wave as their preventive policies were almost
+              non-existing due to internal political conflicts characterized by
+              irrational propaganda.
             </ListItem>
           </List>
           <p>

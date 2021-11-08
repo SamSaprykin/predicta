@@ -33,12 +33,16 @@ const DepthGreeceData = {
       linkTo: "/greece/health-facilities-deaths",
     },
     {
-      title: "Measures Mobility-RT",
-      linkTo: "/greece/measures-mobility",
+      title: "Demographics Age Effect",
+      linkTo: "/greece/demographics",
     },
     {
       title: "The Effect of Vaccinations",
       linkTo: "/greece/vaccination-effect",
+    },
+    {
+      title: "Measures Mobility-RT",
+      linkTo: "/greece/measures-mobility",
     },
     {
       title: "The Success during the First Wave",
@@ -47,10 +51,6 @@ const DepthGreeceData = {
     {
       title: "A Quick Comparison",
       linkTo: "/greece/a-quick-comparison",
-    },
-    {
-      title: "Demographics Age Effect",
-      linkTo: "/greece/demographics",
     },
     {
       title: "Conclusion",
@@ -116,11 +116,12 @@ const HealthFacilities = (props) => (
         <PredictaText marginTop="40px" marginBottom="40px">
           Health system requirements are depicted on the following figures
           regarding hospital admissions and intensice care units load for the
-          3rd wave. <br /> <br />
-          The following graph demonstrates the pressure on the health system
-          during the 3rd wave (February ’21 to May ’21). As we can see, for most
-          of this period, hospitalizations are higher than discharges. This
-          trend was only reversed in the first week of May’21.
+          3rd wave. <br /> <br /> The following graph demonstrates the pressure
+          on the health system during the 3rd wave (February ’21 to May ’21). As
+          we can see, for most of this period, hospitalizations are higher than
+          discharges. This trend was reversed during May and June ’21, but
+          reappeared from July onwards due to Delta mutation, which accelarated
+          the spread.
         </PredictaText>
       </PredictaTextWrapper>
       <PredictaSubTitle>
@@ -143,9 +144,24 @@ const HealthFacilities = (props) => (
           occupation reached their peak at 89.8 %.
         </PredictaText>
       </PredictaTextWrapper>
-      <PredictaSubTitle>ICU</PredictaSubTitle>
+      <PredictaSubTitle>ICU Patiens</PredictaSubTitle>
       <PredictaContentContainer marginTop="20px" containerSize="normal">
         <img src="/depth-greece/ICU.png" alt="Deaths and ICU patients" />
+      </PredictaContentContainer>
+    </div>
+    <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
+      <PredictaTextWrapper>
+        <PredictaText marginTop="40px" marginBottom="40px">
+          It is interesting to note that after vaccination (from May ’21
+          onwards), ICU beds are occupied equally by under and over 65 year-old.
+        </PredictaText>
+      </PredictaTextWrapper>
+      <PredictaSubTitle>Age distribution in ICU</PredictaSubTitle>
+      <PredictaContentContainer marginTop="20px" containerSize="normal">
+        <img
+          src="/depth-greece/Age-distribution-in-ICU.png"
+          alt="Deaths and ICU patients"
+        />
       </PredictaContentContainer>
     </div>
   </Layout>

@@ -84,81 +84,81 @@ const GeneralFindingsLatin = (props) => (
         <tbody>
           <tr>
             <td>Western Europe</td>
-            <td>29.261.101</td>
-            <td>17,3%</td>
-            <td>641.984</td>
-            <td>18,2%</td>
-            <td>2,2%</td>
-            <td>68.726</td>
-            <td>1.508</td>
+            <td>35.520.986</td>
+            <td>16,4%</td>
+            <td>665.342</td>
+            <td>15,2%</td>
+            <td>1,9%</td>
+            <td>83.428</td>
+            <td>1.563</td>
           </tr>
           <tr>
             <td>Eastern Europe</td>
-            <td>18.524.909</td>
-            <td>10,9%</td>
-            <td>434.328</td>
-            <td>12,3%</td>
-            <td>2,3%</td>
-            <td>54.414</td>
-            <td>1.276</td>
+            <td>21.189.497</td>
+            <td>9,8%</td>
+            <td>511.259</td>
+            <td>11,7%</td>
+            <td>2,4%</td>
+            <td>62.241</td>
+            <td>1.502</td>
           </tr>
           <tr>
             <td>North America</td>
-            <td>34.290.575</td>
-            <td>20,2%</td>
-            <td>609.185</td>
-            <td>17,3%</td>
-            <td>1,8%</td>
-            <td>93.554</td>
-            <td>1.662</td>
+            <td>40.280.930</td>
+            <td>18,6%</td>
+            <td>655.588</td>
+            <td>15,0%</td>
+            <td>1,6%</td>
+            <td>109.897</td>
+            <td>1.789</td>
           </tr>
           <tr id="highlighted">
             <td>Latin America and the Caribbean</td>
-            <td>33.065.992</td>
-            <td>19,5%</td>
-            <td>1.037.821</td>
-            <td>29,5%</td>
+            <td>43.458.129</td>
+            <td>20,1%</td>
+            <td>1.327.011</td>
+            <td>30,3%</td>
             <td>3,1%</td>
-            <td>51.101</td>
-            <td>1.604</td>
+            <td>67.162</td>
+            <td>2.051</td>
           </tr>
           <tr>
             <td>Asia-Pacific</td>
-            <td>36.459.144</td>
-            <td>21,5%</td>
-            <td>482.018</td>
-            <td>13,7%</td>
-            <td>1,3%</td>
-            <td>8.589</td>
-            <td>114</td>
+            <td>50.343.781</td>
+            <td>23,3%</td>
+            <td>783.277</td>
+            <td>17,9%</td>
+            <td>1,6%</td>
+            <td>11.860</td>
+            <td>185</td>
           </tr>
           <tr>
             <td>Middle East and North Africa</td>
-            <td>14.409.207</td>
-            <td>8,5%</td>
-            <td>231.633</td>
-            <td>6,6%</td>
-            <td>1,6%</td>
-            <td>26.833</td>
-            <td>431</td>
+            <td>20.012.229</td>
+            <td>9,3%</td>
+            <td>297.968</td>
+            <td>6,8%</td>
+            <td>1,5%</td>
+            <td>37.267</td>
+            <td>555</td>
           </tr>
           <tr>
             <td>Sub-Saharan Africa</td>
-            <td>3.379.593</td>
-            <td>2,0%</td>
-            <td>86.633</td>
+            <td>5.423.114</td>
             <td>2,5%</td>
-            <td>2,6%</td>
-            <td>3.043</td>
-            <td>78</td>
+            <td>132.940</td>
+            <td>3,0%</td>
+            <td>2,5%</td>
+            <td>4.882</td>
+            <td>120</td>
           </tr>
           <tr>
             <td>Global</td>
-            <td>169.390.521</td>
+            <td>216.228.666</td>
             <td>&nbsp;</td>
-            <td>3.523.602</td>
+            <td>4.373.385</td>
             <td>&nbsp;</td>
-            <td>2,1%</td>
+            <td>2,0%</td>
             <td>22.078</td>
             <td>459</td>
           </tr>
@@ -168,138 +168,138 @@ const GeneralFindingsLatin = (props) => (
     <div className="row" style={{ backgroundColor: `#E8E8E8` }}>
       <PredictaTextWrapper>
         <PredictaText>
-          Nine Latin American countries are among the Top 30 in Deaths per
-          Million Population
+          Eleven Latin American countries are among the Top 30 in Deaths per
+          Million Population.
         </PredictaText>
       </PredictaTextWrapper>
       <PredictaContentContainer marginTop="40px" containerSize="normal">
         <Table className="metrics-table" maxWidth="480px">
           <thead>
             <tr>
-              <th>Top 20 countries</th>
+              <th>Top 30 countries</th>
               <th>Death per 1M</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Hungary</td>
-              <td>3.040</td>
+              <td>3.073</td>
             </tr>
             <tr>
-              <td>Czechia</td>
-              <td>2.820</td>
-            </tr>
-            <tr>
-              <td>Bosnia and Herzegovina</td>
-              <td>2.792</td>
+              <td>Bosnia & Herzegovina</td>
+              <td>2.967</td>
             </tr>
             <tr>
               <td>North Macedonia</td>
-              <td>2.602</td>
+              <td>2.839</td>
             </tr>
             <tr>
-              <td>Bulgaria</td>
-              <td>2.518</td>
+              <td>Czechia</td>
+              <td>2.833</td>
             </tr>
             <tr>
-              <td>Slovakia</td>
-              <td>2.251</td>
+              <td>Montenegro</td>
+              <td>2.758</td>
             </tr>
             <tr id="highlighted">
               <td>Brazil</td>
-              <td>2.189</td>
+              <td>2.750</td>
             </tr>
             <tr>
-              <td>Belgium</td>
-              <td>2.157</td>
+              <td>Bulgaria</td>
+              <td>2.686</td>
             </tr>
             <tr id="highlighted">
               <td>Peru</td>
-              <td>2.136</td>
-            </tr>
-            <tr>
-              <td>Italy</td>
-              <td>2.082</td>
-            </tr>
-            <tr>
-              <td>Croatia</td>
-              <td>1.951</td>
-            </tr>
-            <tr>
-              <td>Poland</td>
-              <td>1.928</td>
-            </tr>
-            <tr>
-              <td>United Kingdom</td>
-              <td>1.907</td>
-            </tr>
-            <tr>
-              <td>Slovenia</td>
-              <td>1.800</td>
-            </tr>
-            <tr>
-              <td>United States of America</td>
-              <td>1.774</td>
-            </tr>
-            <tr id="highlighted">
-              <td>Mexico</td>
-              <td>1.754</td>
-            </tr>
-            <tr id="highlighted">
-              <td>Colombia</td>
-              <td>1.742</td>
+              <td>2.589</td>
             </tr>
             <tr id="highlighted">
               <td>Argentina</td>
-              <td>1.720</td>
-            </tr>
-            <tr>
-              <td>Portugal</td>
-              <td>1.653</td>
-            </tr>
-            <tr>
-              <td>France</td>
-              <td>1.625</td>
-            </tr>
-            <tr>
-              <td>Spain</td>
-              <td>1.604</td>
-            </tr>
-            <tr>
-              <td>Romania</td>
-              <td>1.554</td>
+              <td>2.486</td>
             </tr>
             <tr id="highlighted">
-              <td>Chile</td>
-              <td>1.538</td>
+              <td>Colombia</td>
+              <td>2.082</td>
             </tr>
             <tr>
-              <td>Moldova</td>
-              <td>1.510</td>
-            </tr>
-            <tr>
-              <td>Armenia</td>
-              <td>1.501</td>
-            </tr>
-            <tr id="highlighted">
-              <td>Panama</td>
-              <td>1.495</td>
-            </tr>
-            <tr>
-              <td>Sweden</td>
-              <td>1.394</td>
-            </tr>
-            <tr>
-              <td>Lithuania</td>
-              <td>1.393</td>
+              <td>Slovakia</td>
+              <td>2.289</td>
             </tr>
             <tr id="highlighted">
               <td>Paraguay</td>
-              <td>1.277</td>
+              <td>2.233</td>
+            </tr>
+            <tr>
+              <td>Belgium</td>
+              <td>2.193</td>
+            </tr>
+            <tr>
+              <td>Italy</td>
+              <td>2.134</td>
+            </tr>
+            <tr>
+              <td>Croatia</td>
+              <td>2.030</td>
+            </tr>
+            <tr id="highlighted">
+              <td>Mexico</td>
+              <td>2.026</td>
+            </tr>
+            <tr>
+              <td>Tunisia</td>
+              <td>2.003</td>
+            </tr>
+            <tr>
+              <td>United Kingdom</td>
+              <td>1.978</td>
+            </tr>
+            <tr>
+              <td>Poland</td>
+              <td>1.970</td>
+            </tr>
+            <tr id="highlighted">
+              <td>Chile</td>
+              <td>1.948</td>
+            </tr>
+            <tr>
+              <td>U.S.A</td>
+              <td>1.911</td>
+            </tr>
+            <tr id="highlighted">
+              <td>Ecuador</td>
+              <td>1.861</td>
+            </tr>
+            <tr>
+              <td>Slovenia</td>
+              <td>1.837</td>
+            </tr>
+            <tr id="highlighted">
+              <td>Uruguay</td>
+              <td>1.742</td>
+            </tr>
+            <tr>
+              <td>Portugal</td>
+              <td>1.722</td>
+            </tr>
+            <tr>
+              <td>France</td>
+              <td>1.686</td>
+            </tr>
+            <tr>
+              <td>Spain</td>
+              <td>1.683</td>
+            </tr>
+            <tr id="highlighted">
+              <td>Panama</td>
+              <td>1.654</td>
             </tr>
             <tr id="highlighted">
               <td>Bolivia</td>
-              <td>1.256</td>
+              <td>1.601</td>
+            </tr>
+            <tr>
+              <td>Romania</td>
+              <td>1.590</td>
             </tr>
           </tbody>
         </Table>
@@ -481,8 +481,9 @@ const GeneralFindingsLatin = (props) => (
           The evolution of the pandemic in major Latin American countries is
           demonstrated in the graphs that follow, presenting Cases per 1M pop
           and Deaths per 1M Pop. We note that Chile faced an outstanding peak in
-          May-June 2020, while Argentina a considerable in September-October
-          2020 and an even worse one in April-May 2021.
+          May-June 2020, while Argentina a considerable peak in
+          September-October 2020 and an even worse one in April-May-June 2021
+          and Colombia had its worst peak in June-July 2021.
         </PredictaText>
       </PredictaTextWrapper>
       <PredictaContentContainer marginTop="40px" containerSize="normal">
@@ -520,7 +521,7 @@ const GeneralFindingsLatin = (props) => (
     <div className="row">
       <PredictaContentContainer containerSize="normal">
         <PredictaSubTitle marginBottom="24px">
-          Total Cases per 1M vs Total Deaths per 1M (Feb ‘20-May ‘21)
+          Total Cases per 1M vs Total Deaths per 1M (Feb ‘20-Aug ‘21)
         </PredictaSubTitle>
         <img src="/deaths-per-1mln-latin.png" alt="deaths-per-1mln-latin" />
         <PredictaText>
@@ -530,7 +531,7 @@ const GeneralFindingsLatin = (props) => (
           <ul>
             <li>
               Countries that are hit strongly (high number of cases and deaths),
-              like Peru Argentina Brazil etc.{" "}
+              like Colombia Argentina Brazil etc.{" "}
             </li>
             <li>
               Countries that are hit mildly or not at all (low number of cases
@@ -572,15 +573,14 @@ const GeneralFindingsLatin = (props) => (
         </PredictaSubTitle>
         <img src="/vaccination-latin.png" alt="% Vaccinated - Dose" />
         <PredictaText>
-          Most of Latin America Countries have vaccinated with at least one dose
-          a small proportion of their population (less than 20%), except for
-          Chile, Uruguay and Dominican Republic which vaccinated with at least
-          one dose more than 30% of their population. Chile’s paradox, is that
-          despite the successful vaccination program, there was a substantial
-          third wave of the pandemic. The reason for this paradox is probably
-          the early opening of many social activities and possibly the fact that
-          one dose of vaccine is not sufficient for new mutations, such as the
-          Brazilian one.
+          Most of the Latin America Countries have been vaccinated with at least
+          one dose, less than 70% of their population, except for Chile and
+          Uruguay, where over 70% of the population is vaccinated with at least
+          one dose. Half of the Latin American countries are vaccinated less
+          than 50%. Despite Chile’s high percent of vaccination, they suffered
+          an intense third wave. Possibly this was the result of early
+          relaxation of preventive restrictions, as well as a high percent of
+          only first dose of vaccination, which has been proved less effective.
         </PredictaText>
       </PredictaContentContainer>
     </div>

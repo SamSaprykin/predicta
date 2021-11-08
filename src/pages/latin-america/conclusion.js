@@ -64,7 +64,9 @@ const Conclusion = (props) => (
         The Latin American countries poverty level combined with the rest of the
         socioeconomic and health characteristics discussed, lead to unsurpassed
         difficulties to contain the pandemic in this region of the world with
-        continuous disastrous results.
+        continuous disastrous results. More than half of the Latin American
+        countries are extremely poor leading to very low percentages of
+        vaccinated population.
       </PredictaText>
     </PredictaTextWrapper>
     <SpaceElem />

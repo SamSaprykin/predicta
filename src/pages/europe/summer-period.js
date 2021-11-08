@@ -172,8 +172,8 @@ const SummerPeriod = (props) => (
           <p>
             It is evident that the level of temperature influences the pandemic,
             as higher temperatures during the summer months decreased the number
-            of incidents of COVID-19 and therefore almost minimized death per
-            million indices.{" "}
+            of incidents of COVID-19 and therefore almost minimized Death per
+            Million indices.{" "}
           </p>
         </TextBox>
 
@@ -187,7 +187,10 @@ const SummerPeriod = (props) => (
 
         <Grid>
           <Item>
-            <ChartTwo />
+            <img
+              src="/temperature-deaths-per-1M.png"
+              alt="temperature-deaths-per-1M"
+            />
             <Gap />
           </Item>
         </Grid>
@@ -195,11 +198,13 @@ const SummerPeriod = (props) => (
         <TextBox>
           <p>
             We also note that in both waves (first and second wave) the Deaths
-            per Million index increases from 15 degrees Celsius onwards. Having
-            said that, the mobility indexes graph we saw in previous section
-            highlights the increased mobility in the parks during summer months,
-            which may provide an additional explanation for the decrease in
-            Deaths per Million during the summer period.
+            per Million index increases from 15 degrees Celsius onwards. There
+            was a small increase in deaths during summer’ 21 due to Delta
+            mutation. <br /> <br /> Having said that, the mobility indexes graph
+            we saw in previous section highlights the increased mobility in the
+            parks during summer months, which may provide an additional
+            explanation for the decrease in Deaths per Million during the summer
+            period.
           </p>
         </TextBox>
       </div>

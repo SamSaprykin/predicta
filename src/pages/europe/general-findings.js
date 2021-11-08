@@ -244,10 +244,10 @@ const GeneralFindings = (props) => (
           <Gap />
           <p>
             COVID-19 PANDEMIC has hit Europe much more than other geographical
-            regions of the world, having almost 30% of diagnosed cases and
+            regions of the world, having almost 26% of diagnosed cases and
             deaths. We can also see that there is a significant difference
             between Western and Eastern Europe, with Western Europe having
-            almost 20% of cases and deaths.
+            almost 16% of cases and deaths.
           </p>
         </TextBox>
 
@@ -269,93 +269,93 @@ const GeneralFindings = (props) => (
               <tbody>
                 <tr id="highlighted-dark">
                   <td>Western Europe</td>
-                  <td>29.261.101</td>
-                  <td>17,3%</td>
-                  <td>641.984</td>
-                  <td>18,2%</td>
-                  <td>2,2%</td>
-                  <td>68.726</td>
-                  <td>1508</td>
+                  <td>35.520.986</td>
+                  <td>16,4%</td>
+                  <td>665.342</td>
+                  <td>15,2%</td>
+                  <td>1,9%</td>
+                  <td>83.428</td>
+                  <td>1.563</td>
                 </tr>
                 <tr id="highlighted-dark">
                   <td>Eastern Europe</td>
-                  <td>18.524.909</td>
-                  <td>10,9%</td>
-                  <td>434.328</td>
-                  <td>12,3%</td>
-                  <td>2,3%</td>
-                  <td>54.414</td>
-                  <td>1.276</td>
+                  <td>21.189.497</td>
+                  <td>9,8%</td>
+                  <td>511.259</td>
+                  <td>11,7%</td>
+                  <td>2,4%</td>
+                  <td>62.241</td>
+                  <td>1.502</td>
                 </tr>
                 <tr id="highlighted">
                   <td>Total Europe</td>
-                  <td>47.786.010</td>
-                  <td>28,2%</td>
-                  <td>1.076.312</td>
-                  <td>30.5%</td>
-                  <td>2.3%</td>
-                  <td>63.484</td>
-                  <td>1.429</td>
+                  <td>56.710.483</td>
+                  <td>26,2%</td>
+                  <td>1.176.601</td>
+                  <td>26,9%</td>
+                  <td>2,1%</td>
+                  <td>74.014</td>
+                  <td>1.535</td>
                 </tr>
                 <tr>
                   <td>North America</td>
-                  <td>34.290.575</td>
-                  <td>20,2%</td>
-                  <td>609.185</td>
-                  <td>17,3%</td>
-                  <td>1,8%</td>
-                  <td>93.554</td>
-                  <td>1.662</td>
+                  <td>40.280.930</td>
+                  <td>18,6%</td>
+                  <td>655.588</td>
+                  <td>15,0%</td>
+                  <td>1,6%</td>
+                  <td>109.897</td>
+                  <td>1.789</td>
                 </tr>
                 <tr>
                   <td>Latin America and the Caribbean</td>
-                  <td>33.065.992</td>
-                  <td>19,5%</td>
-                  <td>1.037.821</td>
-                  <td>29,5%</td>
+                  <td>43.458.129</td>
+                  <td>20,1%</td>
+                  <td>1.327.011</td>
+                  <td>30,3%</td>
                   <td>3,1%</td>
-                  <td>51.101</td>
-                  <td>1.604</td>
+                  <td>67.162</td>
+                  <td>2.051</td>
                 </tr>
                 <tr>
                   <td>Asia-Pacific</td>
-                  <td>36.459.144</td>
-                  <td>21,5%</td>
-                  <td>482.018</td>
-                  <td>13,7%</td>
-                  <td>1,3%</td>
-                  <td>8.589</td>
-                  <td>114</td>
+                  <td>50.343.781</td>
+                  <td>23,3%</td>
+                  <td>783.277</td>
+                  <td>17,9%</td>
+                  <td>1,6%</td>
+                  <td>11.860</td>
+                  <td>185</td>
                 </tr>
                 <tr>
                   <td>Middle East and North Africa</td>
-                  <td>14.409.207</td>
-                  <td>8,5%</td>
-                  <td>231.633</td>
-                  <td>6,6%</td>
-                  <td>1,6%</td>
-                  <td>26.833</td>
-                  <td>431</td>
+                  <td>20.012.229</td>
+                  <td>9,3%</td>
+                  <td>297.968</td>
+                  <td>6,8%</td>
+                  <td>1,5%</td>
+                  <td>37.267</td>
+                  <td>555</td>
                 </tr>
                 <tr>
                   <td>Sub-Saharan Africa</td>
-                  <td>3.379.593</td>
-                  <td>2,0%</td>
-                  <td>86.633</td>
+                  <td>5.423.114</td>
                   <td>2,5%</td>
-                  <td>2,6%</td>
-                  <td>3.043</td>
-                  <td>78</td>
+                  <td>132.940</td>
+                  <td>3,0%</td>
+                  <td>2,5%</td>
+                  <td>4.882</td>
+                  <td>120</td>
                 </tr>
                 <tr>
                   <td>Global</td>
-                  <td>169.390.521</td>
+                  <td>216.228.666</td>
                   <td>&nbsp;</td>
-                  <td>3.523.602</td>
+                  <td>4.373.385</td>
                   <td>&nbsp;</td>
-                  <td>2,1%</td>
-                  <td>22.078</td>
-                  <td>459</td>
+                  <td>2,0%</td>
+                  <td>28.182</td>
+                  <td>570</td>
                 </tr>
               </tbody>
             </table>
@@ -371,7 +371,7 @@ const GeneralFindings = (props) => (
         </SubTitle>
         <Grid>
           <Item>
-            <ChartOne />
+            <img src="/europe-deaths.png" alt="Europe - Deaths per 1M MA7" />
             <Gap />
           </Item>
         </Grid>
@@ -398,7 +398,7 @@ const GeneralFindings = (props) => (
         <Grid>
           <Item>
             <SubTitle>Deaths per 1M</SubTitle>
-            <img src="/deaths-depth-europe.png" alt="deaths depth europe" />
+            <img src="/Deaths-per-1M.png" alt="deaths depth europe" />
             <Gap />
             <TextBox>
               <p>
@@ -438,50 +438,50 @@ const GeneralFindings = (props) => (
                 <tr>
                   <td>Western Europe</td>
                   <td>17</td>
-                  <td>70.328</td>
-                  <td>1.576</td>
-                  <td>2,2%</td>
+                  <td>88.726</td>
+                  <td>1.679</td>
+                  <td>1,9%</td>
                 </tr>
                 <tr>
                   <td>Ex East Block (Central Europe)</td>
                   <td>4</td>
-                  <td>89.176</td>
-                  <td>2.274</td>
+                  <td>89.905</td>
+                  <td>2.310</td>
                   <td>2,6%</td>
                 </tr>
                 <tr>
                   <td>Balkans</td>
                   <td>11</td>
-                  <td>69.365</td>
-                  <td>1.720</td>
-                  <td>2,5%</td>
+                  <td>73.817</td>
+                  <td>1.803</td>
+                  <td>2,4%</td>
                 </tr>
                 <tr>
                   <td>Greece</td>
                   <td>1</td>
-                  <td>37.450</td>
-                  <td>1.123</td>
-                  <td>3,0%</td>
+                  <td>54.454</td>
+                  <td>1.267</td>
+                  <td>2,3%</td>
                 </tr>
                 <tr>
                   <td>Baltic</td>
                   <td>5</td>
-                  <td>52.926</td>
-                  <td>1.036</td>
+                  <td>56.573</td>
+                  <td>1.116</td>
                   <td>2,0%</td>
                 </tr>
                 <tr>
                   <td>Scandinavian</td>
                   <td>3</td>
-                  <td>29.814</td>
-                  <td>252</td>
-                  <td>0,8%</td>
+                  <td>37.745</td>
+                  <td>261</td>
+                  <td>0,7%</td>
                 </tr>
                 <tr>
                   <td>Sweden</td>
                   <td>1</td>
-                  <td>104.005</td>
-                  <td>1.394</td>
+                  <td>109.403</td>
+                  <td>1.407</td>
                   <td>1,3%</td>
                 </tr>
               </tbody>
@@ -497,6 +497,7 @@ const GeneralFindings = (props) => (
                   <th>Cases per 1M(Sep'20 - Nov'20)</th>
                   <th>Cases per 1M(Dec'20 - Feb'21)</th>
                   <th>Cases per 1M(Mar'21 - May'21)</th>
+                  <th>Cases per 1M (Jun‘21 - Aug‘21)</th>
                 </tr>
               </thead>
               <tbody>
@@ -507,6 +508,7 @@ const GeneralFindings = (props) => (
                   <td>21.616</td>
                   <td>26.093</td>
                   <td>17.818</td>
+                  <td>15.998</td>
                 </tr>
                 <tr>
                   <td>Ex East Block (Central Europe)</td>
@@ -515,6 +517,7 @@ const GeneralFindings = (props) => (
                   <td>27.043</td>
                   <td>28.462</td>
                   <td>32.088</td>
+                  <td>730</td>
                 </tr>
                 <tr>
                   <td>Balkans</td>
@@ -523,6 +526,7 @@ const GeneralFindings = (props) => (
                   <td>20.418</td>
                   <td>22.924</td>
                   <td>21.501</td>
+                  <td>4.452</td>
                 </tr>
                 <tr>
                   <td>Greece</td>
@@ -531,6 +535,7 @@ const GeneralFindings = (props) => (
                   <td>8.774</td>
                   <td>8.013</td>
                   <td>19.718</td>
+                  <td>17.004</td>
                 </tr>
                 <tr>
                   <td>Baltic</td>
@@ -539,6 +544,7 @@ const GeneralFindings = (props) => (
                   <td>12.619</td>
                   <td>17.677</td>
                   <td>19.312</td>
+                  <td>3.647</td>
                 </tr>
                 <tr>
                   <td>Scandinavian</td>
@@ -547,6 +553,7 @@ const GeneralFindings = (props) => (
                   <td>6.210</td>
                   <td>11.845</td>
                   <td>9.639</td>
+                  <td>7.930</td>
                 </tr>
                 <tr>
                   <td>Sweden</td>
@@ -555,6 +562,7 @@ const GeneralFindings = (props) => (
                   <td>15.532</td>
                   <td>39.075</td>
                   <td>39.753</td>
+                  <td>5.398</td>
                 </tr>
               </tbody>
             </table>
@@ -569,6 +577,7 @@ const GeneralFindings = (props) => (
                   <th>Deaths per 1M(Sep'20 - Nov'20)</th>
                   <th>Deaths per 1M(Dec'20 - Feb'21)</th>
                   <th>Deaths per 1M(Mar'21 - May'21)</th>
+                  <th>Cases per 1M (Jun‘21 - Aug‘21)</th>
                 </tr>
               </thead>
               <tbody>
@@ -579,6 +588,7 @@ const GeneralFindings = (props) => (
                   <td>255</td>
                   <td>655</td>
                   <td>232</td>
+                  <td>65</td>
                 </tr>
                 <tr>
                   <td>Ex East Block (Central Europe)</td>
@@ -587,6 +597,7 @@ const GeneralFindings = (props) => (
                   <td>434</td>
                   <td>859</td>
                   <td>939</td>
+                  <td>36</td>
                 </tr>
                 <tr>
                   <td>Balkans</td>
@@ -595,6 +606,7 @@ const GeneralFindings = (props) => (
                   <td>366</td>
                   <td>585</td>
                   <td>617</td>
+                  <td>83</td>
                 </tr>
                 <tr>
                   <td>Greece</td>
@@ -603,6 +615,7 @@ const GeneralFindings = (props) => (
                   <td>192</td>
                   <td>385</td>
                   <td>521</td>
+                  <td>144</td>
                 </tr>
                 <tr>
                   <td>Baltic</td>
@@ -611,6 +624,7 @@ const GeneralFindings = (props) => (
                   <td>181</td>
                   <td>329</td>
                   <td>468</td>
+                  <td>80</td>
                 </tr>
                 <tr>
                   <td>Scandinavian</td>
@@ -619,6 +633,7 @@ const GeneralFindings = (props) => (
                   <td>20</td>
                   <td>128</td>
                   <td>32</td>
+                  <td>9</td>
                 </tr>
                 <tr>
                   <td>Sweden</td>
@@ -627,6 +642,7 @@ const GeneralFindings = (props) => (
                   <td>86</td>
                   <td>556</td>
                   <td>140</td>
+                  <td>13</td>
                 </tr>
               </tbody>
             </table>
@@ -642,6 +658,7 @@ const GeneralFindings = (props) => (
                   <th>% Mortality(Sep'20 - Nov'20)</th>
                   <th>% Mortality(Dec'20 - Feb'21)</th>
                   <th>% Mortality(Mar'21 - May'21)</th>
+                  <th>% Mortality (Jun‘21 - Aug‘21)</th>
                 </tr>
               </thead>
               <tbody>
@@ -652,6 +669,7 @@ const GeneralFindings = (props) => (
                   <td>1,2%</td>
                   <td>2,5%</td>
                   <td>1,3%</td>
+                  <td>0,4%</td>
                 </tr>
                 <tr>
                   <td>Ex East Block (Central Europe)</td>
@@ -660,6 +678,7 @@ const GeneralFindings = (props) => (
                   <td>1,6%</td>
                   <td>3,0%</td>
                   <td>2,9%</td>
+                  <td>4,9%</td>
                 </tr>
                 <tr>
                   <td>Balkans</td>
@@ -668,6 +687,7 @@ const GeneralFindings = (props) => (
                   <td>1,8%</td>
                   <td>2,6%</td>
                   <td>2,9%</td>
+                  <td>1,9%</td>
                 </tr>
                 <tr>
                   <td>Greece</td>
@@ -676,6 +696,7 @@ const GeneralFindings = (props) => (
                   <td>2,2%</td>
                   <td>4,8%</td>
                   <td>2,6%</td>
+                  <td>0,8%</td>
                 </tr>
                 <tr>
                   <td>Baltic</td>
@@ -684,6 +705,7 @@ const GeneralFindings = (props) => (
                   <td>1,4%</td>
                   <td>1,9%</td>
                   <td>2,4%</td>
+                  <td>2,2%</td>
                 </tr>
                 <tr>
                   <td>Scandinavian</td>
@@ -692,6 +714,7 @@ const GeneralFindings = (props) => (
                   <td>0,3%</td>
                   <td>1,1%</td>
                   <td>0,3%</td>
+                  <td>0,1%</td>
                 </tr>
                 <tr>
                   <td>Sweden</td>
@@ -700,6 +723,7 @@ const GeneralFindings = (props) => (
                   <td>0,6%</td>
                   <td>1,4%</td>
                   <td>0,4%</td>
+                  <td>0,2%</td>
                 </tr>
               </tbody>
             </table>
@@ -733,218 +757,218 @@ const GeneralFindings = (props) => (
                 <tr>
                   <td>1</td>
                   <td>Montenegro</td>
-                  <td>158.598</td>
+                  <td>182.996</td>
                 </tr>
                 <tr>
                   <td>2</td>
                   <td>Czechia</td>
-                  <td>154.579</td>
+                  <td>156.194</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Slovenia</td>
-                  <td>120.910</td>
+                  <td>Cyprus</td>
+                  <td>130.005</td>
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>Luxembourg</td>
-                  <td>114.357</td>
+                  <td>Slovenia</td>
+                  <td>127.158</td>
                 </tr>
                 <tr>
                   <td>5</td>
-                  <td>Sweden</td>
-                  <td>104.005</td>
+                  <td>Luxembourg</td>
+                  <td>123.707</td>
                 </tr>
                 <tr>
                   <td>6</td>
-                  <td>Serbia</td>
-                  <td>102.258</td>
+                  <td>Netherlands</td>
+                  <td>112.204</td>
                 </tr>
                 <tr>
                   <td>7</td>
-                  <td>Lithuania</td>
-                  <td>97.482</td>
+                  <td>Sweden</td>
+                  <td>109.403</td>
                 </tr>
                 <tr>
                   <td>8</td>
-                  <td>Estonia</td>
-                  <td>97.228</td>
+                  <td>Serbia</td>
+                  <td>109.112</td>
                 </tr>
                 <tr>
                   <td>9</td>
-                  <td>Netherlands</td>
-                  <td>95.305</td>
+                  <td>Estonia</td>
+                  <td>106.597</td>
                 </tr>
                 <tr>
                   <td>10</td>
-                  <td>Belgium</td>
-                  <td>92.343</td>
+                  <td>Lithuania</td>
+                  <td>106.295</td>
                 </tr>
                 <tr>
                   <td>11</td>
-                  <td>France</td>
-                  <td>88.609</td>
+                  <td>Spain</td>
+                  <td>103.708</td>
                 </tr>
                 <tr>
                   <td>12</td>
-                  <td>Croatia</td>
-                  <td>86.783</td>
+                  <td>France</td>
+                  <td>103.390</td>
                 </tr>
                 <tr>
                   <td>13</td>
-                  <td>Cyprus</td>
-                  <td>82.989</td>
+                  <td>Belgium</td>
+                  <td>102.724</td>
                 </tr>
                 <tr>
                   <td>14</td>
-                  <td>Hungary</td>
-                  <td>82.375</td>
+                  <td>United Kingdom</td>
+                  <td>100.705</td>
                 </tr>
                 <tr>
                   <td>15</td>
                   <td>Portugal</td>
-                  <td>81.909</td>
+                  <td>100.141</td>
                 </tr>
                 <tr>
                   <td>16</td>
-                  <td>Switzerland</td>
-                  <td>80.104</td>
+                  <td>Monaco</td>
+                  <td>95.814</td>
                 </tr>
                 <tr>
                   <td>17</td>
-                  <td>Spain</td>
-                  <td>79.042</td>
+                  <td>Croatia</td>
+                  <td>91.164</td>
                 </tr>
                 <tr>
                   <td>18</td>
-                  <td>Liechtenstein</td>
-                  <td>77.831</td>
+                  <td>Switzerland</td>
+                  <td>90.153</td>
                 </tr>
                 <tr>
                   <td>19</td>
-                  <td>Poland</td>
-                  <td>72.285</td>
+                  <td>Liechtenstein</td>
+                  <td>85.283</td>
                 </tr>
 
                 <tr>
                   <td>20</td>
-                  <td>Monaco</td>
-                  <td>75.139</td>
+                  <td>North Macedonia</td>
+                  <td>84.440</td>
                 </tr>
                 <tr>
                   <td>21</td>
-                  <td>North Macedonia</td>
-                  <td>74.640</td>
+                  <td>Hungary</td>
+                  <td>83.174</td>
                 </tr>
                 <tr>
                   <td>22</td>
-                  <td>Austria</td>
-                  <td>72.341</td>
+                  <td>Kosovo</td>
+                  <td>79.554</td>
                 </tr>
                 <tr>
                   <td>23</td>
-                  <td>Slovakia</td>
-                  <td>70.344</td>
+                  <td>Austria</td>
+                  <td>77.150</td>
                 </tr>
                 <tr>
                   <td>24</td>
-                  <td>Italy</td>
-                  <td>69.748</td>
+                  <td>Poland</td>
+                  <td>75.717</td>
                 </tr>
                 <tr>
                   <td>25</td>
-                  <td>Latvia</td>
-                  <td>68.549</td>
+                  <td>Italy</td>
+                  <td>75.025</td>
                 </tr>
                 <tr>
                   <td>26</td>
-                  <td>United Kingdom</td>
-                  <td>66.590</td>
+                  <td>Latvia</td>
+                  <td>73.518</td>
                 </tr>
                 <tr>
                   <td>27</td>
-                  <td>Moldova</td>
-                  <td>63.009</td>
+                  <td>Malta</td>
+                  <td>73.363</td>
                 </tr>
                 <tr>
                   <td>28</td>
-                  <td>Malta</td>
-                  <td>62.069</td>
+                  <td>Slovakia</td>
+                  <td>71.299</td>
                 </tr>
                 <tr>
                   <td>29</td>
-                  <td>Bosnia and Herzegovina</td>
-                  <td>61.577</td>
+                  <td>Ireland</td>
+                  <td>71.273</td>
                 </tr>
                 <tr>
                   <td>30</td>
-                  <td>Bulgaria</td>
-                  <td>59.651</td>
+                  <td>Moldova</td>
+                  <td>65.992</td>
                 </tr>
                 <tr>
                   <td>31</td>
-                  <td>Kosovo</td>
-                  <td>59.393</td>
+                  <td>Bulgaria</td>
+                  <td>64.710</td>
                 </tr>
                 <tr>
                   <td>32</td>
-                  <td>Romania</td>
-                  <td>55.427</td>
+                  <td>Bosnia and Herzegovina</td>
+                  <td>64.425</td>
                 </tr>
                 <tr>
                   <td>33</td>
-                  <td>Ireland</td>
-                  <td>53.045</td>
+                  <td>Denmark</td>
+                  <td>59.286</td>
                 </tr>
                 <tr>
                   <td>34</td>
-                  <td>Ukraine</td>
-                  <td>50.513</td>
+                  <td>Romania</td>
+                  <td>56.518</td>
                 </tr>
                 <tr>
                   <td>35</td>
-                  <td>Denmark</td>
-                  <td>48.182</td>
+                  <td>Greece</td>
+                  <td>54.454</td>
                 </tr>
                 <tr>
                   <td>36</td>
-                  <td>Albania</td>
-                  <td>46.349</td>
+                  <td>Ukraine</td>
+                  <td>52.418</td>
                 </tr>
                 <tr>
                   <td>37</td>
-                  <td>Germany</td>
-                  <td>44.037</td>
+                  <td>Albania</td>
+                  <td>50.899</td>
                 </tr>
                 <tr>
                   <td>38</td>
                   <td>Belarus</td>
-                  <td>41.601</td>
+                  <td>50.758</td>
                 </tr>
                 <tr>
                   <td>39</td>
-                  <td>Greece</td>
-                  <td>37.450</td>
+                  <td>Germany</td>
+                  <td>47.190</td>
                 </tr>
                 <tr>
                   <td>40</td>
                   <td>Russia</td>
-                  <td>34.421</td>
+                  <td>47.084</td>
                 </tr>
                 <tr>
                   <td>41</td>
-                  <td>Norway</td>
-                  <td>23.171</td>
+                  <td>Iceland</td>
+                  <td>30.222</td>
                 </tr>
                 <tr>
                   <td>42</td>
-                  <td>Iceland</td>
-                  <td>18.420</td>
+                  <td>Norway</td>
+                  <td>29.383</td>
                 </tr>
                 <tr>
                   <td>43</td>
-                  <td>Iceland</td>
-                  <td>18.420</td>
+                  <td>Finland</td>
+                  <td>23.153</td>
                 </tr>
               </tbody>
             </table>
@@ -963,22 +987,22 @@ const GeneralFindings = (props) => (
                 <tr>
                   <td>1</td>
                   <td>Hungary</td>
-                  <td>3.040</td>
+                  <td>3.073</td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Czechia</td>
-                  <td>2.820</td>
+                  <td>Bosnia and Herzegovina</td>
+                  <td>2.967</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Bosnia and Herzegovina</td>
-                  <td>2.792</td>
+                  <td>North Macedonia</td>
+                  <td>2.839</td>
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>North Macedonia</td>
-                  <td>2.602</td>
+                  <td>Czechia</td>
+                  <td>2.833</td>
                 </tr>
                 <tr>
                   <td>5</td>
@@ -988,195 +1012,195 @@ const GeneralFindings = (props) => (
                 <tr>
                   <td>6</td>
                   <td>Bulgaria</td>
-                  <td>2.518</td>
+                  <td>2.686</td>
                 </tr>
                 <tr>
                   <td>7</td>
                   <td>Slovakia</td>
-                  <td>2.251</td>
+                  <td>2.289</td>
                 </tr>
                 <tr>
                   <td>8</td>
                   <td>Belgium</td>
-                  <td>2.157</td>
+                  <td>2.193</td>
                 </tr>
                 <tr>
                   <td>9</td>
                   <td>Italy</td>
-                  <td>2.082</td>
+                  <td>2.134</td>
                 </tr>
                 <tr>
                   <td>10</td>
                   <td>Croatia</td>
-                  <td>1.951</td>
+                  <td>2.030</td>
                 </tr>
                 <tr>
                   <td>11</td>
-                  <td>Poland</td>
-                  <td>1.928</td>
+                  <td>United Kingdom</td>
+                  <td>1.978</td>
                 </tr>
                 <tr>
                   <td>12</td>
-                  <td>United Kingdom</td>
-                  <td>1.907</td>
+                  <td>Poland</td>
+                  <td>1.970</td>
                 </tr>
                 <tr>
                   <td>13</td>
                   <td>Slovenia</td>
-                  <td>1.800</td>
+                  <td>1.837</td>
                 </tr>
                 <tr>
                   <td>14</td>
                   <td>Portugal</td>
-                  <td>1.653</td>
+                  <td>1.722</td>
                 </tr>
                 <tr>
                   <td>15</td>
                   <td>France</td>
-                  <td>1.625</td>
+                  <td>1.686</td>
                 </tr>
                 <tr>
                   <td>16</td>
                   <td>Spain</td>
-                  <td>1.604</td>
+                  <td>1.683</td>
                 </tr>
                 <tr>
                   <td>17</td>
                   <td>Romania</td>
-                  <td>1.554</td>
+                  <td>1.590</td>
                 </tr>
                 <tr>
                   <td>18</td>
                   <td>Moldova</td>
-                  <td>1.510</td>
+                  <td>1.582</td>
                 </tr>
                 <tr>
                   <td>19</td>
-                  <td>Liechtenstein</td>
-                  <td>448</td>
+                  <td>Lithuania</td>
+                  <td>1.502</td>
                 </tr>
                 <tr>
                   <td>20</td>
-                  <td>Sweden</td>
-                  <td>1.394</td>
+                  <td>Liechtenstein</td>
+                  <td>1.433</td>
                 </tr>
                 <tr>
                   <td>21</td>
-                  <td>Lithuania</td>
-                  <td>1.393</td>
+                  <td>Sweden</td>
+                  <td>1.407</td>
                 </tr>
                 <tr>
                   <td>22</td>
-                  <td>Luxembourg</td>
-                  <td>1.332</td>
+                  <td>Kosovo</td>
+                  <td>1.372</td>
                 </tr>
                 <tr>
                   <td>23</td>
-                  <td>Kosovo</td>
-                  <td>1.242</td>
+                  <td>Luxembourg</td>
+                  <td>1.359</td>
                 </tr>
                 <tr>
                   <td>24</td>
                   <td>Latvia</td>
-                  <td>1.232</td>
+                  <td>1.340</td>
                 </tr>
                 <tr>
                   <td>25</td>
-                  <td>Austria</td>
-                  <td>1.169</td>
+                  <td>Greece</td>
+                  <td>1.267</td>
                 </tr>
                 <tr>
                   <td>26</td>
-                  <td>Ukraine</td>
-                  <td>1.166</td>
+                  <td>Russia</td>
+                  <td>1.246</td>
                 </tr>
                 <tr>
                   <td>27</td>
-                  <td>Switzerland</td>
-                  <td>1.166</td>
+                  <td>Ukraine</td>
+                  <td>1.240</td>
                 </tr>
                 <tr>
                   <td>28</td>
-                  <td>Greece</td>
-                  <td>1.123</td>
+                  <td>Austria</td>
+                  <td>1.186</td>
                 </tr>
                 <tr>
                   <td>29</td>
-                  <td>Germany</td>
-                  <td>1.058</td>
+                  <td>Switzerland</td>
+                  <td>1.185</td>
                 </tr>
 
                 <tr>
                   <td>30</td>
-                  <td>Netherlands</td>
-                  <td>1.016</td>
+                  <td>Germany</td>
+                  <td>1.104</td>
                 </tr>
                 <tr>
                   <td>31</td>
-                  <td>Ireland</td>
-                  <td>1.006</td>
+                  <td>Serbia</td>
+                  <td>1.040</td>
                 </tr>
                 <tr>
                   <td>32</td>
-                  <td>Serbia</td>
-                  <td>979</td>
+                  <td>Netherlands</td>
+                  <td>1.038</td>
                 </tr>
                 <tr>
                   <td>33</td>
-                  <td>Estonia</td>
-                  <td>943</td>
+                  <td>Ireland</td>
+                  <td>1.037</td>
                 </tr>
                 <tr>
                   <td>34</td>
                   <td>Monaco</td>
-                  <td>937</td>
+                  <td>1.028</td>
                 </tr>
                 <tr>
                   <td>35</td>
-                  <td>Albania</td>
-                  <td>861</td>
+                  <td>Estonia</td>
+                  <td>973</td>
                 </tr>
 
                 <tr>
                   <td>36</td>
                   <td>Malta</td>
-                  <td>841</td>
+                  <td>883</td>
                 </tr>
                 <tr>
                   <td>37</td>
-                  <td>Russia</td>
-                  <td>823</td>
+                  <td>Albania</td>
+                  <td>877</td>
                 </tr>
                 <tr>
                   <td>38</td>
-                  <td>Denmark</td>
-                  <td>427</td>
+                  <td>Cyprus</td>
+                  <td>572</td>
                 </tr>
                 <tr>
                   <td>39</td>
-                  <td>Cyprus</td>
-                  <td>411</td>
+                  <td>Denmark</td>
+                  <td>438</td>
                 </tr>
                 <tr>
                   <td>40</td>
                   <td>Belarus</td>
-                  <td>301</td>
+                  <td>399</td>
                 </tr>
 
                 <tr>
                   <td>41</td>
                   <td>Finland</td>
-                  <td>171</td>
+                  <td>181</td>
                 </tr>
                 <tr>
                   <td>42</td>
                   <td>Norway</td>
-                  <td>147</td>
+                  <td>153</td>
                 </tr>
                 <tr>
                   <td>42</td>
                   <td>Iceland</td>
-                  <td>84</td>
+                  <td>92</td>
                 </tr>
               </tbody>
             </table>
@@ -1192,7 +1216,10 @@ const GeneralFindings = (props) => (
       </SubTitle>
       <GridC>
         <Item className="big-item">
-          <img src="/graph-5.png" alt="GDP per Capita vs Deaths per 1M" />
+          <img
+            src="/gdp-capita-europe-test-policy.png"
+            alt="GDP per Capita vs COVID-19 Test Policy"
+          />
           <Gap />
         </Item>
         <TextBox>
@@ -1211,7 +1238,10 @@ const GeneralFindings = (props) => (
       </SubTitle>
       <GridC>
         <Item className="big-item">
-          <img src="/graph-6.png" alt="GDP per Capita vs Deaths per 1M" />
+          <img
+            src="/GDP-per-capita-vs-deaths-per-1M.png"
+            alt="GDP per Capita vs Deaths per 1M"
+          />
           <Gap />
         </Item>
         <TextBox>
@@ -1227,7 +1257,7 @@ const GeneralFindings = (props) => (
             Poland,Chechia, Bulgaria, North Macedonia etc). It looks like the
             GDP per Capita is not a primary factor in the evolution of the
             pandemic in Europe. There is a negative Correlation between GDP and
-            Deaths per 1M.(Pearson = -0.4)
+            Deaths per 1M. (Pearson = -0.4)
           </p>
         </TextBox>
       </GridC>
