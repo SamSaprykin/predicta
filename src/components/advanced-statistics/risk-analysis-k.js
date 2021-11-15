@@ -79,6 +79,28 @@ const TitleSection = styled.h1`
   }
 `;
 
+const Info = styled.p`
+  background-color: #f8f8f8;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
+  letter-spacing: 0px;
+  color: #606060;
+  font-size: 24px;
+  line-height: 44px;
+  margin-bottom: 80px;
+  @media (max-width: 1440px) {
+    max-width: 600px;
+    font-size: 19.2px;
+    line-height: 35.2px;
+  }
+  @media (max-width: 1024px) {
+    padding: 0 32px;
+  }
+`;
+
 const RiskK = () => (
   <>
     <Grid>
@@ -101,6 +123,11 @@ const RiskK = () => (
         group to 0,3% for the vaccinated group.
       </p>
     </TextBox>
+    <Info>
+      {" "}
+      If you have found this small selection of scenarios interesting, you can
+      always contact us for more.
+    </Info>
   </>
 );
 
